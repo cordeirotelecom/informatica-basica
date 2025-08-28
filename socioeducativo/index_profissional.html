@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Ressocialização - Materiais Educacionais</title>
+    <link rel="stylesheet" href="../public/style.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+        }
+        
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero-section p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .module-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #3498db;
+        }
+        
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .module-card h3 {
+            color: #2c3e50;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .module-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        
+        .module-description {
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .module-objectives {
+            margin-bottom: 1.5rem;
+        }
+        
+        .module-objectives h4 {
+            color: #34495e;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .objectives-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .objectives-list li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 20px;
+            font-size: 0.9rem;
+            color: #5a6c7d;
+        }
+        
+        .objectives-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .download-btn:hover {
+            background: linear-gradient(135deg, #2980b9 0%, #1f4e79 100%);
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .program-info {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-left: 5px solid #27ae60;
+        }
+        
+        .methodology-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #ecf0f1;
+            border-radius: 12px;
+            color: #5a6c7d;
+        }
+        
+        @media (max-width: 768px) {
+            .modules-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            
+            .module-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hero-section">
+            <h1>Programa de Ressocialização</h1>
+            <p>Materiais educacionais profissionais para desenvolvimento integral, autonomia e reintegração social efetiva</p>
+        </header>
+
+        <section class="program-info">
+            <h2>Sobre o Programa</h2>
+            <p>Este programa foi desenvolvido especialmente para pessoas em processo de ressocialização, oferecendo ferramentas práticas e conhecimentos essenciais para uma reintegração social bem-sucedida. Cada módulo foi cuidadosamente estruturado para promover o desenvolvimento pessoal e profissional de forma progressiva e sustentável.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                <div style="text-align: center; padding: 1rem; background: white; border-radius: 8px;">
+                    <strong>4 Módulos</strong><br>
+                    <span style="color: #7f8c8d;">Conteúdo estruturado</span>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: white; border-radius: 8px;">
+                    <strong>20 Horas</strong><br>
+                    <span style="color: #7f8c8d;">Carga horária total</span>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: white; border-radius: 8px;">
+                    <strong>Material PDF</strong><br>
+                    <span style="color: #7f8c8d;">Formato profissional</span>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: white; border-radius: 8px;">
+                    <strong>Atividades Práticas</strong><br>
+                    <span style="color: #7f8c8d;">Aplicação imediata</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="modules-section">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Módulos do Programa</h2>
+            
+            <div class="modules-grid">
+                <div class="module-card">
+                    <h3>Módulo 01: Identidade Profissional</h3>
+                    <div class="module-meta">
+                        <span>Duração: 4 horas</span>
+                        <span>Formato: PDF</span>
+                    </div>
+                    <p class="module-description">
+                        Desenvolvimento do autoconhecimento profissional através de ferramentas de autoavaliação, exploração de carreiras e construção de uma narrativa pessoal estruturada.
+                    </p>
+                    <div class="module-objectives">
+                        <h4>Principais Competências:</h4>
+                        <ul class="objectives-list">
+                            <li>Autoconhecimento e autorreflexão</li>
+                            <li>Comunicação interpessoal</li>
+                            <li>Planejamento de carreira</li>
+                            <li>Pesquisa profissional</li>
+                        </ul>
+                    </div>
+                    <a href="atividades/modulo01_identidade_profissional.pdf" class="download-btn" target="_blank">
+                        Baixar Material PDF
+                    </a>
+                </div>
+
+                <div class="module-card">
+                    <h3>Módulo 02: Gestão Financeira Pessoal</h3>
+                    <div class="module-meta">
+                        <span>Duração: 6 horas</span>
+                        <span>Formato: PDF</span>
+                    </div>
+                    <p class="module-description">
+                        Construção de autonomia financeira através de educação financeira prática, orçamento pessoal, estratégias de poupança e planejamento de objetivos.
+                    </p>
+                    <div class="module-objectives">
+                        <h4>Principais Competências:</h4>
+                        <ul class="objectives-list">
+                            <li>Planejamento financeiro estratégico</li>
+                            <li>Análise crítica de gastos</li>
+                            <li>Disciplina e organização</li>
+                            <li>Tomada de decisão financeira</li>
+                        </ul>
+                    </div>
+                    <a href="atividades/modulo02_gestao_financeira.pdf" class="download-btn" target="_blank">
+                        Baixar Material PDF
+                    </a>
+                </div>
+
+                <div class="module-card">
+                    <h3>Módulo 03: Comunicação e Relacionamentos</h3>
+                    <div class="module-meta">
+                        <span>Duração: 5 horas</span>
+                        <span>Formato: PDF</span>
+                    </div>
+                    <p class="module-description">
+                        Desenvolvimento de habilidades sociais fundamentais incluindo comunicação assertiva, escuta ativa, gestão de conflitos e construção de relacionamentos saudáveis.
+                    </p>
+                    <div class="module-objectives">
+                        <h4>Principais Competências:</h4>
+                        <ul class="objectives-list">
+                            <li>Comunicação assertiva e empática</li>
+                            <li>Escuta ativa e compreensão</li>
+                            <li>Gestão de conflitos</li>
+                            <li>Trabalho em equipe</li>
+                        </ul>
+                    </div>
+                    <a href="atividades/modulo03_comunicacao_relacionamentos.pdf" class="download-btn" target="_blank">
+                        Baixar Material PDF
+                    </a>
+                </div>
+
+                <div class="module-card">
+                    <h3>Módulo 04: Autoestima e Desenvolvimento</h3>
+                    <div class="module-meta">
+                        <span>Duração: 5 horas</span>
+                        <span>Formato: PDF</span>
+                    </div>
+                    <p class="module-description">
+                        Fortalecimento da autoestima e construção de uma autoimagem positiva através de técnicas de desenvolvimento pessoal, resiliência e estabelecimento de metas.
+                    </p>
+                    <div class="module-objectives">
+                        <h4>Principais Competências:</h4>
+                        <ul class="objectives-list">
+                            <li>Autoconhecimento profundo</li>
+                            <li>Confiança pessoal</li>
+                            <li>Resiliência e adaptabilidade</li>
+                            <li>Motivação intrínseca</li>
+                        </ul>
+                    </div>
+                    <a href="atividades/modulo04_autoestima_desenvolvimento.pdf" class="download-btn" target="_blank">
+                        Baixar Material PDF
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="methodology-section">
+            <h2>Metodologia</h2>
+            <p>
+                Nossa abordagem pedagógica é baseada em competências, privilegiando o aprendizado ativo e a aplicação prática. 
+                Cada módulo combina fundamentos teóricos sólidos com atividades práticas, reflexões pessoais e exercícios de aplicação imediata.
+            </p>
+            <p style="margin-top: 1rem; font-style: italic;">
+                "Educação que transforma, autonomia que liberta, conhecimento que empodera."
+            </p>
+        </section>
+
+        <section class="footer-note">
+            <h3>Instruções de Uso</h3>
+            <p>
+                Os materiais estão organizados em formato PDF profissional para facilitar o download, impressão e uso offline. 
+                Cada módulo é independente, mas recomenda-se seguir a sequência proposta para um desenvolvimento progressivo e consistente.
+            </p>
+            <p style="margin-top: 1rem;">
+                <strong>Importante:</strong> Este material foi desenvolvido especificamente para programas de ressocialização, 
+                respeitando as necessidades e especificidades deste público, promovendo dignidade, respeito e empoderamento.
+            </p>
+        </section>
+
+        <footer style="text-align: center; margin-top: 2rem; padding: 1rem; color: #7f8c8d;">
+            <p>Programa de Ressocialização - Construindo pontes para um futuro melhor</p>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Material educacional desenvolvido com metodologia profissional focada na autonomia e desenvolvimento integral</p>
+        </footer>
+    </div>
+</body>
+</html>

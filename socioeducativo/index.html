@@ -1,114 +1,325 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Socioeducativo - Informática</title>
-  <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Socioeducativa - Programa de Ressocialização</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .intro {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .intro h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        
+        .intro p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .modules-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .modules-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .module-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #3498db;
+        }
+        
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .module-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .module-card p {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        
+        .module-card .topics {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        
+        .module-card .topics h4 {
+            color: #34495e;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        .module-card .topics ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .module-card .topics li {
+            color: #666;
+            margin-bottom: 5px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 0.9rem;
+        }
+        
+        .module-card .topics li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .info-box h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .info-box p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .professional-badge {
+            background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .modules-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .intro h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Informática para Socioeducativo</h1>
-    <nav>
-      <a href="/index.html">Início</a>
-      <a href="/aulas/aula01.html">Aula 01</a>
-      <a href="/aulas/aula02.html">Aula 02</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Área restrita para atividades de ressocialização</h2>
-    <p>Esta seção é exclusiva para atividades de ressocialização. Aqui você encontra atividades práticas para aplicar no socioeducativo, abordando desenvolvimento pessoal, profissional e social.</p>
-    
-    <div class="socioeducativo-overview">
-      <h3>📋 Programa de Atividades</h3>
-      
-      <div class="activities-grid">
-        <div class="activity-card">
-          <h4><a href="/socioeducativo/aula01.html">Aula 01 - Criando um Currículo</a></h4>
-          <p><strong>Ferramenta:</strong> Microsoft Word<br>
-          <strong>Foco:</strong> Organização pessoal e apresentação profissional<br>
-          <a href="/socioeducativo/downloads/Aula01_Curriculo_Word.md" download>📄 Download Material</a></p>
+    <div class="container">
+        <header>
+            <h1>Área Socioeducativa</h1>
+            <p>Programa de Ressocialização através da Informática Básica</p>
+            <div class="professional-badge">Metodologia Profissional - Desenvolvimento Integral</div>
+        </header>
+
+        <section class="intro">
+            <h2>Bem-vindo ao Programa de Ressocialização</h2>
+            <p>Este programa foi desenvolvido com base em metodologias comprovadas de ressocialização e desenvolvimento humano. Através de atividades práticas com informática básica, você desenvolverá competências essenciais para a vida pessoal e profissional, fortalecendo sua autoestima, habilidades de comunicação e preparação para o mercado de trabalho.</p>
+        </section>
+
+        <div class="info-box">
+            <h3>Formato dos Materiais</h3>
+            <p>Todos os módulos estão disponíveis em formato profissional, prontos para impressão e uso em sala de aula. Cada atividade inclui reflexões profundas, exercícios práticos e planos de ação individualizados.</p>
         </div>
-        
-        <div class="activity-card">
-          <h4><a href="/socioeducativo/aula02.html">Aula 02 - Orçamento Financeiro</a></h4>
-          <p><strong>Ferramenta:</strong> Microsoft Excel<br>
-          <strong>Foco:</strong> Educação financeira e planejamento<br>
-          <a href="/socioeducativo/downloads/Aula02_Orcamento_Excel.md" download>📄 Download Material</a></p>
+
+        <section class="modules-section">
+            <h2>Módulos de Desenvolvimento</h2>
+            
+            <div class="modules-grid">
+                <div class="module-card">
+                    <h3>Módulo 01: Identidade Profissional</h3>
+                    <p>Desenvolvimento da consciência profissional através da criação de currículo estruturado.</p>
+                    <div class="topics">
+                        <h4>Competências Desenvolvidas:</h4>
+                        <ul>
+                            <li>Autoconhecimento e mapeamento de habilidades</li>
+                            <li>Organização de informações pessoais</li>
+                            <li>Comunicação escrita profissional</li>
+                            <li>Construção de visão de futuro</li>
+                            <li>Uso avançado do Microsoft Word</li>
+                        </ul>
+                    </div>
+                    <a href="atividades/modulo01_identidade_profissional.html" class="btn">Acessar Módulo</a>
+                </div>
+
+                <div class="module-card">
+                    <h3>Módulo 02: Gestão Financeira</h3>
+                    <p>Desenvolvimento de autonomia financeira através de ferramentas de controle e planejamento.</p>
+                    <div class="topics">
+                        <h4>Competências Desenvolvidas:</h4>
+                        <ul>
+                            <li>Controle de gastos e receitas</li>
+                            <li>Planejamento orçamentário</li>
+                            <li>Análise financeira pessoal</li>
+                            <li>Estabelecimento de metas financeiras</li>
+                            <li>Uso avançado do Microsoft Excel</li>
+                        </ul>
+                    </div>
+                    <a href="atividades/modulo02_gestao_financeira.html" class="btn">Acessar Módulo</a>
+                </div>
+
+                <div class="module-card">
+                    <h3>Módulo 03: Comunicação e Relacionamentos</h3>
+                    <p>Desenvolvimento de habilidades interpessoais e comunicação assertiva.</p>
+                    <div class="topics">
+                        <h4>Competências Desenvolvidas:</h4>
+                        <ul>
+                            <li>Comunicação assertiva e empática</li>
+                            <li>Técnicas de escuta ativa</li>
+                            <li>Resolução construtiva de conflitos</li>
+                            <li>Trabalho em equipe</li>
+                            <li>Inteligência emocional aplicada</li>
+                        </ul>
+                    </div>
+                    <a href="atividades/modulo03_comunicacao_relacionamentos.html" class="btn">Acessar Módulo</a>
+                </div>
+
+                <div class="module-card">
+                    <h3>Módulo 04: Autoestima e Desenvolvimento</h3>
+                    <p>Fortalecimento da autoestima e construção de uma autoimagem positiva e realista.</p>
+                    <div class="topics">
+                        <h4>Competências Desenvolvidas:</h4>
+                        <ul>
+                            <li>Autoaceitação e autoconfiança</li>
+                            <li>Reconhecimento de valores pessoais</li>
+                            <li>Ressignificação de experiências</li>
+                            <li>Combate a pensamentos negativos</li>
+                            <li>Construção de projeto de vida</li>
+                        </ul>
+                    </div>
+                    <a href="atividades/modulo04_autoestima_desenvolvimento.html" class="btn">Acessar Módulo</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="info-box">
+            <h3>Metodologia Aplicada</h3>
+            <p>Cada módulo combina aprendizado técnico com desenvolvimento pessoal, utilizando reflexões estruturadas, atividades práticas e dinâmicas de grupo que promovem crescimento integral e preparação efetiva para reintegração social e profissional.</p>
         </div>
-        
-        <div class="activity-card">
-          <h4><a href="/socioeducativo/aula03.html">Aula 03 - Profissões e Ética</a></h4>
-          <p><strong>Ferramenta:</strong> Microsoft PowerPoint<br>
-          <strong>Foco:</strong> Valores, ética e perspectivas profissionais</p>
-        </div>
-        
-        <div class="activity-card">
-          <h4><a href="/socioeducativo/aula04.html">Aula 04 - Planejamento Financeiro</a></h4>
-          <p><strong>Ferramenta:</strong> Excel + Word<br>
-          <strong>Foco:</strong> Educação financeira avançada e metas</p>
-        </div>
-        
-        <div class="activity-card">
-          <h4><a href="/socioeducativo/aula05.html">Aula 05 - Projeto de Vida</a></h4>
-          <p><strong>Ferramenta:</strong> PowerPoint + Word<br>
-          <strong>Foco:</strong> Autoestima, planejamento e cursos IFSC</p>
-        </div>
-        
-        <div class="activity-card">
-          <h4><a href="/socioeducativo/aula06.html">Aula 06 - Comunicação e Relacionamentos</a></h4>
-          <p><strong>Ferramenta:</strong> Word + Dinâmicas<br>
-          <strong>Foco:</strong> Habilidades interpessoais e empatia<br>
-          <a href="/socioeducativo/downloads/Aula06_Comunicacao_Relacionamentos.md" download>📄 Download Material</a></p>
-        </div>
-        
-        <div class="activity-card">
-          <h4><a href="/socioeducativo/aula07.html">Aula 07 - Autoestima e Desenvolvimento</a></h4>
-          <p><strong>Ferramenta:</strong> PowerPoint + Word + Excel<br>
-          <strong>Foco:</strong> Autoconhecimento e fortalecimento pessoal<br>
-          <a href="/socioeducativo/downloads/Aula07_Autoestima_Desenvolvimento.md" download>📄 Download Material</a></p>
-        </div>
-        
-        <div class="activity-card">
-          <h4><a href="/socioeducativo/aula08.html">Aula 08 - Empreendedorismo e Inovação</a></h4>
-          <p><strong>Ferramenta:</strong> Word + Excel + PowerPoint<br>
-          <strong>Foco:</strong> Mentalidade empreendedora e plano de negócios<br>
-          <a href="/socioeducativo/downloads/Aula08_Empreendedorismo_Inovacao.md" download>📄 Download Material</a></p>
-        </div>
-        
-        <div class="activity-card">
-          <h4><a href="/socioeducativo/recursos.html">📚 Recursos e Materiais</a></h4>
-          <p><strong>Conteúdo:</strong> Livros, guias, templates<br>
-          <strong>Foco:</strong> Material de apoio para educadores</p>
-        </div>
-      </div>
     </div>
-    
-    <div class="important-note">
-      <h3>⚠️ Importante para Educadores</h3>
-      <ul>
-        <li>Todas as atividades são projetadas para funcionar <strong>sem acesso à internet</strong></li>
-        <li>Foque no desenvolvimento de <strong>habilidades socioemocionais</strong></li>
-        <li>Promova discussões sobre <strong>ética, respeito e empatia</strong></li>
-        <li>Adapte as atividades conforme o perfil do grupo</li>
-        <li>Mantenha um ambiente <strong>acolhedor e não-julgamental</strong></li>
-      </ul>
-    </div>
-    
-    <div class="methodology-note">
-      <h3>🔄 Metodologia Aplicada</h3>
-      <p>As atividades seguem princípios de <strong>gestão sistêmica para desenvolvimento harmônico sustentável</strong>, 
-      integrando aspectos técnicos, pessoais e sociais para promover uma ressocialização completa e duradoura.</p>
-    </div>
-    
-    <p><strong>🔒 Acesso Restrito:</strong> Esta seção deve ser protegida com senha no deploy do Netlify.</p>
-  </main>
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Informática Básica - cordeirotelecom</p>
-      <p class="footer-methodology">
-        Desenvolvido com técnicas de planejamento de gestão sistêmica para desenvolvimento harmônico sustentável
-      </p>
-    </div>
-  </footer>
+
+    <footer>
+        <p>&copy; 2024 Programa de Ressocialização - Desenvolvido com técnicas de planejamento de gestão sistêmica para desenvolvimento harmônico sustentável</p>
+    </footer>
 </body>
 </html>
