@@ -1,0 +1,20 @@
+[build]
+  publish = "public"
+  
+[build.environment]
+  NODE_VERSION = "18"
+
+# Redirect rules for socioeducativo protection
+[[redirects]]
+  from = "/socioeducativo/*"
+  to = "/.netlify/functions/auth-socioeducativo"
+  status = 401
+  force = true
+
+# Headers for security
+[[headers]]
+  for = "/socioeducativo/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
