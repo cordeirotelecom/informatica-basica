@@ -1,48 +1,64 @@
 @echo off
 echo ==========================================
-echo    SCRIPT DE DEPLOY - INFORMATICA BASICA
+echo    DEPLOY AUTOMATICO - cordeirotelecom
 echo ==========================================
 echo.
-echo Este script ira enviar seus arquivos para o GitHub
+echo Conta GitHub: cordeirotelecom
+echo Repositorio: informatica-basica
 echo.
-echo Pressione qualquer tecla para continuar...
-pause > nul
+echo PASSO 1: Criando repositorio no GitHub...
+echo.
+echo ABRA O NAVEGADOR E:
+echo 1. Va em: https://github.com/new
+echo 2. Repository name: informatica-basica
+echo 3. Marque "Public"
+echo 4. NAO marque nenhuma opcao extra
+echo 5. Clique "Create repository"
+echo.
+echo Pressione ENTER depois de criar o repositorio...
+pause
 
 echo.
-echo Navegando para a pasta do projeto...
+echo PASSO 2: Enviando arquivos...
+echo.
 cd /d "c:\Users\corde\OneDrive\Desktop\informatica basica"
-
-echo.
-echo Enviando arquivos para o GitHub...
 git push -u origin main
 
-echo.
 if %errorlevel% == 0 (
+    echo.
     echo ==========================================
-    echo     SUCESSO! Arquivos enviados!
+    echo        SUCESSO! Arquivos enviados!
     echo ==========================================
     echo.
-    echo Proximo passo:
-    echo 1. Acesse: https://app.netlify.com
-    echo 2. Clique em "New site from Git"
-    echo 3. Escolha GitHub e selecione: cordeirotelecom/informatica-basica
-    echo 4. Configure Publish directory: public
-    echo 5. Clique em "Deploy site"
+    echo PASSO 3: Deploy no Netlify
     echo.
+    echo ABRA: https://app.netlify.com
+    echo 1. Faca login no Netlify
+    echo 2. Clique "New site from Git"
+    echo 3. Escolha "GitHub"
+    echo 4. Selecione: cordeirotelecom/informatica-basica
+    echo 5. Publish directory: public
+    echo 6. Clique "Deploy site"
+    echo.
+    echo CREDENCIAIS AREA RESTRITA:
+    echo Usuario: cordeirotelecom
+    echo Senha: Socio2025!@#
+    echo.
+    start https://app.netlify.com
+    
 ) else (
+    echo.
     echo ==========================================
-    echo     ERRO! Repositorio nao encontrado
+    echo     ERRO! Crie o repositorio primeiro
     echo ==========================================
     echo.
-    echo Primeiro crie o repositorio no GitHub:
-    echo 1. Acesse: https://github.com/cordeirotelecom
-    echo 2. Clique em "New repository"
-    echo 3. Nome: informatica-basica
-    echo 4. Marque "Public"
-    echo 5. NAO marque nenhuma opcao extra
-    echo 6. Clique em "Create repository"
-    echo 7. Execute este script novamente
+    echo 1. Va em: https://github.com/new
+    echo 2. Nome: informatica-basica  
+    echo 3. Marque Public
+    echo 4. Crie o repositorio
+    echo 5. Execute este script novamente
     echo.
+    start https://github.com/new
 )
 
 echo.
