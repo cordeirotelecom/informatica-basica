@@ -4,17 +4,41 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Redirect rules for socioeducativo protection
+# Proteção específica para a pasta socioeducativo
 [[redirects]]
   from = "/socioeducativo/*"
   to = "/.netlify/functions/auth-socioeducativo"
-  status = 401
+  status = 200
   force = true
 
-# Headers for security
+# Redirect root para index.html
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+# Redirect 404 para página inicial
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
+
+# Headers para segurança
 [[headers]]
   for = "/socioeducativo/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    X-XSS-Protection = "1; mode=block"
+
+# Headers para assets
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+    
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
