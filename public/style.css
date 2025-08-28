@@ -3,19 +3,176 @@ body {
   margin: 0;
   padding: 0;
   background: #f5f5f5;
+  line-height: 1.6;
 }
+
 header {
   background: #003366;
   color: #fff;
   padding: 1rem;
 }
+
 nav a {
   color: #fff;
   margin-right: 1rem;
   text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.3s;
 }
+
+nav a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
 main {
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.course-overview {
+  margin: 2rem 0;
+}
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.lesson-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.lesson-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.lesson-card h4 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.lesson-card a {
+  text-decoration: none;
+  color: #003366;
+}
+
+.lesson-card a:hover {
+  color: #0066cc;
+}
+
+.special-section {
+  background: #e8f4f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  border-left: 4px solid #003366;
+}
+
+/* Socioeducativo Styles */
+.socioeducativo-overview {
+  margin: 2rem 0;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.activity-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-left: 4px solid #ff6b35;
+  transition: transform 0.3s;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.activity-card h4 {
+  margin-top: 0;
+  color: #d63031;
+}
+
+.activity-card a {
+  text-decoration: none;
+  color: #d63031;
+}
+
+.important-note {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.methodology-note {
+  background: #e8f5e8;
+  border-left: 4px solid #00b894;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.resources-section {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.courses-info, .personal-development, .action-plan {
+  background: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+.motivational-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.motivational-section blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.reflection-box {
+  background: #f1f3f4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border-left: 4px solid #4285f4;
+}
+
+.ethics-section {
+  background: #fef7e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border-left: 4px solid #f39c12;
 }
 footer {
   background: #222;
