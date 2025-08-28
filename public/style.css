@@ -174,6 +174,61 @@ main {
   margin: 1rem 0;
   border-left: 4px solid #f39c12;
 }
+
+/* Download and material sections */
+.download-section {
+  background: #e8f8f5;
+  border: 2px solid #27ae60;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.download-section a {
+  display: inline-block;
+  background: #27ae60;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 0.5rem;
+  transition: background 0.3s;
+}
+
+.download-section a:hover {
+  background: #219a52;
+}
+
+.competencies-box, .financial-tips, .business-section {
+  background: #f8f9fa;
+  border-left: 4px solid #6c757d;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.competencies-box h4, .financial-tips h4, .business-section h4 {
+  color: #495057;
+  margin-top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .lessons-grid, .activities-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  nav a {
+    display: block;
+    margin: 0.2rem 0;
+  }
+  
+  .download-section {
+    padding: 1rem;
+  }
+}
 footer {
   background: #222;
   color: #fff;
