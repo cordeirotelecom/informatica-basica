@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 01 - Construção da Identidade Profissional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            border-left: 5px solid #3498db;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        .section h3 {
+            color: #34495e;
+            margin: 25px 0 15px 0;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+        
+        .objective-box {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .activity-box {
+            background: linear-gradient(135deg, #00cec9 0%, #00b894 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .reflection-box {
+            background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .step-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .step-list li {
+            counter-increment: step-counter;
+            margin: 15px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            padding-left: 70px;
+        }
+        
+        .step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .competency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .competency-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #e74c3c;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .template-box {
+            background: #f1f2f6;
+            border: 2px dashed #57606f;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .page-break {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MÓDULO 01</h1>
+            <div class="subtitle">Construção da Identidade Profissional</div>
+            <div style="margin-top: 20px; font-size: 1rem; opacity: 0.8;">
+                Programa de Ressocialização através da Informática Básica
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="objective-box">
+                <h2>OBJETIVO DO MÓDULO</h2>
+                <p>Desenvolver a consciência profissional e pessoal através da criação de um currículo estruturado, fortalecendo a autoestima e preparando para o mercado de trabalho com foco na reconstrução da identidade profissional.</p>
+            </div>
+            
+            <div class="section">
+                <h2>COMPETÊNCIAS A DESENVOLVER</h2>
+                <div class="competency-grid">
+                    <div class="competency-card">
+                        <h3>Autoconhecimento</h3>
+                        <p>Identificação de habilidades, talentos e experiências de vida que podem ser transformadas em competências profissionais.</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Organização Pessoal</h3>
+                        <p>Estruturação de informações pessoais de forma clara e profissional para apresentação ao mercado de trabalho.</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Comunicação Escrita</h3>
+                        <p>Desenvolvimento da capacidade de expressar experiências e objetivos de forma clara e persuasiva.</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Visão de Futuro</h3>
+                        <p>Construção de objetivos profissionais realistas e motivadores que orientem as próximas etapas da vida.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-break"></div>
+            
+            <div class="section">
+                <h2>ATIVIDADE PRINCIPAL: CRIAÇÃO DO CURRÍCULO PROFISSIONAL</h2>
+                
+                <h3>Preparação e Reflexão Inicial</h3>
+                <p>Antes de iniciar a criação do currículo no Microsoft Word, é fundamental realizar uma reflexão profunda sobre trajetória pessoal e profissional. Esta etapa é crucial para identificar elementos que muitas vezes passam despercebidos, mas que são valiosos para o mercado de trabalho.</p>
+                
+                <div class="activity-box">
+                    <h3>ETAPA 1: INVENTÁRIO PESSOAL E PROFISSIONAL</h3>
+                    <p>Complete as reflexões abaixo antes de iniciar o documento:</p>
+                </div>
+                
+                <div class="template-box">
+                    <h4>EXPERIÊNCIAS DE VIDA QUE SE TORNARAM COMPETÊNCIAS:</h4>
+                    <p>1. Situações onde demonstrei responsabilidade:</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                    <br>
+                    <p>2. Momentos onde liderei ou organizei algo:</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                    <br>
+                    <p>3. Problemas que consegui resolver:</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                    <br>
+                    <p>4. Pessoas que já ajudei e como:</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                    <br>
+                    <p>5. Atividades que faço bem (mesmo que não sejam trabalho formal):</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>DESENVOLVIMENTO DA ATIVIDADE NO MICROSOFT WORD</h3>
+                
+                <ol class="step-list">
+                    <li>
+                        <strong>Configuração Inicial do Documento</strong>
+                        <p>Abra o Microsoft Word e configure o documento com margens de 2,5cm, fonte Arial ou Times New Roman, tamanho 12. Configure o espaçamento entre linhas para 1,15 para melhor legibilidade.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Criação do Cabeçalho Profissional</strong>
+                        <p>Centralize seu nome em fonte tamanho 16, negrito. Abaixo, inclua endereço completo, telefone celular com DDD, e-mail profissional (crie um se necessário). Adicione uma linha horizontal para separar.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Objetivo Profissional Personalizado</strong>
+                        <p>Escreva um parágrafo de 3-4 linhas que demonstre motivação, mencionando a área de interesse e como pretende contribuir. Evite frases genéricas - seja específico sobre seus valores e intenções.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Experiências Profissionais e de Vida</strong>
+                        <p>Liste experiências em ordem cronológica inversa. Inclua trabalhos formais, informais, voluntariado, cuidado familiar, projetos pessoais. Para cada experiência, descreva responsabilidades usando verbos de ação.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Formação e Desenvolvimento</strong>
+                        <p>Inclua educação formal, cursos livres, palestras, workshops. Se a educação formal foi interrompida, mencione planos de retomada. Valorize todo tipo de aprendizado.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Habilidades e Competências Pessoais</strong>
+                        <p>Liste competências técnicas e comportamentais. Inclua habilidades desenvolvidas na vida pessoal que se aplicam ao trabalho: organização, comunicação, persistência, adaptabilidade.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Revisão e Finalização</strong>
+                        <p>Revise ortografia, gramática e formatação. Verifique se todas as informações estão corretas e atualizadas. Salve em formato PDF para preservar formatação.</p>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="page-break"></div>
+            
+            <div class="section">
+                <h2>MODELO DE CURRÍCULO ESTRUTURADO</h2>
+                
+                <div class="template-box">
+                    <h3 style="text-align: center; margin-bottom: 20px;">[SEU NOME COMPLETO]</h3>
+                    <p style="text-align: center;">
+                        Endereço: [Rua, número, bairro, cidade, CEP]<br>
+                        Telefone: [DDD] 9XXXX-XXXX | E-mail: [seu.email@exemplo.com]
+                    </p>
+                    <hr style="margin: 20px 0;">
+                    
+                    <h4>OBJETIVO PROFISSIONAL</h4>
+                    <p>Busco uma oportunidade na área de [ÁREA ESPECÍFICA] onde possa aplicar minha experiência em [HABILIDADE PRINCIPAL] e minha capacidade de [COMPETÊNCIA COMPORTAMENTAL], contribuindo para o crescimento da empresa enquanto desenvolvo minha carreira profissional.</p>
+                    
+                    <h4>EXPERIÊNCIA PROFISSIONAL</h4>
+                    <p><strong>[Função/Atividade] - [Local/Empresa]</strong><br>
+                    Período: [Mês/Ano] a [Mês/Ano]<br>
+                    • [Responsabilidade específica com resultado]<br>
+                    • [Habilidade desenvolvida na função]<br>
+                    • [Conquista ou melhoria implementada]</p>
+                    
+                    <h4>FORMAÇÃO ACADÊMICA</h4>
+                    <p><strong>Ensino Médio</strong> - [Nome da Escola]<br>
+                    Concluído em: [Ano]</p>
+                    
+                    <h4>CURSOS E QUALIFICAÇÕES</h4>
+                    <p>• [Nome do curso] - [Instituição] - [Ano]<br>
+                    • [Certificação obtida] - [Local] - [Ano]</p>
+                    
+                    <h4>COMPETÊNCIAS E HABILIDADES</h4>
+                    <p><strong>Técnicas:</strong> [Conhecimentos específicos]<br>
+                    <strong>Comportamentais:</strong> [Características pessoais aplicáveis ao trabalho]<br>
+                    <strong>Informática:</strong> [Programas que sabe usar]</p>
+                    
+                    <h4>INFORMAÇÕES COMPLEMENTARES</h4>
+                    <p>• [Idiomas, se houver]<br>
+                    • [Disponibilidade de horário]<br>
+                    • [Disposição para viagens, se aplicável]</p>
+                </div>
+            </div>
+            
+            <div class="reflection-box">
+                <h2>REFLEXÃO E DISCUSSÃO DIRIGIDA</h2>
+                <h3>Questões para Desenvolvimento Pessoal:</h3>
+                <p><strong>1. Reconhecimento de Valor Pessoal</strong></p>
+                <p>Como suas experiências de vida, mesmo as difíceis, contribuíram para formar suas qualidades atuais? Que competências você desenvolveu que nem sabia que tinha?</p>
+                
+                <p><strong>2. Perspectiva de Futuro</strong></p>
+                <p>Visualize-se daqui a 2 anos em um emprego. Como você se vê contribuindo para uma empresa? Que tipo de profissional você quer ser lembrado por ser?</p>
+                
+                <p><strong>3. Superação e Aprendizado</strong></p>
+                <p>Quais desafios você já superou na vida? Como essas experiências podem ser pontos fortes em um ambiente de trabalho?</p>
+                
+                <p><strong>4. Motivação e Propósito</strong></p>
+                <p>O que realmente te motiva a trabalhar? Além do dinheiro, que satisfação pessoal você busca através do trabalho?</p>
+            </div>
+            
+            <div class="section">
+                <h2>ATIVIDADES COMPLEMENTARES</h2>
+                
+                <h3>Dinâmica 1: Entrevista Simulada</h3>
+                <p>Em duplas, pratiquem uma entrevista de emprego usando o currículo criado. Um participante é o entrevistador, outro o candidato. Depois troquem os papéis. Foquem em perguntas sobre experiências descritas no currículo.</p>
+                
+                <h3>Dinâmica 2: Apresentação Pessoal</h3>
+                <p>Cada participante tem 2 minutos para se apresentar como se fosse o primeiro dia de trabalho. Incluam informações do currículo de forma natural e confiante.</p>
+                
+                <h3>Dinâmica 3: Feedback Construtivo</h3>
+                <p>Em grupos de 3-4 pessoas, cada um apresenta seu currículo e recebe sugestões construtivas dos colegas. Foquem em pontos positivos e melhorias possíveis.</p>
+            </div>
+            
+            <div class="section">
+                <h2>PLANO DE AÇÃO INDIVIDUAL</h2>
+                
+                <div class="template-box">
+                    <h4>MEUS PRÓXIMOS PASSOS:</h4>
+                    <p><strong>Nos próximos 7 dias, vou:</strong></p>
+                    <p>□ Finalizar meu currículo com todas as revisões</p>
+                    <p>□ Criar um e-mail profissional</p>
+                    <p>□ Pesquisar 3 empresas onde gostaria de trabalhar</p>
+                    <p>□ Praticar minha apresentação pessoal</p>
+                    <br>
+                    <p><strong>Nos próximos 30 dias, vou:</strong></p>
+                    <p>□ Entregar meu currículo em pelo menos 5 lugares</p>
+                    <p>□ Conversar com 3 pessoas sobre oportunidades de trabalho</p>
+                    <p>□ Pesquisar sobre cursos que possam melhorar meu currículo</p>
+                    <p>□ Estabelecer uma rotina de busca por emprego</p>
+                    <br>
+                    <p><strong>Meu compromisso pessoal:</strong></p>
+                    <p>Eu, _________________________, me comprometo a valorizar minha trajetória e buscar ativamente oportunidades de crescimento profissional, utilizando este currículo como ferramenta de apresentação da pessoa capaz e determinada que sou.</p>
+                    <br>
+                    <p>Assinatura: _________________________ Data: ___________</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Programa de Ressocialização através da Informática Básica</p>
+            <p>Desenvolvido com técnicas de planejamento de gestão sistêmica para desenvolvimento harmônico sustentável</p>
+        </div>
+    </div>
+</body>
+</html>

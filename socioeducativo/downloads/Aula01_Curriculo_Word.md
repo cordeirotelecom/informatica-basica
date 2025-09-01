@@ -2,184 +2,233 @@
 **Socioeducativo - Informática Básica**
 
 ## 📋 OBJETIVO DA AULA
-# Atividade 01: Currículo Profissional Completo
+# ATIVIDADE 01: ELABORAÇÃO DE CURRÍCULO PROFISSIONAL COMPLETO
 
-## Objetivo
-Elaborar um currículo profissional detalhado, aprendendo cada etapa do processo, desde o levantamento de informações pessoais até a formatação final no Word. Esta atividade é dividida em módulos, com exemplos, dicas, exercícios práticos e desafios para garantir aprendizado real e aprofundado.
+## CONTEXTUALIZAÇÃO E IMPORTÂNCIA
+O currículo é o primeiro contato que você estabelece com um potencial empregador. É através dele que você consegue despertar interesse suficiente para ser convidado a uma entrevista. Um currículo bem elaborado pode abrir portas, enquanto um mal feito pode fechá-las definitivamente. Esta atividade foi desenvolvida para capacitá-lo a criar um documento profissional que destaque suas qualidades e experiências de forma clara e convincente.
 
----
+No atual mercado de trabalho brasileiro, onde a concorrência é acirrada e as oportunidades são disputadas por milhares de candidatos, ter um currículo que se destaque é fundamental. Estatísticas mostram que recrutadores gastam em média apenas 6 segundos analisando cada currículo antes de decidir se o candidato será considerado para a vaga. Portanto, cada palavra, cada formatação e cada informação contida no seu currículo deve ser estrategicamente pensada.
 
-## Módulo 1: O que é um Currículo e para que serve?
+O Microsoft Word é uma ferramenta amplamente utilizada no mercado corporativo e dominar suas funcionalidades básicas de formatação é essencial para qualquer profissional. Além de aprender a criar um currículo, você desenvolverá habilidades importantes de edição de texto, formatação e organização de informações que serão úteis em diversas situações profissionais futuras.
 
-### Leitura e Reflexão
-O currículo é o seu cartão de visitas profissional. Ele serve para apresentar suas experiências, habilidades e objetivos para empresas e recrutadores. Um bom currículo pode abrir portas para entrevistas e oportunidades de trabalho.
+### REFLEXÃO INICIAL SOBRE TRAJETÓRIA PROFISSIONAL
+Antes de começarmos a construção do currículo propriamente dito, é fundamental que você faça uma reflexão profunda sobre sua trajetória pessoal e profissional. Muitas pessoas subestimam suas experiências e habilidades, acreditando que só o trabalho formal "conta" no currículo. Isso é um equívoco que pode prejudicar significativamente suas chances no mercado de trabalho.
 
-**Leia o texto abaixo e responda:**
+Pense em todas as atividades que você já realizou, mesmo que não tenham sido empregos formais: trabalhos informais, voluntariado, atividades domésticas que desenvolveram habilidades organizacionais, cursos livres, experiências de liderança em grupos ou comunidades, projetos pessoais que demonstrem iniciativa e criatividade. Todas essas experiências agregam valor ao seu perfil e podem ser estrategicamente apresentadas no currículo.
 
-> "O currículo é mais do que um papel: é a sua história profissional resumida. Ele deve ser claro, objetivo e verdadeiro. Não existe um modelo único, mas existem informações essenciais que não podem faltar."
+Reflita também sobre suas características pessoais que podem ser consideradas qualidades profissionais: você é uma pessoa pontual? Tem facilidade para trabalhar em equipe? É organizado? Tem boa comunicação? Sabe resolver problemas? É criativo? Todas essas características são valorizadas pelo mercado e devem ser destacadas de forma adequada.
 
-**Perguntas para reflexão:**
-- Por que é importante ter um currículo atualizado?
-- O que não pode faltar em um currículo?
-- Você já entregou um currículo antes? Como foi a experiência?
+**EXERCÍCIO REFLEXIVO 1:** Escreva um parágrafo de pelo menos 8 linhas descrevendo sua trajetória de vida, destacando momentos que considera importantes para sua formação pessoal e profissional. Inclua desafios que enfrentou e como os superou, pois isso demonstra resiliência, uma característica muito valorizada pelos empregadores.
 
----
-
-## Módulo 2: Levantando suas Informações
-
-### Passo a Passo
-1. **Dados Pessoais:**
-   - Nome completo
-   - Idade/Data de nascimento
-   - Endereço completo
-   - Telefone e e-mail
-2. **Objetivo Profissional:**
-   - O que você busca? (Ex: "Busco oportunidade como auxiliar administrativo.")
-3. **Formação Escolar:**
-   - Escola, curso, ano de conclusão
-4. **Experiências Profissionais:**
-   - Nome da empresa, cargo, período, principais atividades
-5. **Cursos e Qualificações:**
-   - Cursos extras, informática, idiomas, etc.
-6. **Habilidades e Competências:**
-   - Pontualidade, trabalho em equipe, comunicação, etc.
-
-### Exercício Prático
-Preencha a tabela abaixo com suas informações reais ou fictícias:
-
-| Dado                  | Informação Exemplo                  | Sua Informação           |
-|-----------------------|-------------------------------------|--------------------------|
-| Nome                  | Maria da Silva                      |                          |
-| Idade/Data Nasc.      | 22 anos / 10/03/2003                |                          |
-| Endereço              | Rua das Flores, 123, Centro         |                          |
-| Telefone/E-mail       | (11) 99999-9999 / maria@email.com   |                          |
-| Objetivo              | Auxiliar de escritório               |                          |
-| Formação              | Ensino Médio - E.E. João Paulo (2021)|                          |
-| Experiência           | Padaria Pão Doce, Atendente (2022)  |                          |
-| Cursos                | Informática Básica (2023)           |                          |
-| Habilidades           | Comunicação, organização            |                          |
-
----
-
-## Módulo 3: Escrevendo o Currículo no Word
-
-### Passo a Passo Detalhado
-1. Abra o Microsoft Word
-2. Clique em "Arquivo" > "Novo" > "Documento em branco"
-3. Digite seu nome no topo, centralizado e em negrito
-4. Insira seus dados pessoais logo abaixo
-5. Crie os títulos: Objetivo, Formação, Experiência, Cursos, Habilidades
-6. Preencha cada seção com as informações levantadas
-7. Use marcadores para listar itens
-8. Revise ortografia e formatação
-
-### Exercício Prático
-Abra o Word e siga o passo a passo acima. Salve o arquivo como `Curriculo_Nome.docx`.
-
----
-
-## Módulo 4: Dicas de Ouro para um Currículo Profissional
-
-- Seja honesto: nunca invente informações
-- Use fonte legível (Arial, Calibri, tamanho 12)
-- Evite erros de português
-- Não coloque documentos pessoais (RG, CPF)
-- Não use fotos, a menos que seja exigido
-- Currículo deve ter no máximo 2 páginas
-
-### Desafio
-Peça para um colega ou educador revisar seu currículo e dar sugestões de melhoria.
-
----
-
-## Módulo 5: Simulação de Entrevista
-
-1. Imagine que você foi chamado para uma entrevista com base no seu currículo.
-2. Responda às perguntas abaixo:
-   - Fale sobre você.
-   - Por que você quer esta vaga?
-   - Quais são seus pontos fortes?
-   - O que você precisa melhorar?
-   - Onde se vê daqui a 5 anos?
-
-**Escreva suas respostas:**
 ```
-...espaço para respostas...
+_________________________________________________________________________________
+_________________________________________________________________________________
+_________________________________________________________________________________
+_________________________________________________________________________________
+_________________________________________________________________________________
+_________________________________________________________________________________
+_________________________________________________________________________________
+_________________________________________________________________________________
 ```
 
----
+## ANÁLISE DO MERCADO DE TRABALHO E POSICIONAMENTO PROFISSIONAL
 
-## Módulo 6: Currículo para Diferentes Áreas
+Compreender o mercado de trabalho atual é crucial para posicionar adequadamente seu perfil profissional. O mundo do trabalho passou por transformações significativas nos últimos anos, especialmente após a pandemia de COVID-19, que acelerou a digitalização de processos e mudou a forma como as empresas recrutam talentos.
 
-Leia os exemplos de currículos para diferentes áreas (comércio, serviços, indústria, tecnologia) e adapte o seu para a área de interesse.
+Hoje, além das competências técnicas específicas de cada área, as empresas valorizam muito as chamadas "soft skills" ou habilidades comportamentais. Entre elas estão: adaptabilidade, pensamento crítico, inteligência emocional, capacidade de aprendizado contínuo, colaboração, comunicação eficaz e liderança. Essas habilidades podem ser desenvolvidas em diversos contextos, não apenas no ambiente de trabalho formal.
 
-### Exercício
-Escolha uma área e reescreva seu objetivo e experiências para ela.
+O perfil do trabalhador moderno também inclui a capacidade de usar tecnologias básicas, como pacote Office, ferramentas de comunicação digital, e ter noções básicas de internet e redes sociais profissionais. Mesmo para vagas que não são diretamente relacionadas à tecnologia, essas competências são cada vez mais exigidas.
 
----
+**MAPEAMENTO DE COMPETÊNCIAS PESSOAIS**
+Para cada competência listada abaixo, avalie seu nível (Iniciante/Intermediário/Avançado) e descreva uma situação onde demonstrou essa habilidade:
 
-## Módulo 7: Checklist Final
+**Comunicação:** _______________________________________________________________
+Situação onde demonstrei: _____________________________________________________
+___________________________________________________________________________
 
-- [ ] Todas as informações estão corretas?
-- [ ] O currículo está bem formatado?
-- [ ] Não há erros de português?
-- [ ] O objetivo está claro?
-- [ ] O arquivo está salvo e pronto para ser enviado?
+**Trabalho em equipe:** ________________________________________________________
+Situação onde demonstrei: _____________________________________________________
+___________________________________________________________________________
 
----
+**Organização:** ______________________________________________________________
+Situação onde demonstrei: _____________________________________________________
+___________________________________________________________________________
 
-## Módulo 8: Enviando o Currículo por E-mail
+**Proatividade:** _____________________________________________________________
+Situação onde demonstrei: _____________________________________________________
+___________________________________________________________________________
 
-### Passo a Passo
-1. Abra seu e-mail
-2. Clique em "Novo e-mail"
-3. Escreva um assunto claro: "Currículo - Maria da Silva"
-4. Escreva uma mensagem educada e objetiva
-5. Anexe o arquivo do currículo
-6. Revise tudo antes de enviar
+**Resolução de problemas:** ____________________________________________________
+Situação onde demonstrei: _____________________________________________________
+___________________________________________________________________________
 
-### Exercício
-Simule o envio de um e-mail com seu currículo para um amigo ou educador.
+## ESTRUTURAÇÃO ESTRATÉGICA DO CURRÍCULO
 
----
+Um currículo eficaz deve contar uma história coerente sobre quem você é profissionalmente e para onde quer ir. Não é apenas uma lista de empregos anteriores, mas sim um documento de marketing pessoal que deve ser personalizado para cada tipo de vaga que você busca.
 
-## Módulo 9: Dúvidas Frequentes
+### SEÇÕES OBRIGATÓRIAS E SUA IMPORTÂNCIA ESTRATÉGICA
 
-- O que fazer se não tenho experiência?
-- Como colocar trabalhos informais?
-- Preciso colocar referências?
-- Como atualizar meu currículo?
+**1. DADOS PESSOAIS E CONTATO**
+Esta seção deve conter apenas informações essenciais para contato: nome completo, telefone com DDD, e-mail profissional, cidade e estado onde reside. Evite incluir informações como RG, CPF, estado civil ou idade, pois podem gerar preconceitos desnecessários no processo seletivo.
 
-Pesquise as respostas e escreva um pequeno texto para cada dúvida.
+O e-mail deve ser profissional, preferencialmente usando variações do seu nome. Evite e-mails como "gatinha123@email.com" ou "revolucionario2024@email.com". Crie um e-mail específico para busca de emprego se necessário.
 
----
+**2. OBJETIVO PROFISSIONAL**
+Esta é uma das seções mais importantes e mais negligenciadas pelos candidatos. O objetivo deve ser específico, direto e alinhado com a vaga pretendida. Evite objetivos genéricos como "Crescer profissionalmente" ou "Oportunidade na área administrativa". Seja específico: "Atuar como auxiliar administrativo em empresa de médio porte, aplicando conhecimentos em organização de documentos e atendimento ao cliente para contribuir com a eficiência dos processos internos."
 
-## Módulo 10: Avaliação e Reflexão
+**EXERCÍCIO PRÁTICO:** Escreva três objetivos diferentes para três áreas distintas onde gostaria de trabalhar:
 
-- O que aprendi nesta atividade?
-- O que foi mais difícil?
-- O que posso melhorar?
-- Como me sinto agora em relação ao mercado de trabalho?
+Objetivo 1 (Área: ____________): ______________________________________________
+___________________________________________________________________________
+___________________________________________________________________________
 
-**Escreva sua reflexão final:**
-```
-...espaço para reflexão...
-```
+Objetivo 2 (Área: ____________): ______________________________________________
+___________________________________________________________________________
+___________________________________________________________________________
 
----
+Objetivo 3 (Área: ____________): ______________________________________________
+___________________________________________________________________________
+___________________________________________________________________________
 
-## Recursos Complementares
-- Modelos de currículo prontos (Word e PDF)
-- Vídeos tutoriais sobre currículo
-- Links para sites de vagas de emprego
+**3. EXPERIÊNCIA PROFISSIONAL**
+Organize suas experiências em ordem cronológica inversa (da mais recente para a mais antiga). Para cada experiência, inclua: nome da empresa, cargo ocupado, período de trabalho e principais responsabilidades e conquistas.
 
----
+Use verbos de ação para descrever suas responsabilidades: "Organizei", "Desenvolvi", "Coordenei", "Implementei", "Gerenciei". Quantifique sempre que possível: "Atendi em média 50 clientes por dia", "Organizei arquivo com mais de 1000 documentos", "Reduzi tempo de atendimento em 20%".
 
-## Download PDF
-[⬇️ Baixar esta atividade em PDF](./Aula01_Curriculo_Word.pdf)
+Se você não tem experiência formal, inclua trabalhos informais, estágios, trabalho voluntário ou projetos pessoais relevantes. O importante é demonstrar que você tem experiência prática, mesmo que não tenha sido em empregos com carteira assinada.
 
-## Voltar ao Menu
-[← Voltar para atividades](../README.md)
+**4. FORMAÇÃO ACADÊMICA**
+Liste sua formação em ordem cronológica inversa. Inclua o nome da instituição, curso, período de estudo e situação (concluído, em andamento, interrompido). Se você não concluiu o ensino médio, mencione até que série estudou e se está retomando os estudos.
+
+Para cursos técnicos, profissionalizantes ou superiores, inclua disciplinas ou projetos relevantes que se relacionem com a vaga pretendida.
+
+**5. CURSOS E QUALIFICAÇÕES COMPLEMENTARES**
+Esta seção pode ser um diferencial importante. Inclua cursos de informática, idiomas, cursos profissionalizantes, workshops, palestras relevantes. Mesmo cursos de curta duração podem demonstrar seu interesse em aprendizado contínuo.
+
+Organize por relevância para a vaga pretendida, não apenas por ordem cronológica. Se está buscando uma vaga administrativa, destaque cursos de Excel antes de cursos de culinária, por exemplo.
+
+**6. HABILIDADES E COMPETÊNCIAS**
+Liste habilidades técnicas (uso de softwares, ferramentas, idiomas) e comportamentais (trabalho em equipe, liderança, comunicação). Seja honesto sobre seu nível de conhecimento em cada área.
+
+## CRIAÇÃO PRÁTICA NO MICROSOFT WORD
+
+### CONFIGURAÇÃO INICIAL DO DOCUMENTO
+Antes de começar a digitar, é importante configurar adequadamente o documento para garantir uma apresentação profissional:
+
+1. **Margem:** Configure margem de 2,5 cm em todos os lados (Layout > Margens > Margens Personalizadas)
+2. **Fonte:** Use fontes profissionais como Arial, Calibri ou Times New Roman, tamanho 11 ou 12 para o texto
+3. **Espaçamento:** Configure espaçamento entre linhas de 1,15 para facilitar a leitura
+4. **Alinhamento:** Use alinhamento justificado para o corpo do texto
+
+### FORMATAÇÃO ESTRATÉGICA
+A formatação do currículo é tão importante quanto o conteúdo. Um documento bem formatado transmite profissionalismo e atenção aos detalhes, qualidades valorizadas em qualquer função.
+
+**HIERARQUIA VISUAL:**
+- Nome: Fonte tamanho 16-18, negrito, centralizado
+- Seções principais: Fonte tamanho 14, negrito, alinhado à esquerda
+- Subseções: Fonte tamanho 12, negrito
+- Texto: Fonte tamanho 11-12, normal
+
+**USO DE ESPAÇOS:**
+- Deixe uma linha em branco entre seções
+- Use recuo de primeira linha nos parágrafos
+- Mantenha consistência no espaçamento
+
+### EXEMPLO DE ESTRUTURA COMPLETA
+
+**MARIA DA SILVA SANTOS**
+*Telefone: (11) 99999-9999 | E-mail: maria.santos.profissional@email.com*
+*São Paulo - SP*
+
+**OBJETIVO PROFISSIONAL**
+Atuar como Auxiliar Administrativo em empresa de médio porte, aplicando experiência em organização de documentos, atendimento ao cliente e conhecimentos em informática básica para contribuir com a eficiência dos processos administrativos e o bom funcionamento da equipe.
+
+**EXPERIÊNCIA PROFISSIONAL**
+
+*Atendente de Loja | Padaria Pão Nosso | Janeiro 2023 - Presente*
+- Responsável pelo atendimento direto a aproximadamente 80 clientes diários
+- Organização e controle de estoque de produtos diversos
+- Operação de sistema de vendas e controle de caixa
+- Manutenção da apresentação e limpeza do ambiente de trabalho
+- Desenvolvimento de relacionamento positivo com clientes regulares
+
+*Cuidadora de Idosos | Autônoma | Março 2021 - Dezembro 2022*
+- Acompanhamento e cuidados básicos de saúde para duas pessoas idosas
+- Organização de medicamentos e controle de horários
+- Preparo de refeições balanceadas conforme orientação nutricional
+- Companhia para consultas médicas e atividades recreativas
+- Desenvolvimento de paciência, empatia e responsabilidade
+
+**FORMAÇÃO ACADÊMICA**
+
+*Ensino Médio Completo | E.E. Professor João Silva | 2020*
+- Participação em projeto de monitoria em matemática
+- Membro do grêmio estudantil por dois anos consecutivos
+
+**CURSOS E QUALIFICAÇÕES**
+
+*Informática Básica (Word, Excel, Internet) | SENAI | 2023 - 40 horas*
+*Atendimento ao Cliente | Senac | 2022 - 20 horas*
+*Primeiros Socorros | Cruz Vermelha | 2021 - 16 horas*
+
+**HABILIDADES E COMPETÊNCIAS**
+
+*Técnicas:* Pacote Office básico, Internet, Redes Sociais, Operação de caixa
+*Comportamentais:* Comunicação eficaz, Trabalho em equipe, Organização, Pontualidade, Proatividade, Paciência
+
+## REVISÃO, PERSONALIZAÇÃO E ESTRATÉGIAS DE ENVIO
+
+### PROCESSO DE REVISÃO DETALHADA
+A revisão do currículo é uma etapa crucial que muitos candidatos negligenciam. Um erro de português ou uma informação inconsistente pode eliminar suas chances em um processo seletivo.
+
+**Checklist de Revisão:**
+- [ ] Todas as informações de contato estão corretas?
+- [ ] O objetivo está alinhado com a vaga pretendida?
+- [ ] As datas de experiências estão corretas e em ordem?
+- [ ] Não há erros de português ou digitação?
+- [ ] A formatação está consistente em todo documento?
+- [ ] O documento tem no máximo 2 páginas?
+- [ ] As informações são verdadeiras e podem ser comprovadas?
+
+**EXERCÍCIO FINAL:** Após criar seu currículo completo seguindo todas as orientações desta atividade, escreva uma autoavaliação crítica identificando três pontos fortes do seu documento e três aspectos que ainda precisam ser melhorados:
+
+**Pontos Fortes:**
+1. ________________________________________________________________________
+2. ________________________________________________________________________
+3. ________________________________________________________________________
+
+**Aspectos a Melhorar:**
+1. ________________________________________________________________________
+2. ________________________________________________________________________
+3. ________________________________________________________________________
+
+### PERSONALIZAÇÃO POR ÁREA DE INTERESSE
+Um dos maiores erros dos candidatos é usar o mesmo currículo para todas as vagas. Cada área profissional valoriza competências específicas, e seu currículo deve refletir isso.
+
+**Para Área Comercial:** Destaque experiências com vendas, atendimento ao cliente, metas alcançadas, relacionamento interpessoal.
+
+**Para Área Administrativa:** Enfatize organização, conhecimentos em informática, experiência com documentos, processos internos.
+
+**Para Área Industrial:** Valorize experiência com trabalho em equipe, cumprimento de normas de segurança, produtividade, pontualidade.
+
+**Para Área de Serviços:** Destaque flexibilidade, atendimento ao público, resolução de problemas, adaptabilidade.
+
+### ESTRATÉGIAS DE ENVIO E FOLLOW-UP
+O envio do currículo também requer estratégia. Não basta ter um bom currículo se ele não chegar da forma adequada ao recrutador.
+
+**E-mail de Apresentação:**
+Sempre envie seu currículo acompanhado de um e-mail profissional de apresentação. Este e-mail deve ser conciso, destacar brevemente sua adequação à vaga e demonstrar conhecimento sobre a empresa.
+
+**Assunto do E-mail:**
+Use assuntos claros e específicos: "Currículo para vaga de Auxiliar Administrativo - Maria Santos" ao invés de apenas "Currículo" ou "Vaga de emprego".
+
+**Formato do Arquivo:**
+Salve sempre em PDF para preservar a formatação, e nomeie o arquivo de forma profissional: "Curriculo_Maria_Santos_Auxiliar_Administrativo.pdf"
+
+**Timing de Envio:**
+Envie currículos preferencialmente entre terça e quinta-feira, no período da manhã, quando os recrutadores têm mais disposição para análise.
+
+Esta atividade forneceu uma base sólida para criação de um currículo profissional eficaz. Lembre-se de que o currículo é um documento vivo, que deve ser constantemente atualizado conforme você adquire novas experiências e qualificações. Continue investindo em seu desenvolvimento profissional e mantenha sempre sua apresentação atualizada e alinhada com seus objetivos de carreira.
 
 ## 🎯 COMPETÊNCIAS DESENVOLVIDAS
 - Organização de informações pessoais

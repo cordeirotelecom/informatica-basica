@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 03 - Comunicação Eficaz e Relacionamentos Saudáveis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            border-left: 5px solid #6c5ce7;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        .section h3 {
+            color: #34495e;
+            margin: 25px 0 15px 0;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+        
+        .objective-box {
+            background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .activity-box {
+            background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .reflection-box {
+            background: linear-gradient(135deg, #00cec9 0%, #00b894 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .step-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .step-list li {
+            counter-increment: step-counter;
+            margin: 15px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            padding-left: 70px;
+        }
+        
+        .step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+            background: #6c5ce7;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .skill-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #6c5ce7;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .template-box {
+            background: #f1f2f6;
+            border: 2px dashed #57606f;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .scenario-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .exercise-box {
+            background: #d1ecf1;
+            border-left: 4px solid #bee5eb;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .communication-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .communication-table th {
+            background: #6c5ce7;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .communication-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .communication-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        .tip-box {
+            background: #e8f5e8;
+            border: 2px solid #28a745;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .page-break {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MÓDULO 03</h1>
+            <div class="subtitle">Comunicação Eficaz e Relacionamentos Saudáveis</div>
+            <div style="margin-top: 20px; font-size: 1rem; opacity: 0.8;">
+                Desenvolvendo Competências Sociais e Interpessoais
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="objective-box">
+                <h2>OBJETIVO DO MÓDULO</h2>
+                <p>Desenvolver habilidades de comunicação assertiva, empatia e construção de relacionamentos saudáveis, tanto no ambiente pessoal quanto profissional. Este módulo visa fortalecer a capacidade de resolver conflitos, trabalhar em equipe e estabelecer vínculos positivos que contribuam para a reintegração social e profissional.</p>
+            </div>
+            
+            <div class="section">
+                <h2>COMPETÊNCIAS SOCIAIS A DESENVOLVER</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Comunicação Assertiva</h3>
+                        <p>Expressar opiniões, sentimentos e necessidades de forma clara, respeitosa e direta, sem agressividade ou passividade.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Escuta Ativa</h3>
+                        <p>Capacidade de ouvir verdadeiramente o outro, compreendendo não apenas as palavras, mas também os sentimentos e necessidades.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Empatia e Compreensão</h3>
+                        <p>Habilidade de se colocar no lugar do outro, compreendendo perspectivas diferentes e respondendo com sensibilidade.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Resolução de Conflitos</h3>
+                        <p>Competência para identificar, abordar e resolver desentendimentos de forma construtiva e pacífica.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Trabalho em Equipe</h3>
+                        <p>Capacidade de colaborar, compartilhar responsabilidades e contribuir para objetivos comuns de forma harmoniosa.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Inteligência Emocional</h3>
+                        <p>Reconhecimento e gestão das próprias emoções e compreensão das emoções dos outros em interações sociais.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-break"></div>
+            
+            <div class="section">
+                <h2>FUNDAMENTOS DA COMUNICAÇÃO EFICAZ</h2>
+                
+                <h3>Os Três Pilares da Comunicação</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>1. Clareza na Mensagem</h4>
+                        <p>Organizar pensamentos antes de falar, usar linguagem adequada ao contexto e verificar se a mensagem foi compreendida.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>2. Escuta Genuína</h4>
+                        <p>Dar atenção total ao interlocutor, evitar interrupções e demonstrar interesse através de linguagem corporal e verbal.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>3. Resposta Empática</h4>
+                        <p>Considerar os sentimentos do outro, validar experiências e responder de forma que fortaleça o relacionamento.</p>
+                    </div>
+                </div>
+                
+                <div class="tip-box">
+                    <h4>REFLEXÃO IMPORTANTE:</h4>
+                    <p>A comunicação não é apenas sobre falar. É sobre criar pontes de compreensão entre pessoas. Cada conversa é uma oportunidade de fortalecer ou enfraquecer um relacionamento.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>ESTILOS DE COMUNICAÇÃO</h2>
+                
+                <table class="communication-table">
+                    <thead>
+                        <tr>
+                            <th>Estilo</th>
+                            <th>Características</th>
+                            <th>Vantagens</th>
+                            <th>Desvantagens</th>
+                            <th>Quando Usar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Assertivo</strong></td>
+                            <td>Direto, respeitoso, claro</td>
+                            <td>Constrói confiança e respeito</td>
+                            <td>Pode ser mal interpretado como agressivo</td>
+                            <td>Na maioria das situações</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Passivo</strong></td>
+                            <td>Evita conflitos, submisso</td>
+                            <td>Mantém harmonia superficial</td>
+                            <td>Pode gerar ressentimento</td>
+                            <td>Em situações de extrema tensão</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Agressivo</strong></td>
+                            <td>Dominador, impositivo</td>
+                            <td>Pode obter resultados rápidos</td>
+                            <td>Prejudica relacionamentos</td>
+                            <td>Em emergências (raramente)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Passivo-Agressivo</strong></td>
+                            <td>Indireto, sarcástico</td>
+                            <td>Evita confronto direto</td>
+                            <td>Cria confusão e tensão</td>
+                            <td>Nunca é recomendado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="activity-box">
+                <h2>ATIVIDADE PRINCIPAL: ANÁLISE E PRÁTICA DE COMUNICAÇÃO</h2>
+                <p>Vamos desenvolver suas habilidades através de situações práticas e reflexões estruturadas:</p>
+            </div>
+            
+            <div class="section">
+                <h3>ETAPA 1: AUTOAVALIAÇÃO DA COMUNICAÇÃO PESSOAL</h3>
+                
+                <div class="template-box">
+                    <h4>REFLEXÃO SOBRE MEU ESTILO DE COMUNICAÇÃO:</h4>
+                    <p>1. Como eu costumo reagir quando alguém discorda de mim?</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                    <br>
+                    <p>2. Em situações de conflito, eu tendo a:</p>
+                    <p>□ Evitar e me calar □ Discutir até o fim □ Buscar entender o outro □ Fazer ironias</p>
+                    <br>
+                    <p>3. Quando preciso pedir algo importante, eu:</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                    <br>
+                    <p>4. As pessoas costumam me procurar para:</p>
+                    <p>□ Desabafar □ Pedir conselhos □ Resolver problemas □ Conversar sobre amenidades</p>
+                    <br>
+                    <p>5. Minha maior dificuldade na comunicação é:</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                    <br>
+                    <p>6. Uma situação em que me comuniquei muito bem foi:</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>ETAPA 2: CENÁRIOS PRÁTICOS DE COMUNICAÇÃO</h3>
+                
+                <div class="scenario-box">
+                    <h4>CENÁRIO 1: NO AMBIENTE DE TRABALHO</h4>
+                    <p><strong>Situação:</strong> Seu chefe critica seu trabalho na frente de outros colegas de forma que você considera injusta.</p>
+                    <p><strong>Desafio:</strong> Como responder de forma assertiva sem prejudicar seu emprego?</p>
+                    <br>
+                    <p><strong>Resposta Assertiva:</strong></p>
+                    <p>"Entendo sua preocupação com a qualidade do trabalho. Posso conversar com você em particular para entender melhor os pontos que precisam ser melhorados e como posso ajustar minha abordagem?"</p>
+                    <br>
+                    <p><strong>Por que funciona:</strong> Demonstra respeito, busca compreensão e propõe solução sem confronto público.</p>
+                </div>
+                
+                <div class="scenario-box">
+                    <h4>CENÁRIO 2: EM RELACIONAMENTOS PESSOAIS</h4>
+                    <p><strong>Situação:</strong> Um amigo próximo frequentemente cancela compromissos no último minuto, deixando você frustrado.</p>
+                    <p><strong>Desafio:</strong> Como abordar o assunto sem perder a amizade?</p>
+                    <br>
+                    <p><strong>Resposta Assertiva:</strong></p>
+                    <p>"Valorizo muito nossa amizade e quero que ela continue forte. Quando nossos planos são cancelados no último minuto, eu me sinto desvalorizado. Podemos conversar sobre como organizar melhor nossos encontros?"</p>
+                    <br>
+                    <p><strong>Por que funciona:</strong> Expressa sentimentos sem atacar, valoriza o relacionamento e busca solução colaborativa.</p>
+                </div>
+                
+                <div class="scenario-box">
+                    <h4>CENÁRIO 3: EM SITUAÇÕES DE CONFLITO FAMILIAR</h4>
+                    <p><strong>Situação:</strong> Durante uma discussão familiar, as emoções estão altas e todos estão falando ao mesmo tempo.</p>
+                    <p><strong>Desafio:</strong> Como mediar e acalmar a situação?</p>
+                    <br>
+                    <p><strong>Resposta Assertiva:</strong></p>
+                    <p>"Vejo que todos têm pontos importantes a colocar. Que tal cada um falar por vez, por dois minutos, para que possamos realmente nos ouvir? Eu gostaria de começar ouvindo você, [nome]."</p>
+                    <br>
+                    <p><strong>Por que funciona:</strong> Reconhece a importância de todos, propõe estrutura e demonstra liderança pacífica.</p>
+                </div>
+            </div>
+            
+            <div class="page-break"></div>
+            
+            <div class="section">
+                <h3>ETAPA 3: TÉCNICAS DE ESCUTA ATIVA</h3>
+                
+                <ol class="step-list">
+                    <li>
+                        <strong>Atenção Total</strong>
+                        <p>Pare o que estiver fazendo, faça contato visual e demonstre através da postura corporal que está presente na conversa.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Evite Interrupções</strong>
+                        <p>Resista à tentação de completar frases ou dar soluções antes que a pessoa termine de se expressar completamente.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Faça Perguntas Abertas</strong>
+                        <p>Use "Como você se sentiu...?", "O que isso significou para você...?", "Pode me contar mais sobre...?" para aprofundar a compreensão.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Reformule e Confirme</strong>
+                        <p>Repita com suas palavras o que entendeu: "Se eu entendi bem, você está dizendo que..." e aguarde confirmação.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Valide Emoções</strong>
+                        <p>Reconheça os sentimentos expressos: "Imagino como isso deve ter sido difícil para você" ou "É compreensível que você se sinta assim".</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Responda com Empatia</strong>
+                        <p>Antes de oferecer soluções ou opiniões, demonstre que compreendeu a perspectiva e os sentimentos da pessoa.</p>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="exercise-box">
+                <h3>EXERCÍCIO PRÁTICO: ESCUTA ATIVA EM DUPLAS</h3>
+                <p><strong>Instruções:</strong></p>
+                <ol>
+                    <li>Formem duplas. Uma pessoa será o "narrador", outra o "ouvinte".</li>
+                    <li>O narrador conta sobre uma situação desafiadora que viveu (3-4 minutos).</li>
+                    <li>O ouvinte pratica escuta ativa seguindo as técnicas acima.</li>
+                    <li>Após a narrativa, o ouvinte reformula o que entendeu.</li>
+                    <li>O narrador confirma se foi bem compreendido.</li>
+                    <li>Troquem os papéis e repitam o exercício.</li>
+                    <li>Discutam a experiência: como foi ser verdadeiramente ouvido/ouvir?</li>
+                </ol>
+            </div>
+            
+            <div class="section">
+                <h2>GESTÃO DE CONFLITOS E RELACIONAMENTOS</h2>
+                
+                <h3>O Ciclo Construtivo de Resolução de Conflitos</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>1. Reconhecimento</h4>
+                        <p>Identificar que existe um conflito e que ele precisa ser abordado, não ignorado.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>2. Compreensão</h4>
+                        <p>Buscar entender as perspectivas de todas as partes envolvidas sem julgamentos.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>3. Comunicação</h4>
+                        <p>Expressar seu ponto de vista e necessidades de forma clara e respeitosa.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>4. Negociação</h4>
+                        <p>Buscar soluções que atendam às necessidades principais de todos os envolvidos.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>5. Acordo</h4>
+                        <p>Estabelecer compromissos claros sobre como proceder a partir da resolução.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>6. Acompanhamento</h4>
+                        <p>Verificar se a solução está funcionando e fazer ajustes se necessário.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>ESTRATÉGIAS PARA RELACIONAMENTOS SAUDÁVEIS</h3>
+                
+                <div class="template-box">
+                    <h4>PRINCÍPIOS FUNDAMENTAIS:</h4>
+                    <p><strong>1. RESPEITO MÚTUO</strong></p>
+                    <p>• Reconhecer a dignidade do outro, mesmo em desacordo</p>
+                    <p>• Evitar xingamentos, ironias ou desqualificações</p>
+                    <p>• Valorizar diferenças como oportunidades de aprendizado</p>
+                    <br>
+                    <p><strong>2. COMUNICAÇÃO HONESTA</strong></p>
+                    <p>• Expressar sentimentos e necessidades com clareza</p>
+                    <p>• Evitar manipulação ou comunicação indireta</p>
+                    <p>• Ser verdadeiro sobre limitações e expectativas</p>
+                    <br>
+                    <p><strong>3. EMPATIA ATIVA</strong></p>
+                    <p>• Tentar compreender as motivações do outro</p>
+                    <p>• Reconhecer que cada pessoa tem sua história</p>
+                    <p>• Responder com compaixão, mesmo quando é difícil</p>
+                    <br>
+                    <p><strong>4. RESPONSABILIDADE PESSOAL</strong></p>
+                    <p>• Assumir responsabilidade por suas ações e palavras</p>
+                    <p>• Não culpar outros por seus sentimentos</p>
+                    <p>• Focar no que pode controlar: suas atitudes</p>
+                    <br>
+                    <p><strong>5. CRESCIMENTO CONJUNTO</strong></p>
+                    <p>• Ver conflitos como oportunidades de melhoria</p>
+                    <p>• Estar aberto a mudanças e aprendizado</p>
+                    <p>• Apoiar o desenvolvimento pessoal do outro</p>
+                </div>
+            </div>
+            
+            <div class="page-break"></div>
+            
+            <div class="reflection-box">
+                <h2>REFLEXÃO PROFUNDA SOBRE RELACIONAMENTOS</h2>
+                <h3>Questões para Desenvolvimento Interpessoal:</h3>
+                
+                <p><strong>1. Padrões de Relacionamento</strong></p>
+                <p>Que padrões você identifica em seus relacionamentos? Como suas experiências passadas influenciam a forma como você se relaciona hoje? O que você gostaria de mudar?</p>
+                
+                <p><strong>2. Impacto da Comunicação</strong></p>
+                <p>Pense em uma conversa recente que teve um resultado positivo. O que você fez de diferente? Como pode aplicar esses aprendizados em outras situações?</p>
+                
+                <p><strong>3. Zona de Conforto Social</strong></p>
+                <p>Em que situações sociais você se sente mais confiante? Quais situações ainda são desafiadoras? Como pode expandir gradualmente sua zona de conforto?</p>
+                
+                <p><strong>4. Valor dos Relacionamentos</strong></p>
+                <p>Como relacionamentos saudáveis podem contribuir para seus objetivos pessoais e profissionais? Que tipo de pessoa você quer ser nos relacionamentos?</p>
+            </div>
+            
+            <div class="section">
+                <h2>ATIVIDADES PRÁTICAS AVANÇADAS</h2>
+                
+                <h3>Dinâmica 1: Teatro da Comunicação</h3>
+                <p>Em grupos de 3-4 pessoas, criem pequenas encenações mostrando situações de comunicação assertiva vs. não-assertiva. Uma pessoa observa e dá feedback sobre linguagem corporal, tom de voz e escolha de palavras.</p>
+                
+                <h3>Dinâmica 2: Círculo de Feedback</h3>
+                <p>Em círculo, cada pessoa compartilha uma qualidade comunicativa que observou em outro participante durante as atividades. Foquem em observações específicas e positivas.</p>
+                
+                <h3>Dinâmica 3: Resolução de Conflito Simulado</h3>
+                <p>Em trios, uma pessoa observa enquanto duas encenam um conflito comum (divergência sobre tarefa no trabalho, mal-entendido entre amigos). Pratiquem aplicar as técnicas de resolução.</p>
+                
+                <h3>Projeto Individual: Diário de Comunicação</h3>
+                <p>Durante uma semana, registrem diariamente: uma interação que correu bem, uma que poderiam melhorar, e uma técnica que usaram ou poderiam ter usado.</p>
+            </div>
+            
+            <div class="section">
+                <h2>COMUNICAÇÃO NO AMBIENTE PROFISSIONAL</h2>
+                
+                <table class="communication-table">
+                    <thead>
+                        <tr>
+                            <th>Situação</th>
+                            <th>Abordagem Assertiva</th>
+                            <th>O que Evitar</th>
+                            <th>Objetivo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feedback de Superior</td>
+                            <td>"Obrigado pelo feedback. Posso fazer algumas perguntas para entender melhor?"</td>
+                            <td>Ficar na defensiva ou concordar sem entender</td>
+                            <td>Crescimento profissional</td>
+                        </tr>
+                        <tr>
+                            <td>Discordância com Colega</td>
+                            <td>"Vejo que temos perspectivas diferentes. Como podemos encontrar uma solução?"</td>
+                            <td>Impor sua opinião ou ceder sem argumentar</td>
+                            <td>Colaboração efetiva</td>
+                        </tr>
+                        <tr>
+                            <td>Apresentação de Ideias</td>
+                            <td>"Gostaria de apresentar uma proposta que pode beneficiar nosso projeto."</td>
+                            <td>Ser tímido demais ou agressivo</td>
+                            <td>Contribuição valiosa</td>
+                        </tr>
+                        <tr>
+                            <td>Pedido de Ajuda</td>
+                            <td>"Estou enfrentando um desafio e acredito que sua experiência pode me ajudar."</td>
+                            <td>Fingir que sabe tudo ou ser dependente</td>
+                            <td>Aprendizado e eficiência</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="section">
+                <h2>PLANO DE DESENVOLVIMENTO INTERPESSOAL</h2>
+                
+                <div class="template-box">
+                    <h4>MEUS OBJETIVOS DE COMUNICAÇÃO:</h4>
+                    <p><strong>Nos próximos 7 dias, vou:</strong></p>
+                    <p>□ Praticar escuta ativa em pelo menos 3 conversas</p>
+                    <p>□ Identificar meu estilo de comunicação dominante</p>
+                    <p>□ Escolher uma pessoa para melhorar o relacionamento</p>
+                    <p>□ Observar minha linguagem corporal durante conversas</p>
+                    <br>
+                    <p><strong>Nos próximos 30 dias, vou:</strong></p>
+                    <p>□ Resolver um conflito pendente usando técnicas assertivas</p>
+                    <p>□ Iniciar conversas mais profundas com pessoas importantes</p>
+                    <p>□ Praticar dar feedback construtivo</p>
+                    <p>□ Manter um diário de interações sociais</p>
+                    <br>
+                    <p><strong>Minha situação de relacionamento que quero melhorar:</strong></p>
+                    <p>Pessoa: _________________________</p>
+                    <p>Situação atual: _________________________</p>
+                    <p>Como quero que seja: _________________________</p>
+                    <p>Primeiro passo: _________________________</p>
+                    <br>
+                    <p><strong>Meu compromisso pessoal:</strong></p>
+                    <p>Eu, _________________________, me comprometo a desenvolver relacionamentos mais saudáveis e comunicação mais assertiva, reconhecendo que isso contribuirá para meu crescimento pessoal e profissional. Vou tratar cada interação como uma oportunidade de praticar empatia e respeito.</p>
+                    <br>
+                    <p>Assinatura: _________________________ Data: ___________</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Programa de Ressocialização através da Informática Básica</p>
+            <p>Construindo Pontes de Comunicação e Relacionamentos Saudáveis</p>
+        </div>
+    </div>
+</body>
+</html>

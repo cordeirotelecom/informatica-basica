@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 02 - Gestão Financeira Pessoal e Planejamento</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            border-left: 5px solid #27ae60;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        .section h3 {
+            color: #34495e;
+            margin: 25px 0 15px 0;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+        
+        .objective-box {
+            background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .activity-box {
+            background: linear-gradient(135deg, #fdcb6e 0%, #f39c12 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .reflection-box {
+            background: linear-gradient(135deg, #e17055 0%, #d63031 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .step-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .step-list li {
+            counter-increment: step-counter;
+            margin: 15px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            padding-left: 70px;
+        }
+        
+        .step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+            background: #27ae60;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .financial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .financial-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #27ae60;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .template-box {
+            background: #f1f2f6;
+            border: 2px dashed #57606f;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .excel-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .excel-table th {
+            background: #27ae60;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .excel-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .excel-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        .formula-box {
+            background: #e8f5e8;
+            border: 2px solid #27ae60;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        
+        .tip-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .page-break {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MÓDULO 02</h1>
+            <div class="subtitle">Gestão Financeira Pessoal e Planejamento</div>
+            <div style="margin-top: 20px; font-size: 1rem; opacity: 0.8;">
+                Desenvolvendo Controle e Autonomia Financeira através do Excel
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="objective-box">
+                <h2>OBJETIVO DO MÓDULO</h2>
+                <p>Desenvolver competências em gestão financeira pessoal utilizando o Microsoft Excel como ferramenta de controle, planejamento e tomada de decisões financeiras responsáveis. Este módulo visa criar autonomia financeira e reduzir situações de vulnerabilidade econômica.</p>
+            </div>
+            
+            <div class="section">
+                <h2>COMPETÊNCIAS FINANCEIRAS A DESENVOLVER</h2>
+                <div class="financial-grid">
+                    <div class="financial-card">
+                        <h3>Controle de Gastos</h3>
+                        <p>Registro e categorização de todas as entradas e saídas financeiras mensais, desenvolvendo consciência sobre padrões de consumo.</p>
+                    </div>
+                    <div class="financial-card">
+                        <h3>Planejamento Orçamentário</h3>
+                        <p>Criação de orçamentos realistas que equilibrem necessidades, desejos e capacidade de pagamento.</p>
+                    </div>
+                    <div class="financial-card">
+                        <h3>Análise Financeira</h3>
+                        <p>Interpretação de dados financeiros para identificar oportunidades de economia e melhoria da situação financeira.</p>
+                    </div>
+                    <div class="financial-card">
+                        <h3>Planejamento de Objetivos</h3>
+                        <p>Estabelecimento de metas financeiras realistas e criação de estratégias para alcançá-las.</p>
+                    </div>
+                    <div class="financial-card">
+                        <h3>Educação Financeira</h3>
+                        <p>Compreensão de conceitos como juros, inflação, investimentos básicos e proteção contra endividamento.</p>
+                    </div>
+                    <div class="financial-card">
+                        <h3>Uso de Tecnologia</h3>
+                        <p>Domínio de fórmulas e funções do Excel aplicadas ao contexto financeiro pessoal.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-break"></div>
+            
+            <div class="section">
+                <h2>ATIVIDADE PRINCIPAL: PLANILHA DE CONTROLE FINANCEIRO PESSOAL</h2>
+                
+                <h3>Preparação e Reflexão Inicial</h3>
+                <p>Antes de iniciar a planilha, é fundamental realizar uma análise honesta da situação financeira atual. Esta reflexão ajudará a identificar padrões, problemas e oportunidades.</p>
+                
+                <div class="activity-box">
+                    <h3>DIAGNÓSTICO FINANCEIRO PESSOAL</h3>
+                    <p>Complete esta análise antes de criar a planilha:</p>
+                </div>
+                
+                <div class="template-box">
+                    <h4>REFLEXÃO SOBRE HÁBITOS FINANCEIROS:</h4>
+                    <p>1. Quais são meus três maiores gastos mensais?</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                    <br>
+                    <p>2. Em que situações costumo gastar mais do que planejei?</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                    <br>
+                    <p>3. Que gastos considero essenciais e quais são supérfluos?</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                    <br>
+                    <p>4. Qual é meu maior sonho que depende de dinheiro?</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                    <br>
+                    <p>5. O que me preocupa mais sobre minha situação financeira?</p>
+                    <p>_________________________________________________</p>
+                    <p>_________________________________________________</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>DESENVOLVIMENTO DA PLANILHA NO MICROSOFT EXCEL</h3>
+                
+                <ol class="step-list">
+                    <li>
+                        <strong>Configuração Inicial da Planilha</strong>
+                        <p>Abra o Excel e crie um novo arquivo. Nomeie a primeira aba como "Controle Mensal" e crie abas adicionais para "Planejamento Anual" e "Metas Financeiras". Configure as células para formato de moeda brasileira (R$).</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Estrutura do Controle Mensal</strong>
+                        <p>Crie cabeçalhos para: Data, Descrição, Categoria, Entrada, Saída, Saldo. Use formatação condicional para destacar entradas (verde) e saídas (vermelho). Congele a primeira linha para facilitar a navegação.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Categorização de Gastos</strong>
+                        <p>Estabeleça categorias claras: Moradia, Alimentação, Transporte, Saúde, Educação, Lazer, Vestuário, Emergências. Use validação de dados para criar lista suspensa de categorias.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Fórmulas de Controle Automático</strong>
+                        <p>Implemente fórmulas para: soma automática de entradas e saídas, cálculo de saldo atual, percentual de gastos por categoria. Use SOMA, SOMASE e outras funções básicas.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Gráficos de Acompanhamento</strong>
+                        <p>Crie gráficos de pizza para distribuição de gastos por categoria e gráfico de linhas para evolução do saldo ao longo do mês. Posicione os gráficos de forma visualmente atrativa.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Seção de Planejamento Orçamentário</strong>
+                        <p>Crie uma área para orçamento previsto vs. realizado, com indicadores visuais que mostrem se está dentro ou fora do planejado. Use formatação condicional para alertas.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Área de Metas e Objetivos</strong>
+                        <p>Desenvolva uma seção para metas de curto, médio e longo prazo, com cálculos de quanto economizar mensalmente para alcançar cada objetivo.</p>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="page-break"></div>
+            
+            <div class="section">
+                <h2>ESTRUTURA DETALHADA DA PLANILHA</h2>
+                
+                <h3>Aba 1: Controle Mensal</h3>
+                <table class="excel-table">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Descrição</th>
+                            <th>Categoria</th>
+                            <th>Entrada (R$)</th>
+                            <th>Saída (R$)</th>
+                            <th>Saldo (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/01/2024</td>
+                            <td>Salário</td>
+                            <td>Renda</td>
+                            <td>1.500,00</td>
+                            <td>-</td>
+                            <td>1.500,00</td>
+                        </tr>
+                        <tr>
+                            <td>02/01/2024</td>
+                            <td>Aluguel</td>
+                            <td>Moradia</td>
+                            <td>-</td>
+                            <td>600,00</td>
+                            <td>900,00</td>
+                        </tr>
+                        <tr>
+                            <td>03/01/2024</td>
+                            <td>Mercado</td>
+                            <td>Alimentação</td>
+                            <td>-</td>
+                            <td>250,00</td>
+                            <td>650,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="formula-box">
+                    <h4>FÓRMULAS ESSENCIAIS:</h4>
+                    <p><strong>Saldo Atual:</strong> =SOMA(Entradas) - SOMA(Saídas)</p>
+                    <p><strong>Gasto por Categoria:</strong> =SOMASE(Categoria,"Alimentação",Saída)</p>
+                    <p><strong>Percentual de Gastos:</strong> =Gasto_Categoria/Total_Gastos*100</p>
+                    <p><strong>Saldo Projetado:</strong> =Saldo_Atual + Renda_Prevista - Gastos_Previstos</p>
+                </div>
+                
+                <h3>Resumo Financeiro Mensal</h3>
+                <div class="financial-grid">
+                    <div class="financial-card">
+                        <h4>Total de Entradas</h4>
+                        <p>=SOMA(D:D)</p>
+                    </div>
+                    <div class="financial-card">
+                        <h4>Total de Saídas</h4>
+                        <p>=SOMA(E:E)</p>
+                    </div>
+                    <div class="financial-card">
+                        <h4>Saldo Final</h4>
+                        <p>=Entradas - Saídas</p>
+                    </div>
+                    <div class="financial-card">
+                        <h4>Maior Gasto</h4>
+                        <p>=MÁXIMO(E:E)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>Aba 2: Planejamento Orçamentário</h3>
+                
+                <table class="excel-table">
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Orçado (R$)</th>
+                            <th>Realizado (R$)</th>
+                            <th>Diferença (R$)</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Moradia</td>
+                            <td>600,00</td>
+                            <td>600,00</td>
+                            <td>0,00</td>
+                            <td>✓ No orçamento</td>
+                        </tr>
+                        <tr>
+                            <td>Alimentação</td>
+                            <td>400,00</td>
+                            <td>450,00</td>
+                            <td>-50,00</td>
+                            <td>⚠ Acima do orçamento</td>
+                        </tr>
+                        <tr>
+                            <td>Transporte</td>
+                            <td>200,00</td>
+                            <td>150,00</td>
+                            <td>50,00</td>
+                            <td>✓ Abaixo do orçamento</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="tip-box">
+                    <h4>💡 DICA IMPORTANTE:</h4>
+                    <p>Use formatação condicional para colorir automaticamente as células: Verde para gastos dentro do orçamento, Amarelo para pequenos excessos (até 10%), Vermelho para excessos significativos (acima de 10%).</p>
+                </div>
+            </div>
+            
+            <div class="page-break"></div>
+            
+            <div class="section">
+                <h3>Aba 3: Metas Financeiras</h3>
+                
+                <div class="template-box">
+                    <h4>CALCULADORA DE METAS FINANCEIRAS</h4>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 10px;"><strong>Meta</strong></td>
+                            <td style="border: 1px solid #ccc; padding: 10px;"><strong>Valor Total (R$)</strong></td>
+                            <td style="border: 1px solid #ccc; padding: 10px;"><strong>Prazo (meses)</strong></td>
+                            <td style="border: 1px solid #ccc; padding: 10px;"><strong>Valor Mensal (R$)</strong></td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 10px;">Emergência (3 salários)</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">4.500,00</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">18</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">=B2/C2</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 10px;">Curso Profissionalizante</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">800,00</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">8</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">=B3/C3</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 10px;">Eletrodoméstico</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">1.200,00</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">12</td>
+                            <td style="border: 1px solid #ccc; padding: 10px;">=B4/C4</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="formula-box">
+                    <h4>FÓRMULAS PARA METAS:</h4>
+                    <p><strong>Valor Mensal Necessário:</strong> =Valor_Total/Prazo_Meses</p>
+                    <p><strong>Progresso da Meta:</strong> =Valor_Poupado/Valor_Total*100</p>
+                    <p><strong>Meses Restantes:</strong> =(Valor_Total-Valor_Poupado)/Valor_Mensal</p>
+                    <p><strong>Data Prevista:</strong> =HOJE()+Meses_Restantes*30</p>
+                </div>
+            </div>
+            
+            <div class="reflection-box">
+                <h2>ANÁLISE E REFLEXÃO FINANCEIRA</h2>
+                <h3>Questões para Desenvolvimento da Consciência Financeira:</h3>
+                
+                <p><strong>1. Padrões de Consumo</strong></p>
+                <p>Analisando seus gastos na planilha, que padrões você identifica? Em que momentos ou situações você tende a gastar mais? Como esses padrões se relacionam com suas emoções?</p>
+                
+                <p><strong>2. Prioridades Financeiras</strong></p>
+                <p>Comparando seu orçamento planejado com o realizado, suas prioridades estão alinhadas com seus valores? Onde você pode fazer ajustes para melhor controle?</p>
+                
+                <p><strong>3. Impacto das Decisões</strong></p>
+                <p>Como pequenas mudanças nos gastos diários podem impactar suas metas de médio e longo prazo? Que sacrifícios vale a pena fazer hoje para conquistar objetivos futuros?</p>
+                
+                <p><strong>4. Autonomia e Segurança</strong></p>
+                <p>Como ter controle financeiro muda sua relação com o dinheiro e sua sensação de segurança? De que forma isso pode influenciar outras áreas da sua vida?</p>
+            </div>
+            
+            <div class="section">
+                <h2>ATIVIDADES PRÁTICAS COMPLEMENTARES</h2>
+                
+                <h3>Exercício 1: Simulação de Situações Financeiras</h3>
+                <p>Usando a planilha, simule cenários como: aumento de 20% na renda, perda temporária de renda, gasto emergencial de R$ 500. Como cada situação afetaria seu planejamento?</p>
+                
+                <h3>Exercício 2: Negociação e Economia</h3>
+                <p>Identifique três gastos que podem ser reduzidos ou eliminados. Calcule quanto essas economias representariam em 6 meses e como acelerariam suas metas.</p>
+                
+                <h3>Exercício 3: Planejamento de Investimentos</h3>
+                <p>Pesquise opções de investimento com baixo risco (poupança, CDB, Tesouro Direto) e calcule como o dinheiro das metas cresceria com rendimentos.</p>
+                
+                <h3>Dinâmica em Grupo: Consultoria Financeira</h3>
+                <p>Em duplas, cada pessoa apresenta sua situação financeira (usando dados fictícios se preferir) e recebe sugestões do colega. Practiquem dar e receber feedback construtivo sobre finanças.</p>
+            </div>
+            
+            <div class="section">
+                <h2>CONCEITOS FINANCEIROS IMPORTANTES</h2>
+                
+                <div class="financial-grid">
+                    <div class="financial-card">
+                        <h4>Regra 50-30-20</h4>
+                        <p>50% da renda para necessidades, 30% para desejos, 20% para poupança e investimentos.</p>
+                    </div>
+                    <div class="financial-card">
+                        <h4>Reserva de Emergência</h4>
+                        <p>Valor equivalente a 3-6 meses de gastos fixos para situações imprevistas.</p>
+                    </div>
+                    <div class="financial-card">
+                        <h4>Juros Compostos</h4>
+                        <p>Como o dinheiro cresce quando rende juros sobre os juros já acumulados.</p>
+                    </div>
+                    <div class="financial-card">
+                        <h4>Inflação</h4>
+                        <p>Aumento geral de preços que reduz o poder de compra do dinheiro parado.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>PLANO DE AÇÃO FINANCEIRA</h2>
+                
+                <div class="template-box">
+                    <h4>MEUS COMPROMISSOS FINANCEIROS:</h4>
+                    <p><strong>Nos próximos 7 dias, vou:</strong></p>
+                    <p>□ Completar o registro de todos os gastos da semana na planilha</p>
+                    <p>□ Identificar meu maior gasto desnecessário</p>
+                    <p>□ Estabelecer uma meta financeira de curto prazo</p>
+                    <p>□ Pesquisar formas de reduzir um gasto fixo</p>
+                    <br>
+                    <p><strong>Nos próximos 30 dias, vou:</strong></p>
+                    <p>□ Usar a planilha diariamente para controle</p>
+                    <p>□ Estabelecer e seguir um orçamento mensal</p>
+                    <p>□ Iniciar uma reserva de emergência</p>
+                    <p>□ Pesquisar sobre uma opção de investimento</p>
+                    <br>
+                    <p><strong>Minha meta financeira de 6 meses:</strong></p>
+                    <p>Valor: R$ _____________ Para: _________________________</p>
+                    <p>Valor mensal necessário: R$ _____________</p>
+                    <br>
+                    <p><strong>Meu compromisso pessoal:</strong></p>
+                    <p>Eu, _________________________, me comprometo a usar esta planilha como ferramenta de controle financeiro e a tomar decisões conscientes sobre meu dinheiro, buscando sempre melhorar minha situação financeira e alcançar meus objetivos.</p>
+                    <br>
+                    <p>Assinatura: _________________________ Data: ___________</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Programa de Ressocialização através da Informática Básica</p>
+            <p>Desenvolvendo Autonomia Financeira e Responsabilidade Pessoal</p>
+        </div>
+    </div>
+</body>
+</html>
