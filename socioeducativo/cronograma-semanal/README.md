@@ -22,9 +22,15 @@
 ### **📋 1. CRONOGRAMAS PRINCIPAIS**
 
 #### `Cronograma_Completo_2025.md`
-- **📊 Visão geral:** Todas as 80 atividades organizadas
+- **📊 Visão geral:** Todas as 80 atividades organizadas (2025)
 - **📈 Estatísticas:** Distribuição por categoria e gênero
 - **🎯 Uso:** Planejamento geral e supervisão
+
+#### `Cronograma_Detalhado_Set_Dez_2025.md` ⭐ **ATUALIZADO**
+- **📅 Período específico:** Setembro a Dezembro 2025
+- **📋 Cronograma corrigido:** 80 atividades com datas e dias corretos
+- **🎯 Padrão semanal:** Segunda (Ambos), Terça (Fem), Quarta (Masc), Quinta (Fem), Sexta (Masc)
+- **📊 Análise completa:** Estatísticas atualizadas por turmas
 
 #### `Cronograma_Masculino_Especializado.md`
 - **⚡ Foco técnico:** 48 atividades para desenvolvimento masculino
