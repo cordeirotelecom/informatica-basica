@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 34 - Hardware e Software</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        .component-box {
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 10px 0;
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 34 - NOÇÕES DE HARDWARE E SOFTWARE</h1>
+        <p>Montando um Computador (Teórico)</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 29/10/2025</span>
+        <span>Turma: Masculina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Fundamentos de Hardware
+        </div>
+        <div class="question">
+            <p><strong>A1.</strong> O que é hardware: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A2.</strong> Principais componentes internos: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A3.</strong> Diferença entre entrada e saída: <span class="answer-line">_________________________</span></p>
+        </div>
+        
+        <p><strong>Conceito e importância do hardware:</strong> Hardware refere-se aos componentes físicos e tangíveis de um sistema computacional - tudo que você pode tocar e ver fisicamente. Inclui processador, memória, dispositivos de armazenamento, placa-mãe, fonte de alimentação, periféricos de entrada e saída, e gabinete. Hardware fornece a base física sobre a qual software executa, criando ambiente necessário para que programas funcionem e usuários interajam com sistema computacional.</p>
+
+        <p><strong>Arquitetura básica dos computadores:</strong> Computadores seguem arquitetura fundamental baseada em modelo de von Neumann: unidade central de processamento (CPU) que executa instruções, memória que armazena dados e programas, dispositivos de entrada que recebem informações do usuário, dispositivos de saída que apresentam resultados, e sistema de interconexão (barramentos) que permite comunicação entre componentes. Esta arquitetura básica permanece consistente desde primeiros computadores até dispositivos modernos.</p>
+
+        <p><strong>Evolução tecnológica do hardware:</strong> Hardware computacional passou por dramática evolução nas últimas décadas: transistores substituíram válvulas, circuitos integrados aumentaram densidade de componentes, processadores tornaram-se mais rápidos e eficientes, capacidade de memória e armazenamento cresceu exponencialmente, e dispositivos tornaram-se menores, mais potentes, e mais acessíveis. Lei de Moore observou que poder de processamento dobra aproximadamente a cada dois anos.</p>
+
+        <p><strong>Interação entre componentes:</strong> Componentes de hardware trabalham colaborativamente: CPU executa instruções buscar da memória, resultados são armazenados em dispositivos de armazenamento persistente, dispositivos de entrada fornecem dados para processamento, dispositivos de saída apresentam resultados para usuários, e barramentos coordenam transferência de dados entre todos componentes. Desempenho geral do sistema depende do equilíbrio e compatibilidade entre todos componentes.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Processador e Memória
+        </div>
+        <div class="question">
+            <p><strong>A4.</strong> Função do processador (CPU): <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A5.</strong> Tipos de memória do computador: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A6.</strong> O que determina velocidade do PC: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Central Processing Unit (CPU):</strong> Processador é "cérebro" do computador, responsável por executar instruções de programas. CPU realiza operações aritméticas, lógicas, e de controle através de ciclos de busca-decodificação-execução. Características importantes incluem velocidade de clock (medida em gigahertz), número de núcleos (cores), arquitetura (32-bit vs. 64-bit), cache memory, e conjunto de instruções suportadas. CPUs modernas têm múltiplos núcleos que permitem processamento paralelo.</p>
+
+        <p><strong>Hierarquia de memória:</strong> Sistemas computacionais usam hierarquia de memória com diferentes velocidades, capacidades, e custos: registradores (mais rápidos, menor capacidade), cache memory (muito rápida, capacidade média), RAM (memória principal, rápida acesso aleatório), e armazenamento secundário (maior capacidade, acesso mais lento). Dados movem-se através desta hierarquia conforme necessário para otimizar performance e custo.</p>
+
+        <p><strong>Memória RAM (Random Access Memory):</strong> RAM é memória principal onde sistema operacional, programas em execução, e dados ativos são temporariamente armazenados. Características importantes incluem capacidade (medida em gigabytes), velocidade (MHz), tipo (DDR4, DDR5), e latência. Mais RAM permite executar mais programas simultaneamente e melhora responsividade geral do sistema. RAM é volátil - perde dados quando energia é desligada.</p>
+
+        <p><strong>Fatores de performance:</strong> Velocidade geral do sistema depende de múltiplos fatores: velocidade e arquitetura do processador, quantidade e velocidade da RAM, velocidade dos dispositivos de armazenamento (HDDs vs. SSDs), eficiência do sistema operacional, e otimização dos programas em execução. Bottlenecks podem ocorrer em qualquer componente, limitando performance geral. Upgrade estratégico de componentes pode melhorar significativamente performance.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Dispositivos de Armazenamento
+        </div>
+        <div class="question">
+            <p><strong>A7.</strong> Diferença entre HD e SSD: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A8.</strong> Capacidades típicas de armazenamento: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A9.</strong> Cuidados com backup de dados: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Hard Disk Drives (HDDs):</strong> HDDs usam discos magnéticos rotativos para armazenar dados permanentemente. Dados são escritos e lidos por cabeças magnéticas que se movem sobre superfície dos discos. HDDs oferecem grande capacidade de armazenamento por custo relativamente baixo, mas têm partes móveis que podem falhar e velocidades de acesso mais lentas. Capacidades típicas variam de 500GB a várias terabytes para uso doméstico.</p>
+
+        <p><strong>Solid State Drives (SSDs):</strong> SSDs usam memória flash para armazenar dados sem partes móveis. São significativamente mais rápidos que HDDs para operações de leitura e escrita, mais resistentes a choques físicos, consomem menos energia, e operam silenciosamente. Custos por gigabyte são mais altos que HDDs, mas preços têm diminuído constantemente. SSDs melhoram dramaticamente responsividade geral do sistema, especialmente tempo de boot e carregamento de programas.</p>
+
+        <p><strong>Armazenamento em nuvem:</strong> Cloud storage permite armazenar dados em servidores remotos acessíveis pela internet. Vantagens incluem acesso de múltiplos dispositivos, backup automático, colaboração facilitada, e escalabilidade. Considerações incluem dependência de conectividade internet, custos recorrentes, privacidade e segurança de dados, e potencial latência para grandes transferências. Serviços populares incluem Google Drive, Dropbox, OneDrive, e iCloud.</p>
+
+        <p><strong>Estratégias de backup:</strong> Proteção de dados requer estratégia abrangente de backup: regra 3-2-1 (3 cópias dos dados, 2 em mídias diferentes, 1 offsite), backups regulares automatizados, verificação periódica da integridade dos backups, e plans de disaster recovery. Considere combinação de backups locais (para acesso rápido) e remotos/cloud (para proteção contra desastres físicos). Teste restoration procedures periodicamente para garantir backups funcionais.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="component-box">
+        <div class="section-title">
+            PRINCIPAIS COMPONENTES DE UM COMPUTADOR
+        </div>
+        
+        <p><strong>COMPONENTES INTERNOS:</strong><br>
+        • <strong>Placa-mãe:</strong> Conecta todos os componentes do sistema<br>
+        • <strong>Processador (CPU):</strong> Executa instruções e processamento<br>
+        • <strong>Memória RAM:</strong> Armazenamento temporário rápido<br>
+        • <strong>Placa de vídeo:</strong> Processa gráficos e imagens<br>
+        • <strong>Fonte de alimentação:</strong> Fornece energia para componentes<br>
+        • <strong>Dispositivos de armazenamento:</strong> HD/SSD para dados permanentes</p>
+
+        <p><strong>PERIFÉRICOS DE ENTRADA:</strong><br>
+        • <strong>Teclado:</strong> Inserção de texto e comandos<br>
+        • <strong>Mouse:</strong> Navegação e seleção na interface<br>
+        • <strong>Microfone:</strong> Captura de áudio<br>
+        • <strong>Câmera:</strong> Captura de vídeo e imagens<br>
+        • <strong>Scanner:</strong> Digitalização de documentos</p>
+
+        <p><strong>PERIFÉRICOS DE SAÍDA:</strong><br>
+        • <strong>Monitor:</strong> Exibição visual de informações<br>
+        • <strong>Impressora:</strong> Impressão de documentos<br>
+        • <strong>Caixas de som:</strong> Reprodução de áudio<br>
+        • <strong>Fones de ouvido:</strong> Áudio pessoal<br>
+        • <strong>Projetor:</strong> Exibição em telas grandes</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Conceitos de Software
+        </div>
+        <div class="question">
+            <p><strong>A10.</strong> O que é software: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A11.</strong> Tipos principais de software: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A12.</strong> Função do sistema operacional: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Definição e natureza do software:</strong> Software compreende todos os programas, aplicações, e instruções que executam em hardware computacional. Diferentemente de hardware, software é intangível - consiste em código, algoritmos, e dados que direcionam operações do sistema. Software transforma hardware em ferramenta útil, permitindo que usuários realizem tarefas específicas como processar textos, navegar na internet, editar fotos, ou gerenciar finanças pessoais.</p>
+
+        <p><strong>Categorias principais de software:</strong> Software divide-se em categorias principais: software de sistema (sistemas operacionais, drivers, utilitários), software de aplicação (programas para usuários finais como editores de texto, navegadores, jogos), e software de programação (ferramentas para desenvolver outros softwares como compiladores, editores de código). Cada categoria serve propósitos específicos na ecosystem computacional.</p>
+
+        <p><strong>Sistemas operacionais:</strong> Sistema operacional é software fundamental que gerencia hardware e fornece plataforma para outros programas executarem. Principais funções incluem gerenciamento de memória, scheduling de processos, controle de dispositivos, sistema de arquivos, segurança, e interface de usuário. Sistemas populares incluem Windows, macOS, Linux (com várias distribuições), Android, e iOS para dispositivos móveis.</p>
+
+        <p><strong>Ciclo de vida do software:</strong> Software passa por ciclo de desenvolvimento: planejamento, análise de requisitos, design, implementação (coding), testing, deployment, e maintenance. Software requer atualizações regulares para corrigir bugs, adicionar funcionalidades, melhorar security, e manter compatibilidade com evolving hardware e outros software. Version control e software management são aspectos importantes da utilization eficaz.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Manutenção e Otimização
+        </div>
+        <div class="question">
+            <p><strong>A13.</strong> Sinais de problemas no computador: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A14.</strong> Manutenção preventiva básica: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A15.</strong> Como melhorar performance: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Identificação de problemas comuns:</strong> Sinais de problemas incluem lentidão geral do sistema, travamentos frequentes, erros inexplicados, ruídos estranhos do hardware, superaquecimento, falhas na inicialização, corrupção de arquivos, ou comportamento errático de programas. Early detection permite resolução antes que problemas se tornem mais sérios e potencialmente causem perda de dados ou damage permanent ao hardware.</p>
+
+        <p><strong>Manutenção preventiva regular:</strong> Manutenção adequada prolonga life útil e mantém performance: limpeza física regular para remover dust e debris, verification de connections, updates de software e drivers, disk cleanup para remover temporary files, defragmentation de HDDs (não necessário para SSDs), virus scans regulares, e monitoring de temperatures e performance metrics. Schedule maintenance tasks ajuda ensure consistency.</p>
+
+        <p><strong>Otimização de performance:</strong> Estratégias para melhorar performance incluem: disable startup programs desnecessários, uninstall software não utilizado, increase RAM se necessário, upgrade para SSD, clean registry errors, optimize virtual memory settings, ensure adequate ventilation para cooling, e consider hardware upgrades estratégicos. Monitor resource usage ajuda identify bottlenecks específicos.</p>
+
+        <p><strong>Troubleshooting sistemático:</strong> Quando problemas ocorrem, use approach sistemático: document symptoms accurately, research known issues online, try simple solutions primeiro (restart, updates), isolate variables (safe mode, minimal configuration), check hardware connections, run diagnostic tools, e consider professional help para complex issues. Maintain records de solutions que worked para future reference.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">6</span>
+            Tendências Tecnológicas Atuais
+        </div>
+        <div class="question">
+            <p><strong>A16.</strong> Tecnologias emergentes importantes: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A17.</strong> Impacto da computação em nuvem: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A18.</strong> Futuro da tecnologia pessoal: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Inteligência Artificial e Machine Learning:</strong> AI e ML estão transformando como computers process information e make decisions. Modern hardware incorpora specialized processors (GPUs, TPUs) optimized para AI workloads. AI applications incluem voice assistants, image recognition, predictive text, recommendation systems, e autonomous vehicles. Esta trend está driving demand para more powerful computing resources e changing how software é designed e implemented.</p>
+
+        <p><strong>Edge computing e IoT:</strong> Internet of Things (IoT) conecta everyday objects para internet, criando networks de smart devices. Edge computing processes data locally near where it's generated, reduzindo latency e bandwidth requirements. Esta trend está driving development de smaller, more efficient processors e specialized hardware para embedded systems. Home automation, smart cities, e industrial IoT são major application areas.</p>
+
+        <p><strong>Quantum computing e computação avançada:</strong> Quantum computers use quantum mechanical phenomena para perform calculations impossíveis para classical computers. While ainda em early stages, quantum computing promises breakthroughs em cryptography, optimization, simulation, e AI. Current research focuses em developing stable qubits, error correction, e practical algorithms. Esta technology pode fundamentally change computing landscape em future decades.</p>
+
+        <p><strong>Sustentabilidade e green computing:</strong> Environmental concerns estão driving development de more energy-efficient hardware e sustainable computing practices. Trends incluem processors com better performance-per-watt ratios, renewable energy para data centers, recycling programs para electronic waste, e software optimization para reduce energy consumption. Green computing considerations estão becoming important factors em technology purchasing decisions para both consumers e enterprises.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            Tecnologia na Era Digital - Entendendo o Ecossistema Computacional
+        </div>
+
+        <p><strong>Convergência digital e integração de sistemas:</strong> Moderna landscape tecnológica caracteriza-se por convergência entre different types de devices e systems. Smartphones combines computing, communication, photography, e entertainment em single device. Smart homes integrate appliances, security systems, e entertainment through networked connections. Cloud services enable seamless data synchronization across multiple devices. Esta convergência está criando integrated digital experiences que transcend traditional boundaries entre different technologies.</p>
+
+        <p><strong>Segurança e privacidade em sistemas integrados:</strong> Como technology becomes more integrated em daily life, security e privacy concerns become more critical. Hardware-level security features como TPM chips, biometric authentication, e secure enclaves protect sensitive data. Software security involves regular updates, strong authentication, encrypted communications, e user education sobre best practices. Balance between convenience e security é ongoing challenge para both developers e users.</p>
+
+        <p><strong>Personalização e adaptabilidade tecnológica:</strong> Modern computing systems increasingly adapt para individual user preferences e behaviors. Machine learning algorithms personalize content recommendations, interface layouts adjust based em usage patterns, e accessibility features accommodate different abilities e needs. Esta trend toward personalization requires more sophisticated hardware capabilities e intelligent software design, mas improves user experience significantly.</p>
+
+        <p><strong>Colaboração humano-computador:</strong> Future de computing involves closer collaboration between humans e machines rather than simple tool usage. AI assistants become more capable, voice interfaces become more natural, e augmented reality overlays digital information onto physical world. Esta evolution requires rethinking how we design both hardware interfaces e software interactions para support more intuitive human-computer collaboration.</p>
+
+        <p><strong>Democratização da tecnologia:</strong> Advancing technology está becoming more accessible para broader populations through lower costs, simpler interfaces, e cloud-based services que reduce technical barriers. Open-source software provides alternatives para expensive proprietary solutions, online education makes technical knowledge more accessible, e no-code/low-code platforms enable non-programmers para create applications. Esta democratization está expanding who can participate em digital economy.</p>
+
+        <p><strong>Impacto societal e responsabilidade tecnológica:</strong> Como technology becomes more powerful e pervasive, considerations about its societal impact become more important. Digital divide issues affect equal access para technological benefits, automation impacts employment patterns, e social media influences communication e relationships. Understanding technology incluir understanding its broader implications para society e individual responsibility em its use.</p>
+
+        <p><strong>Aprendizagem contínua em tecnologia:</strong> Rapid pace de technological change requires commitment para lifelong learning. Hardware capabilities double every few years, software platforms evolve constantly, e new paradigms emerge regularly. Successful engagement with technology requires curiosity, adaptability, e willingness para experiment with new tools e approaches. Esta mindset é more important than mastery de any specific technology.</p>
+
+        <p><strong>Economia digital e oportunidades de carreira:</strong> Technology proficiency opens diverse career opportunities beyond traditional IT roles. Digital marketing, content creation, e-commerce, remote work, e online entrepreneurship all depend em understanding technology fundamentals. Basic computer literacy has become essential para most careers, while advanced technical skills command premium em job market. Understanding technology landscape helps people position themselves para future opportunities.</p>
+
+        <p><strong>Sustentabilidade e futuro tecnológico:</strong> Long-term viability de our technological society depends em sustainable practices. This includes designing hardware para longer lifecycles, developing more energy-efficient systems, implementing effective recycling programs, e considering environmental impact em technological choices. Individual consumers can contribute through responsible purchasing, proper disposal de electronic waste, e energy-conscious usage patterns.</p>
+
+        <p><strong>Global connectivity e cultura digital:</strong> Technology connects people across geographical e cultural boundaries, creating global digital culture while raising questions about cultural preservation e digital sovereignty. Understanding technology includes appreciating its role em facilitating global communication, commerce, e collaboration, while being mindful de potential negative effects como cultural homogenization ou digital colonialism. Responsible technology use considers both local e global implications.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: __________</span>
+    </div>
+</body>
+</html>

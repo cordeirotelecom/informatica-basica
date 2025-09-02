@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 60 - Design Digital + Criatividade Tecnológica</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+            font-size: 11px;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .color-box {
+            width: 30px;
+            height: 20px;
+            border: 1px solid #000;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .design-tip {
+            background-color: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .creative-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .checkbox {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .tool-icon {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        .rating-scale {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+        .rating-number {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+        }
+        .skill-level {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .beginner { background-color: #d4edda; color: #155724; }
+        .intermediate { background-color: #fff3cd; color: #856404; }
+        .advanced { background-color: #f8d7da; color: #721c24; }
+        .design-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .grid-item {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 60 - DESIGN DIGITAL + CRIATIVIDADE TECNOLÓGICA</h1>
+        <p>Arte Digital e Design Criativo - Data: 12/12/2025 - Turma: Masculina</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: Masculina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Fundamentos do Design Digital
+        </div>
+
+        <div class="question">
+            <p><strong>1.</strong> O que significa "design" para você? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>2.</strong> Que peças gráficas você precisa criar no seu dia a dia? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Princípios fundamentais do design:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Princípio</th>
+                    <th>Definição</th>
+                    <th>Exemplo Prático</th>
+                    <th>Importância</th>
+                    <th>Domino</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Contraste</td>
+                    <td>Diferenças marcantes entre elementos</td>
+                    <td>Texto preto em fundo branco</td>
+                    <td>Legibilidade e hierarquia</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Alinhamento</td>
+                    <td>Organização visual dos elementos</td>
+                    <td>Texto alinhado à esquerda</td>
+                    <td>Profissionalismo e ordem</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Repetição</td>
+                    <td>Consistência de elementos visuais</td>
+                    <td>Mesma fonte em todo documento</td>
+                    <td>Unidade e identidade</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Proximidade</td>
+                    <td>Agrupamento de elementos relacionados</td>
+                    <td>Título próximo ao parágrafo</td>
+                    <td>Organização e compreensão</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Equilíbrio</td>
+                    <td>Distribuição harmoniosa do peso visual</td>
+                    <td>Imagem grande + texto pequeno</td>
+                    <td>Harmonia e estabilidade</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Hierarquia</td>
+                    <td>Ordem de importância visual</td>
+                    <td>Título grande, subtítulo médio</td>
+                    <td>Direcionamento da atenção</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>3.</strong> Analise esta peça gráfica imaginária e avalie os princípios:</p>
+            <p><em>Um cartaz com título em amarelo claro sobre fundo branco, textos espalhados aleatoriamente, usando 5 fontes diferentes</em></p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Princípio</th>
+                    <th>Problema Identificado</th>
+                    <th>Como Melhorar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Contraste</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Alinhamento</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Repetição</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Proximidade</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="design-tip">
+            <p><strong>🎨 Dica de Design:</strong> Menos é mais! Comece com design simples e adicione elementos gradualmente. 
+            É mais fácil adicionar do que remover excessos.</p>
+        </div>
+
+        <p><strong>Psicologia das Cores no Design:</strong> Cores influenciam emoções e comportamentos. Vermelho estimula urgência e paixão, azul transmite confiança e profissionalismo, verde sugere natureza e crescimento, amarelo evoca energia e otimismo. Entender psicologia das cores ajuda comunicar mensagem certa para audiência específica. Considere também significados culturais das cores.</p>
+
+        <p><strong>Tipografia e Legibilidade:</strong> Escolha de fonte afeta drasticamente legibilidade e percepção. Fontes serifadas (com "pezinhos") são tradicionais para textos longos impressos. Fontes sans-serif (sem serifa) são modernas e funcionam bem em telas. Evite mais de 2-3 fontes no mesmo projeto. Tamanho mínimo para texto deve ser 12pt para leitura confortável.</p>
+
+        <p><strong>Composição e Grid:</strong> Grids são estruturas invisíveis que organizam elementos no design. Sistema de grid garante alinhamento consistente e proporções harmoniosas. Regra dos terços divide espaço em 9 partes iguais, colocando elementos importantes nas intersecções. Composição bem estruturada orienta olhar do observador naturalmente através do design.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Ferramentas de Design Digital
+        </div>
+
+        <div class="question">
+            <p><strong>4.</strong> Que ferramentas de design você já usou? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>5.</strong> Qual o maior desafio ao criar peças gráficas? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Comparativo de ferramentas de design:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ferramenta</th>
+                    <th>Tipo</th>
+                    <th>Custo</th>
+                    <th>Nível</th>
+                    <th>Melhor Para</th>
+                    <th>Interesse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="tool-icon">🎨</span>Canva</td>
+                    <td>Online/App</td>
+                    <td>Freemium</td>
+                    <td><span class="skill-level beginner">INICIANTE</span></td>
+                    <td>Posts, cartões, apresentações</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="tool-icon">🖌️</span>Adobe Photoshop</td>
+                    <td>Desktop</td>
+                    <td>Assinatura</td>
+                    <td><span class="skill-level advanced">AVANÇADO</span></td>
+                    <td>Edição de fotos, arte digital</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="tool-icon">📐</span>Adobe Illustrator</td>
+                    <td>Desktop</td>
+                    <td>Assinatura</td>
+                    <td><span class="skill-level advanced">AVANÇADO</span></td>
+                    <td>Logos, ilustrações vetoriais</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="tool-icon">🎯</span>Figma</td>
+                    <td>Online</td>
+                    <td>Freemium</td>
+                    <td><span class="skill-level intermediate">INTERMEDIÁRIO</span></td>
+                    <td>UI/UX, protótipos, colaboração</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="tool-icon">🖼️</span>GIMP</td>
+                    <td>Desktop</td>
+                    <td>Gratuito</td>
+                    <td><span class="skill-level intermediate">INTERMEDIÁRIO</span></td>
+                    <td>Edição de fotos, alternativa ao PS</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="tool-icon">📱</span>Procreate</td>
+                    <td>iPad</td>
+                    <td>Pago (único)</td>
+                    <td><span class="skill-level intermediate">INTERMEDIÁRIO</span></td>
+                    <td>Arte digital, ilustração</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="tool-icon">🆓</span>Inkscape</td>
+                    <td>Desktop</td>
+                    <td>Gratuito</td>
+                    <td><span class="skill-level intermediate">INTERMEDIÁRIO</span></td>
+                    <td>Gráficos vetoriais, alternativa ao AI</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="tool-icon">🎪</span>Adobe Express</td>
+                    <td>Online/App</td>
+                    <td>Freemium</td>
+                    <td><span class="skill-level beginner">INICIANTE</span></td>
+                    <td>Redes sociais, templates</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>6.</strong> Para seu projeto de marca pessoal, que ferramenta escolheria e por quê?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Funcionalidades essenciais por categoria:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Funcionalidades Importantes</th>
+                    <th>Experiência</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>📝 Templates</td>
+                    <td>Modelos prontos, personalização, formatos diversos</td>
+                    <td>Nunca usei / Básico / Intermediário / Avançado</td>
+                </tr>
+                <tr>
+                    <td>🖼️ Edição de Imagem</td>
+                    <td>Filtros, recorte, ajuste de cores, remoção de fundo</td>
+                    <td>Nunca usei / Básico / Intermediário / Avançado</td>
+                </tr>
+                <tr>
+                    <td>📐 Formas e Vetores</td>
+                    <td>Criação de formas, ícones, escalabilidade infinita</td>
+                    <td>Nunca usei / Básico / Intermediário / Avançado</td>
+                </tr>
+                <tr>
+                    <td>🎨 Paleta de Cores</td>
+                    <td>Escolha de cores, harmonias, gradientes</td>
+                    <td>Nunca usei / Básico / Intermediário / Avançado</td>
+                </tr>
+                <tr>
+                    <td>📱 Export/Formatos</td>
+                    <td>PNG, JPG, PDF, SVG, tamanhos otimizados</td>
+                    <td>Nunca usei / Básico / Intermediário / Avançado</td>
+                </tr>
+                <tr>
+                    <td>👥 Colaboração</td>
+                    <td>Compartilhamento, comentários, versões</td>
+                    <td>Nunca usei / Básico / Intermediário / Avançado</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="creative-box">
+            <p><strong>💡 Dica Criativa:</strong> Comece sempre com propósito claro: qual mensagem quer transmitir? 
+            Para quem? Em que contexto será usado? Isso orienta todas as decisões de design.</p>
+        </div>
+
+        <p><strong>Fluxo de Trabalho Eficiente:</strong> Desenvolva processo sistemático para projetos de design: briefing (entender requisitos), research (inspiração e referências), sketches (ideias rápidas no papel), wireframes (estrutura básica), design final (execução detalhada), e feedback (refinamento baseado em comentários). Processo estruturado economiza tempo e melhora resultados.</p>
+
+        <p><strong>Gestão de Recursos Visuais:</strong> Organize biblioteca pessoal de recursos: fontes favoritas, paletas de cores testadas, ícones úteis, fotos stock de qualidade, e templates personalizados. Organização facilita reutilização e mantém consistência visual entre projetos. Use pastas bem nomeadas e considere ferramentas de gestão de assets.</p>
+
+        <p><strong>Tendências vs Atemporalidade:</strong> Balance design atual com longevidade. Tendências podem dar relevância imediata, mas designs atemporais duram mais. Para marca pessoal ou empresarial, prefira elementos clássicos com toques modernos sutis. Para campanhas temporárias, pode seguir tendências mais agressivamente. Sempre considere contexto e duração esperada do design.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Teoria das Cores e Paletas
+        </div>
+
+        <div class="question">
+            <p><strong>7.</strong> Que cores representam sua personalidade? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>8.</strong> Como cores afetam suas decisões de compra? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Círculo cromático e harmonias:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Harmonia</th>
+                    <th>Descrição</th>
+                    <th>Exemplo de Cores</th>
+                    <th>Efeito Visual</th>
+                    <th>Uso Ideal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monocromática</td>
+                    <td>Variações de uma cor</td>
+                    <td>Azul claro, médio, escuro</td>
+                    <td>Elegante, calmo</td>
+                    <td>Minimalismo, sofisticação</td>
+                </tr>
+                <tr>
+                    <td>Complementar</td>
+                    <td>Cores opostas no círculo</td>
+                    <td>Azul e laranja</td>
+                    <td>Alto contraste, vibrante</td>
+                    <td>Chamar atenção, energia</td>
+                </tr>
+                <tr>
+                    <td>Análoga</td>
+                    <td>Cores vizinhas no círculo</td>
+                    <td>Verde, azul-verde, azul</td>
+                    <td>Harmoniosa, natural</td>
+                    <td>Paisagens, tranquilidade</td>
+                </tr>
+                <tr>
+                    <td>Triádica</td>
+                    <td>Três cores equidistantes</td>
+                    <td>Vermelho, amarelo, azul</td>
+                    <td>Balanceada, dinâmica</td>
+                    <td>Diversidade, criatividade</td>
+                </tr>
+                <tr>
+                    <td>Split-complementar</td>
+                    <td>Uma cor + duas adjacentes à oposta</td>
+                    <td>Azul, vermelho-laranja, amarelo-laranja</td>
+                    <td>Contraste suave</td>
+                    <td>Iniciantes, menos agressivo</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>9.</strong> Crie paletas para diferentes propósitos:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Propósito</th>
+                    <th>Cor Principal</th>
+                    <th>Cor Secundária</th>
+                    <th>Cor de Apoio</th>
+                    <th>Justificativa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Logo para advogado</td>
+                    <td><span class="color-box"></span></td>
+                    <td><span class="color-box"></span></td>
+                    <td><span class="color-box"></span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Café infantil</td>
+                    <td><span class="color-box"></span></td>
+                    <td><span class="color-box"></span></td>
+                    <td><span class="color-box"></span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>App de meditação</td>
+                    <td><span class="color-box"></span></td>
+                    <td><span class="color-box"></span></td>
+                    <td><span class="color-box"></span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Loja de esportes</td>
+                    <td><span class="color-box"></span></td>
+                    <td><span class="color-box"></span></td>
+                    <td><span class="color-box"></span></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Significados culturais das cores:</strong></p>
+
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Vermelho:</strong> Paixão, energia, perigo (Ocidente) | Sorte, prosperidade (China)</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Branco:</strong> Pureza, paz (Ocidente) | Luto, morte (Ásia)</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Verde:</strong> Natureza, dinheiro (EUA) | Sagrado (Islã) | Azar (teatro)</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Azul:</strong> Confiança, masculinidade | Tristeza | Espiritualidade</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Preto:</strong> Elegância, formalidade | Luto | Poder</p>
+        </div>
+
+        <div class="question">
+            <p><strong>10.</strong> Como adaptaria paleta de cores para mercado internacional?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Acessibilidade e Contraste:</strong> Design inclusivo considera pessoas com daltonismo e baixa visão. Use ferramentas de verificação de contraste para garantir legibilidade. Proporção mínima 4.5:1 para texto normal, 3:1 para texto grande. Evite usar apenas cor para transmitir informação importante - adicione ícones, formas ou texto. Teste designs em simuladores de daltonismo.</p>
+
+        <p><strong>Cores em Diferentes Mídias:</strong> Cores aparecem diferentemente em tela vs impressão. Monitores usam RGB (luz), impressoras usam CMYK (pigmento). Cores vibrantes da tela podem ficar opacas no papel. Sempre faça testes de impressão para materiais gráficos importantes. Configure perfis de cor adequados e calibre monitores quando possível para maior precisão.</p>
+
+        <p><strong>Psicologia Avançada das Cores:</strong> Cores afetam percepção de temperatura (azul = frio, vermelho = quente), peso visual (escuro = pesado, claro = leve), e até sabor (vermelho = doce, verde = azedo). Restaurantes usam vermelho e amarelo para estimular apetite. Hospitais preferem verde e azul para tranquilizar. Considere efeitos subconscientes ao escolher paletas.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Projeto Prático: Identidade Visual Pessoal
+        </div>
+
+        <div class="question">
+            <p><strong>11.</strong> Como você se descreveria em 3 palavras? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>12.</strong> Que valores quer transmitir profissionalmente? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Planejamento da identidade visual:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Elemento</th>
+                    <th>Objetivo</th>
+                    <th>Sua Proposta</th>
+                    <th>Inspiração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Logo/Marca Pessoal</td>
+                    <td>Reconhecimento visual único</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Paleta de Cores</td>
+                    <td>Transmitir personalidade</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tipografia</td>
+                    <td>Legibilidade e estilo</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Estilo Visual</td>
+                    <td>Consistência em todas peças</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Aplicações</td>
+                    <td>Cartão, currículo, redes sociais</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>13.</strong> Esboce sua marca pessoal (pode ser iniciais, símbolo, ou nome):</p>
+            <div style="border: 1px solid #000; height: 100px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>14.</strong> Planeje aplicações da sua identidade visual:</p>
+        </div>
+
+        <div class="design-grid">
+            <div class="grid-item">
+                <strong>Cartão de Visita</strong><br>
+                <small>Sketch aqui</small>
+            </div>
+            <div class="grid-item">
+                <strong>Perfil LinkedIn</strong><br>
+                <small>Sketch aqui</small>
+            </div>
+            <div class="grid-item">
+                <strong>Assinatura de E-mail</strong><br>
+                <small>Sketch aqui</small>
+            </div>
+            <div class="grid-item">
+                <strong>Currículo Header</strong><br>
+                <small>Sketch aqui</small>
+            </div>
+        </div>
+
+        <div class="question">
+            <p><strong>15.</strong> Manual de uso da sua marca - defina regras:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Aspecto</th>
+                    <th>Regra Definida</th>
+                    <th>Não Fazer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cores</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tamanho mínimo</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Espaçamento</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Backgrounds</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Estratégia de Marca Pessoal:</strong> Identidade visual é apenas parte da marca pessoal. Considere também tom de voz (formal/casual), conteúdo que compartilha, valores que demonstra, e experiências que oferece. Marca forte é consistente em todos pontos de contato: desde cartão de visita até interações em redes sociais. Pense na marca como promessa que faz ao mundo.</p>
+
+        <p><strong>Evolução e Flexibilidade:</strong> Marcas precisam evoluir com o tempo, mas mudanças devem ser graduais para manter reconhecimento. Planeje sistema flexível: logo que funciona em várias configurações, paleta expansível, tipografia com variações. Documente decisões para manter consistência futura. Revisite identidade anualmente para verificar se ainda representa seus objetivos.</p>
+
+        <p><strong>Implementação Prática:</strong> Após criar identidade, implemente sistemicamente: atualize perfis em redes sociais, crie templates para apresentações, padronize assinatura de e-mail, e desenvolva materiais impressos básicos. Implementação consistente reforça reconhecimento da marca. Use ferramentas como Brand24 ou Google Alerts para monitorar presença online.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Tendências e Futuro do Design Digital
+        </div>
+
+        <div class="question">
+            <p><strong>16.</strong> Que mudanças notou no design digital nos últimos anos? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>17.</strong> Como IA está impactando o design? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Tendências atuais em design digital:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tendência</th>
+                    <th>Descrição</th>
+                    <th>Exemplos de Uso</th>
+                    <th>Relevância</th>
+                    <th>Interesse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Minimalismo</td>
+                    <td>Design limpo, espaços em branco</td>
+                    <td>Apple, Google, interfaces modernas</td>
+                    <td>Alta</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Dark Mode</td>
+                    <td>Interfaces escuras</td>
+                    <td>Apps, sites, sistemas operacionais</td>
+                    <td>Alta</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Ilustração 3D</td>
+                    <td>Elementos tridimensionais</td>
+                    <td>Landing pages, apps, marketing</td>
+                    <td>Crescendo</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Glassmorphism</td>
+                    <td>Efeito de vidro fosco</td>
+                    <td>iOS, interfaces modernas</td>
+                    <td>Média</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Typography Grande</td>
+                    <td>Fontes em tamanhos exagerados</td>
+                    <td>Headers, cartazes, web design</td>
+                    <td>Alta</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Gradientes</td>
+                    <td>Transições de cor suaves</td>
+                    <td>Instagram, Spotify, branding</td>
+                    <td>Estável</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Microinterações</td>
+                    <td>Animações pequenas e funcionais</td>
+                    <td>Botões, loading, feedback</td>
+                    <td>Crescendo</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Sustentabilidade</td>
+                    <td>Design eco-consciente</td>
+                    <td>Impressão responsável, web leve</td>
+                    <td>Emergente</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>18.</strong> Como essas tendências podem ser aplicadas ao seu campo profissional?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Impacto da IA no design:</strong></p>
+
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Geração automática:</strong> IA cria logos, layouts, e ilustrações</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Personalização:</strong> Conteúdo adaptado para cada usuário</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Otimização:</strong> A/B testing automatizado de designs</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Acessibilidade:</strong> Verificação automática de contraste e usabilidade</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Assistência criativa:</strong> Sugestões e refinamentos de design</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Automação de tarefas:</strong> Redimensionamento e adaptação automática</p>
+        </div>
+
+        <div class="question">
+            <p><strong>19.</strong> Que habilidades de design serão mais valiosas no futuro?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Design Sustentável e Responsabilidade Social:</strong> Futuros designers devem considerar impacto ambiental: escolher materiais sustentáveis para impressão, criar designs web otimizados que consomem menos energia, promover longevidade visual para reduzir necessidade de redesigns frequentes. Design responsável também considera diversidade, inclusão e impacto social das mensagens visuais.</p>
+
+        <p><strong>Realidade Aumentada e Interfaces Imersivas:</strong> AR/VR criam oportunidades novas para design: interfaces tridimensionais, experiências imersivas, interação gestual. Designers precisarão pensar espacialmente, considerar movimento e profundidade. Design de experiência (UX) se expandirá além de telas planas para ambientes virtuais completos. Habilidades em 3D se tornarão mais valiosas.</p>
+
+        <p><strong>Democratização vs Especialização:</strong> IA e ferramentas simplificadas permitem que mais pessoas criem designs básicos, mas isso aumenta demanda por especialistas que entendam estratégia, psicologia e inovação. Futuros designers serão mais consultores criativos que executores técnicos. Combinação de conhecimento técnico, visão estratégica e sensibilidade humana será diferencial competitivo.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            Reflexão sobre Design e Comunicação Visual
+        </div>
+
+        <div class="question">
+            <p><strong>20.</strong> Como design digital impacta a comunicação moderna?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>21.</strong> Que responsabilidade têm designers na era da informação?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>22.</strong> Como aplicará conhecimentos de design em sua vida pessoal e profissional?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Design como Linguagem Universal:</strong> Design digital transcende barreiras linguísticas através de ícones, cores e símbolos universais. Um botão vermelho em forma de X significa "fechar" globalmente. Esta linguagem visual facilita comunicação intercultural e democratiza acesso à informação. Designers moldam essa linguagem global e têm responsabilidade de torná-la inclusiva e compreensível.</p>
+
+        <p><strong>Ética no Design Digital:</strong> Design persuasivo pode manipular comportamentos - dark patterns em apps incentivam gastos excessivos, cores específicas criam urgência falsa, layouts confusos dificultam cancelamentos. Designers éticos priorizam bem-estar do usuário sobre métricas de engajamento. Considere impacto de longo prazo das decisões visuais na sociedade e nos indivíduos.</p>
+
+        <p><strong>Design Thinking na Vida Cotidiana:</strong> Princípios de design se aplicam além de projetos gráficos: organização de espaços físicos, estruturação de apresentações, planejamento de eventos, e até relacionamentos pessoais. Pensar como designer significa priorizar experiência do usuário, buscar soluções elegantes para problemas complexos, e iterar baseado em feedback. São habilidades valiosas em qualquer área profissional.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Design Digital e Criatividade Tecnológica</span>
+        <span>Turma: Masculina</span>
+        <span>Data: 12/12/2025</span>
+    </div>
+</body>
+</html>

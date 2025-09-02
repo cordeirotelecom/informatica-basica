@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11 - Introdução à Programação: Desenhando um Fluxograma Simples</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+        }
+        .text-area {
+            border: 1px solid #000;
+            min-height: 80px;
+            margin: 5px 0;
+            padding: 5px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        .flowchart-area {
+            border: 2px solid #000;
+            min-height: 120px;
+            margin: 10px 0;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 11 - INTRODUÇÃO À PROGRAMAÇÃO: DESENHANDO UM FLUXOGRAMA SIMPLES</h1>
+        <p>Lógica de Programação e Resolução de Problemas</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 18/09/2025</span>
+        <span>Turma: Feminina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Conceitos Básicos de Lógica
+        </div>
+        <div class="question">
+            <p><strong>1.</strong> O que você entende por "lógica de programação": <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>2.</strong> Exemplo de sequência lógica do seu dia a dia: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>3.</strong> Principal desafio ao resolver problemas: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>O que é lógica de programação:</strong> Lógica de programação é a forma organizada de pensar e estruturar soluções para problemas, dividindo-os em passos sequenciais e lógicos. É como criar uma receita detalhada que qualquer pessoa (ou computador) possa seguir para alcançar um resultado específico. Essa habilidade não se aplica apenas à programação, mas a qualquer situação que requer resolução sistemática de problemas.</p>
+
+        <p><strong>Pensamento computacional:</strong> Este conceito envolve quatro pilares fundamentais: decomposição (dividir problemas grandes em partes menores), reconhecimento de padrões (identificar semelhanças e repetições), abstração (focar no essencial, ignorando detalhes irrelevantes) e algoritmos (criar sequências de passos para resolver problemas). Essas habilidades são valiosas em qualquer área profissional.</p>
+
+        <p><strong>Resolução estruturada de problemas:</strong> Antes de começar a resolver qualquer problema, é importante compreendê-lo completamente, definir claramente o objetivo, identificar os recursos disponíveis e planejar uma estratégia. Essa abordagem sistemática evita desperdício de tempo e energia, levando a soluções mais eficazes e elegantes.</p>
+
+        <p><strong>Aplicações na vida real:</strong> Lógica de programação se aplica a situações cotidianas como planejar uma viagem (definir destino, calcular custos, reservar hospedagem), organizar estudos (dividir matérias, estabelecer cronograma, definir metas) ou gerenciar finanças pessoais (controlar gastos, estabelecer orçamento, planejar investimentos).</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Introdução aos Fluxogramas
+        </div>
+        <div class="question">
+            <p><strong>4.</strong> Para que serve um fluxograma: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>5.</strong> Vantagem de visualizar processos: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>O que são fluxogramas:</strong> Fluxogramas são representações visuais de processos, mostrando a sequência de passos, decisões e fluxos de informação através de símbolos padronizados conectados por setas. São ferramentas poderosas para documentar, analisar e comunicar processos complexos de forma clara e compreensível.</p>
+
+        <p><strong>Símbolos básicos:</strong> Óvalos representam início e fim de processos; retângulos indicam ações ou processos; losangos mostram decisões ou perguntas; paralelogramos representam entrada ou saída de dados; círculos pequenos conectam diferentes partes do fluxograma. Setas mostram a direção do fluxo entre os elementos.</p>
+
+        <p><strong>Benefícios da visualização:</strong> Fluxogramas facilitam a compreensão de processos complexos, identificam gargalos e redundâncias, melhoram comunicação entre equipes, padronizam procedimentos e servem como documentação para treinamento. Também ajudam a identificar melhorias e otimizações nos processos.</p>
+
+        <p><strong>Aplicações profissionais:</strong> Fluxogramas são usados em diversas áreas: mapeamento de processos empresariais, documentação de procedimentos médicos, planejamento de projetos, análise de sistemas, controle de qualidade e desenvolvimento de software. São fundamentais para gestão eficiente em qualquer organização.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Construindo seu Primeiro Fluxograma
+        </div>
+        <div class="question">
+            <p><strong>6.</strong> Processo que você quer representar: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>7.</strong> Número de passos principais: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <div class="flowchart-area">
+            <p><strong>ESPAÇO PARA SEU FLUXOGRAMA</strong></p>
+            <p>Desenhe aqui o fluxograma do processo escolhido usando os símbolos apropriados</p>
+        </div>
+
+        <p><strong>Planejamento antes do desenho:</strong> Antes de começar a desenhar, liste todos os passos do processo em ordem cronológica. Identifique pontos de decisão onde o fluxo pode seguir caminhos diferentes. Determine entradas necessárias (informações, materiais) e saídas esperadas (resultados, produtos). Essa preparação facilita a criação de um fluxograma claro e completo.</p>
+
+        <p><strong>Dicas para fluxogramas eficazes:</strong> Mantenha simplicidade - use linguagem clara e objetiva; seja consistente com símbolos e formato; organize o fluxo de cima para baixo ou da esquerda para direita; evite cruzamentos desnecessários de linhas; teste o fluxograma seguindo cada caminho possível; peça feedback de outras pessoas para verificar clareza.</p>
+
+        <p><strong>Identificando decisões:</strong> Pontos de decisão são cruciais em fluxogramas - representam momentos onde o processo pode seguir diferentes caminhos baseados em condições específicas. Formule decisões como perguntas que podem ser respondidas com "sim" ou "não", criando caminhos claros para cada resposta possível.</p>
+
+        <p><strong>Validação e refinamento:</strong> Após criar o fluxograma inicial, revise cuidadosamente cada passo. Verifique se nada foi omitido, se a sequência está correta e se as decisões estão bem definidas. Teste mentalmente diferentes cenários para garantir que o fluxograma funciona em todas as situações possíveis.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Algoritmos e Sequências Lógicas
+        </div>
+        <div class="question">
+            <p><strong>8.</strong> Exemplo de algoritmo do dia a dia: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>9.</strong> Importância de seguir sequências: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Conceito de algoritmo:</strong> Algoritmo é uma sequência finita e bem definida de instruções para resolver um problema ou executar uma tarefa. Deve ser preciso (sem ambiguidades), ter entrada e saída definidas, ser finito (terminar em tempo razoável) e eficaz (resolver o problema proposto). Algoritmos estão presentes em receitas culinárias, manuais de instrução e rotinas diárias.</p>
+
+        <p><strong>Estruturas de controle:</strong> Algoritmos usam três estruturas básicas: sequência (passos executados em ordem), seleção (escolha entre alternativas baseada em condições) e repetição (loops que executam passos múltiplas vezes). Compreender essas estruturas é fundamental para criar soluções eficientes para qualquer problema.</p>
+
+        <p><strong>Importância da precisão:</strong> Computadores executam instruções literalmente, sem interpretação. Por isso, algoritmos devem ser extremamente precisos e completos. Uma instrução ambígua ou incompleta pode levar a resultados inesperados. Essa disciplina de pensamento preciso é valiosa em qualquer contexto profissional.</p>
+
+        <p><strong>Otimização e eficiência:</strong> Bons algoritmos não apenas resolvem problemas, mas o fazem de forma eficiente. Isso envolve minimizar tempo de execução, uso de recursos e complexidade. Pensar em otimização desenvolve habilidades de análise crítica e busca por melhorias contínuas em qualquer processo.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            Reflexão sobre Pensamento Lógico
+        </div>
+
+        <p><strong>Programação como linguagem universal:</strong> Lógica de programação é uma forma de pensamento que transcende barreiras culturais e linguísticas. É uma linguagem universal para resolver problemas, criar soluções e automatizar tarefas. Mesmo que você nunca se torne programador, essas habilidades melhoram seu raciocínio e capacidade analítica.</p>
+
+        <p><strong>Desenvolvimento do pensamento crítico:</strong> Programação ensina a questionar suposições, testar hipóteses e validar soluções sistematicamente. Desenvolve paciência para encontrar erros, persistência para resolver problemas complexos e humildade para aceitar que sempre há formas melhores de fazer as coisas.</p>
+
+        <p><strong>Criatividade dentro de regras:</strong> Programação combina criatividade com lógica rigorosa. Há múltiplas formas de resolver o mesmo problema, permitindo expressão criativa dentro de regras estruturadas. Essa combinação de criatividade e disciplina é valiosa em muitas profissões que requerem inovação sistemática.</p>
+
+        <p><strong>Resolução colaborativa de problemas:</strong> Programação moderna é frequentemente um esforço colaborativo. Isso desenvolve habilidades de comunicação técnica, trabalho em equipe e documentação clara. Aprender a explicar lógica complexa de forma simples é uma habilidade transferível para qualquer área.</p>
+
+        <p><strong>Preparação para o futuro digital:</strong> Vivemos em um mundo cada vez mais digital. Compreender como a tecnologia funciona, mesmo em nível básico, torna você um usuário mais consciente e eficaz. Isso inclui melhor uso de softwares, compreensão de automação e capacidade de se adaptar a novas tecnologias.</p>
+
+        <p><strong>Aplicação em outras disciplinas:</strong> Pensamento computacional se aplica a matemática, ciências, gestão, design e até artes. A capacidade de decompor problemas, reconhecer padrões e criar soluções estruturadas é valiosa em qualquer campo que requeira análise sistemática e resolução de problemas.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Prática e Aplicação
+        </div>
+        <div class="text-area">
+            <p><strong>Descreva seu processo passo a passo:</strong> Escreva em linguagem simples os passos do processo que você representou no fluxograma:</p>
+        </div>
+
+        <div class="text-area">
+            <p><strong>Identificação de melhorias:</strong> Que melhorias você faria neste processo para torná-lo mais eficiente?</p>
+        </div>
+
+        <div class="question">
+            <p><strong>10.</strong> Principal aprendizado sobre lógica: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>11.</strong> Como aplicará pensamento lógico no futuro: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Próximos passos:</strong> Continue praticando criação de fluxogramas para diferentes processos do seu dia a dia. Experimente ferramentas digitais como Lucidchart, Draw.io ou mesmo PowerPoint para criar diagramas mais elaborados. A prática constante desenvolve o pensamento lógico e estruturado que beneficiará qualquer carreira escolhida.</p>
+    </div>
+</body>
+</html>

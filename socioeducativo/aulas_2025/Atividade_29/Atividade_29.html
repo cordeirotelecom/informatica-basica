@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 29 - Desenhando um Fluxograma Simples</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        .flowchart-symbols {
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 10px 0;
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 29 - INTRODUÇÃO À PROGRAMAÇÃO (LÓGICA)</h1>
+        <p>Desenhando um Fluxograma Simples</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 21/10/2025</span>
+        <span>Turma: Feminina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Conceitos Básicos de Lógica de Programação
+        </div>
+        <div class="question">
+            <p><strong>A1.</strong> O que é lógica de programação? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A2.</strong> Para que serve um fluxograma? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A3.</strong> Primeiro passo para resolver um problema: <span class="answer-line">_________________________</span></p>
+        </div>
+        
+        <p><strong>Fundamentos da lógica de programação:</strong> Lógica de programação é a habilidade de organizar pensamentos e instruções de forma sequencial, clara e eficiente para resolver problemas. É como criar uma receita detalhada que qualquer pessoa (ou computador) possa seguir para chegar ao resultado desejado. Esta habilidade é fundamental não apenas na programação, mas em qualquer atividade que exija planejamento e resolução sistemática de problemas.</p>
+
+        <p><strong>Pensamento algorítmico:</strong> Um algoritmo é uma sequência finita de passos bem definidos para resolver um problema ou executar uma tarefa. Pensamento algorítmico envolve decompor problemas complexos em partes menores e mais gerenciáveis, identificar padrões, e criar soluções que funcionem consistentemente. Esta forma de pensar é aplicável desde organizar rotinas pessoais até desenvolver sistemas complexos.</p>
+
+        <p><strong>Resolução sistemática de problemas:</strong> Antes de criar qualquer solução, é essencial compreender completamente o problema: qual é o objetivo final? Quais informações temos disponíveis? Quais são as limitações e restrições? Que recursos podemos utilizar? Esta análise inicial determina o sucesso de qualquer solução posteriormente desenvolvida.</p>
+
+        <p><strong>Importância da precisão:</strong> Na programação, precisão é fundamental porque computadores executam instruções exatamente como recebem, sem interpretação ou adaptação. Um passo mal definido ou uma sequência incorreta pode levar a resultados completamente diferentes do esperado. Esta necessidade de precisão desenvolve atenção aos detalhes e capacidade de comunicação clara.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Elementos de um Fluxograma
+        </div>
+        <div class="question">
+            <p><strong>A4.</strong> Símbolo para início/fim: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A5.</strong> Símbolo para decisão: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A6.</strong> Símbolo para processo: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Símbolos padronizados:</strong> Fluxogramas utilizam símbolos padronizados que facilitam compreensão universal: elipses/óvalos para início e fim, retângulos para processos/ações, losangos para decisões/condições, paralelogramos para entrada/saída de dados, e setas para indicar fluxo/direção. Esta padronização permite que qualquer pessoa familiarizada com fluxogramas compreenda a solução proposta.</p>
+
+        <p><strong>Fluxo lógico:</strong> Setas conectam símbolos indicando ordem de execução. Fluxo deve ser claro e unidirecional, evitando ambiguidades. Em decisões (losangos), duas ou mais saídas são possíveis (geralmente "Sim/Não" ou "Verdadeiro/Falso"), levando a caminhos diferentes no fluxograma. Todo caminho deve eventualmente levar a uma conclusão lógica.</p>
+
+        <p><strong>Estruturas de controle:</strong> Fluxogramas representam três estruturas fundamentais de programação: sequência (passos executados em ordem), seleção (escolha entre alternativas baseada em condições), e repetição (loops que executam ações múltiplas vezes). Compreender essas estruturas é fundamental para criar soluções eficientes.</p>
+
+        <p><strong>Documentação visual:</strong> Fluxogramas servem como documentação visual que complementa explicações textuais. São especialmente úteis para comunicar ideias complexas para pessoas com diferentes níveis de conhecimento técnico, facilitando colaboração em equipes multidisciplinares e manutenção de sistemas ao longo do tempo.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Planejamento de um Fluxograma Simples
+        </div>
+        <div class="question">
+            <p><strong>A7.</strong> Problema que vou resolver: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A8.</strong> Dados de entrada necessários: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A9.</strong> Resultado esperado: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Definição do problema:</strong> Escolha problema simples e bem definido para seu primeiro fluxograma: calcular média de notas, determinar se número é par ou ímpar, verificar se pessoa pode votar baseada na idade, ou calcular preço com desconto. Problemas simples permitem focar na lógica sem se perder em complexidades desnecessárias.</p>
+
+        <p><strong>Identificação de entradas:</strong> Liste todas as informações necessárias para resolver o problema. Para calcular média, precisamos das notas individuais. Para verificar se pode votar, precisamos da idade. Para calcular desconto, precisamos do preço original e percentual de desconto. Entradas bem definidas facilitam criação de soluções completas.</p>
+
+        <p><strong>Processamento lógico:</strong> Determine que operações ou verificações são necessárias para transformar entradas em resultado desejado. Isso pode incluir cálculos matemáticos, comparações lógicas, ou transformações de dados. Detalhe cada passo necessário, mesmo que pareça óbvio, pois computadores precisam de instruções explícitas.</p>
+
+        <p><strong>Validação de saídas:</strong> Defina claramente que resultado o fluxograma deve produzir e em que formato. Resultado pode ser um valor numérico, uma mensagem de texto, uma decisão (sim/não), ou uma ação específica. Saídas bem definidas permitem verificar se solução está funcionando corretamente.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Construção do Fluxograma
+        </div>
+        <div class="question">
+            <p><strong>A10.</strong> Primeiro símbolo do meu fluxograma: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A11.</strong> Principal decisão do problema: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A12.</strong> Último símbolo do fluxograma: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Início estruturado:</strong> Todo fluxograma começa com símbolo de início (oval com "INÍCIO"). Este símbolo representa ponto de entrada único para execução do algoritmo. Partir de início bem definido garante que todos que seguem o fluxograma começem do mesmo ponto e tenham contexto claro sobre o que está sendo resolvido.</p>
+
+        <p><strong>Sequência lógica:</strong> Conecte símbolos em ordem lógica usando setas. Cada símbolo deve ter entrada e saída claras. Evite cruzamento de linhas sempre que possível para manter clareza visual. Se cruzamentos forem inevitáveis, use convenção gráfica (ponte) para indicar que linhas não se conectam no ponto de cruzamento.</p>
+
+        <p><strong>Decisões e ramificações:</strong> Use losangos para pontos onde diferentes caminhos são possíveis baseados em condições. Cada saída do losango deve ser claramente rotulada (Sim/Não, Verdadeiro/Falso, valores específicos). Garanta que todos os caminhos possíveis levem a conclusões apropriadas, evitando becos sem saída.</p>
+
+        <p><strong>Finalização adequada:</strong> Todo fluxograma deve ter ponto de finalização claro (oval com "FIM"). Todos os caminhos possíveis devem convergir para este ponto, ou ter suas próprias finalizações claramente identificadas. Finalizações múltiplas são aceitáveis quando representam diferentes resultados ou saídas do processo.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Teste e Validação
+        </div>
+        <div class="question">
+            <p><strong>A13.</strong> Como testar meu fluxograma: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A14.</strong> Exemplo de dados para teste: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A15.</strong> Resultado esperado do teste: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Simulação de execução:</strong> Teste seu fluxograma "executando" manualmente com dados de exemplo. Siga cada passo exatamente como desenhado, tomando decisões baseadas nos dados fornecidos. Esta simulação revela problemas na lógica, passos ausentes, ou condições não consideradas. É equivalente a "rodar" um programa para verificar se funciona corretamente.</p>
+
+        <p><strong>Casos de teste variados:</strong> Use diferentes conjuntos de dados para testar vários cenários possíveis: valores normais, valores extremos (muito altos ou baixos), valores inválidos, e situações especiais. Para fluxograma que verifica idade para votar, teste com idades como 16, 18, 25, 100, e valores inválidos como -5 ou 200.</p>
+
+        <p><strong>Verificação de completude:</strong> Certifique-se de que fluxograma trata todos os casos possíveis sem deixar situações sem resposta. Se houver possibilidade de entrada inválida, fluxograma deve incluir tratamento apropriado (mensagem de erro, solicitação de nova entrada, ou valor padrão).</p>
+
+        <p><strong>Refinamento iterativo:</strong> Com base nos testes, refine o fluxograma corrigindo problemas identificados, adicionando passos ausentes, ou simplificando partes desnecessariamente complexas. Processo de refinamento é normal e importante para desenvolver soluções robustas e eficientes. Soluções raramente ficam perfeitas na primeira tentativa.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">6</span>
+            Aplicações Práticas da Lógica
+        </div>
+        <div class="question">
+            <p><strong>A16.</strong> Problema do dia a dia que posso resolver: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A17.</strong> Profissão que usa lógica de programação: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A18.</strong> Próximo fluxograma que quero criar: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Aplicações cotidianas:</strong> Lógica de programação aplica-se a muitas situações cotidianas: planejamento de rotinas, organização de tarefas domésticas, decisões de compra, planejamento de viagens, ou resolução de problemas escolares. Desenvolver esta forma de pensamento melhora eficiência e qualidade de decisões em diversas áreas da vida.</p>
+
+        <p><strong>Carreiras que valorizam lógica:</strong> Além da programação tradicional, muitas carreiras beneficiam de pensamento lógico estruturado: engenharia, matemática, ciências, administração, direito, medicina, arquitetura, e até áreas criativas como design e marketing. Capacidade de decompor problemas e criar soluções sistemáticas é valiosa universalmente.</p>
+
+        <p><strong>Desenvolvimento de soft skills:</strong> Praticar lógica de programação desenvolve habilidades transferíveis: pensamento crítico, resolução de problemas, atenção aos detalhes, comunicação clara, paciência, persistência, e capacidade de trabalhar com sistemas complexos. Estas competências são altamente valorizadas no mercado de trabalho moderno.</p>
+
+        <p><strong>Base para aprendizado futuro:</strong> Compreender lógica de programação facilita aprendizado de linguagens de programação específicas, desenvolvimento de aplicativos, análise de dados, automação de processos, e compreensão de como tecnologia funciona. É base sólida para explorar oportunidades na economia digital.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="flowchart-symbols">
+        <div class="section-title">
+            SÍMBOLOS PADRÃO DE FLUXOGRAMA
+        </div>
+        
+        <p><strong>INÍCIO/FIM</strong><br>
+        Símbolo: Oval ou elipse<br>
+        Uso: Marca início e fim do processo<br>
+        Exemplo: "INÍCIO", "FIM"</p>
+
+        <p><strong>PROCESSO/AÇÃO</strong><br>
+        Símbolo: Retângulo<br>
+        Uso: Representa ação ou processamento<br>
+        Exemplo: "Calcular média", "Ler dados"</p>
+
+        <p><strong>DECISÃO/CONDIÇÃO</strong><br>
+        Símbolo: Losango<br>
+        Uso: Representa ponto de decisão<br>
+        Exemplo: "Idade >= 18?", "Nota >= 7?"</p>
+
+        <p><strong>ENTRADA/SAÍDA</strong><br>
+        Símbolo: Paralelogramo<br>
+        Uso: Representa entrada ou saída de dados<br>
+        Exemplo: "Digite sua idade", "Exibir resultado"</p>
+
+        <p><strong>FLUXO/DIREÇÃO</strong><br>
+        Símbolo: Seta<br>
+        Uso: Indica direção do fluxo<br>
+        Conecta símbolos em sequência lógica</p>
+
+        <p><strong>CONECTOR</strong><br>
+        Símbolo: Círculo pequeno<br>
+        Uso: Conecta partes distantes do fluxograma<br>
+        Evita linhas muito longas</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            Resolução de Problemas e Pensamento Computacional
+        </div>
+
+        <p><strong>Decomposição de problemas:</strong> Pensamento computacional envolve quebrar problemas complexos em partes menores e mais gerenciáveis. Esta habilidade é fundamental não apenas na programação, mas em qualquer situação que envolva resolver desafios complexos. Aprender a identificar componentes individuais de um problema grande facilita desenvolvimento de soluções eficazes.</p>
+
+        <p><strong>Reconhecimento de padrões:</strong> Muitos problemas compartilham características ou soluções similares. Desenvolver habilidade de reconhecer padrões permite aplicar soluções conhecidas a novos contextos, economizando tempo e esforço. Esta capacidade é valiosa tanto na programação quanto na resolução de problemas em geral.</p>
+
+        <p><strong>Abstração e simplificação:</strong> Abstração envolve focar nos aspectos essenciais de um problema, ignorando detalhes desnecessários para o contexto atual. Esta habilidade permite criar soluções mais gerais e reutilizáveis, além de facilitar comunicação de ideias complexas de forma simples e clara.</p>
+
+        <p><strong>Desenvolvimento de algoritmos:</strong> Algoritmos são receitas passo-a-passo para resolver problemas. Capacidade de criar algoritmos eficientes é útil em muitas áreas: desde organizar tarefas pessoais até desenvolver processos empresariais complexos. Algoritmos bem projetados economizam tempo, reduzem erros, e garantem resultados consistentes.</p>
+
+        <p><strong>Pensamento crítico e analítico:</strong> Programação exige avaliação constante de diferentes abordagens, identificação de potenciais problemas, e otimização de soluções. Esta forma de pensamento crítico é transferível para análise de situações, tomada de decisões, e avaliação de informações em contextos pessoais e profissionais.</p>
+
+        <p><strong>Iteração e melhoria contínua:</strong> Raramente criamos soluções perfeitas na primeira tentativa. Programação ensina valor da iteração: criar versão inicial, testar, identificar problemas, e melhorar gradualmente. Esta mentalidade de melhoria contínua é valiosa para desenvolvimento pessoal e profissional em qualquer área.</p>
+
+        <p><strong>Colaboração e comunicação:</strong> Embora programação possa parecer atividade solitária, na realidade envolve muita colaboração e comunicação. Fluxogramas e outros diagramas facilitam compartilhamento de ideias com colegas, permitindo trabalho em equipe mais eficaz e desenvolvimento de soluções mais robustas através de perspectivas múltiplas.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: __________</span>
+    </div>
+</body>
+</html>

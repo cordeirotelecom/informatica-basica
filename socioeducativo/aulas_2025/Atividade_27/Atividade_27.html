@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 27 - Projeto Sweet Home (Software)</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        .blueprint {
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 10px 0;
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 27 - ARQUITETURA: PLANTA DE CASA 3D</h1>
+        <p>Projeto Sweet Home (Software)</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 16/10/2025</span>
+        <span>Turma: Feminina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Planejamento do Projeto Residencial
+        </div>
+        <div class="question">
+            <p><strong>A1.</strong> Tipo de casa que vou projetar: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A2.</strong> Número de quartos: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A3.</strong> Estilo arquitetônico desejado: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A4.</strong> Área total estimada: <span class="answer-line">_________________________</span></p>
+        </div>
+        
+        <p><strong>Conceitos básicos de arquitetura residencial:</strong> Arquitetura é a arte e ciência de projetar e construir espaços funcionais, seguros e esteticamente agradáveis. Uma casa bem projetada considera necessidades dos moradores, clima local, orçamento disponível, regulamentações municipais e integração com o entorno. O projeto arquitetônico começa sempre com análise das necessidades específicas da família que utilizará o espaço.</p>
+
+        <p><strong>Programa de necessidades:</strong> Antes de desenhar qualquer linha, é essencial definir o programa de necessidades: quantas pessoas morarão na casa, idades dos moradores, atividades que serão realizadas, necessidades especiais (home office, espaço para pets, acessibilidade), hábitos da família, e expectativas de crescimento futuro. Esta análise orienta todas as decisões posteriores de projeto.</p>
+
+        <p><strong>Análise do terreno:</strong> Mesmo em projetos teóricos, considere características do terreno: orientação solar (norte/sul), topografia, ventos predominantes, vistas interessantes, acesso da rua, e limitações legais (recuos obrigatórios, taxa de ocupação). A casa ideal aproveita aspectos positivos do terreno e minimiza aspectos negativos através de design inteligente.</p>
+
+        <p><strong>Estilos arquitetônicos:</strong> Diferentes estilos refletem épocas, culturas e preferências estéticas: contemporâneo (linhas limpas, grandes janelas), tradicional (elementos clássicos, simetria), rústico (materiais naturais, integração com paisagem), minimalista (simplicidade, funcionalidade), eclético (mistura de estilos). Escolha estilo que reflita personalidade dos moradores e se adapte ao contexto local.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Distribuição de Ambientes
+        </div>
+        <div class="question">
+            <p><strong>A5.</strong> Ambiente mais importante da casa: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A6.</strong> Como organizar área social: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A7.</strong> Posição ideal da cozinha: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Setorização funcional:</strong> Organize a casa em setores funcionais: área social (sala de estar, sala de jantar, varanda), área íntima (quartos, banheiros), área de serviços (cozinha, lavanderia, depósito), e área externa (jardim, churrasqueira, garagem). Cada setor deve ter características específicas de privacidade, acesso, e relação com outros setores.</p>
+
+        <p><strong>Fluxos e circulação:</strong> Planeje circulação eficiente entre ambientes. Evite corredores longos e desnecessários. Crie fluxos diretos entre ambientes relacionados (cozinha-sala de jantar, quartos-banheiros). Considere circulação de serviços separada da circulação social. Entrada principal deve ter acesso direto à área social sem passar pela área íntima.</p>
+
+        <p><strong>Hierarquia de ambientes:</strong> Ambientes têm diferentes graus de importância e devem receber tratamento proporcional: sala de estar geralmente é ambiente principal da área social, quarto do casal tem prioridade sobre quartos de solteiro, banheiro social deve ser facilmente acessível a visitas. Tamanhos, posicionamento e acabamentos devem refletir esta hierarquia.</p>
+
+        <p><strong>Flexibilidade e adaptabilidade:</strong> Projete espaços que possam se adaptar a mudanças futuras: quartos que podem virar home office, salas integradas que podem ser divididas, espaços multifuncionais. Evite paredes estruturais desnecessárias que impedem reformas futuras. Pense na casa como organismo vivo que evolui com as necessidades da família.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Elementos Técnicos e Funcionais
+        </div>
+        <div class="question">
+            <p><strong>A8.</strong> Largura mínima de portas: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A9.</strong> Altura padrão de janelas: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A10.</strong> Dimensão mínima de banheiro: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Dimensionamento adequado:</strong> Ambientes devem ter dimensões que permitam uso confortável: quartos mínimo 2,5m x 2,5m, salas mínimo 3m x 3m, cozinhas mínimo 1,5m de largura para circulação, banheiros mínimo 1,2m x 1,5m. Considere não apenas área, mas também proporções adequadas. Ambientes muito estreitos ou muito alongados são desconfortáveis mesmo com área adequada.</p>
+
+        <p><strong>Aberturas e ventilação:</strong> Janelas devem ter área mínima de 1/8 da área do piso para garantir iluminação adequada. Posicione janelas para criar ventilação cruzada sempre que possível. Ambientes úmidos (banheiros, cozinhas) necessitam ventilação permanente. Considere privacidade ao posicionar janelas - evite devassamento entre casas vizinhas.</p>
+
+        <p><strong>Circulação vertical:</strong> Se o projeto incluir segundo pavimento, escadas devem ter largura mínima de 80cm, degraus entre 16-18cm de altura, e patamar intermediário se tiver mais de 19 degraus. Posicione escada em local que não prejudique layout dos ambientes principais. Considere espaço necessário tanto no pavimento inferior quanto superior.</p>
+
+        <p><strong>Instalações prediais:</strong> Agrupe pontos hidráulicos (cozinha, banheiros, lavanderia) para economizar tubulações e facilitar manutenção. Preveja espaço para reservatório de água, central de gás, quadro elétrico, e equipamentos de ar condicionado. Considere passagem de tubulações e fiação elétrica desde a fase de projeto para evitar improvisos durante construção.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Uso do Software Sweet Home 3D
+        </div>
+        <div class="question">
+            <p><strong>A11.</strong> Primeira ferramenta a usar no software: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A12.</strong> Como inserir móveis: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A13.</strong> Para que serve a vista 3D: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Interface do Sweet Home 3D:</strong> O software divide-se em áreas principais: catálogo de móveis e objetos (esquerda), planta baixa 2D (centro superior), vista 3D (centro inferior), e lista de móveis (direita). Esta organização permite trabalhar simultaneamente em 2D e 3D, visualizando resultados imediatamente. Familiarize-se com cada área antes de começar o projeto.</p>
+
+        <p><strong>Criação da planta baixa:</strong> Comece desenhando paredes usando a ferramenta "Criar Paredes". Clique para definir pontos inicial e final de cada parede. Use guias e snap para manter precisão dimensional. Defina espessura das paredes (geralmente 15cm para paredes externas, 10cm para internas). Crie paredes em sequência lógica, fechando ambientes completamente.</p>
+
+        <p><strong>Inserção de aberturas:</strong> Use ferramentas específicas para portas e janelas. Clique na parede onde deseja inserir abertura e arraste para posicionar. Ajuste dimensões no painel de propriedades. Portas internas geralmente 70-80cm, portas externas 80-90cm, janelas conforme necessidade de iluminação e ventilação. Verifique se aberturas não interferem entre si ou com mobiliário.</p>
+
+        <p><strong>Mobiliário e decoração:</strong> Arraste móveis do catálogo para planta baixa. Ajuste posição, rotação e dimensões conforme necessário. Use móveis para verificar se ambientes têm dimensões adequadas - se móveis essenciais não cabem confortavelmente, ambiente precisa ser redimensionado. Vista 3D permite verificar aparência e proporções do conjunto.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Design de Interiores e Ambientação
+        </div>
+        <div class="question">
+            <p><strong>A14.</strong> Cor principal que usarei: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A15.</strong> Estilo de decoração preferido: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A16.</strong> Material preferido para pisos: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Conceitos de design de interiores:</strong> Design de interiores vai além da decoração - envolve planejamento funcional, ergonomia, psicologia das cores, iluminação, acústica, e criação de ambientes que promovem bem-estar. Cada ambiente deve ser projetado considerando atividades que serão realizadas, perfil dos usuários, e sensações que se deseja transmitir.</p>
+
+        <p><strong>Harmonia cromática:</strong> Cores influenciam humor e percepção de espaço. Cores claras ampliam ambientes e transmitem leveza, cores escuras criam aconchego mas podem reduzir sensação de espaço. Use regra 60-30-10: 60% cor dominante (paredes, pisos), 30% cor secundária (móveis principais), 10% cor de destaque (objetos decorativos). Mantenha coerência cromática entre ambientes integrados.</p>
+
+        <p><strong>Iluminação eficiente:</strong> Combine iluminação natural e artificial. Iluminação geral (teto) para atividades básicas, iluminação de tarefa (leitura, cozinhar) para atividades específicas, iluminação de destaque (quadros, objetos) para criar ambiente. Use dimerizadores para ajustar intensidade conforme hora do dia e atividade. Luz quente (amarelada) para relaxamento, luz fria (branca) para concentração.</p>
+
+        <p><strong>Materiais e texturas:</strong> Varie texturas para criar interesse visual: madeira traz aconchego, metal adiciona modernidade, tecidos proporcionam conforto, pedra transmite solidez. Considere manutenção e durabilidade: ambientes úmidos necessitam materiais resistentes à água, áreas de alta circulação precisam materiais duráveis. Balance praticidade com beleza.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">6</span>
+            Apresentação e Finalização do Projeto
+        </div>
+        <div class="question">
+            <p><strong>A17.</strong> Como exportar imagens do projeto: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A18.</strong> Principal qualidade do meu projeto: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A19.</strong> Próxima melhoria que faria: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Finalização técnica:</strong> Revise projeto verificando: dimensões de ambientes adequadas, posicionamento lógico de móveis, circulação livre entre ambientes, iluminação e ventilação suficientes, harmonia estética geral. Use vista 3D para caminhar virtualmente pela casa e identificar problemas que não são visíveis na planta baixa. Faça ajustes necessários antes de finalizar.</p>
+
+        <p><strong>Geração de imagens:</strong> Sweet Home 3D permite exportar plantas baixas e vistas 3D em alta qualidade. Configure resolução adequada para uso pretendido: baixa resolução para visualização rápida, alta resolução para impressão ou apresentação formal. Capture diferentes ângulos da vista 3D para mostrar vários aspectos do projeto. Organize imagens em sequência lógica para apresentação.</p>
+
+        <p><strong>Documentação do projeto:</strong> Crie memorial descritivo explicando conceito do projeto, justificativas das principais decisões, materiais especificados, e características funcionais. Inclua lista de ambientes com suas respectivas áreas. Esta documentação transforma projeto visual em comunicação profissional completa.</p>
+
+        <p><strong>Avaliação crítica:</strong> Analise projeto considerando: atende às necessidades iniciais? Layouts são funcionais? Projeto é viável construtivamente? Estética é coerente? Custos são realistas? Esta autoavaliação desenvolve senso crítico e capacidade de refinamento que são essenciais para qualquer atividade de design ou projeto.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="blueprint">
+        <div class="section-title">
+            CHECKLIST DE PROJETO RESIDENCIAL
+        </div>
+        
+        <p><strong>PROGRAMA DE NECESSIDADES</strong><br>
+        □ Número de moradores definido<br>
+        □ Idades e necessidades especiais consideradas<br>
+        □ Atividades principais identificadas<br>
+        □ Hábitos familiares analisados</p>
+
+        <p><strong>DISTRIBUIÇÃO DE AMBIENTES</strong><br>
+        □ Setorização clara (social/íntimo/serviços)<br>
+        □ Fluxos de circulação eficientes<br>
+        □ Privacidade adequada<br>
+        □ Integração apropriada entre ambientes</p>
+
+        <p><strong>DIMENSIONAMENTO</strong><br>
+        □ Áreas mínimas respeitadas<br>
+        □ Proporções adequadas<br>
+        □ Mobiliário essencial acomodado<br>
+        □ Circulação livre garantida</p>
+
+        <p><strong>ASPECTOS TÉCNICOS</strong><br>
+        □ Iluminação natural suficiente<br>
+        □ Ventilação cruzada prevista<br>
+        □ Instalações prediais consideradas<br>
+        □ Acessibilidade contemplada</p>
+
+        <p><strong>ESTÉTICA E CONFORTO</strong><br>
+        □ Estilo arquitetônico coerente<br>
+        □ Harmonia cromática definida<br>
+        □ Materiais adequados especificados<br>
+        □ Iluminação artificial planejada</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            Pensamento Crítico e Resolução de Problemas na Arquitetura
+        </div>
+
+        <p><strong>Desenvolvimento do pensamento espacial:</strong> Trabalhar com projetos arquitetônicos desenvolve capacidade de visualização tridimensional, compreensão de relações espaciais, e habilidade de traduzir ideias abstratas em soluções concretas. Estas competências são valiosas não apenas na arquitetura, mas em engenharia, design, matemática, e qualquer área que envolva resolução de problemas complexos.</p>
+
+        <p><strong>Análise de problemas complexos:</strong> Projetar uma casa envolve balancear múltiplas variáveis simultâneas: necessidades funcionais, limitações orçamentárias, restrições técnicas, preferências estéticas, regulamentações legais, e sustentabilidade ambiental. Aprender a considerar todos esses fatores simultaneamente desenvolve pensamento sistêmico e capacidade de síntese.</p>
+
+        <p><strong>Criatividade aplicada:</strong> Arquitetura combina criatividade artística com rigor técnico. Soluções inovadoras surgem quando se pensa "fora da caixa" respeitando limitações práticas. Esta combinação de liberdade criativa com disciplina técnica é modelo útil para abordar problemas em qualquer área profissional.</p>
+
+        <p><strong>Comunicação visual:</strong> Plantas, cortes, elevações e perspectivas são formas de comunicação visual que transmitem informações complexas de forma clara e sintética. Dominar estas formas de comunicação desenvolve capacidade de organizar e apresentar ideias visuellement, habilidade valiosa em apresentações, relatórios, e projetos em geral.</p>
+
+        <p><strong>Atenção aos detalhes:</strong> Arquitetura exige precisão dimensional, compatibilização entre sistemas, e cuidado com acabamentos. Um erro pequeno na planta pode resultar em problema grande na construção. Esta atenção aos detalhes, combinada com visão do conjunto, é competência transferível para gestão de projetos, controle de qualidade, e liderança.</p>
+
+        <p><strong>Sustentabilidade e responsabilidade:</strong> Projetar considerando impacto ambiental, eficiência energética, e uso racional de recursos desenvolve consciência sobre consequências de nossas decisões. Esta perspectiva de longo prazo e responsabilidade social é essencial para liderança em qualquer área profissional.</p>
+
+        <p><strong>Aplicações interdisciplinares:</strong> Conhecimentos de arquitetura aplicam-se em áreas diversas: design de produtos, planejamento urbano, cenografia, design de jogos, realidade virtual, e até organização de espaços de trabalho. As competências desenvolvidas têm aplicação ampla e podem abrir caminhos profissionais inesperados.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: __________</span>
+    </div>
+</body>
+</html>

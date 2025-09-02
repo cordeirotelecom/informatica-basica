@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 54 - Word Avançado / Organização de Documentos</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+            font-size: 11px;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .text-sample {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px 0;
+            font-family: 'Times New Roman', serif;
+        }
+        .checkbox {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 54 - WORD AVANÇADO / ORGANIZAÇÃO DE DOCUMENTOS</h1>
+        <p>Documentos Profissionais e Produtividade - Data: 03/12/2025 - Turma: Masculina</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: Masculina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Funcionalidades Avançadas do Word
+        </div>
+
+        <div class="question">
+            <p><strong>1.</strong> Para que serve a função "Estilos" no Word? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>2.</strong> Como inserir um sumário automático? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>3.</strong> Qual a diferença entre quebra de página e quebra de seção? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Marque as funcionalidades que você já sabe usar:</strong></p>
+        <div class="question">
+            <p><span class="checkbox"></span> Aplicar estilos de títulos (Título 1, 2, 3)</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Inserir sumário automático</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Usar quebras de página e seção</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Inserir cabeçalho e rodapé personalizados</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Criar tabelas complexas</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Inserir referências cruzadas</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Usar controle de alterações</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Mesclar correspondência</p>
+        </div>
+
+        <p><strong>Estilos e Formatação Consistente:</strong> O uso de estilos é fundamental para documentos profissionais. Estilos garantem formatação consistente, facilitam alterações globais e são essenciais para gerar sumários automáticos. Defina estilos personalizados para diferentes tipos de conteúdo: títulos, subtítulos, corpo do texto, citações e destaques. Isso economiza tempo e garante aparência profissional uniforme.</p>
+
+        <p><strong>Estruturação de Documentos Longos:</strong> Para documentos extensos como relatórios, monografias ou manuais, use funcionalidades avançadas: sumário automático baseado em estilos de título, quebras de seção para diferentes formatações, cabeçalhos e rodapés variados, numeração automática de páginas e referências cruzadas para figuras, tabelas e seções. Essas ferramentas transformam documentos amadores em publicações profissionais.</p>
+
+        <p><strong>Colaboração e Revisão:</strong> O Word oferece excelentes ferramentas para trabalho colaborativo. Controle de alterações permite rastrear modificações, comentários facilitam feedback sem alterar o texto principal, e versões diferentes podem ser comparadas automaticamente. Configure proteção de documento quando necessário e use a funcionalidade de coautoria para trabalho simultâneo em tempo real.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Tipos de Documentos Profissionais
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de Documento</th>
+                    <th>Características Principais</th>
+                    <th>Estrutura Básica</th>
+                    <th>Quando Usar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Currículo</td>
+                    <td>Conciso, objetivo, visual limpo</td>
+                    <td>Dados pessoais + Experiência + Formação</td>
+                    <td>Busca de emprego</td>
+                </tr>
+                <tr>
+                    <td>Carta Comercial</td>
+                    <td>Formal, estruturada, cortês</td>
+                    <td>Cabeçalho + Destinatário + Corpo + Fecho</td>
+                    <td>Comunicação empresarial</td>
+                </tr>
+                <tr>
+                    <td>Relatório</td>
+                    <td>Objetivo, dados, conclusões</td>
+                    <td>Resumo + Introdução + Desenvolvimento + Conclusão</td>
+                    <td>Apresentar resultados</td>
+                </tr>
+                <tr>
+                    <td>Proposta</td>
+                    <td>Persuasiva, detalhada, viável</td>
+                    <td>Problema + Solução + Investimento + Benefícios</td>
+                    <td>Vender ideia ou serviço</td>
+                </tr>
+                <tr>
+                    <td>Manual</td>
+                    <td>Didático, sequencial, ilustrado</td>
+                    <td>Sumário + Seções + Exemplos + Anexos</td>
+                    <td>Ensinar procedimentos</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>4.</strong> Qual tipo de documento você mais precisa criar? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>5.</strong> Que elemento é comum a todos os documentos profissionais? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Princípios de Redação Profissional:</strong> Documentos profissionais seguem princípios específicos: clareza (ideias expressas de forma compreensível), concisão (uso eficiente de palavras), coerência (ideias organizadas logicamente), correção (gramática e ortografia impecáveis) e cortesia (tom respeitoso e apropriado). Cada tipo de documento tem convenções específicas que devem ser respeitadas para transmitir credibilidade.</p>
+
+        <p><strong>Adaptação ao Público-Alvo:</strong> O mesmo conteúdo pode ser apresentado de formas diferentes dependendo do público. Um relatório técnico para especialistas usará linguagem específica e detalhes técnicos, enquanto um resumo executivo para gestores será mais sintético e focado em implicações estratégicas. Sempre considere o conhecimento prévio, interesses e necessidades de quem lerá o documento.</p>
+
+        <p><strong>Elementos Visuais em Documentos:</strong> A aparência visual é tão importante quanto o conteúdo. Use hierarquia visual clara através de títulos, subtítulos e espaçamento adequado. Inclua elementos gráficos quando apropriado: tabelas para dados comparativos, gráficos para tendências, imagens para ilustrar conceitos e diagramas para processos. Mantenha design limpo e profissional, evitando excessos que distraem do conteúdo principal.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Projeto Prático - Criação de Template
+        </div>
+
+        <div class="question">
+            <p><strong>6.</strong> Que tipo de template seria mais útil para você?</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Opção de Template</th>
+                    <th>Elementos Inclusos</th>
+                    <th>Marque (X)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>📄 Currículo Profissional</td>
+                    <td>Cabeçalho personalizado, seções padronizadas, formatação moderna</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>📊 Relatório de Atividades</td>
+                    <td>Capa, sumário automático, estilos definidos, seções estruturadas</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>📝 Carta Comercial</td>
+                    <td>Cabeçalho empresarial, formatação formal, campos variáveis</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>📋 Manual de Procedimentos</td>
+                    <td>Numeração automática, estilos hierárquicos, espaços para imagens</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>💼 Proposta de Serviços</td>
+                    <td>Capa atrativa, seções persuasivas, tabelas de preços</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>7.</strong> Planeje os elementos do seu template:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Elemento</th>
+                    <th>Descrição</th>
+                    <th>Estilo/Formatação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cabeçalho</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Título Principal</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Subtítulos</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Corpo do Texto</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Rodapé</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Design de Templates Eficazes:</strong> Um bom template equilibra funcionalidade e estética. Deve ser suficientemente flexível para diferentes conteúdos, mas estruturado o bastante para manter consistência. Use cores neutras que funcionem em diferentes contextos, fonts legíveis tanto na tela quanto impressas, e espaçamento que facilite a leitura. Inclua elementos variáveis que podem ser facilmente personalizados sem quebrar o design.</p>
+
+        <p><strong>Reutilização e Padronização:</strong> Templates economizam tempo e garantem consistência em todos os documentos de uma pessoa ou organização. Desenvolvem identidade visual, transmitem profissionalismo e reduzem chances de erros de formatação. Mantenha uma biblioteca de templates para diferentes propósitos e atualize-os periodicamente baseado em feedback e necessidades emergentes.</p>
+
+        <p><strong>Compatibilidade e Acessibilidade:</strong> Considere que seus documentos podem ser abertos em diferentes versões do Word, outros editores de texto ou convertidos para PDF. Use recursos compatíveis, evite fontes muito específicas, teste em diferentes dispositivos e considere acessibilidade para pessoas com deficiência visual através de estrutura clara e uso adequado de estilos.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Organização de Documentos
+        </div>
+
+        <div class="question">
+            <p><strong>8.</strong> Como você nomeia seus arquivos do Word? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>9.</strong> Onde você salva seus documentos importantes? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>10.</strong> Com que frequência você faz backup dos documentos? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Crie um sistema de organização para seus documentos:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Pasta Principal</th>
+                    <th>Subpastas</th>
+                    <th>Nomenclatura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pessoais</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Educacionais</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Profissionais</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Templates</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Arquivos</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Versionamento de Documentos:</strong> Para documentos importantes que passam por várias revisões, estabeleça um sistema de versionamento. Use números (v1.0, v1.1, v2.0) ou datas (2025-12-03) no nome do arquivo. Mantenha versões principais e delete rascunhos intermediários após finalização. Para trabalhos colaborativos, combine versionamento com controle de alterações do Word.</p>
+
+        <p><strong>Segurança e Backup:</strong> Documentos importantes merecem estratégia de backup robusta. Use salvamento automático do Word, backup em nuvem (OneDrive, Google Drive) e backup local periódico. Para documentos confidenciais, considere proteção por senha e criptografia. Nunca mantenha apenas uma cópia de documentos críticos.</p>
+
+        <p><strong>Metadados e Propriedades:</strong> Use as propriedades do documento (Arquivo > Informações > Propriedades) para adicionar informações que facilitam organização e busca: autor, assunto, palavras-chave, empresa e comentários. Essas informações ajudam na localização posterior e fornecem contexto sobre o documento sem precisar abri-lo.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Produtividade com Word
+        </div>
+
+        <div class="question">
+            <p><strong>11.</strong> Qual atalho do Word você mais usa? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>12.</strong> Que funcionalidade do Word você gostaria de dominar? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Atalhos essenciais para produtividade:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ação</th>
+                    <th>Atalho</th>
+                    <th>Quando Usar</th>
+                    <th>Domino (✓)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Copiar formatação</td>
+                    <td>Ctrl + Shift + C</td>
+                    <td>Aplicar mesmo formato em diferentes textos</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Colar formatação</td>
+                    <td>Ctrl + Shift + V</td>
+                    <td>Depois de copiar formatação</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Localizar e substituir</td>
+                    <td>Ctrl + H</td>
+                    <td>Trocar palavras em todo o documento</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Inserir quebra de página</td>
+                    <td>Ctrl + Enter</td>
+                    <td>Forçar nova página</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Aplicar estilo Título 1</td>
+                    <td>Ctrl + Alt + 1</td>
+                    <td>Formatação rápida de títulos principais</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Aplicar estilo Título 2</td>
+                    <td>Ctrl + Alt + 2</td>
+                    <td>Formatação rápida de subtítulos</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Texto normal</td>
+                    <td>Ctrl + Shift + N</td>
+                    <td>Voltar ao formato padrão do texto</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Repetir última ação</td>
+                    <td>F4 ou Ctrl + Y</td>
+                    <td>Repetir formatação ou comando</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>13.</strong> Descreva uma situação onde você poderia usar "Localizar e Substituir":</p>
+            <div style="border: 1px solid #000; height: 40px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Autotext e Blocos de Construção:</strong> Para textos que você usa frequentemente (assinaturas, endereços, frases padrão), crie entradas de AutoText ou Blocos de Construção. Isso economiza tempo e garante consistência. Acesse através da guia Inserir > Partes Rápidas > AutoText. É especialmente útil para profissionais que criam documentos similares regularmente.</p>
+
+        <p><strong>Personalização da Interface:</strong> Adapte o Word às suas necessidades através da personalização da Faixa de Opções e Barra de Ferramentas de Acesso Rápido. Adicione comandos que você usa com frequência e remova os que não utiliza. Isso reduz cliques e acelera o fluxo de trabalho. Configure também modelos padrão personalizados que atendam suas necessidades específicas.</p>
+
+        <p><strong>Integração com Outras Ferramentas:</strong> O Word se integra bem com outras ferramentas do Office e serviços externos. Use vinculação com Excel para dados que mudam frequentemente, incorpore elementos do PowerPoint, conecte com Outlook para mala direta e aproveite serviços de nuvem para colaboração em tempo real. Essa integração multiplica a produtividade.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            Desafio Final - Documento Profissional Completo
+        </div>
+
+        <div class="question">
+            <p><strong>14.</strong> Descreva um documento profissional que você criará usando as técnicas aprendidas:</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>15.</strong> Que funcionalidades avançadas incluirá neste documento?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>16.</strong> Como este documento beneficiará sua vida pessoal ou profissional?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Planejamento de Documento Profissional:</strong> Antes de começar a digitar, planeje a estrutura completa do documento. Defina objetivos claros, identifique o público-alvo, esboce a organização do conteúdo e determine que recursos avançados serão necessários. Esse planejamento inicial economiza tempo e resulta em documentos mais eficazes e profissionais.</p>
+
+        <p><strong>Qualidade e Revisão:</strong> Documentos profissionais requerem atenção meticulosa à qualidade. Além da correção ortográfica e gramatical automática, faça revisões manuais focando em clareza, coerência e objetividade. Peça feedback de colegas quando apropriado e sempre visualize como o documento aparecerá quando impresso ou visualizado em diferentes dispositivos.</p>
+
+        <p><strong>Evolução Contínua:</strong> As habilidades com Word são desenvolvidas através da prática constante e experimentação com novos recursos. Mantenha-se atualizado com novas funcionalidades, participe de comunidades online, explore templates profissionais e não hesite em experimentar recursos avançados. O domínio do Word é um investimento que beneficia todas as áreas da vida pessoal e profissional.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Word Avançado e Organização de Documentos</span>
+        <span>Turma: Masculina</span>
+        <span>Data: 03/12/2025</span>
+    </div>
+</body>
+</html>

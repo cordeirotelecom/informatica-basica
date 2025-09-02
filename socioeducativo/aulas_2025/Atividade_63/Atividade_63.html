@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 63 - Síntese Final + Avaliação do Curso</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+            font-size: 11px;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .achievement-box {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .reflection-box {
+            background-color: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .gratitude-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .checkbox {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .satisfaction-level {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .excellent { background-color: #d4edda; color: #155724; }
+        .good { background-color: #cce5ff; color: #004085; }
+        .average { background-color: #fff3cd; color: #856404; }
+        .poor { background-color: #f8d7da; color: #721c24; }
+        .celebration-icon {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+        .rating-stars {
+            display: flex;
+            gap: 3px;
+            align-items: center;
+        }
+        .star {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        .timeline-item {
+            border-left: 3px solid #000;
+            padding-left: 10px;
+            margin: 10px 0;
+            position: relative;
+        }
+        .timeline-date {
+            font-weight: bold;
+            font-size: 11px;
+        }
+        .competency-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            margin: 10px 0;
+        }
+        .competency-item {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 63 - SÍNTESE FINAL + AVALIAÇÃO DO CURSO</h1>
+        <p>Reflexão e Avaliação do Percurso de Aprendizagem - Data: 18/12/2025 - Turma: Feminina</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: Feminina</span>
+    </div>
+
+    <div class="achievement-box">
+        <p><span class="celebration-icon">🎉</span><strong>Parabéns!</strong> Você concluiu um percurso completo de 63 atividades educacionais, explorando desde conceitos básicos de informática até temas avançados como inteligência artificial, empreendedorismo digital e cidadania tecnológica. Este é um momento de celebração e reflexão sobre sua jornada de aprendizagem!</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Retrospectiva da Jornada de Aprendizagem
+        </div>
+
+        <div class="question">
+            <p><strong>1.</strong> Como você se sentia sobre tecnologia no início do curso? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>2.</strong> Como se sente agora? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Linha do tempo dos seus principais aprendizados:</strong></p>
+
+        <div class="timeline-item">
+            <div class="timeline-date">Módulo 1 (Atividades 1-15): Fundamentos</div>
+            <p><strong>Principal aprendizado:</strong> <span class="answer-line">________________________________</span></p>
+            <p><strong>Maior desafio:</strong> <span class="answer-line">________________________________</span></p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">Módulo 2 (Atividades 16-30): Aplicações Práticas</div>
+            <p><strong>Principal aprendizado:</strong> <span class="answer-line">________________________________</span></p>
+            <p><strong>Maior desafio:</strong> <span class="answer-line">________________________________</span></p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">Módulo 3 (Atividades 31-45): Produtividade Digital</div>
+            <p><strong>Principal aprendizado:</strong> <span class="answer-line">________________________________</span></p>
+            <p><strong>Maior desafio:</strong> <span class="answer-line">________________________________</span></p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">Módulo 4 (Atividades 46-63): Temas Avançados</div>
+            <p><strong>Principal aprendizado:</strong> <span class="answer-line">________________________________</span></p>
+            <p><strong>Maior desafio:</strong> <span class="answer-line">________________________________</span></p>
+        </div>
+
+        <div class="question">
+            <p><strong>3.</strong> Competências desenvolvidas - Auto-avaliação antes e depois:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Competência</th>
+                    <th>Antes (1-5)</th>
+                    <th>Depois (1-5)</th>
+                    <th>Evolução</th>
+                    <th>Evidência/Exemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Uso básico de computador</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>+___</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Navegação na internet</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>+___</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Microsoft Office (Word, Excel, PowerPoint)</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>+___</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>E-mail e comunicação digital</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>+___</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Segurança digital</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>+___</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Redes sociais e comunicação</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>+___</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Resolução de problemas técnicos</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>+___</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Pensamento crítico sobre tecnologia</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td>+___</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="reflection-box">
+            <p><strong>💭 Reflexão:</strong> O aprendizado é um processo contínuo. Cada pequeno passo contribui para 
+            uma grande jornada de transformação pessoal e profissional.</p>
+        </div>
+
+        <p><strong>Transformação Digital Pessoal:</strong> Ao longo desta jornada, você não apenas aprendeu sobre tecnologia - você se transformou digitalmente. Desenvolveu novas formas de pensar, comunicar-se, trabalhar e se relacionar com o mundo digital. Esta transformação é permanente e continuará evoluindo à medida que novas tecnologias emergirem e suas necessidades mudarem.</p>
+
+        <p><strong>Metacognição e Aprendizagem:</strong> Um dos aspectos mais valiosos desta experiência foi desenvolver consciência sobre seu próprio processo de aprendizagem. Identificar que estratégias funcionam melhor para você, como superar obstáculos, e que áreas precisam de mais atenção são habilidades meta-cognitivas que se aplicam a qualquer área da vida, não apenas tecnologia.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Atividades e Temas Mais Impactantes
+        </div>
+
+        <div class="question">
+            <p><strong>4.</strong> Quais foram as 5 atividades mais marcantes para você?</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Número da Atividade</th>
+                    <th>Tema Principal</th>
+                    <th>Por que foi marcante?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1ª</td>
+                    <td>Atividade ___</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2ª</td>
+                    <td>Atividade ___</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3ª</td>
+                    <td>Atividade ___</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4ª</td>
+                    <td>Atividade ___</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5ª</td>
+                    <td>Atividade ___</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>5.</strong> Temas que mais mudaram sua perspectiva sobre tecnologia:</p>
+        </div>
+
+        <div class="question">
+            <p><span class="checkbox"></span> Inteligência Artificial e seu impacto na sociedade</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Segurança digital e proteção de dados</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Empreendedorismo e oportunidades digitais</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Cidadania digital e responsabilidade online</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Automação e futuro do trabalho</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Design digital e criatividade tecnológica</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Sustentabilidade e tecnologia verde</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Inclusão digital e acessibilidade</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Programação e pensamento computacional</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Colaboração e ferramentas digitais</p>
+        </div>
+
+        <div class="question">
+            <p><strong>6.</strong> Conhecimentos que mais aplicou na vida pessoal/profissional:</p>
+            <div style="border: 1px solid #000; height: 80px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>7.</strong> Temas que gostaria de aprofundar no futuro:</p>
+            <div style="border: 1px solid #000; height: 80px; margin: 10px 0;"></div>
+        </div>
+
+        <p><strong>Conexões Interdisciplinares:</strong> Uma das riquezas desta jornada foi descobrir como tecnologia se conecta com praticamente todas as áreas da vida humana: arte, ciência, educação, negócios, saúde, meio ambiente, política e relacionamentos. Estas conexões interdisciplinares refletem a natureza integrada do mundo moderno, onde fronteiras entre áreas se tornam cada vez mais fluidas.</p>
+
+        <p><strong>Relevância Temporal dos Aprendizados:</strong> Alguns conceitos aprendidos terão relevância duradoura (como pensamento crítico, ética digital, princípios de segurança), enquanto outros podem evoluir rapidamente (ferramentas específicas, interfaces, tecnologias emergentes). Desenvolver capacidade de distinguir entre conhecimento perene e temporário é habilidade valiosa para aprendizagem ao longo da vida.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Avaliação da Metodologia e Estrutura do Curso
+        </div>
+
+        <div class="question">
+            <p><strong>8.</strong> Como avalia a estrutura geral do curso?</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Aspecto</th>
+                    <th>Avaliação</th>
+                    <th>Comentários/Sugestões</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sequência dos tópicos</td>
+                    <td><span class="satisfaction-level excellent">EXCELENTE</span> <span class="satisfaction-level good">BOM</span> <span class="satisfaction-level average">REGULAR</span> <span class="satisfaction-level poor">RUIM</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Nível de dificuldade</td>
+                    <td><span class="satisfaction-level excellent">EXCELENTE</span> <span class="satisfaction-level good">BOM</span> <span class="satisfaction-level average">REGULAR</span> <span class="satisfaction-level poor">RUIM</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Variedade de atividades</td>
+                    <td><span class="satisfaction-level excellent">EXCELENTE</span> <span class="satisfaction-level good">BOM</span> <span class="satisfaction-level average">REGULAR</span> <span class="satisfaction-level poor">RUIM</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Aplicabilidade prática</td>
+                    <td><span class="satisfaction-level excellent">EXCELENTE</span> <span class="satisfaction-level good">BOM</span> <span class="satisfaction-level average">REGULAR</span> <span class="satisfaction-level poor">RUIM</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Clareza das explicações</td>
+                    <td><span class="satisfaction-level excellent">EXCELENTE</span> <span class="satisfaction-level good">BOM</span> <span class="satisfaction-level average">REGULAR</span> <span class="satisfaction-level poor">RUIM</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Atualidade dos conteúdos</td>
+                    <td><span class="satisfaction-level excellent">EXCELENTE</span> <span class="satisfaction-level good">BOM</span> <span class="satisfaction-level average">REGULAR</span> <span class="satisfaction-level poor">RUIM</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Carga horária/ritmo</td>
+                    <td><span class="satisfaction-level excellent">EXCELENTE</span> <span class="satisfaction-level good">BOM</span> <span class="satisfaction-level average">REGULAR</span> <span class="satisfaction-level poor">RUIM</span></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>9.</strong> Tipos de atividade que mais contribuíram para seu aprendizado:</p>
+        </div>
+
+        <div class="question">
+            <p><span class="checkbox"></span> Exercícios práticos com computador</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Reflexões escritas sobre temas tecnológicos</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Projetos de aplicação prática</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Análise de casos e cenários</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Auto-avaliações e questionários</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Pesquisas e investigações</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Planejamentos e estratégias pessoais</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Discussões sobre ética e sociedade</p>
+        </div>
+
+        <div class="question">
+            <p><strong>10.</strong> Sugestões para melhorar o curso:</p>
+            <div style="border: 1px solid #000; height: 80px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>11.</strong> Temas que poderiam ser adicionados:</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>12.</strong> Nota geral para o curso (0-10):</strong> <span class="answer-line">____</span></p>
+        </div>
+
+        <p><strong>Pedagogia Adaptativa:</strong> Este curso foi desenhado com princípios de pedagogia adaptativa, reconhecendo que cada pessoa tem ritmo, estilo e necessidades de aprendizagem únicos. A combinação de teoria e prática, reflexão individual e aplicação concreta, temas fundamentais e avançados buscou atender diversidade de perfis de aprendizes. Feedback como o seu é essencial para continuar melhorando essa abordagem.</p>
+
+        <p><strong>Aprendizagem Ativa e Significativa:</strong> Metodologia privilegiou aprendizagem ativa, onde você foi protagonista do próprio aprendizado, em oposição a abordagens passivas tradicionais. Atividades de reflexão, aplicação prática, e conexão com experiências pessoais buscaram tornar aprendizado significativo e duradouro. Pesquisas mostram que este tipo de engajamento ativo resulta em retenção superior do conhecimento.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Impactos na Vida Pessoal e Profissional
+        </div>
+
+        <div class="question">
+            <p><strong>13.</strong> Como este curso impactou sua vida pessoal?</p>
+            <div style="border: 1px solid #000; height: 80px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>14.</strong> E sua vida profissional (atual ou futura)?</p>
+            <div style="border: 1px solid #000; height: 80px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>15.</strong> Mudanças concretas que implementou:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Área</th>
+                    <th>Mudança Implementada</th>
+                    <th>Resultado Obtido</th>
+                    <th>Planeja Continuar?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Organização pessoal</td>
+                    <td></td>
+                    <td></td>
+                    <td>Sim / Não</td>
+                </tr>
+                <tr>
+                    <td>Comunicação digital</td>
+                    <td></td>
+                    <td></td>
+                    <td>Sim / Não</td>
+                </tr>
+                <tr>
+                    <td>Segurança online</td>
+                    <td></td>
+                    <td></td>
+                    <td>Sim / Não</td>
+                </tr>
+                <tr>
+                    <td>Produtividade no trabalho</td>
+                    <td></td>
+                    <td></td>
+                    <td>Sim / Não</td>
+                </tr>
+                <tr>
+                    <td>Relacionamentos</td>
+                    <td></td>
+                    <td></td>
+                    <td>Sim / Não</td>
+                </tr>
+                <tr>
+                    <td>Aprendizado contínuo</td>
+                    <td></td>
+                    <td></td>
+                    <td>Sim / Não</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>16.</strong> Como sua família/amigos notaram mudanças em você?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>17.</strong> Oportunidades que se abriram através do conhecimento adquirido:</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 10px 0;"></div>
+        </div>
+
+        <p><strong>Efeito Multiplicador do Conhecimento:</strong> Conhecimento tecnológico tem efeito multiplicador - cada nova competência digital amplia possibilidades exponencialmente. Saber usar uma ferramenta abre portas para aprender outras similares, compreender um conceito facilita absorção de conceitos relacionados, e desenvolver confiança tecnológica reduz barreiras para experimentar inovações futuras.</p>
+
+        <p><strong>Empoderamento Digital:</strong> Verdadeiro valor deste curso não está apenas nas habilidades técnicas específicas, mas no empoderamento digital que proporcionou. Sentir-se capaz e confiante para navegar mundo digital, tomar decisões informadas sobre tecnologia, e adaptar-se a mudanças futuras é forma de empoderamento que beneficia todas as áreas da vida.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Planos Futuros e Educação Continuada
+        </div>
+
+        <div class="question">
+            <p><strong>18.</strong> Como planeja continuar seu desenvolvimento tecnológico?</p>
+            <div style="border: 1px solid #000; height: 80px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>19.</strong> Próximos cursos ou certificações que pretende fazer:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Área de Interesse</th>
+                    <th>Curso/Certificação Específica</th>
+                    <th>Prazo Planejado</th>
+                    <th>Motivação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>20.</strong> Como pretende compartilhar conhecimento com outros?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>21.</strong> Metas pessoais relacionadas à tecnologia para 2026:</p>
+        </div>
+
+        <div class="question">
+            <p><span class="checkbox"></span> Meta 1: <span class="answer-line">_____________________________________</span></p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Meta 2: <span class="answer-line">_____________________________________</span></p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Meta 3: <span class="answer-line">_____________________________________</span></p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Meta 4: <span class="answer-line">_____________________________________</span></p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Meta 5: <span class="answer-line">_____________________________________</span></p>
+        </div>
+
+        <p><strong>Aprendizagem ao Longo da Vida:</strong> Em mundo de mudanças tecnológicas aceleradas, aprendizagem ao longo da vida não é luxo, mas necessidade. Competências tecnológicas específicas podem se tornar obsoletas, mas capacidade de aprender, adaptar-se, e pensar criticamente sobre tecnologia são habilidades perenes. Este curso foi apenas início de jornada que deve continuar por toda vida.</p>
+
+        <p><strong>Comunidades de Aprendizagem:</strong> Conhecimento tecnológico se desenvolve melhor em comunidades. Procure grupos locais ou online de pessoas com interesses similares, participe de fóruns de discussão, frequente eventos de tecnologia, e mantenha-se conectado com colegas deste curso. Aprendizagem colaborativa acelera desenvolvimento e torna jornada mais rica e enjoyable.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">6</span>
+            Mensagem para Futuras Turmas
+        </div>
+
+        <div class="question">
+            <p><strong>22.</strong> Que conselho daria para alguém que está começando este curso?</p>
+            <div style="border: 1px solid #000; height: 80px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>23.</strong> Qual a principal lição que aprendeu sobre tecnologia e vida?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>24.</strong> Mensagem motivacional para pessoas que têm medo da tecnologia:</p>
+            <div style="border: 1px solid #000; height: 80px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="gratitude-box">
+            <p><strong>🙏 Espaço para Agradecimentos:</strong></p>
+            <div style="border: 1px solid #000; height: 80px; margin: 10px 0;"></div>
+        </div>
+
+        <p><strong>Legado de Aprendizagem:</strong> Sua experiência neste curso contribui para melhoria contínua da educação tecnológica. Feedbacks, sugestões, e reflexões que compartilhou ajudarão a aprimorar experiência de futuras turmas. Desta forma, você se torna parte da cadeia de conhecimento que beneficia outros aprendizes - legado valioso que se estende além de seu desenvolvimento pessoal.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            Reflexão Final e Celebração
+        </div>
+
+        <div class="question">
+            <p><strong>25.</strong> Complete a frase: "Antes deste curso, eu não sabia que..."</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>26.</strong> "Agora eu sei que posso..."</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>27.</strong> "No futuro, vou usar tecnologia para..."</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="achievement-box">
+            <p><span class="celebration-icon">🏆</span><strong>Conquista Desbloqueada!</strong> Você completou 63 atividades educacionais, desenvolveu competências digitais essenciais, e está preparado(a) para continuar evoluindo no mundo digital. Leve consigo a confiança de que pode aprender qualquer tecnologia que escolher - você já provou isso!</p>
+        </div>
+
+        <div class="competency-grid">
+            <div class="competency-item">
+                <strong>🖥️ Competência Técnica</strong>
+            </div>
+            <div class="competency-item">
+                <strong>🧠 Pensamento Crítico</strong>
+            </div>
+            <div class="competency-item">
+                <strong>🤝 Colaboração Digital</strong>
+            </div>
+            <div class="competency-item">
+                <strong>🔒 Consciência de Segurança</strong>
+            </div>
+            <div class="competency-item">
+                <strong>🌟 Criatividade Tecnológica</strong>
+            </div>
+            <div class="competency-item">
+                <strong>⚖️ Ética Digital</strong>
+            </div>
+            <div class="competency-item">
+                <strong>📚 Aprendizagem Contínua</strong>
+            </div>
+            <div class="competency-item">
+                <strong>🚀 Mentalidade Inovadora</strong>
+            </div>
+        </div>
+
+        <p><strong>Transformação Contínua:</strong> Conclusão deste curso marca não um fim, mas um novo começo. Você agora faz parte da comunidade global de cidadãos digitais conscientes e capacitados. Tecnologia continuará evoluindo, mas você desenvolveu foundations sólidas e mentalidade de crescimento que permitirão navegar qualquer mudança futura com confiança e sabedoria.</p>
+
+        <p><strong>Responsabilidade e Oportunidade:</strong> Com conhecimento vem responsabilidade. Use competências adquiridas não apenas para benefício próprio, mas para contribuir positivamente para comunidade digital global. Seja mentor para quem está começando, defensor de práticas éticas, e agente de mudança positiva no mundo digital. Sua jornada de aprendizagem é também jornada de contribuição social.</p>
+
+        <p><strong>Celebre Sua Conquista:</strong> Pause por um momento e reconheça magnitude do que accomplishes. Transformar-se digitalmente requer coragem, persistência, e abertura mental. Você demonstrou todas essas qualidades e muito mais. Esta é uma conquista que merece ser celebrada e que servirá como foundation para todas suas futuras aventuras tecnológicas.</p>
+    </div>
+
+    <div class="info-bar">
+        <span><strong>🎓 CURSO CONCLUÍDO COM SUCESSO! 🎓</strong></span>
+        <span>Turma: Feminina</span>
+        <span>Data: 18/12/2025</span>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px; font-weight: bold; font-size: 14px;">
+        🌟 PARABÉNS POR SUA DEDICAÇÃO E SUCESSO! 🌟<br>
+        O FUTURO DIGITAL ESTÁ EM SUAS MÃOS!
+    </div>
+</body>
+</html>

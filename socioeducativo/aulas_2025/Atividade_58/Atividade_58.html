@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 58 - Segurança Avançada + Privacidade Online</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+            font-size: 11px;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .security-tip {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .checkbox {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .password-example {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 5px 0;
+        }
+        .threat-level {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .threat-low { background-color: #d4edda; color: #155724; }
+        .threat-medium { background-color: #fff3cd; color: #856404; }
+        .threat-high { background-color: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 58 - SEGURANÇA AVANÇADA + PRIVACIDADE ONLINE</h1>
+        <p>Proteção Digital e Privacidade - Data: 10/12/2025 - Turma: Masculina</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: Masculina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Ameaças Digitais Modernas
+        </div>
+
+        <div class="question">
+            <p><strong>1.</strong> Qual foi sua experiência mais preocupante com segurança online? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>2.</strong> Como você protege seus dados pessoais atualmente? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Principais ameaças digitais - Avalie seu nível de conhecimento:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ameaça</th>
+                    <th>Descrição</th>
+                    <th>Nível</th>
+                    <th>Conheço</th>
+                    <th>Já Enfrentei</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Phishing</td>
+                    <td>E-mails falsos para roubar dados</td>
+                    <td><span class="threat-level threat-high">ALTO</span></td>
+                    <td><span class="checkbox"></span></td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Malware</td>
+                    <td>Software malicioso (vírus, trojans)</td>
+                    <td><span class="threat-level threat-high">ALTO</span></td>
+                    <td><span class="checkbox"></span></td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Ransomware</td>
+                    <td>Sequestro de dados por resgate</td>
+                    <td><span class="threat-level threat-high">ALTO</span></td>
+                    <td><span class="checkbox"></span></td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Engenharia Social</td>
+                    <td>Manipulação psicológica para obter info</td>
+                    <td><span class="threat-level threat-medium">MÉDIO</span></td>
+                    <td><span class="checkbox"></span></td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Roubo de Identidade</td>
+                    <td>Uso indevido de dados pessoais</td>
+                    <td><span class="threat-level threat-medium">MÉDIO</span></td>
+                    <td><span class="checkbox"></span></td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Wi-Fi Malicioso</td>
+                    <td>Redes falsas para interceptar dados</td>
+                    <td><span class="threat-level threat-medium">MÉDIO</span></td>
+                    <td><span class="checkbox"></span></td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Cookies de Rastreamento</td>
+                    <td>Monitoramento de atividade online</td>
+                    <td><span class="threat-level threat-low">BAIXO</span></td>
+                    <td><span class="checkbox"></span></td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Vazamento de Dados</td>
+                    <td>Exposição acidental de informações</td>
+                    <td><span class="threat-level threat-medium">MÉDIO</span></td>
+                    <td><span class="checkbox"></span></td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="alert-box">
+            <strong>⚠️ Atenção:</strong> 95% dos ataques cibernéticos começam com erro humano. 
+            Conhecimento e vigilância são suas melhores defesas.
+        </div>
+
+        <p><strong>Evolução das Ameaças Cibernéticas:</strong> O cenário de segurança digital evolui constantemente. Atacantes desenvolvem métodos cada vez mais sofisticados: deepfakes para golpes por vídeo, ataques baseados em IA, exploração de dispositivos IoT vulneráveis e ataques coordenados a infraestruturas críticas. Manter-se informado sobre novas ameaças é essencial para proteção eficaz.</p>
+
+        <p><strong>Psicologia dos Ataques Cibernéticos:</strong> Muitos ataques exploram aspectos psicológicos humanos: urgência artificial (sua conta será fechada hoje!), autoridade falsa (somos do banco), reciprocidade (você ganhou um prêmio!), e medo (vírus detectado!). Reconhecer essas táticas psicológicas é fundamental para não ser manipulado por criminosos digitais.</p>
+
+        <p><strong>Impacto Pessoal e Financeiro:</strong> Ataques cibernéticos podem ter consequências devastadoras: perda financeira direta, roubo de identidade, chantagem, danos à reputação, perda de dados irreplacíveis e stress emocional significativo. O custo de prevenção é sempre menor que o custo de recuperação após um ataque bem-sucedido.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Gestão Avançada de Senhas
+        </div>
+
+        <div class="question">
+            <p><strong>3.</strong> Quantas senhas diferentes você usa? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>4.</strong> Como você lembra de suas senhas? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Avaliação de força de senhas:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Exemplo de Senha</th>
+                    <th>Força</th>
+                    <th>Problemas</th>
+                    <th>Tempo para Quebrar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="password-example">123456</td>
+                    <td><span class="threat-level threat-high">FRACA</span></td>
+                    <td>Sequência óbvia</td>
+                    <td>Instantâneo</td>
+                </tr>
+                <tr>
+                    <td class="password-example">password123</td>
+                    <td><span class="threat-level threat-high">FRACA</span></td>
+                    <td>Palavra comum + números</td>
+                    <td>Segundos</td>
+                </tr>
+                <tr>
+                    <td class="password-example">Maria2025</td>
+                    <td><span class="threat-level threat-medium">MÉDIA</span></td>
+                    <td>Info pessoal previsível</td>
+                    <td>Minutos</td>
+                </tr>
+                <tr>
+                    <td class="password-example">Gat0Pr3t0#</td>
+                    <td><span class="threat-level threat-low">BOA</span></td>
+                    <td>Mistura caracteres</td>
+                    <td>Dias</td>
+                </tr>
+                <tr>
+                    <td class="password-example">C4f3@M4nh4&Sol#2025</td>
+                    <td><span class="threat-level threat-low">FORTE</span></td>
+                    <td>Complexa e longa</td>
+                    <td>Séculos</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>5.</strong> Crie uma senha forte usando a técnica da frase:</p>
+            <p>Frase: "Eu bebo 2 cafés toda manhã às 7 horas"</p>
+            <p>Senha: <span class="answer-line">_________________________</span></p>
+            <p><em>Dica: Use primeiras letras + números + símbolos</em></p>
+        </div>
+
+        <p><strong>Gerenciadores de senha recomendados:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Gerenciador</th>
+                    <th>Custo</th>
+                    <th>Características</th>
+                    <th>Interesse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bitwarden</td>
+                    <td>Gratuito/Pago</td>
+                    <td>Open source, sincronização</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>1Password</td>
+                    <td>Pago</td>
+                    <td>Interface amigável, família</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>LastPass</td>
+                    <td>Freemium</td>
+                    <td>Popular, fácil uso</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Google Password Manager</td>
+                    <td>Gratuito</td>
+                    <td>Integrado Chrome/Android</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="security-tip">
+            <strong>🔐 Dica de Segurança:</strong> Use autenticação de dois fatores (2FA) sempre que possível. 
+            Mesmo com senha comprometida, atacante precisará do segundo fator.
+        </div>
+
+        <p><strong>Autenticação de Múltiplos Fatores (MFA):</strong> A autenticação de dois fatores adiciona camada crucial de segurança. Fatores incluem: algo que você sabe (senha), algo que você tem (smartphone), algo que você é (biometria). Apps como Google Authenticator, Authy ou Microsoft Authenticator geram códigos temporários mais seguros que SMS.</p>
+
+        <p><strong>Estratégias de Recuperação Segura:</strong> Tenha plano para recuperação de contas: mantenha informações de recuperação atualizadas, use e-mail secundário seguro, configure perguntas de segurança com respostas não óbvias, mantenha códigos de backup em local seguro. Nunca use informações pessoais facilmente descobríveis como respostas de segurança.</p>
+
+        <p><strong>Higiene Digital de Senhas:</strong> Desenvolva hábitos saudáveis: senhas únicas para cada conta importante, mudança periódica de senhas críticas, auditoria regular de contas não utilizadas, verificação de vazamentos em sites como HaveIBeenPwned, e nunca compartilhamento de senhas por meios inseguros como e-mail ou mensagens.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Privacidade e Proteção de Dados Pessoais
+        </div>
+
+        <div class="question">
+            <p><strong>6.</strong> Que informações pessoais você compartilha online? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>7.</strong> Como você configura privacidade nas redes sociais? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Auditoria de privacidade pessoal:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Plataforma/Serviço</th>
+                    <th>Info Compartilhada</th>
+                    <th>Configuração Atual</th>
+                    <th>Ação Necessária</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Facebook/Meta</td>
+                    <td></td>
+                    <td>Pública / Amigos / Privada</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td></td>
+                    <td>Pública / Amigos / Privada</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>WhatsApp</td>
+                    <td></td>
+                    <td>Pública / Amigos / Privada</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Google/Gmail</td>
+                    <td></td>
+                    <td>Pública / Amigos / Privada</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td></td>
+                    <td>Pública / Amigos / Privada</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>TikTok</td>
+                    <td></td>
+                    <td>Pública / Amigos / Privada</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Configurações essenciais de privacidade:</strong></p>
+        <div class="question">
+            <p><span class="checkbox"></span> Perfil privado em redes sociais pessoais</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Localização desabilitada em posts</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Listagem em mecanismos de busca desabilitada</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Notificações de login em novos dispositivos</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Revisão de tags antes da publicação</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Bloqueio de anúncios personalizados</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Download de dados pessoais para backup</p>
+        </div>
+
+        <div class="question">
+            <p><strong>8.</strong> Projeto: Configure privacidade de uma rede social. Qual escolheu e o que mudou?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Lei Geral de Proteção de Dados (LGPD):</strong> A LGPD brasileira garante direitos sobre seus dados pessoais: direito de acesso (saber que dados empresas têm sobre você), correção (corrigir dados incorretos), exclusão (solicitar remoção), portabilidade (transferir dados), e oposição (recusar processamento). Empresas devem ser transparentes sobre coleta e uso de dados pessoais.</p>
+
+        <p><strong>Pegada Digital e Reputação Online:</strong> Tudo que você faz online deixa rastros. Empregadores, instituições educacionais e parceiros pessoais podem pesquisar sobre você. Conduza auditoria regular de sua presença online: pesquise seu nome no Google, configure alertas para seu nome, remova conteúdo inadequado quando possível, e construa presença digital positiva profissionalmente.</p>
+
+        <p><strong>Proteção Contra Vigilância Corporativa:</strong> Grandes empresas de tecnologia coletam dados extensivos para fins comerciais. Use navegadores focados em privacidade (Firefox, Brave), mecanismos de busca que não rastreiam (DuckDuckGo), configure bloqueadores de rastreamento, leia políticas de privacidade de serviços importantes, e considere alternativas que respeitam mais privacidade.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Navegação Segura e Ferramentas de Proteção
+        </div>
+
+        <div class="question">
+            <p><strong>9.</strong> Como você identifica sites seguros? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>10.</strong> Que precauções toma ao usar Wi-Fi público? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Ferramentas de segurança essenciais:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Ferramenta</th>
+                    <th>Função</th>
+                    <th>Recomendação</th>
+                    <th>Uso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">🛡️ Antivírus</td>
+                    <td>Windows Defender</td>
+                    <td>Proteção integrada Windows</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Bitdefender</td>
+                    <td>Antivírus premium</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Malwarebytes</td>
+                    <td>Anti-malware especializado</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">🌐 Navegação</td>
+                    <td>uBlock Origin</td>
+                    <td>Bloqueio de anúncios e rastreadores</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>HTTPS Everywhere</td>
+                    <td>Força conexões seguras</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Privacy Badger</td>
+                    <td>Bloqueia rastreamento invisível</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">🔒 VPN</td>
+                    <td>NordVPN</td>
+                    <td>Rede privada virtual premium</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>ProtonVPN</td>
+                    <td>VPN com versão gratuita</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>11.</strong> Situações onde você usaria VPN:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Situação</th>
+                    <th>Necessário?</th>
+                    <th>Por quê?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wi-Fi público em aeroporto</td>
+                    <td>Sim / Não</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Casa com internet própria</td>
+                    <td>Sim / Não</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Acessar conteúdo bloqueado geograficamente</td>
+                    <td>Sim / Não</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Internet banking</td>
+                    <td>Sim / Não</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Pesquisa sobre temas sensíveis</td>
+                    <td>Sim / Não</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="security-tip">
+            <strong>🔒 Regra de Ouro:</strong> Se o site não tem "https://" (cadeado verde), 
+            nunca insira informações pessoais ou financeiras.
+        </div>
+
+        <p><strong>Identificação de Sites Maliciosos:</strong> Desenvolva intuição para identificar sites perigosos: URLs suspeitas com erros de ortografia, design amador ou muito profissional para ser verdadeiro, ofertas irreais (ganhe milhões!), solicitações urgentes de informações pessoais, falta de informações de contato legítimas, e certificados SSL inexistentes ou inválidos.</p>
+
+        <p><strong>Segurança em Dispositivos Móveis:</strong> Smartphones requerem atenção especial: baixe apps apenas de lojas oficiais, revise permissões antes de instalar apps, mantenha sistema operacional atualizado, use bloqueio de tela seguro, configure rastreamento em caso de roubo, e seja cauteloso com redes Wi-Fi públicas em dispositivos móveis.</p>
+
+        <p><strong>Backup e Recuperação de Desastres:</strong> Tenha estratégia robusta de backup: use regra 3-2-1 (3 cópias, 2 locais diferentes, 1 off-site), automatize backups quando possível, teste restauração periodicamente, criptografe backups sensíveis, e mantenha versões de backup de períodos diferentes para proteger contra ransomware.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Plano Pessoal de Segurança Digital
+        </div>
+
+        <div class="question">
+            <p><strong>12.</strong> Crie seu plano de segurança para os próximos 30 dias:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Semana</th>
+                    <th>Ação de Segurança</th>
+                    <th>Ferramenta/Método</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td>Pendente / Feito</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td>Pendente / Feito</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td>Pendente / Feito</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td>Pendente / Feito</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>13.</strong> Como você educará familiares sobre segurança digital?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>14.</strong> Que medidas tomará se suspeitar que foi vítima de ataque?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Protocolo de resposta a incidentes:</strong></p>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Contenção:</strong> Desconecte dispositivo da internet imediatamente</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Avaliação:</strong> Identifique tipo e extensão do ataque</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Documentação:</strong> Registre evidências (screenshots, logs)</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Comunicação:</strong> Notifique bancos, empresas afetadas</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Recuperação:</strong> Restaure sistemas seguros a partir backup</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Prevenção:</strong> Implemente medidas para evitar reincidência</p>
+        </div>
+
+        <p><strong>Educação Continuada em Segurança:</strong> A segurança digital é área em constante evolução. Mantenha-se atualizado através de blogs especializados (Krebs on Security, SANS), newsletters de segurança, treinamentos online, participação em comunidades de segurança, e acompanhamento de alertas de organizações como CERT.br. Conhecimento atualizado é sua melhor defesa.</p>
+
+        <p><strong>Cultura de Segurança Familiar:</strong> Segurança digital é responsabilidade coletiva. Eduque familiares sobre riscos básicos, estabeleça regras familiares para uso seguro da internet, configure controles parentais apropriados, crie ambiente onde pessoas se sintam confortáveis relatando suspeitas de ataques, e pratique exercícios regulares de segurança digital em família.</p>
+
+        <p><strong>Balanceamento Segurança vs Usabilidade:</strong> Segurança absoluta pode ser impraticável. Encontre equilíbrio entre proteção robusta e facilidade de uso que você manterá consistentemente. É melhor implementar medidas de segurança moderadas que você usa religiosamente do que medidas extremas que você abandona por serem muito complicadas. Consistência é chave para segurança eficaz.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            Reflexão sobre Segurança Digital e Sociedade
+        </div>
+
+        <div class="question">
+            <p><strong>15.</strong> Como a segurança digital impacta a sociedade moderna?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>16.</strong> Que responsabilidade você tem em proteger outros online?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>17.</strong> Como imagina que será a segurança digital no futuro?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Segurança Digital como Direito Humano:</strong> O acesso seguro à internet está se tornando direito fundamental no século XXI. Segurança digital afeta liberdade de expressão, privacidade, participação democrática e oportunidades econômicas. Ataques cibernéticos podem silenciar vozes, influenciar eleições e exacerbar desigualdades sociais. Proteger-se digitalmente é ato de cidadania.</p>
+
+        <p><strong>Responsabilidade Coletiva:</strong> Sua segurança digital afeta outros. Dispositivos comprometidos podem ser usados em ataques contra terceiros, informações pessoais vazadas podem comprometer contatos, e propagação de desinformação pode causar danos sociais amplos. Praticar boa segurança digital é responsabilidade social, não apenas pessoal.</p>
+
+        <p><strong>Futuro da Segurança Digital:</strong> Tecnologias emergentes trarão novos desafios e soluções: autenticação biométrica mais sofisticada, inteligência artificial para detecção de ameaças, computação quântica que pode quebrar criptografia atual, mas também criar métodos de proteção revolucionários. Mantenha mentalidade de aprendizado contínuo para evoluir com o cenário de segurança.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Segurança Avançada e Privacidade Online</span>
+        <span>Turma: Masculina</span>
+        <span>Data: 10/12/2025</span>
+    </div>
+</body>
+</html>

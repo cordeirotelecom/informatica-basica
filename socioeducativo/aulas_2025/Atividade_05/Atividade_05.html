@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 05 - Meu Currículo em Formato Texto</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+        }
+        .text-area {
+            border: 1px solid #000;
+            min-height: 40px;
+            margin: 5px 0;
+            padding: 5px;
+        }
+        .curriculum-box {
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 10px 0;
+            background: #fafafa;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        .tip-box {
+            background: #f0f9f0;
+            border: 1px solid #228B22;
+            border-left: 4px solid #228B22;
+            padding: 8px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 05 - MEU CURRÍCULO EM FORMATO TEXTO</h1>
+        <p>Currículo e Entrevista de Emprego - Preparação para o Mercado</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 09/09/2025</span>
+        <span>Turma: __________</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Dados Pessoais
+        </div>
+        <div class="question">
+            <p><strong>Nome completo:</strong> <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>Data de nascimento:</strong> <span class="answer-line">___/___/______</span> <strong>Idade:</strong> <span class="answer-line">____</span></p>
+        </div>
+        <div class="question">
+            <p><strong>Endereço:</strong> <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>Cidade/Estado:</strong> <span class="answer-line">_________________________</span> <strong>CEP:</strong> <span class="answer-line">________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>Telefone:</strong> <span class="answer-line">_____________</span> <strong>E-mail:</strong> <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>Estado civil:</strong> <span class="answer-line">_____________</span> <strong>Nacionalidade:</strong> <span class="answer-line">_____________</span></p>
+        </div>
+
+        <div class="tip-box">
+            <p><strong>Dica importante:</strong> Use um e-mail profissional (nome.sobrenome@...). Evite apelidos ou termos inadequados para o ambiente profissional.</p>
+        </div>
+
+        <p><strong>Sobre dados pessoais no currículo:</strong> Os dados pessoais são essenciais para que os empregadores possam entrar em contato com você. Mantenha sempre essas informações atualizadas. Algumas informações como foto, estado civil e idade não são obrigatórias e, em muitos casos, não devem ser solicitadas pelos empregadores para evitar discriminação.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Objetivo Profissional
+        </div>
+        <div class="question">
+            <p><strong>Escreva seu objetivo profissional (2-3 linhas):</strong></p>
+            <div class="text-area">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+
+        <p><strong>Como escrever um objetivo profissional:</strong> O objetivo deve ser claro, específico e alinhado com a vaga que você está buscando. Evite objetivos muito genéricos como "crescer profissionalmente". Seja específico sobre a área em que quer atuar e que tipo de contribuição pode oferecer. Adapte este campo para cada vaga específica quando possível.</p>
+
+        <div class="tip-box">
+            <p><strong>Exemplo de objetivo:</strong> "Busco uma oportunidade na área de vendas onde possa aplicar minhas habilidades de comunicação e relacionamento interpessoal para contribuir com os resultados da empresa, enquanto desenvolvo experiência no mercado comercial."</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Formação Acadêmica
+        </div>
+        <div class="question">
+            <p><strong>Ensino Médio:</strong></p>
+            <p>Escola: <span class="answer-line">_________________________</span></p>
+            <p>Período: <span class="answer-line">____/____</span> a <span class="answer-line">____/____</span></p>
+            <p>Situação: <span class="answer-line">_________________________</span> (cursando/concluído)</p>
+        </div>
+        <div class="question">
+            <p><strong>Cursos técnicos ou profissionalizantes:</strong></p>
+            <div class="text-area">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+        <div class="question">
+            <p><strong>Outros cursos (informática, idiomas, etc.):</strong></p>
+            <div class="text-area">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+
+        <p><strong>Organizando a formação acadêmica:</strong> Liste sempre a formação mais recente primeiro (ordem cronológica inversa). Para jovens profissionais, incluir cursos extracurriculares, workshops e certificações online pode ser valioso. Mencione também projetos acadêmicos relevantes ou notas destacadas se forem significativas.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Experiência Profissional
+        </div>
+        <div class="question">
+            <p><strong>Trabalhos formais ou informais (se houver):</strong></p>
+            <div class="text-area">
+                <p>Empresa: ________________________________________________________</p>
+                <p>Cargo: __________________________________________________________</p>
+                <p>Período: ___/___/___ a ___/___/___</p>
+                <p>Principais atividades: ___________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+        <div class="question">
+            <p><strong>Trabalhos voluntários:</strong></p>
+            <div class="text-area">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+        <div class="question">
+            <p><strong>Estágios ou programas de jovem aprendiz:</strong></p>
+            <div class="text-area">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+
+        <p><strong>Para quem não tem experiência formal:</strong> Não se preocupe se ainda não teve empregos formais. Inclua trabalhos informais (ajudar em negócios familiares, cuidar de crianças, dar aulas particulares), voluntariado, projetos escolares de destaque, participação em grêmio estudantil ou qualquer atividade que demonstre responsabilidade e habilidades.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Qualificações e Habilidades
+        </div>
+        <div class="question">
+            <p><strong>Conhecimentos em informática:</strong></p>
+            <div class="text-area">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+        <div class="question">
+            <p><strong>Idiomas:</strong></p>
+            <p>Inglês: <span class="answer-line">_____________</span> (básico/intermediário/avançado/fluente)</p>
+            <p>Espanhol: <span class="answer-line">_____________</span> (básico/intermediário/avançado/fluente)</p>
+            <p>Outros: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>Outras habilidades (comunicação, liderança, criatividade, etc.):</strong></p>
+            <div class="text-area">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+
+        <div class="tip-box">
+            <p><strong>Seja honesto sobre seu nível:</strong> Não exagere suas habilidades. Se disser que fala inglês fluente, pode ser testado na entrevista. É melhor ser realista sobre suas competências.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">6</span>
+            Informações Complementares
+        </div>
+        <div class="question">
+            <p><strong>Disponibilidade de horário:</strong> <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>Possui CNH?</strong> <span class="answer-line">___</span> <strong>Categoria:</strong> <span class="answer-line">___</span> <strong>Veículo próprio?</strong> <span class="answer-line">___</span></p>
+        </div>
+        <div class="question">
+            <p><strong>Hobbies e interesses pessoais relevantes:</strong></p>
+            <div class="text-area">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+        <div class="question">
+            <p><strong>Pretensão salarial:</strong> <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Informações complementares estratégicas:</strong> Esta seção pode diferenciar você de outros candidatos. Hobbies que demonstram habilidades relevantes (tocar instrumentos = disciplina, esportes = trabalho em equipe) devem ser incluídos. Sobre pretensão salarial, pesquise valores de mercado ou coloque "a combinar" se não tiver certeza.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">7</span>
+            Meu Currículo Finalizado
+        </div>
+        <p><strong>Instruções:</strong> Agora organize todas as informações acima em um formato de currículo completo e bem estruturado:</p>
+        
+        <div class="curriculum-box">
+            <p style="text-align: center; font-weight: bold; font-size: 16px; margin-bottom: 15px;">CURRÍCULO</p>
+            
+            <p><strong>DADOS PESSOAIS</strong></p>
+            <div style="border-bottom: 1px solid #ccc; margin: 10px 0; padding-bottom: 10px;">
+                <p>Nome: ___________________________________________________________</p>
+                <p>Endereço: _______________________________________________________</p>
+                <p>Telefone: _________________ E-mail: ____________________________</p>
+                <p>Data de nascimento: ____________ Estado civil: _________________</p>
+            </div>
+
+            <p><strong>OBJETIVO PROFISSIONAL</strong></p>
+            <div style="border-bottom: 1px solid #ccc; margin: 10px 0; padding-bottom: 10px;">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+
+            <p><strong>FORMAÇÃO ACADÊMICA</strong></p>
+            <div style="border-bottom: 1px solid #ccc; margin: 10px 0; padding-bottom: 10px;">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+
+            <p><strong>EXPERIÊNCIA PROFISSIONAL</strong></p>
+            <div style="border-bottom: 1px solid #ccc; margin: 10px 0; padding-bottom: 10px;">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+
+            <p><strong>QUALIFICAÇÕES E HABILIDADES</strong></p>
+            <div style="border-bottom: 1px solid #ccc; margin: 10px 0; padding-bottom: 10px;">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+
+            <p><strong>INFORMAÇÕES COMPLEMENTARES</strong></p>
+            <div style="margin: 10px 0; padding-bottom: 10px;">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">8</span>
+            Reflexão sobre o Currículo
+        </div>
+        <div class="question">
+            <p><strong>Pontos fortes do meu currículo:</strong></p>
+            <div class="text-area">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+        <div class="question">
+            <p><strong>O que preciso melhorar ou desenvolver:</strong></p>
+            <div class="text-area">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+        <div class="question">
+            <p><strong>Plano para enriquecer meu currículo nos próximos meses:</strong></p>
+            <div class="text-area">
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+                <p>__________________________________________________________________</p>
+            </div>
+        </div>
+
+        <p><strong>Desenvolvendo um currículo competitivo:</strong> Um currículo é um documento vivo que deve ser constantemente atualizado. Identifique áreas onde pode se desenvolver: fazer cursos online, aprender novos softwares, praticar idiomas, fazer trabalho voluntário, participar de projetos escolares. Cada nova experiência pode agregar valor ao seu perfil profissional.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            Preparação para Entrevistas - Guia Completo
+        </div>
+
+        <p><strong>O que é uma entrevista de emprego:</strong> A entrevista é uma conversa estruturada entre você e um ou mais representantes da empresa, com o objetivo de avaliar se você é adequado para a vaga e se a empresa atende às suas expectativas. É uma via de mão dupla - eles avaliam você, mas você também deve avaliar se quer trabalhar lá. A entrevista pode ser presencial, por telefone ou videoconferência, e pode ter diferentes formatos: individual, em grupo, com dinâmicas ou testes práticos.</p>
+
+        <p><strong>Preparação antes da entrevista:</strong> A preparação é fundamental para o sucesso. Pesquise a empresa: sua história, missão, valores, produtos/serviços, concorrentes e notícias recentes. Releia a descrição da vaga e identifique como suas habilidades se alinham com os requisitos. Prepare exemplos específicos de experiências que demonstrem suas competências. Planeje seu trajeto e chegue com 10-15 minutos de antecedência. Prepare perguntas inteligentes sobre a empresa e a vaga.</p>
+
+        <p><strong>Vestimenta e apresentação pessoal:</strong> Vista-se adequadamente para o ambiente da empresa. Na dúvida, é melhor estar um pouco mais formal do que casual. Certifique-se de que suas roupas estão limpas e bem passadas, sapatos polidos, cabelo arrumado e unhas limpas. Evite perfumes fortes, maquiagem excessiva ou acessórios chamativos. Sua aparência deve apoiar sua mensagem profissional, não distraí-la. Leve cópias do seu currículo, caneta e um bloco para anotações.</p>
+
+        <p><strong>Linguagem corporal e comunicação não-verbal:</strong> Sua postura, gestos e expressões faciais comunicam tanto quanto suas palavras. Mantenha contato visual adequado (olhe nos olhos, mas não encare fixamente), postura ereta, aperto de mão firme e sorriso genuíno. Evite gestos que demonstrem nervosismo como balançar as pernas, mexer no cabelo constantemente ou cruzar os braços defensivamente. Demonstre interesse através da linguagem corporal: incline-se ligeiramente para frente, acenem com a cabeça para mostrar que está ouvindo.</p>
+
+        <p><strong>Perguntas mais comuns e como respondê-las:</strong> "Fale sobre você" - prepare um resumo de 2-3 minutos destacando sua formação, experiências relevantes e objetivos. "Por que quer trabalhar aqui?" - demonstre conhecimento sobre a empresa e entusiasmo genuíno. "Quais são seus pontos fortes e fracos?" - seja honesto mas estratégico, mostrando autoconhecimento e capacidade de melhoria. "Onde se vê em 5 anos?" - demonstre ambição mas realismo, e que seus objetivos se alinham com a empresa.</p>
+
+        <p><strong>Técnica STAR para responder perguntas:</strong> Para perguntas sobre experiências específicas, use a técnica STAR: Situação (contexto), Tarefa (o que precisava ser feito), Ação (o que você fez especificamente) e Resultado (o que aconteceu). Por exemplo: "Situação: Durante um projeto escolar em grupo, Tarefa: precisávamos entregar uma apresentação importante, Ação: organizei as tarefas e cronograma para cada membro, Resultado: entregamos no prazo e recebemos nota máxima."</p>
+
+        <p><strong>Perguntas que você deve fazer:</strong> Demonstre interesse fazendo perguntas inteligentes: "Quais são os maiores desafios desta posição?", "Como é um dia típico nesta função?", "Quais oportunidades de crescimento a empresa oferece?", "Qual é a cultura da empresa?", "Quais são as expectativas para os primeiros 90 dias?". Evite perguntar sobre salário e benefícios na primeira entrevista, a menos que o entrevistador traga o assunto.</p>
+
+        <p><strong>Lidando com o nervosismo:</strong> É normal ficar nervoso - isso mostra que você se importa com a oportunidade. Para controlar a ansiedade: pratique a entrevista com amigos ou família, respire profundamente antes de entrar, chegue cedo para se ambientar, lembre-se de que o entrevistador quer que você seja bem-sucedido (eles precisam preencher a vaga), e veja a entrevista como uma conversa, não um interrogatório. Se ficar nervoso durante a entrevista, é aceitável pausar por um momento e respirar.</p>
+
+        <p><strong>Diferentes tipos de entrevista:</strong> Entrevista comportamental foca em como você agiu em situações passadas. Entrevista técnica testa conhecimentos específicos da área. Entrevista em grupo avalia como você interage com outros candidatos. Dinâmicas de grupo testam trabalho em equipe e liderança. Entrevista por videoconferência requer cuidados especiais com tecnologia e ambiente. Prepare-se adequadamente para cada formato, entendendo o que será avaliado.</p>
+
+        <p><strong>Follow-up após a entrevista:</strong> Dentro de 24-48 horas, envie um e-mail de agradecimento reiterando seu interesse na vaga e destacando pontos importantes da conversa. Se não receber resposta no prazo mencionado pelo entrevistador, é apropriado fazer um follow-up educado. Se for rejeitado, agradeça o feedback e mantenha a porta aberta para futuras oportunidades - empresas frequentemente lembram de candidatos que se comportaram profissionalmente.</p>
+
+        <p><strong>Negociação salarial:</strong> Pesquise previamente faixas salariais para a posição em sua região. Geralmente, o salário é discutido após demonstrado interesse mútuo. Considere o pacote completo (salário base, benefícios, oportunidades de crescimento), não apenas o valor monetário. Para primeiro emprego, o foco deve ser mais na experiência e aprendizado do que apenas no salário. Seja realista com suas expectativas baseado em sua experiência e qualificações.</p>
+
+        <p><strong>Recuperação de entrevistas difíceis:</strong> Se algo não saiu como esperado durante a entrevista, não desista imediatamente. No follow-up, você pode esclarecer pontos mal explicados ou fornecer informações adicionais. Aprenda com cada experiência - anote o que funcionou bem e o que pode melhorar para próximas oportunidades. Cada entrevista é uma oportunidade de prática e desenvolvimento de suas habilidades de comunicação profissional.</p>
+    </div>
+</body>
+</html>

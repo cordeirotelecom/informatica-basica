@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 23 - Meu Currículo em Formato Texto</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        .curriculum-model {
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 10px 0;
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 23 - CURRÍCULO E ENTREVISTA DE EMPREGO</h1>
+        <p>Meu Currículo em Formato Texto</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 09/10/2025</span>
+        <span>Turma: Feminina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Dados Pessoais e Contato
+        </div>
+        <div class="question">
+            <p><strong>A1.</strong> Nome completo: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A2.</strong> Telefone para contato: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A3.</strong> E-mail profissional: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A4.</strong> Endereço (cidade/estado): <span class="answer-line">_________________________</span></p>
+        </div>
+        
+        <p><strong>Importância dos dados pessoais:</strong> As informações de contato são a base de qualquer currículo, pois permitem que o empregador entre em contato com você. É fundamental que todos os dados estejam corretos e atualizados. Use um e-mail profissional (evite apelidos ou referências inadequadas), mantenha seu telefone sempre disponível e certifique-se de que o endereço está completo e legível.</p>
+
+        <p><strong>Cuidados com informações pessoais:</strong> Inclua apenas informações essenciais para o contato profissional. Não é necessário informar RG, CPF, estado civil ou foto no currículo inicial (essas informações podem ser solicitadas posteriormente). Mantenha um e-mail exclusivo para oportunidades profissionais, separado do pessoal, e certifique-se de verificá-lo regularmente.</p>
+
+        <p><strong>Criando uma identidade profissional:</strong> Mesmo sendo jovem e iniciando a carreira, é importante começar a construir uma identidade profissional consistente. Use o mesmo nome em todos os documentos profissionais, redes sociais profissionais e aplicações de emprego. Isso facilita que empregadores encontrem e reconheçam você em diferentes contextos.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Objetivo Profissional
+        </div>
+        <div class="question">
+            <p><strong>A5.</strong> Área de interesse: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A6.</strong> Tipo de trabalho que busca: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A7.</strong> Principal motivação profissional: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Definindo seu objetivo:</strong> O objetivo profissional é uma declaração concisa que comunica ao empregador que tipo de oportunidade você está buscando e como pretende contribuir. Para jovens iniciando a carreira, é importante demonstrar entusiasmo, disposição para aprender e clareza sobre a direção desejada, mesmo que ainda esteja explorando diferentes possibilidades.</p>
+
+        <p><strong>Personalizando para cada oportunidade:</strong> Embora seja tentador criar um objetivo genérico, é mais eficaz personalizar esta seção para cada tipo de vaga que você está buscando. Um objetivo focado em vendas será diferente de um objetivo para área administrativa ou técnica. Mostre que você pesquisou a empresa e entende o que ela procura.</p>
+
+        <p><strong>Exemplos de objetivos eficazes:</strong> "Busco oportunidade de estágio em administração para aplicar conhecimentos em organização e atendimento ao cliente, contribuindo para o crescimento da empresa enquanto desenvolvo experiência prática." Ou: "Interessada em iniciar carreira na área de educação infantil, utilizando minha paciência e criatividade para contribuir com o desenvolvimento de crianças."</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Formação Educacional
+        </div>
+        <div class="question">
+            <p><strong>A8.</strong> Ensino médio (escola e ano): <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A9.</strong> Cursos complementares: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A10.</strong> Área de estudo que mais se destaca: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Valorizando sua educação:</strong> Mesmo que você ainda esteja no ensino médio ou tenha acabado de se formar, sua educação é valiosa. Inclua informações sobre sua escola, ano de conclusão (ou previsão), e destaque matérias em que teve bom desempenho. Se participou de projetos especiais, olimpíadas académicas, ou atividades extracurriculares relevantes, mencione essas experiências.</p>
+
+        <p><strong>Cursos e capacitações:</strong> Liste todos os cursos complementares que fez, mesmo que sejam básicos: informática, idiomas, primeiros socorros, cursos técnicos, ou workshops. Muitos empregadores valorizam candidatos que demonstram iniciativa para aprender além do currículo básico. Inclua a instituição onde fez o curso e, se possível, a carga horária.</p>
+
+        <p><strong>Habilidades acadêmicas transferíveis:</strong> Pense em como suas experiências escolares se relacionam com o mundo do trabalho. Trabalhos em grupo desenvolvem habilidades de colaboração. Apresentações melhoram comunicação. Projetos de pesquisa demonstram capacidade de investigação e organização. Liderança de turma mostra potencial de liderança.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Experiências e Atividades
+        </div>
+        <div class="question">
+            <p><strong>A11.</strong> Trabalho ou estágio anterior: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A12.</strong> Atividade voluntária ou projeto: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A13.</strong> Responsabilidade que já assumiu: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Valorizando todas as experiências:</strong> Mesmo sem experiência formal de trabalho, você provavelmente tem experiências valiosas. Trabalhos de casa, cuidar de irmãos menores, ajudar em negócios da família, voluntariado, organização de eventos escolares, ou até mesmo gerenciar suas próprias redes sociais - todas essas atividades desenvolvem habilidades transferíveis para o ambiente profissional.</p>
+
+        <p><strong>Trabalho voluntário e projetos pessoais:</strong> Experiências voluntárias são especialmente valiosas porque demonstram iniciativa, compromisso social e habilidades práticas. Se participou de campanhas de arrecadação, ajudou em eventos comunitários, ensinou crianças em programas sociais, ou organizou atividades em sua escola ou igreja, essas experiências mostram caráter e habilidades importantes.</p>
+
+        <p><strong>Responsabilidades e liderança:</strong> Reflita sobre situações onde assumiu responsabilidades ou liderou iniciativas. Pode ter sido capitão de time esportivo, representante de turma, organizador de festa junina, ou líder de grupo de estudos. Essas experiências, mesmo em contextos informais, demonstram potencial de liderança e responsabilidade.</p>
+
+        <p><strong>Resultados e impactos:</strong> Sempre que possível, quantifique seus resultados. "Ajudei a organizar festa junina que arrecadou R$ 2.000 para reforma da escola" é mais impactante que simplesmente "participei da organização de eventos". Números e resultados específicos tornam suas experiências mais concretas e convincentes.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Habilidades e Competências
+        </div>
+        <div class="question">
+            <p><strong>A14.</strong> Principal habilidade técnica: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A15.</strong> Melhor característica pessoal: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A16.</strong> Idioma que conhece: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Habilidades técnicas:</strong> Liste competências específicas que possui, como conhecimento de programas de computador (Word, Excel, PowerPoint), redes sociais, edição de fotos, digitação, operação de equipamentos específicos, ou habilidades manuais. Seja honesto sobre seu nível de conhecimento: básico, intermediário ou avançado.</p>
+
+        <p><strong>Habilidades interpessoais:</strong> As "soft skills" são frequentemente mais importantes que conhecimentos técnicos, especialmente para posições de entrada. Inclua características como boa comunicação, trabalho em equipe, pontualidade, organização, criatividade, paciência, liderança, ou facilidade para aprender. Use exemplos específicos quando possível.</p>
+
+        <p><strong>Idiomas e comunicação:</strong> Mesmo conhecimento básico de outros idiomas pode ser diferencial. Inclua todos os idiomas que conhece e seja honesto sobre o nível (básico, intermediário, avançado, fluente). Considere também habilidades de comunicação especiais, como falar em público, escrita criativa, ou facilidade com diferentes tipos de público.</p>
+
+        <p><strong>Desenvolvimento contínuo:</strong> Mostre que você está sempre aprendendo. Mencione cursos que está fazendo atualmente, habilidades que está desenvolvendo, ou áreas onde tem interesse em se aperfeiçoar. Isso demonstra motivação para crescimento profissional e pessoal.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">6</span>
+            Disponibilidade e Expectativas
+        </div>
+        <div class="question">
+            <p><strong>A17.</strong> Horário de preferência: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A18.</strong> Disponibilidade para viagens: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A19.</strong> Expectativa salarial: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Flexibilidade de horários:</strong> Para jovens iniciando a carreira, flexibilidade pode ser um grande diferencial. Se você pode trabalhar em diferentes turnos, fins de semana, ou adaptar seus horários conforme necessidade da empresa, isso aumenta suas chances de conseguir oportunidades. Seja claro sobre suas limitações, mas enfatize sua disposição para se adaptar.</p>
+
+        <p><strong>Expectativas realistas:</strong> Pesquise faixas salariais para posições de entrada na sua região e área de interesse. Para estágios e primeiros empregos, foque mais na oportunidade de aprender e crescer do que apenas no salário. Muitas vezes, uma experiência valiosa em uma empresa respeitada vale mais a longo prazo que um salário inicial ligeiramente maior.</p>
+
+        <p><strong>Crescimento e desenvolvimento:</strong> Demonstre que você vê a posição como oportunidade de crescimento, não apenas como trabalho temporário. Mencione interesse em desenvolvimento profissional, disposição para assumir responsabilidades adicionais, e ambição de contribuir cada vez mais para o sucesso da empresa.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="curriculum-model">
+        <div class="section-title">
+            MODELO DE CURRÍCULO EM FORMATO TEXTO
+        </div>
+        
+        <p><strong>DADOS PESSOAIS</strong><br>
+        Nome: _______________________________________<br>
+        Endereço: ___________________________________<br>
+        Telefone: ___________________________________<br>
+        E-mail: _____________________________________</p>
+
+        <p><strong>OBJETIVO</strong><br>
+        _____________________________________________<br>
+        _____________________________________________</p>
+
+        <p><strong>FORMAÇÃO EDUCACIONAL</strong><br>
+        Ensino Médio: _______________________________<br>
+        Cursos Complementares: ______________________<br>
+        _____________________________________________</p>
+
+        <p><strong>EXPERIÊNCIA PROFISSIONAL</strong><br>
+        _____________________________________________<br>
+        _____________________________________________<br>
+        _____________________________________________</p>
+
+        <p><strong>HABILIDADES E COMPETÊNCIAS</strong><br>
+        Técnicas: ___________________________________<br>
+        Interpessoais: ______________________________<br>
+        Idiomas: ___________________________________</p>
+
+        <p><strong>ATIVIDADES COMPLEMENTARES</strong><br>
+        _____________________________________________<br>
+        _____________________________________________</p>
+
+        <p><strong>DISPONIBILIDADE</strong><br>
+        Horário: ___________________________________<br>
+        Observações: _______________________________</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            Preparação para Entrevistas de Emprego
+        </div>
+
+        <p><strong>Preparação prévia:</strong> Antes de qualquer entrevista, pesquise thoroughly sobre a empresa: história, valores, produtos ou serviços, cultura organizacional, e notícias recentes. Estude a descrição da vaga detalhadamente e prepare exemplos específicos de como suas habilidades e experiências se relacionam com os requisitos. Prepare respostas para perguntas comuns como "Fale sobre você", "Por que quer trabalhar aqui?" e "Quais são seus pontos fortes e fracos?"</p>
+
+        <p><strong>Apresentação pessoal:</strong> Vista-se adequadamente para a cultura da empresa - quando em dúvida, prefira roupas mais formais a muito casuais. Chegue com 10-15 minutos de antecedência. Traga cópias extras do seu currículo, documento de identidade, e um caderno para anotações. Mantenha postura confiante, faça contato visual, e cumprimente firmemente.</p>
+
+        <p><strong>Durante a entrevista:</strong> Seja autêntico e honesto em suas respostas. Use exemplos específicos para ilustrar seus pontos. Demonstre entusiasmo pela oportunidade e interesse genuíno na empresa. Faça perguntas inteligentes sobre a função, expectativas, cultura da empresa, e oportunidades de crescimento. Escute atentamente e responda diretamente às perguntas feitas.</p>
+
+        <p><strong>Lidando com nervosismo:</strong> É normal sentir nervosismo antes e durante entrevistas. Pratique suas respostas em voz alta antes da entrevista. Chegue cedo para se familiarizar com o ambiente. Respire profundamente e lembre-se de que a entrevista é uma conversa, não um interrogatório. O entrevistador quer que você seja bem-sucedido.</p>
+
+        <p><strong>Perguntas para fazer ao entrevistador:</strong> Prepare perguntas que demonstrem seu interesse e seriedade: "Como é um dia típico nesta função?", "Quais são os maiores desafios que a pessoa nesta posição enfrentará?", "Como a empresa investe no desenvolvimento de seus funcionários?", "Quais são as oportunidades de crescimento?" Evite perguntas sobre salário e benefícios na primeira entrevista.</p>
+
+        <p><strong>Follow-up após a entrevista:</strong> Envie um e-mail de agradecimento dentro de 24 horas, reiterando seu interesse na posição e destacando pontos importantes da conversa. Se não receber resposta no prazo informado, é apropriado fazer um follow-up educado. Independentemente do resultado, trate cada entrevista como oportunidade de aprendizado e melhoria.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: __________</span>
+    </div>
+</body>
+</html>

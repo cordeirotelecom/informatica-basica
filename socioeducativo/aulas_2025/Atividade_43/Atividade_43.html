@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 43 - Ferramentas Google (Docs, Sheets)</title>
+    <style>
+        @page {
+            margin: 5mm 3mm;
+            size: A4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.3;
+            color: #333;
+            background-color: #ffffff;
+            font-size: 11px;
+            max-width: 204mm;
+            margin: 0 auto;
+            padding: 2mm;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3mm;
+            border-bottom: 1.5px solid #4a90e2;
+            padding-bottom: 2mm;
+        }
+
+        .header h1 {
+            color: #2c5aa0;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 1mm;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 11px;
+            font-style: italic;
+        }
+
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4mm;
+            background-color: #f8f9fa;
+            padding: 1.5mm;
+            border-radius: 2mm;
+            font-size: 10px;
+            border: 1px solid #e9ecef;
+        }
+
+        .section {
+            margin-bottom: 4mm;
+            background-color: #fdfdfd;
+            padding: 2.5mm;
+            border-radius: 2mm;
+            border: 1px solid #e3e8ed;
+        }
+
+        .section-title {
+            background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+            color: white;
+            padding: 2mm;
+            border-radius: 2mm;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 2.5mm;
+            display: flex;
+            align-items: center;
+            gap: 2mm;
+        }
+
+        .step-number {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .question {
+            margin-bottom: 2.5mm;
+            padding: 2mm;
+            background-color: #f8f9fa;
+            border-radius: 2mm;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .question p {
+            margin-bottom: 1mm;
+            font-weight: 500;
+        }
+
+        .answer-line {
+            border-bottom: 1px solid #4a90e2;
+            display: inline-block;
+            min-width: 200px;
+            margin-left: 2mm;
+        }
+
+        .google-box {
+            background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+            color: white;
+            padding: 3mm;
+            border-radius: 3mm;
+            margin: 3mm 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .google-box .section-title {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            margin-bottom: 2mm;
+        }
+
+        .google-box p {
+            margin-bottom: 1.5mm;
+            line-height: 1.4;
+        }
+
+        .google-box strong {
+            color: #fff;
+        }
+
+        p {
+            margin-bottom: 2mm;
+            text-align: justify;
+            line-height: 1.4;
+        }
+
+        strong {
+            color: #2c5aa0;
+            font-weight: 600;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .highlight {
+            background-color: #e8f0fe;
+            padding: 2mm;
+            border-left: 4px solid #4285f4;
+            margin: 2mm 0;
+            border-radius: 0 2mm 2mm 0;
+        }
+
+        @media print {
+            body {
+                font-size: 10px;
+                margin: 0;
+                padding: 0;
+                max-width: none;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+            
+            .section {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 43 - FERRAMENTAS GOOGLE (DOCS, SHEETS)</h1>
+        <p>Planejamento de um evento</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 13/11/2025</span>
+        <span>Turma: Feminina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Definindo o Evento
+        </div>
+        <div class="question">
+            <p><strong>A1.</strong> Tipo de evento que vou planejar: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A2.</strong> Público-alvo estimado: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A3.</strong> Objetivo principal do evento: <span class="answer-line">_________________________</span></p>
+        </div>
+        
+        <p><strong>Conceituação do evento:</strong> Todo evento bem-sucedido começa com uma definição clara de propósito, público-alvo, e objetivos. Seja uma festa de aniversário, apresentação escolar, evento esportivo, ou encontro comunitário, é essencial compreender o "porquê" antes de planejar o "como". Esta clareza inicial orienta todas as decisões subsequentes.</p>
+
+        <p><strong>Análise do público-alvo:</strong> Conhecer profundamente quem participará do evento é fundamental para seu sucesso. Idade, interesses, expectativas, limitações físicas ou dietéticas, e preferências culturais influenciam escolhas sobre local, horário, atividades, alimentação, e comunicação. Um evento infantil requer planejamento completamente diferente de um evento corporativo.</p>
+
+        <p><strong>Estabelecimento de objetivos:</strong> Objetivos claros e mensuráveis facilitam o planejamento e permitem avaliar o sucesso do evento. Pode ser celebrar uma conquista, educar sobre um tema, arrecadar fundos para uma causa, promover networking, ou simplesmente proporcionar diversão e entretenimento. Objetivos bem definidos orientam prioridades e decisões.</p>
+
+        <p><strong>Viabilidade inicial:</strong> Antes de avançar no planejamento detalhado, avalie a viabilidade básica do evento considerando recursos disponíveis (tempo, dinheiro, pessoas), restrições legais ou regulamentares, sazonalidade, e competição com outros eventos. Esta análise inicial pode economizar muito tempo e evitar frustrações futuras.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Planejamento Temporal e Cronograma
+        </div>
+        <div class="question">
+            <p><strong>A4.</strong> Data ideal para o evento: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A5.</strong> Duração estimada: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A6.</strong> Tempo necessário para preparação: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Escolha estratégica de data:</strong> A data do evento impacta significativamente a participação e o sucesso geral. Considere feriados, eventos concorrentes, épocas do ano relevantes para o tema, disponibilidade do público-alvo, e fatores climáticos. Eventos acadêmicos funcionam melhor durante períodos letivos, enquanto eventos familiares podem ser melhores em finais de semana ou feriados.</p>
+
+        <p><strong>Cronograma reverso:</strong> Comece pela data do evento e trabalhe retroativamente para criar um cronograma de preparação. Identifique todas as tarefas necessárias, suas dependências, e prazos críticos. Algumas atividades como reserva de local, contratação de fornecedores, ou obtenção de autorizações podem precisar ser feitas com meses de antecedência.</p>
+
+        <p><strong>Gestão de prazos críticos:</strong> Identifique marcos importantes no cronograma que não podem ser adiados sem comprometer o evento. Estes podem incluir: confirmação de local, envio de convites, confirmação de participação, finalização do catering, ou setup técnico. Crie alertas e lembretes para garantir que nada seja esquecido.</p>
+
+        <p><strong>Flexibilidade e contingências:</strong> Mesmo com planejamento cuidadoso, imprevistos acontecem. Construa margem de segurança no cronograma para acomodar atrasos, mudanças de última hora, ou problemas inesperados. Tenha planos alternativos para elementos críticos como local, fornecedores, ou condições climáticas.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Orçamento e Recursos Financeiros
+        </div>
+        <div class="question">
+            <p><strong>A7.</strong> Orçamento total disponível: R$ <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A8.</strong> Principal categoria de gastos: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A9.</strong> Como obter recursos adicionais: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Planejamento orçamentário:</strong> Um orçamento bem estruturado é essencial para controlar custos e garantir viabilidade financeira. Liste todas as categorias de gastos possíveis: local, alimentação, decoração, entretenimento, equipamentos, marketing, transporte, seguros, e reserve sempre uma margem para imprevistos (10-15% do orçamento total).</p>
+
+        <p><strong>Priorização de gastos:</strong> Nem todos os elementos do evento têm a mesma importância. Identifique quais aspectos são essenciais para alcançar os objetivos do evento e quais são desejáveis mas dispensáveis se o orçamento for limitado. Esta priorização ajuda a tomar decisões difíceis quando necessário.</p>
+
+        <p><strong>Busca de parcerias:</strong> Para reduzir custos, explore parcerias com empresas locais, patrocínios, doações, ou trabalho voluntário. Muitas empresas apoiam eventos comunitários em troca de divulgação da marca. Escolas, igrejas, ou organizações sociais frequentemente emprestam equipamentos ou espaços.</p>
+
+        <p><strong>Controle de custos:</strong> Mantenha registro detalhado de todos os gastos e compare regularmente com o orçamento planejado. Use planilhas ou aplicativos para acompanhar despesas em tempo real. Isso permite identificar rapidamente quando custos estão excedendo o planejado e tomar medidas corretivas.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="google-box">
+        <div class="section-title">
+            CHECKLIST PARA PLANEJAMENTO DE EVENTOS NO GOOGLE WORKSPACE
+        </div>
+        
+        <p><strong>GOOGLE DOCS - DOCUMENTAÇÃO</strong><br>
+        ☐ Documento principal com conceito e objetivos<br>
+        ☐ Lista detalhada de tarefas e responsabilidades<br>
+        ☐ Briefing para fornecedores e parceiros<br>
+        ☐ Roteiro detalhado do dia do evento<br>
+        ☐ Documento de lições aprendidas pós-evento</p>
+
+        <p><strong>GOOGLE SHEETS - ORGANIZAÇÃO NUMÉRICA</strong><br>
+        ☐ Planilha de orçamento com categorias<br>
+        ☐ Lista de convidados com controle de confirmação<br>
+        ☐ Cronograma com datas e responsáveis<br>
+        ☐ Controle de fornecedores e contatos<br>
+        ☐ Planilha de avaliação pós-evento</p>
+
+        <p><strong>GOOGLE FORMS - COLETA DE DADOS</strong><br>
+        ☐ Formulário de inscrição/confirmação<br>
+        ☐ Pesquisa de preferências alimentares<br>
+        ☐ Formulário de feedback pós-evento<br>
+        ☐ Cadastro de voluntários<br>
+        ☐ Pesquisa de interesse e sugestões</p>
+
+        <p><strong>GOOGLE CALENDAR - GESTÃO DE TEMPO</strong><br>
+        ☐ Cronograma geral do evento<br>
+        ☐ Lembretes de tarefas importantes<br>
+        ☐ Agenda compartilhada com equipe<br>
+        ☐ Bloqueio de datas de preparação<br>
+        ☐ Timeline detalhado do dia do evento</p>
+
+        <p><strong>GOOGLE DRIVE - COMPARTILHAMENTO</strong><br>
+        ☐ Pasta central com todos os documentos<br>
+        ☐ Permissões de acesso organizadas<br>
+        ☐ Backup de todos os arquivos importantes<br>
+        ☐ Versionamento de documentos-chave<br>
+        ☐ Acesso offline para documentos críticos</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Local e Infraestrutura
+        </div>
+        <div class="question">
+            <p><strong>A10.</strong> Local ideal para o evento: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A11.</strong> Capacidade necessária: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A12.</strong> Equipamentos necessários: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Seleção do local:</strong> O local pode determinar o sucesso ou fracasso do evento. Considere localização (facilidade de acesso, transporte público, estacionamento), capacidade adequada (nem muito pequeno nem excessivamente grande), infraestrutura disponível (som, iluminação, banheiros, cozinha), e custos envolvidos (aluguel, segurança, limpeza).</p>
+
+        <p><strong>Avaliação de infraestrutura:</strong> Faça uma visita técnica detalhada ao local, verificando instalações elétricas, acústica, climatização, acessibilidade para pessoas com deficiência, saídas de emergência, e capacidade de internet. Teste equipamentos disponíveis e identifique o que precisará ser alugado ou trazido externamente.</p>
+
+        <p><strong>Licenças e autorizações:</strong> Muitos eventos requerem autorizações específicas: licença de funcionamento, alvará para música, autorização do corpo de bombeiros, licença para servir bebidas alcoólicas, ou permissões especiais para uso de espaços públicos. Inicie esses processos com antecedência significativa.</p>
+
+        <p><strong>Layout e fluxo:</strong> Planeje cuidadosamente a distribuição de espaços: recepção, área principal, palco/apresentação, alimentação, banheiros, e áreas de descanso. Considere o fluxo de pessoas, evitando congestionamentos e garantindo que todos os participantes tenham boa visibilidade e acesso aos elementos principais do evento.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Alimentação e Catering
+        </div>
+        <div class="question">
+            <p><strong>A13.</strong> Tipo de alimentação prevista: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A14.</strong> Restrições alimentares a considerar: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A15.</strong> Fornecedor ou forma de providenciar: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Planejamento alimentar:</strong> A alimentação frequentemente representa grande parte do orçamento e satisfação dos participantes. Considere o horário do evento (lanche, almoço, jantar), duração, perfil dos participantes (idade, preferências culturais), e objetivos do evento (formal vs. casual). Eventos longos requerem mais opções alimentares.</p>
+
+        <p><strong>Consideração de restrições:</strong> Sempre inclua opções para restrições alimentares comuns: vegetarianos, veganos, intolerância à lactose, celíacos, diabéticos, e alergias alimentares específicas. Colete essas informações durante a inscrição e garanta que fornecedores possam atender essas necessidades adequadamente.</p>
+
+        <p><strong>Seleção de fornecedores:</strong> Compare múltiplas opções considerando qualidade, preço, confiabilidade, experiência com eventos similares, e flexibilidade para mudanças de última hora. Solicite degustação quando possível, verifique referências de eventos anteriores, e confirme todos os detalhes por escrito.</p>
+
+        <p><strong>Logística de serviço:</strong> Coordene detalhes operacionais: horários de montagem e desmontagem, necessidades de energia e água, utensílios e equipamentos incluídos, número de funcionários do catering, e procedimentos de limpeza. Tenha plano de contingência para problemas como atraso na entrega ou qualidade inadequada.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">6</span>
+            Comunicação e Divulgação
+        </div>
+        <div class="question">
+            <p><strong>A16.</strong> Como divulgar o evento: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A17.</strong> Prazo para confirmação de presença: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A18.</strong> Método de controle de participação: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Estratégia de comunicação:</strong> Desenvolva uma estratégia clara para alcançar seu público-alvo: redes sociais, WhatsApp, email, cartazes físicos, ou comunicação boca a boca. Diferentes públicos respondem melhor a diferentes canais. Jovens podem preferir Instagram e TikTok, enquanto adultos mais velhos podem responder melhor a WhatsApp ou ligações telefônicas.</p>
+
+        <p><strong>Cronograma de divulgação:</strong> Crie um timeline de comunicação: primeiro anúncio (save the date), convite oficial com detalhes, lembretes intermediários, e confirmações finais. Para eventos grandes ou formais, comece a divulgação 6-8 semanas antes. Para eventos menores e casuais, 2-3 semanas podem ser suficientes.</p>
+
+        <p><strong>Gestão de confirmações:</strong> Use ferramentas digitais para facilitar confirmações e controlar participação: Google Forms, WhatsApp Business, ou plataformas específicas para eventos. Mantenha lista atualizada de confirmados, pendentes, e recusas. Isso ajuda no planejamento de alimentação, assentos, e materiais.</p>
+
+        <p><strong>Comunicação contínua:</strong> Mantenha participantes informados sobre detalhes importantes: mudanças de local ou horário, instruções especiais (dress code, o que trazer), informações sobre estacionamento ou transporte, e atualizações sobre programação. Comunicação clara reduz ansiedade e melhora a experiência geral.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            Colaboração Eficaz com Google Workspace
+        </div>
+
+        <p><strong>Vantagens da colaboração digital:</strong> As ferramentas Google permitem trabalho colaborativo em tempo real, acessibilidade de qualquer dispositivo, controle de versões automático, e facilidade de compartilhamento. Para planejamento de eventos, isso significa que equipes podem trabalhar simultaneamente em documentos, planilhas atualizam automaticamente, e todos têm acesso às informações mais recentes.</p>
+
+        <p><strong>Organização de documentos:</strong> Crie estrutura clara de pastas no Google Drive: documentos principais, orçamentos, listas de convidados, fornecedores, comunicações, e materiais gráficos. Use nomenclatura consistente e permissões de acesso apropriadas para cada tipo de documento. Isso facilita localização de informações e controla quem pode editar elementos críticos.</p>
+
+        <p><strong>Colaboração em tempo real:</strong> Use comentários e sugestões no Google Docs para feedback sem modificar o documento original. No Google Sheets, use cores e filtros para organizar informações e facilitar visualização. Aproveite o histórico de versões para recuperar informações anteriores se necessário.</p>
+
+        <p><strong>Automação e eficiência:</strong> Explore funcionalidades avançadas como fórmulas no Sheets para calcular orçamentos automaticamente, uso de Google Forms para coleta de dados que alimentam planilhas automaticamente, e integração com Google Calendar para lembretes automáticos de tarefas importantes.</p>
+
+        <p><strong>Comunicação integrada:</strong> Use Google Meet para reuniões de planejamento remotas, Google Chat para comunicação rápida entre membros da equipe, e compartilhamento de tela para apresentar ideias ou revisar documentos colaborativamente. Essa integração reduz necessidade de múltiplas plataformas.</p>
+
+        <p><strong>Backup e segurança:</strong> Embora o Google faça backup automático, mantenha cópias locais de documentos críticos antes do evento. Use permissões de acesso apropriadas para proteger informações sensíveis como orçamentos ou dados pessoais de participantes. Configure notificações para mudanças em documentos importantes.</p>
+
+        <p><strong>Acessibilidade móvel:</strong> Aproveite aplicativos móveis do Google para atualizações rápidas durante o evento: atualizar lista de presença, fazer anotações sobre fornecedores, ou acessar informações de contato emergenciais. Tenha planos offline para documentos críticos caso haja problemas de conectividade.</p>
+
+        <p><strong>Análise pós-evento:</strong> Use Google Forms para coleta de feedback detalhado dos participantes. Analise dados usando funcionalidades do Google Sheets para identificar pontos fortes e áreas de melhoria. Documente lições aprendidas no Google Docs para referência em eventos futuros.</p>
+
+        <p><strong>Gestão de conhecimento:</strong> Crie templates reutilizáveis para eventos similares futuros: planilhas de orçamento, checklists de tarefas, formulários de feedback, e documentos de planejamento. Isso acelera significativamente o planejamento de eventos subsequentes e garante que boas práticas sejam mantidas.</p>
+
+        <p><strong>Integração com outras ferramentas:</strong> Explore integrações do Google Workspace com outras ferramentas úteis para eventos: plataformas de design para materiais gráficos, ferramentas de gestão de projetos, ou sistemas de pagamento online. Essa integração cria fluxo de trabalho mais eficiente e reduz retrabalho.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: __________</span>
+    </div>
+</body>
+</html>

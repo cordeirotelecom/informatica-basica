@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 16 - Básico de Windows: Navegação por Arquivos</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+        }
+        .text-area {
+            border: 1px solid #000;
+            min-height: 80px;
+            margin: 5px 0;
+            padding: 5px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        .shortcut-box {
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 10px 0;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 16 - BÁSICO DE WINDOWS: NAVEGAÇÃO POR ARQUIVOS</h1>
+        <p>Explorando o Sistema de Arquivos do Windows</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 26/09/2025</span>
+        <span>Turma: Masculina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            O Explorador de Arquivos
+        </div>
+        <div class="question">
+            <p><strong>1.</strong> Tecla para abrir o Explorador: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>2.</strong> Diferença entre arquivo e pasta: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>3.</strong> Onde ficam os arquivos baixados: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>O que é o Explorador de Arquivos:</strong> O Explorador de Arquivos é o programa principal para navegar pelos arquivos e pastas do seu computador. É como uma gaveta gigante organizada onde você pode encontrar todos os seus documentos, fotos, programas e outros arquivos. Cada arquivo tem um local específico e o Explorador ajuda você a encontrá-los rapidamente.</p>
+
+        <p><strong>Interface principal:</strong> A janela do Explorador mostra diferentes partes: barra de endereços (mostra onde você está), painel de navegação (lado esquerdo com atalhos), área principal (mostra conteúdo da pasta atual) e barra de status (informações sobre seleção). Compreender essas partes facilita muito a navegação.</p>
+
+        <p><strong>Tipos de visualização:</strong> Você pode ver seus arquivos de diferentes formas: lista (nomes em coluna), detalhes (com informações como tamanho e data), ícones grandes (para ver miniaturas de imagens) ou ícones pequenos (para ver mais arquivos por vez). Cada visualização tem suas vantagens dependendo do que você está procurando.</p>
+
+        <p><strong>Estrutura hierárquica:</strong> Os arquivos no Windows são organizados como árvore: há pastas principais que contêm outras pastas, que por sua vez contêm arquivos ou mais pastas. É como gavetas dentro de gavetas. Esta organização ajuda a manter tudo arrumado e facilita encontrar o que precisa.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Navegação Básica
+        </div>
+        <div class="question">
+            <p><strong>4.</strong> Como voltar para pasta anterior: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>5.</strong> Unidade principal do Windows: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <div class="shortcut-box">
+            <p><strong>ATALHOS ESSENCIAIS DE NAVEGAÇÃO:</strong></p>
+            <p>• Windows + E = Abrir Explorador de Arquivos</p>
+            <p>• Alt + Seta Esquerda = Voltar</p>
+            <p>• Alt + Seta Direita = Avançar</p>
+            <p>• Alt + Seta Cima = Subir um nível</p>
+            <p>• F5 = Atualizar pasta atual</p>
+            <p>• Ctrl + Shift + N = Nova pasta</p>
+            <p>• Enter = Abrir item selecionado</p>
+            <p>• Backspace = Subir um nível</p>
+        </div>
+
+        <p><strong>Unidades e drives:</strong> O computador organiza o armazenamento em unidades, sendo C: a principal onde o Windows está instalado. Outras unidades podem incluir D: (DVD/CD), E: (pen drive), etc. Cada unidade é como um armário separado com suas próprias gavetas (pastas). A barra lateral esquerda mostra todas as unidades disponíveis.</p>
+
+        <p><strong>Pastas principais do usuário:</strong> Cada usuário tem pastas especiais: Documentos (arquivos pessoais), Downloads (arquivos baixados da internet), Área de Trabalho (ícones da tela), Imagens (fotos e figuras), Vídeos, Música. Essas pastas ficam dentro da pasta do usuário, facilitando organização pessoal.</p>
+
+        <p><strong>Navegação por cliques:</strong> Clique simples seleciona um item, clique duplo abre arquivo ou pasta. Na barra de endereços, você pode clicar em qualquer parte do caminho para ir diretamente àquela pasta. Use a setinha ao lado de cada pasta no caminho para ver subpastas disponíveis.</p>
+
+        <p><strong>Histórico e favoritos:</strong> O Explorador lembra lugares que você visitou recentemente (histórico) e permite marcar locais importantes como favoritos. Isso acelera muito a navegação para pastas que você usa frequentemente, evitando ter que navegar toda vez pelo caminho completo.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Operações com Arquivos
+        </div>
+        <div class="question">
+            <p><strong>6.</strong> Atalho para copiar arquivo: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>7.</strong> Onde ficam arquivos deletados: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Selecionando arquivos:</strong> Clique simples seleciona um arquivo. Para selecionar múltiplos arquivos: Ctrl + clique (arquivos separados), Shift + clique (arquivo em sequência), Ctrl + A (todos da pasta). Arquivos selecionados ficam destacados em azul. Essa seleção permite aplicar operações a vários arquivos simultaneamente.</p>
+
+        <p><strong>Copiar e colar:</strong> Copiar (Ctrl + C) cria duplicata do arquivo mantendo o original. Colar (Ctrl + V) coloca a cópia no local desejado. Você pode copiar de uma pasta e colar em várias outras. Útil para backup de arquivos importantes ou para organizar documentos em diferentes locais.</p>
+
+        <p><strong>Recortar e colar:</strong> Recortar (Ctrl + X) move arquivo de um local para outro - remove do local original. Mais eficiente que copiar + deletar original. Use quando quiser reorganizar arquivos sem duplicá-los. O arquivo fica "fantasma" (meio transparente) até ser colado no destino final.</p>
+
+        <p><strong>Deletar e lixeira:</strong> Delete (tecla Del) move arquivo para Lixeira - não remove permanentemente. Shift + Delete remove permanentemente (use com cuidado!). A Lixeira funciona como rede de segurança, permitindo recuperar arquivos deletados acidentalmente. Esvazie a lixeira periodicamente para liberar espaço.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Organização e Busca
+        </div>
+        <div class="question">
+            <p><strong>8.</strong> Onde digitar para buscar arquivo: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>9.</strong> Vantagem de criar pastas: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Criando estrutura organizacional:</strong> Crie pastas temáticas para organizar arquivos: Trabalho, Estudos, Pessoal, Projetos, etc. Dentro de cada pasta principal, crie subpastas mais específicas. Por exemplo: Estudos > Matemática > Exercícios. Boa organização economiza tempo e evita perda de arquivos importantes.</p>
+
+        <p><strong>Renomeação estratégica:</strong> Use nomes descritivos para arquivos e pastas: "Relatório_Vendas_Janeiro2025" em vez de "Relatório1". Evite caracteres especiais que podem causar problemas. Considere usar datas no formato AAAA-MM-DD para ordenação cronológica automática.</p>
+
+        <p><strong>Sistema de busca:</strong> A caixa de busca no canto superior direito procura arquivos na pasta atual e subpastas. Digite palavras-chave do nome do arquivo ou conteúdo (para documentos). Use filtros para refinar busca por tipo de arquivo, data de modificação, tamanho, etc.</p>
+
+        <p><strong>Propriedades e metadados:</strong> Clique direito > Propriedades mostra informações detalhadas: tamanho, data de criação/modificação, tipo, localização. Para imagens e documentos, pode mostrar metadados adicionais como autor, câmera usada, etc. Essas informações ajudam na organização e identificação de arquivos.</p>
+
+        <p><strong>Visualização rápida:</strong> Use o painel de visualização (ativado no menu Exibir) para ver conteúdo de arquivos sem abri-los completamente. Funciona para imagens, documentos de texto, PDFs e vídeos. Acelera muito a verificação de conteúdo quando você está procurando arquivo específico.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            Reflexão sobre Organização Digital
+        </div>
+
+        <p><strong>Hábitos de organização:</strong> Organização digital é habilidade essencial no mundo moderno. Assim como organizamos espaços físicos, devemos organizar arquivos digitais de forma lógica e consistente. Desenvolva rotinas: organize downloads semanalmente, faça backup de arquivos importantes, delete arquivos desnecessários regularmente.</p>
+
+        <p><strong>Impacto da desorganização:</strong> Arquivos mal organizados causam perda de tempo, estresse e podem resultar em perda de trabalho importante. Imagine procurar um documento urgente em centenas de arquivos com nomes como "Documento1", "Nova pasta", "Sem título". Organização prévia evita essas situações desesperadoras.</p>
+
+        <p><strong>Planejamento de estrutura:</strong> Antes de salvar arquivos aleatoriamente, pense em como organizar de forma que faça sentido para você no futuro. Crie estrutura que seja intuitiva mesmo após meses sem usar. Documente seu sistema de organização se for muito complexo.</p>
+
+        <p><strong>Backup e segurança:</strong> Arquivos importantes devem ter cópias de segurança. Use nuvem (OneDrive, Google Drive), disco externo ou pen drive. A regra 3-2-1: 3 cópias do arquivo, em 2 mídias diferentes, com 1 cópia em local externo. Perder trabalho por falta de backup é frustrante e evitável.</p>
+
+        <p><strong>Evolução das habilidades:</strong> Navegação eficiente em arquivos é base para outras habilidades digitais. Quem domina organização de arquivos aprende mais facilmente programação, design, administração de sistemas. É como aprender a dirigir - depois de dominar o básico, outras habilidades relacionadas ficam mais fáceis.</p>
+
+        <p><strong>Eficiência no trabalho:</strong> Profissionais eficientes dominam navegação por arquivos. Conhecer atalhos, usar busca avançada, organizar projetos em pastas específicas, manter área de trabalho limpa - tudo isso contribui para produtividade. Empregadores valorizam quem demonstra organização digital.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Prática de Navegação
+        </div>
+        <div class="text-area">
+            <p><strong>Meu sistema de organização:</strong> Descreva como você organizaria suas pastas pessoais no computador:</p>
+        </div>
+
+        <div class="text-area">
+            <p><strong>Atalhos mais úteis:</strong> Liste os 3 atalhos de teclado que considera mais importantes para navegação:</p>
+        </div>
+
+        <div class="question">
+            <p><strong>10.</strong> Maior dificuldade com arquivos: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>11.</strong> Próximo passo para melhorar organização: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Desenvolvimento contínuo:</strong> Navegação por arquivos é habilidade que melhora com prática. Experimente diferentes formas de organização, teste novos atalhos, explore recursos avançados do Explorador. O importante é encontrar sistema que funcione para seu estilo de trabalho e manter consistência na organização.</p>
+    </div>
+</body>
+</html>

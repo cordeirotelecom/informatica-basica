@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 61 - Empreendedorismo Digital + Inovação</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+            font-size: 11px;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .innovation-box {
+            background-color: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .business-tip {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .checkbox {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .priority-level {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .high-priority { background-color: #f8d7da; color: #721c24; }
+        .medium-priority { background-color: #fff3cd; color: #856404; }
+        .low-priority { background-color: #d4edda; color: #155724; }
+        .business-model {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 5px;
+            text-align: center;
+            min-height: 80px;
+        }
+        .canvas-section {
+            border: 1px solid #000;
+            padding: 5px;
+            margin: 2px;
+            min-height: 60px;
+            font-size: 10px;
+        }
+        .canvas-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2px;
+            height: 140px;
+        }
+        .canvas-item-1 { grid-column: 1; grid-row: 1; }
+        .canvas-item-2 { grid-column: 2; grid-row: 1; }
+        .canvas-item-3 { grid-column: 3; grid-row: 1; }
+        .canvas-item-4 { grid-column: 4; grid-row: 1; }
+        .canvas-item-5 { grid-column: 5; grid-row: 1; }
+        .canvas-item-6 { grid-column: 1; grid-row: 2; }
+        .canvas-item-7 { grid-column: 2; grid-row: 2; }
+        .canvas-item-8 { grid-column: 3; grid-row: 2; }
+        .canvas-item-9 { grid-column: 4 / 6; grid-row: 2; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 61 - EMPREENDEDORISMO DIGITAL + INOVAÇÃO</h1>
+        <p>Negócios Digitais e Inovação Tecnológica - Data: 16/12/2025 - Turma: Feminina</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: Feminina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Mindset Empreendedor no Mundo Digital
+        </div>
+
+        <div class="question">
+            <p><strong>1.</strong> O que significa "empreendedorismo" para você? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>2.</strong> Que problema você gostaria de resolver com tecnologia? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Características do empreendedor digital:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>Descrição</th>
+                    <th>Auto-avaliação (1-5)</th>
+                    <th>Como Desenvolver</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Visão de Oportunidades</td>
+                    <td>Identifica necessidades não atendidas</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Adaptabilidade</td>
+                    <td>Ajusta-se rapidamente a mudanças</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Persistência</td>
+                    <td>Não desiste facilmente dos objetivos</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Criatividade</td>
+                    <td>Gera soluções inovadoras</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Networking</td>
+                    <td>Constrói relacionamentos estratégicos</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Aprendizado Contínuo</td>
+                    <td>Busca conhecimento constantemente</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tolerância ao Risco</td>
+                    <td>Aceita incertezas calculadas</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Foco no Cliente</td>
+                    <td>Prioriza necessidades do mercado</td>
+                    <td>1 - 2 - 3 - 4 - 5</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>3.</strong> Identifique oportunidades no seu ambiente:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Área</th>
+                    <th>Problema Observado</th>
+                    <th>Solução Digital Possível</th>
+                    <th>Viabilidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Casa/Família</td>
+                    <td></td>
+                    <td></td>
+                    <td>Alta / Média / Baixa</td>
+                </tr>
+                <tr>
+                    <td>Trabalho</td>
+                    <td></td>
+                    <td></td>
+                    <td>Alta / Média / Baixa</td>
+                </tr>
+                <tr>
+                    <td>Comunidade</td>
+                    <td></td>
+                    <td></td>
+                    <td>Alta / Média / Baixa</td>
+                </tr>
+                <tr>
+                    <td>Educação</td>
+                    <td></td>
+                    <td></td>
+                    <td>Alta / Média / Baixa</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="innovation-box">
+            <p><strong>💡 Insight:</strong> As melhores oportunidades estão em problemas que você vive pessoalmente. 
+            Sua experiência é validação inicial da necessidade do mercado.</p>
+        </div>
+
+        <p><strong>Era Digital e Transformação dos Negócios:</strong> A digitalização mudou fundamentalmente como negócios operam: barreiras de entrada menores, alcance global instantâneo, custos operacionais reduzidos, dados em tempo real para decisões. Pequenos empreendedores podem competir com grandes corporações usando tecnologia. Modelos de negócio tradicionais são constantemente desafiados por inovações digitais.</p>
+
+        <p><strong>Ecossistema de Inovação:</strong> Empreendedores digitais não trabalham isolados. Fazem parte de ecossistema que inclui: incubadoras e aceleradoras (suporte e mentoria), investidores (capital e expertise), universidades (pesquisa e talentos), governo (políticas e incentivos), e outras startups (colaboração e competição). Participar ativamente deste ecossistema acelera crescimento.</p>
+
+        <p><strong>Mindset de Experimentação:</strong> Mundo digital favorece abordagem experimental: testar ideias rapidamente, coletar feedback do mercado, pivotar quando necessário. Conceito de MVP (Minimum Viable Product) permite validar hipóteses com investimento mínimo. Falha rápida é estratégia válida - melhor descobrir problemas cedo que investir anos em ideia errada.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Modelos de Negócios Digitais
+        </div>
+
+        <div class="question">
+            <p><strong>4.</strong> Como empresas digitais geram receita? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>5.</strong> Que modelo de negócio mais te atrai? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Principais modelos de monetização digital:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Como Funciona</th>
+                    <th>Exemplos</th>
+                    <th>Vantagens</th>
+                    <th>Interesse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Assinatura (SaaS)</td>
+                    <td>Pagamento recorrente mensal/anual</td>
+                    <td>Netflix, Spotify, Office 365</td>
+                    <td>Receita previsível, relacionamento longo</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Freemium</td>
+                    <td>Versão gratuita + recursos pagos</td>
+                    <td>LinkedIn, Canva, Zoom</td>
+                    <td>Baixa barreira entrada, upsell natural</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Marketplace</td>
+                    <td>Comissão sobre transações</td>
+                    <td>Amazon, Uber, Airbnb</td>
+                    <td>Escalabilidade, efeito de rede</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Publicidade</td>
+                    <td>Receita através de anúncios</td>
+                    <td>Google, Facebook, YouTube</td>
+                    <td>Gratuito para usuários, alto volume</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>E-commerce</td>
+                    <td>Venda direta de produtos</td>
+                    <td>Amazon, Mercado Livre</td>
+                    <td>Controle total, margens diretas</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Consultoria Digital</td>
+                    <td>Serviços especializados online</td>
+                    <td>Freelancers, agências digitais</td>
+                    <td>Alta margem, expertise valorizada</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Curso Online</td>
+                    <td>Educação digital paga</td>
+                    <td>Udemy, Coursera, Hotmart</td>
+                    <td>Escalável, impacto social</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Licenciamento</td>
+                    <td>Uso de propriedade intelectual</td>
+                    <td>Software, conteúdo, marcas</td>
+                    <td>Receita passiva, proteção IP</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>6.</strong> Business Model Canvas - Desenvolva ideia de negócio:</p>
+        </div>
+
+        <div class="canvas-grid">
+            <div class="canvas-section canvas-item-1">
+                <strong>Parcerias-chave</strong><br>
+                Quem são seus parceiros estratégicos?
+            </div>
+            <div class="canvas-section canvas-item-2">
+                <strong>Atividades-chave</strong><br>
+                O que você faz de essencial?
+            </div>
+            <div class="canvas-section canvas-item-3">
+                <strong>Proposta de Valor</strong><br>
+                Que problema você resolve?
+            </div>
+            <div class="canvas-section canvas-item-4">
+                <strong>Relacionamento</strong><br>
+                Como se relaciona com clientes?
+            </div>
+            <div class="canvas-section canvas-item-5">
+                <strong>Segmentos</strong><br>
+                Quem são seus clientes?
+            </div>
+            <div class="canvas-section canvas-item-6">
+                <strong>Recursos-chave</strong><br>
+                O que você precisa ter?
+            </div>
+            <div class="canvas-section canvas-item-7">
+                <strong>Canais</strong><br>
+                Como chega aos clientes?
+            </div>
+            <div class="canvas-section canvas-item-8">
+                <strong>Estrutura de Custos</strong><br>
+                Quais são seus principais gastos?
+            </div>
+            <div class="canvas-section canvas-item-9">
+                <strong>Fontes de Receita</strong><br>
+                Como ganha dinheiro?
+            </div>
+        </div>
+
+        <div class="business-tip">
+            <p><strong>💼 Dica de Negócios:</strong> Valide sua proposta de valor com clientes reais antes de desenvolver produto. 
+            Conversas custam pouco, produtos custam muito.</p>
+        </div>
+
+        <p><strong>Economia de Plataforma:</strong> Muitos negócios digitais mais valiosos são plataformas que conectam diferentes grupos: Google conecta anunciantes e usuários, Uber conecta motoristas e passageiros, Amazon conecta vendedores e compradores. Plataformas criam valor através do efeito de rede - quanto mais usuários, mais valiosa se torna. Considere como sua ideia pode se tornar plataforma.</p>
+
+        <p><strong>Modelo de Dados como Ativo:</strong> Dados se tornaram novo petróleo da economia digital. Empresas coletam dados para melhorar produtos, personalizar experiências, prever comportamentos e criar novos serviços. Considere que dados sua empresa gerará e como podem ser monetizados eticamente. Compliance com LGPD é essencial para negócios baseados em dados.</p>
+
+        <p><strong>Escalabilidade Digital:</strong> Vantagem dos negócios digitais é capacidade de escalar sem crescimento proporcional de custos. Software pode servir milhões de usuários com mesma infraestrutura base. Planeje desde início para crescimento: arquitetura técnica escalável, processos automatizados, equipe preparada para expansão. Escalabilidade é o que diferencia startups de pequenos negócios tradicionais.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Tecnologias Emergentes e Oportunidades
+        </div>
+
+        <div class="question">
+            <p><strong>7.</strong> Que tecnologias considera mais promissoras? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>8.</strong> Como tecnologia pode melhorar vida das pessoas? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Tecnologias disruptivas e oportunidades de negócio:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Estágio Atual</th>
+                    <th>Oportunidades</th>
+                    <th>Desafios</th>
+                    <th>Potencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Inteligência Artificial</td>
+                    <td>Crescimento acelerado</td>
+                    <td>Automação, personalização, análise</td>
+                    <td>Ética, emprego, viés</td>
+                    <td><span class="priority-level high-priority">ALTO</span></td>
+                </tr>
+                <tr>
+                    <td>Internet das Coisas (IoT)</td>
+                    <td>Expansão residencial</td>
+                    <td>Casa inteligente, saúde, agricultura</td>
+                    <td>Segurança, privacidade</td>
+                    <td><span class="priority-level high-priority">ALTO</span></td>
+                </tr>
+                <tr>
+                    <td>Blockchain</td>
+                    <td>Amadurecimento</td>
+                    <td>Finanças, contratos, rastreabilidade</td>
+                    <td>Energia, regulamentação</td>
+                    <td><span class="priority-level medium-priority">MÉDIO</span></td>
+                </tr>
+                <tr>
+                    <td>Realidade Aumentada/Virtual</td>
+                    <td>Adoção inicial</td>
+                    <td>Educação, entretenimento, treinamento</td>
+                    <td>Hardware, conteúdo</td>
+                    <td><span class="priority-level medium-priority">MÉDIO</span></td>
+                </tr>
+                <tr>
+                    <td>5G e Edge Computing</td>
+                    <td>Implementação</td>
+                    <td>Aplicações tempo real, mobilidade</td>
+                    <td>Infraestrutura, custos</td>
+                    <td><span class="priority-level high-priority">ALTO</span></td>
+                </tr>
+                <tr>
+                    <td>Computação Quântica</td>
+                    <td>Pesquisa avançada</td>
+                    <td>Simulações, criptografia, IA</td>
+                    <td>Complexidade, custos</td>
+                    <td><span class="priority-level low-priority">LONGO PRAZO</span></td>
+                </tr>
+                <tr>
+                    <td>Biotecnologia Digital</td>
+                    <td>Convergência inicial</td>
+                    <td>Medicina personalizada, agricultura</td>
+                    <td>Regulamentação, ética</td>
+                    <td><span class="priority-level medium-priority">MÉDIO</span></td>
+                </tr>
+                <tr>
+                    <td>Energia Renovável + Tech</td>
+                    <td>Crescimento sustentado</td>
+                    <td>Grid inteligente, armazenamento</td>
+                    <td>Políticas, investimentos</td>
+                    <td><span class="priority-level high-priority">ALTO</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>9.</strong> Desenvolva ideia de startup usando tecnologia emergente:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Aspecto</th>
+                    <th>Sua Proposta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tecnologia escolhida</td>
+                    <td style="height: 25px;"></td>
+                </tr>
+                <tr>
+                    <td>Problema a resolver</td>
+                    <td style="height: 25px;"></td>
+                </tr>
+                <tr>
+                    <td>Cliente-alvo</td>
+                    <td style="height: 25px;"></td>
+                </tr>
+                <tr>
+                    <td>Proposta de valor</td>
+                    <td style="height: 25px;"></td>
+                </tr>
+                <tr>
+                    <td>Modelo de receita</td>
+                    <td style="height: 25px;"></td>
+                </tr>
+                <tr>
+                    <td>Vantagem competitiva</td>
+                    <td style="height: 25px;"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="innovation-box">
+            <p><strong>🚀 Inovação:</strong> Grandes inovações surgem na intersecção de tecnologias. 
+            Smartphone = telefone + internet + câmera + GPS + processamento.</p>
+        </div>
+
+        <p><strong>Democratização da Inovação:</strong> Tecnologias que antes requeriam enormes investimentos agora são acessíveis: cloud computing elimina necessidade de infraestrutura própria, APIs permitem integrar funcionalidades complexas rapidamente, ferramentas no-code permitem criar aplicações sem programação, e IA generativa auxilia desenvolvimento. Barreiras técnicas diminuem constantemente.</p>
+
+        <p><strong>Impacto Social da Tecnologia:</strong> Empreendedores digitais têm oportunidade única de criar impacto social positivo em escala: educação online democratiza conhecimento, telemedicina leva saúde a áreas remotas, fintech inclui pessoas no sistema financeiro, agtech aumenta produtividade sustentável. Considere como sua inovação pode contribuir para ODS (Objetivos de Desenvolvimento Sustentável).</p>
+
+        <p><strong>Convergência Tecnológica:</strong> Inovações mais impactantes surgem quando tecnologias diferentes se combinam: IA + IoT = cidades inteligentes, blockchain + supply chain = rastreabilidade total, AR + educação = aprendizado imersivo. Mantenha visão ampla das tecnologias disponíveis e pense em combinações inovadoras para resolver problemas complexos.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Marketing Digital e Crescimento
+        </div>
+
+        <div class="question">
+            <p><strong>10.</strong> Como você descobriu sobre produtos/serviços que usa? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>11.</strong> Que estratégias digitais mais chamam sua atenção? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Funil de marketing digital:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Etapa</th>
+                    <th>Objetivo</th>
+                    <th>Estratégias</th>
+                    <th>Métricas</th>
+                    <th>Prioridade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Consciência (Awareness)</td>
+                    <td>Conhecer sua marca</td>
+                    <td>SEO, redes sociais, conteúdo</td>
+                    <td>Impressões, alcance, tráfego</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Interesse</td>
+                    <td>Despertar curiosidade</td>
+                    <td>Blog, webinars, e-books</td>
+                    <td>Tempo no site, engajamento</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Consideração</td>
+                    <td>Avaliar sua solução</td>
+                    <td>Demos, cases, comparações</td>
+                    <td>Downloads, inscrições</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Conversão</td>
+                    <td>Realizar compra/ação</td>
+                    <td>Ofertas, urgência, prova social</td>
+                    <td>Taxa conversão, vendas</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Retenção</td>
+                    <td>Manter relacionamento</td>
+                    <td>E-mail marketing, suporte</td>
+                    <td>Churn, LTV, satisfação</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Advocacia</td>
+                    <td>Recomendar para outros</td>
+                    <td>Programas referência, comunidade</td>
+                    <td>NPS, referências, UGC</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>12.</strong> Planeje estratégia de crescimento para sua ideia de negócio:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Canal</th>
+                    <th>Estratégia Específica</th>
+                    <th>Investimento</th>
+                    <th>Expectativa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Redes Sociais</td>
+                    <td></td>
+                    <td>Baixo / Médio / Alto</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Marketing de Conteúdo</td>
+                    <td></td>
+                    <td>Baixo / Médio / Alto</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>SEO/SEM</td>
+                    <td></td>
+                    <td>Baixo / Médio / Alto</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>E-mail Marketing</td>
+                    <td></td>
+                    <td>Baixo / Médio / Alto</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Parcerias</td>
+                    <td></td>
+                    <td>Baixo / Médio / Alto</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Eventos/Networking</td>
+                    <td></td>
+                    <td>Baixo / Médio / Alto</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="business-tip">
+            <p><strong>📈 Growth Hacking:</strong> Foque nos canais onde seu cliente-alvo está mais ativo. 
+            É melhor dominar um canal que espalhar esforços em muitos.</p>
+        </div>
+
+        <p><strong>Marketing de Performance:</strong> Era digital permite medir precisamente ROI de investimentos em marketing. Use ferramentas como Google Analytics, Facebook Pixel, e CRM para rastrear jornada completa do cliente. Optimize campanhas baseado em dados reais, não intuição. Teste A/B constantemente: cores de botões, headlines, ofertas. Pequenas melhorias acumulam grandes resultados.</p>
+
+        <p><strong>Construção de Comunidade:</strong> Marcas digitais mais fortes criam comunidades engajadas em torno de valores compartilhados. Comunidade não é apenas canal de marketing - é ativo estratégico que gera feedback, conteúdo, e lealdade. Plataformas como Discord, Slack, ou grupos em redes sociais permitem construir relacionamentos diretos com clientes.</p>
+
+        <p><strong>Automatização de Marketing:</strong> Ferramentas de automação permitem personalizar comunicação em escala: e-mails triggered baseados em comportamento, chatbots para suporte inicial, segmentação avançada de audiências. Automação libera tempo para estratégia criativa enquanto garante consistência na execução. Comece simples e evolua gradualmente.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Plano de Ação Empreendedor
+        </div>
+
+        <div class="question">
+            <p><strong>13.</strong> Qual seu primeiro passo para empreender digitalmente?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Roadmap de 90 dias:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Período</th>
+                    <th>Foco Principal</th>
+                    <th>Ações Específicas</th>
+                    <th>Métricas de Sucesso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dias 1-30<br><strong>Validação</strong></td>
+                    <td>Validar problema e solução</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Dias 31-60<br><strong>MVP</strong></td>
+                    <td>Desenvolver produto mínimo</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Dias 61-90<br><strong>Tração</strong></td>
+                    <td>Conseguir primeiros clientes</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>14.</strong> Recursos necessários para começar:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Recurso</th>
+                    <th>Necessidade</th>
+                    <th>Como Obter</th>
+                    <th>Investimento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Conhecimento técnico</td>
+                    <td>Alta / Média / Baixa</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Capital inicial</td>
+                    <td>Alta / Média / Baixa</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Rede de contatos</td>
+                    <td>Alta / Média / Baixa</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tempo dedicado</td>
+                    <td>Alta / Média / Baixa</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mentoria</td>
+                    <td>Alta / Média / Baixa</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>15.</strong> Principais riscos e como mitigar:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Risco</th>
+                    <th>Probabilidade</th>
+                    <th>Impacto</th>
+                    <th>Estratégia de Mitigação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Falta de mercado</td>
+                    <td>Alta / Média / Baixa</td>
+                    <td>Alto / Médio / Baixo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Recursos insuficientes</td>
+                    <td>Alta / Média / Baixa</td>
+                    <td>Alto / Médio / Baixo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Competição</td>
+                    <td>Alta / Média / Baixa</td>
+                    <td>Alto / Médio / Baixo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mudanças tecnológicas</td>
+                    <td>Alta / Média / Baixa</td>
+                    <td>Alto / Médio / Baixo</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Lean Startup Methodology:</strong> Abordagem científica para empreendedorismo: construir-medir-aprender em ciclos rápidos. Comece com hipóteses sobre problema, solução e modelo de negócio. Teste cada hipótese com experimentos mínimos. Use dados para validar ou pivotar. Evite desperdiçar tempo e recursos construindo produto que ninguém quer.</p>
+
+        <p><strong>Network e Ecossistema:</strong> Sucesso empreendedor raramente é solo. Cultive relacionamentos com outros empreendedores, mentores, investidores, potenciais clientes e parceiros. Participe de eventos, comunidades online, grupos de networking. Seja generoso com conhecimento e conexões - networking é via de mão dupla. Muitas oportunidades surgem através de relacionamentos.</p>
+
+        <p><strong>Mentalidade de Crescimento:</strong> Empreendedorismo é jornada de aprendizado constante. Falhas são oportunidades de aprendizado, não fracassos pessoais. Mantenha curiosidade, questione suposições, busque feedback honesto. Desenvolva resiliência para lidar com incertezas e rejeições. Celebre pequenas vitórias e aprenda com reveses. Crescimento pessoal e profissional caminham juntos.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            Reflexão sobre Empreendedorismo e Futuro Digital
+        </div>
+
+        <div class="question">
+            <p><strong>16.</strong> Como empreendedorismo digital pode transformar sua vida?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>17.</strong> Que impacto quer causar no mundo através da tecnologia?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>18.</strong> Como imagina o futuro do empreendedorismo digital?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Empreendedorismo como Força de Mudança Social:</strong> Empreendedores digitais têm poder único de criar mudanças sistêmicas. Pequenas startups podem resolver problemas que governos e grandes corporações ignoram. Tecnologia permite testar soluções rapidamente e escalar impacto globalmente. Considere como seus empreendimentos podem contribuir para mundo mais justo, sustentável e próspero.</p>
+
+        <p><strong>Futuro do Trabalho e Criação de Valor:</strong> Economia digital está redefinindo conceitos de trabalho, carreira e criação de valor. Fronteiras entre funcionário e empreendedor se borram. Gig economy, trabalho remoto, e autonomia profissional crescem. Desenvolva habilidades empreendedoras mesmo se não planeja ter empresa própria - mentalidade empreendedora é vantagem em qualquer contexto.</p>
+
+        <p><strong>Responsabilidade Digital:</strong> Com grande poder tecnológico vem grande responsabilidade. Empreendedores digitais influenciam comportamentos, moldam sociedade e impactam meio ambiente. Considere implicações éticas de suas inovações: privacidade de dados, viés algorítmico, sustentabilidade, inclusão digital. Construa negócios que criam valor para todos stakeholders, não apenas acionistas.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Empreendedorismo Digital e Inovação</span>
+        <span>Turma: Feminina</span>
+        <span>Data: 16/12/2025</span>
+    </div>
+</body>
+</html>

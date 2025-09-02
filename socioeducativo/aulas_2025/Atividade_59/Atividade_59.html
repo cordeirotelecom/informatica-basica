@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 59 - Programação para Iniciantes + Lógica Computacional</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+            font-size: 11px;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 5px 0;
+            font-size: 10px;
+        }
+        .logic-box {
+            background-color: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .exercise-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .checkbox {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .flowchart-symbol {
+            border: 1px solid #000;
+            padding: 5px;
+            margin: 3px;
+            display: inline-block;
+            text-align: center;
+            min-width: 80px;
+        }
+        .oval { border-radius: 50px; }
+        .diamond { transform: rotate(45deg); width: 60px; height: 60px; }
+        .rectangle { border-radius: 0; }
+        .parallelogram { transform: skew(-20deg); }
+        .difficulty-level {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .easy { background-color: #d4edda; color: #155724; }
+        .medium { background-color: #fff3cd; color: #856404; }
+        .hard { background-color: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 59 - PROGRAMAÇÃO PARA INICIANTES + LÓGICA COMPUTACIONAL</h1>
+        <p>Introdução à Programação e Pensamento Lógico - Data: 11/12/2025 - Turma: Feminina</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: Feminina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Conceitos Fundamentais de Programação
+        </div>
+
+        <div class="question">
+            <p><strong>1.</strong> O que você entende por "programação de computadores"? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>2.</strong> Você já tentou criar algo automatizado no seu dia a dia? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Componentes básicos de um programa:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Conceito</th>
+                    <th>Definição</th>
+                    <th>Exemplo do Cotidiano</th>
+                    <th>Entendi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Variável</td>
+                    <td>Espaço para guardar informação</td>
+                    <td>Gaveta com etiqueta</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Comando</td>
+                    <td>Instrução específica</td>
+                    <td>Passo de uma receita</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Condição</td>
+                    <td>Decisão baseada em teste</td>
+                    <td>"Se chover, leve guarda-chuva"</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Repetição</td>
+                    <td>Fazer algo várias vezes</td>
+                    <td>Refrão de uma música</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Função</td>
+                    <td>Grupo de comandos reutilizável</td>
+                    <td>Receita de bolo</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Input</td>
+                    <td>Informação que entra</td>
+                    <td>Ingredientes da receita</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Output</td>
+                    <td>Resultado que sai</td>
+                    <td>Bolo pronto</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Bug</td>
+                    <td>Erro no programa</td>
+                    <td>Erro na receita</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>3.</strong> Analise este "programa" para fazer café e identifique os componentes:</p>
+        </div>
+
+        <div class="code-block">
+1. agua = 200ml
+2. cafe = 2 colheres
+3. SE agua estiver fria ENTÃO
+4.    aquecer agua até ferver
+5. FIM SE
+6. colocar cafe no filtro
+7. despejar agua no cafe
+8. REPETIR até encher a xícara:
+9.    esperar pingar
+10. FIM REPETIR
+11. cafe_pronto = verdadeiro
+        </div>
+
+        <div class="question">
+            <p>Variáveis encontradas: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p>Condição encontrada: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p>Repetição encontrada: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Linguagens de Programação Populares:</strong> Existem centenas de linguagens, cada uma criada para propósitos específicos. Python é excelente para iniciantes por sua sintaxe clara e legível. JavaScript é essencial para desenvolvimento web. Java é muito usada em empresas grandes. C é fundamental para sistemas operacionais. Cada linguagem tem forças e fraquezas específicas.</p>
+
+        <p><strong>Evolução da Programação:</strong> Programação evoluiu dramaticamente: dos cartões perfurados dos anos 1940 aos assistentes de IA atuais que ajudam a escrever código. Antigamente, programadores trabalhavam com código de máquina binário. Hoje, linguagens de alto nível permitem expressar ideias complexas em linguagem quase natural. Ferramentas modernas democratizam a programação.</p>
+
+        <p><strong>Pensamento Computacional:</strong> Programação ensina habilidades valiosas além de tecnologia: decomposição (quebrar problemas complexos), reconhecimento de padrões, abstração (focar no essencial), e algoritmos (sequências lógicas de passos). Essas habilidades são úteis em qualquer área: planejamento financeiro, organização doméstica, resolução de problemas profissionais.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Lógica e Algoritmos
+        </div>
+
+        <div class="question">
+            <p><strong>4.</strong> Como você organiza suas tarefas diárias? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>5.</strong> Que processo você usa para tomar decisões? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Símbolos de fluxograma:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Símbolo</th>
+                    <th>Nome</th>
+                    <th>Uso</th>
+                    <th>Exemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><div class="flowchart-symbol oval">Oval</div></td>
+                    <td>Início/Fim</td>
+                    <td>Começo e final do algoritmo</td>
+                    <td>INÍCIO, FIM</td>
+                </tr>
+                <tr>
+                    <td><div class="flowchart-symbol rectangle">Retângulo</div></td>
+                    <td>Processo</td>
+                    <td>Ação ou comando</td>
+                    <td>Calcular salário</td>
+                </tr>
+                <tr>
+                    <td><div class="flowchart-symbol parallelogram">Paralelogramo</div></td>
+                    <td>Entrada/Saída</td>
+                    <td>Receber ou mostrar dados</td>
+                    <td>Digite seu nome</td>
+                </tr>
+                <tr>
+                    <td><div class="flowchart-symbol diamond">Losango</div></td>
+                    <td>Decisão</td>
+                    <td>Pergunta com sim/não</td>
+                    <td>Idade > 18?</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="exercise-box">
+            <p><strong>📝 Exercício:</strong> Crie um fluxograma para "Decidir que roupa usar pela manhã"</p>
+            <div style="border: 1px solid #000; height: 120px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>6.</strong> Escreva algoritmo em linguagem natural para "Preparar um sanduíche":</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Passo</th>
+                    <th>Ação</th>
+                    <th>Detalhe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td></td><td></td></tr>
+                <tr><td>2</td><td></td><td></td></tr>
+                <tr><td>3</td><td></td><td></td></tr>
+                <tr><td>4</td><td></td><td></td></tr>
+                <tr><td>5</td><td></td><td></td></tr>
+                <tr><td>6</td><td></td><td></td></tr>
+            </tbody>
+        </table>
+
+        <div class="logic-box">
+            <p><strong>🧠 Dica de Lógica:</strong> Algoritmos devem ser precisos e não ambíguos. 
+            "Adicione açúcar a gosto" é ambíguo. "Adicione 2 colheres de açúcar" é preciso.</p>
+        </div>
+
+        <p><strong>Estruturas de Controle Fundamentais:</strong> Todo algoritmo pode ser construído com apenas três estruturas: sequência (fazer uma coisa após outra), seleção (escolher entre alternativas), e repetição (fazer algo várias vezes). Estas estruturas são universais - funcionam em qualquer linguagem de programação e mesmo em planejamento de atividades do dia a dia.</p>
+
+        <p><strong>Depuração (Debug) de Algoritmos:</strong> Encontrar e corrigir erros é habilidade essencial. Tipos comuns de erros: sintaxe (escrever incorretamente), lógica (raciocínio errado), e runtime (problemas durante execução). Estratégias de depuração: executar passo a passo mentalmente, usar casos de teste simples, verificar condições extremas, e documentar o que cada parte deveria fazer.</p>
+
+        <p><strong>Eficiência Algorítmica:</strong> Nem todos os algoritmos são iguais - alguns são mais rápidos ou usam menos recursos. Para problemas pequenos, diferença pode ser imperceptível. Para problemas grandes, algoritmo eficiente pode ser diferença entre segundos e horas de processamento. Aprenda a pensar sobre eficiência: quantas operações seu algoritmo realmente precisa fazer?</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Introdução a Python
+        </div>
+
+        <div class="question">
+            <p><strong>7.</strong> Por que Python é boa linguagem para iniciantes? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>8.</strong> Onde você gostaria de aplicar programação? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Sintaxe básica do Python:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Conceito</th>
+                    <th>Exemplo em Python</th>
+                    <th>Explicação</th>
+                    <th>Nível</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Variável</td>
+                    <td class="code-block">nome = "Maria"<br>idade = 25</td>
+                    <td>Guardar dados na memória</td>
+                    <td><span class="difficulty-level easy">FÁCIL</span></td>
+                </tr>
+                <tr>
+                    <td>Saída</td>
+                    <td class="code-block">print("Olá!")<br>print(nome)</td>
+                    <td>Mostrar informação na tela</td>
+                    <td><span class="difficulty-level easy">FÁCIL</span></td>
+                </tr>
+                <tr>
+                    <td>Entrada</td>
+                    <td class="code-block">nome = input("Seu nome:")</td>
+                    <td>Receber dados do usuário</td>
+                    <td><span class="difficulty-level easy">FÁCIL</span></td>
+                </tr>
+                <tr>
+                    <td>Condicional</td>
+                    <td class="code-block">if idade >= 18:<br>    print("Maior")</td>
+                    <td>Tomar decisões</td>
+                    <td><span class="difficulty-level medium">MÉDIO</span></td>
+                </tr>
+                <tr>
+                    <td>Loop</td>
+                    <td class="code-block">for i in range(5):<br>    print(i)</td>
+                    <td>Repetir ações</td>
+                    <td><span class="difficulty-level medium">MÉDIO</span></td>
+                </tr>
+                <tr>
+                    <td>Lista</td>
+                    <td class="code-block">frutas = ["maçã", "banana"]</td>
+                    <td>Guardar vários valores</td>
+                    <td><span class="difficulty-level medium">MÉDIO</span></td>
+                </tr>
+                <tr>
+                    <td>Função</td>
+                    <td class="code-block">def somar(a, b):<br>    return a + b</td>
+                    <td>Agrupar código reutilizável</td>
+                    <td><span class="difficulty-level hard">DIFÍCIL</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>9.</strong> Complete este programa Python para calcular a idade em 2030:</p>
+        </div>
+
+        <div class="code-block">
+# Programa: Calcular idade em 2030
+nome = input("Qual seu nome? ")
+ano_nascimento = int(input("Em que ano você nasceu? "))
+
+# Complete aqui:
+idade_2030 = ________________
+
+print(f"Olá {nome}!")
+print(f"Em 2030 você terá {idade_2030} anos")
+        </div>
+
+        <div class="question">
+            <p><strong>10.</strong> Crie programa para classificar temperatura:</p>
+        </div>
+
+        <div class="code-block">
+temperatura = float(input("Digite a temperatura: "))
+
+if temperatura > ____:
+    print("Muito quente!")
+elif temperatura > ____:
+    print("Agradável")
+elif temperatura > ____:
+    print("Frio")
+else:
+    print("Muito frio!")
+        </div>
+
+        <div class="exercise-box">
+            <p><strong>🎯 Desafio:</strong> Escreva pseudocódigo para programa que ajuda a escolher filme baseado no humor da pessoa.</p>
+            <div style="border: 1px solid #000; height: 80px; margin: 10px 0;"></div>
+        </div>
+
+        <p><strong>Ambiente de Desenvolvimento Python:</strong> Para começar a programar em Python, você precisa de editor de código e interpretador Python. Opções incluem: IDLE (vem com Python), Visual Studio Code (gratuito, popular), PyCharm (profissional), ou até ambientes online como Repl.it. Comece simples - até o Bloco de Notas funciona para primeiros programas!</p>
+
+        <p><strong>Ecossistema Python:</strong> Python tem biblioteca rica para praticamente qualquer tarefa: manipulação de dados (pandas), gráficos (matplotlib), inteligência artificial (tensorflow), desenvolvimento web (django), automação (selenium), e muito mais. Esta variedade torna Python versátil - você pode resolver problemas diversos com mesma linguagem.</p>
+
+        <p><strong>Filosofia Python:</strong> Python segue princípio "Zen of Python": simplicidade é melhor que complexidade, legibilidade conta, deve haver maneira óbvia de fazer algo. Isso resulta em código mais limpo e fácil de entender. Python prioriza produtividade do programador sobre velocidade pura de execução.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Resolução de Problemas Computacionais
+        </div>
+
+        <div class="question">
+            <p><strong>11.</strong> Como você aborda um problema complexo? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>12.</strong> Que ferramentas usa para organizar ideias? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Metodologia de resolução de problemas:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Etapa</th>
+                    <th>Descrição</th>
+                    <th>Perguntas-chave</th>
+                    <th>Aplicação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. Entender</td>
+                    <td>Compreender exatamente o problema</td>
+                    <td>O que precisa ser feito? Quais são as restrições?</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>2. Planejar</td>
+                    <td>Desenvolver estratégia de solução</td>
+                    <td>Como vou abordar? Que ferramentas usar?</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>3. Dividir</td>
+                    <td>Quebrar em partes menores</td>
+                    <td>Que subproblemas posso identificar?</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>4. Implementar</td>
+                    <td>Colocar o plano em ação</td>
+                    <td>Como traduzo a ideia em código?</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>5. Testar</td>
+                    <td>Verificar se funciona corretamente</td>
+                    <td>A solução funciona em todos os casos?</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>6. Refinar</td>
+                    <td>Melhorar e otimizar</td>
+                    <td>Como posso tornar mais eficiente?</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>13.</strong> Problema: Criar calculadora de desconto. Aplique a metodologia:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Etapa</th>
+                    <th>Sua Resposta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Entender</td>
+                    <td style="height: 30px;"></td>
+                </tr>
+                <tr>
+                    <td>Planejar</td>
+                    <td style="height: 30px;"></td>
+                </tr>
+                <tr>
+                    <td>Dividir</td>
+                    <td style="height: 30px;"></td>
+                </tr>
+                <tr>
+                    <td>Implementar</td>
+                    <td style="height: 30px;"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="logic-box">
+            <p><strong>💡 Estratégia:</strong> Quando empacado, tente exemplos concretos. 
+            Em vez de pensar abstratamente, use números específicos para entender o padrão.</p>
+        </div>
+
+        <p><strong>Padrões Comuns em Programação:</strong> Muitos problemas seguem padrões reconhecíveis: busca (encontrar item em lista), ordenação (organizar dados), contagem (quantificar ocorrências), transformação (converter dados), e validação (verificar correção). Reconhecer esses padrões acelera resolução de problemas e permite reutilizar soluções conhecidas.</p>
+
+        <p><strong>Pensamento Modular:</strong> Divida problemas grandes em módulos pequenos e independentes. Cada módulo deve ter responsabilidade única e bem definida. Isso facilita desenvolvimento, teste, manutenção e permite trabalho em equipe. Módulos podem ser reutilizados em projetos diferentes, aumentando produtividade.</p>
+
+        <p><strong>Casos Extremos e Validação:</strong> Sempre considere casos extremos: que acontece com entrada vazia, números negativos, texto muito longo, ou dados inválidos? Programas robustos antecipam e tratam essas situações graciosamente. Desenvolva habito de pensar "que pode dar errado?" durante planejamento.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Projeto Prático: Calculadora de Orçamento Pessoal
+        </div>
+
+        <div class="question">
+            <p><strong>14.</strong> Que funcionalidades sua calculadora de orçamento deveria ter?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Especificações do projeto:</strong></p>
+
+        <div class="question">
+            <p><span class="checkbox"></span> Receber receitas mensais do usuário</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Receber despesas por categoria</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Calcular saldo final</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Mostrar percentual por categoria</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Sugerir economia se saldo negativo</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Salvar dados para consulta posterior</p>
+        </div>
+
+        <div class="question">
+            <p><strong>15.</strong> Desenhe o fluxograma da calculadora:</p>
+            <div style="border: 1px solid #000; height: 150px; margin: 10px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>16.</strong> Escreva pseudocódigo para funcionalidade principal:</p>
+        </div>
+
+        <div class="code-block">
+INÍCIO
+    // Complete aqui o algoritmo
+    DECLARAR receita_total = 0
+    DECLARAR despesas_total = 0
+    
+    // Entrada de dados
+    ______________________________
+    ______________________________
+    ______________________________
+    
+    // Processamento
+    ______________________________
+    ______________________________
+    
+    // Saída
+    ______________________________
+    ______________________________
+FIM
+        </div>
+
+        <div class="question">
+            <p><strong>17.</strong> Que melhorias futuras faria na calculadora?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Planejamento de Interface:</strong> Uma boa calculadora de orçamento precisa ser intuitiva. Considere: menus claros com opções numeradas, entrada de dados passo a passo com validação, feedback imediato sobre cálculos, resumos visuais usando gráficos simples (mesmo que só texto), e opções para salvar/carregar dados. Interface bem planejada é tão importante quanto lógica de programação.</p>
+
+        <p><strong>Tratamento de Erros:</strong> Preveja problemas comuns: usuário digitando texto onde espera número, valores negativos onde não fazem sentido, divisão por zero, e entradas muito grandes. Implemente verificações e mensagens de erro amigáveis. Programa robusto não "quebra" com entrada inesperada - orienta usuário a corrigir entrada.</p>
+
+        <p><strong>Evolução Incremental:</strong> Comece com versão simples funcionando, depois adicione funcionalidades gradualmente. Primeira versão pode só somar receitas e despesas. Segunda adiciona categorias. Terceira adiciona relatórios. Quarta adiciona persistência de dados. Desenvolvimento incremental reduz complexidade e permite validar cada etapa.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            Reflexão sobre Programação e Futuro Digital
+        </div>
+
+        <div class="question">
+            <p><strong>18.</strong> Como programação pode ajudar em sua área profissional?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>19.</strong> Que habilidades de programação são mais valiosas para não-programadores?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>20.</strong> Como imagina que será a programação no futuro?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Programação como Alfabetização Digital:</strong> No século XXI, entender programação básica é como saber ler e escrever no século XX - não é necessário ser escritor profissional, mas alfabetização é essencial para participação plena na sociedade. Programação desenvolve pensamento lógico, resolução sistemática de problemas, e compreensão de como tecnologia funciona.</p>
+
+        <p><strong>Automação e Futuro do Trabalho:</strong> Programação permite automatizar tarefas repetitivas, liberando tempo para trabalho criativo e estratégico. Profissionais que entendem automação podem identificar oportunidades de melhoria, colaborar efetivamente com desenvolvedores, e adaptar-se melhor a mudanças tecnológicas. Não é sobre substituir humanos, mas sobre amplificar capacidades humanas.</p>
+
+        <p><strong>Democratização da Programação:</strong> Ferramentas estão tornando programação mais acessível: interfaces visuais de arrastar-e-soltar, assistentes de IA que ajudam a escrever código, plataformas no-code/low-code para criar aplicações sem programação tradicional. Futuro promete que mais pessoas poderão expressar ideias através de código, mesmo sem formação técnica formal.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Programação para Iniciantes e Lógica Computacional</span>
+        <span>Turma: Feminina</span>
+        <span>Data: 11/12/2025</span>
+    </div>
+</body>
+</html>

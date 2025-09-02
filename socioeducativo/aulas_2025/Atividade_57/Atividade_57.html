@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 57 - Internet Avançada + Pesquisa Eficaz</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+            font-size: 11px;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .search-tip {
+            background-color: #e8f4f8;
+            border: 1px solid #b3d4fc;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .checkbox {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .url-bar {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 57 - INTERNET AVANÇADA + PESQUISA EFICAZ</h1>
+        <p>Navegação Inteligente e Busca Estratégica - Data: 09/12/2025 - Turma: Feminina</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: Feminina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Técnicas Avançadas de Pesquisa no Google
+        </div>
+
+        <div class="question">
+            <p><strong>1.</strong> Como você normalmente pesquisa informações na internet? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>2.</strong> Qual é sua maior dificuldade ao pesquisar online? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Operadores de busca avançada - Complete os exemplos:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Operador</th>
+                    <th>Função</th>
+                    <th>Exemplo</th>
+                    <th>Seu Exemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>"aspas"</td>
+                    <td>Busca frase exata</td>
+                    <td>"receita de brigadeiro"</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>Inclui termo obrigatório</td>
+                    <td>receita +vegana</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Exclui termo</td>
+                    <td>receita -carne</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>site:</td>
+                    <td>Busca em site específico</td>
+                    <td>site:gov.br emprego</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>filetype:</td>
+                    <td>Busca tipo de arquivo</td>
+                    <td>filetype:pdf currículo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Substitui palavra desconhecida</td>
+                    <td>"como * um currículo"</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>OR</td>
+                    <td>Busca termo alternativo</td>
+                    <td>emprego OR trabalho</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="search-tip">
+            <strong>💡 Dica Prática:</strong> Combine operadores para buscas ultra-específicas. 
+            Exemplo: <code>site:youtube.com "curso excel" filetype:mp4 -2020</code> 
+            (vídeos de Excel no YouTube, excluindo conteúdo de 2020)
+        </div>
+
+        <p><strong>Estratégias de Pesquisa Eficaz:</strong> A qualidade de uma pesquisa depende mais da estratégia que da ferramenta. Comece com termos gerais e refine gradualmente. Use sinônimos e variações de palavras-chave. Considere diferentes perspectivas sobre o tema. Se busca informações sobre carreira em tecnologia, pesquise tanto "emprego programador" quanto "oportunidades desenvolvimento software" ou "mercado TI Brasil".</p>
+
+        <p><strong>Verificação de Fontes e Credibilidade:</strong> Nem toda informação online é confiável. Priorize sites de instituições reconhecidas (.gov, .edu, .org), verifique datas de publicação, cruzar informações entre múltiplas fontes, observe se há citações e referências. Seja especialmente cético com informações sobre saúde, finanças e notícias que parecem sensacionais demais.</p>
+
+        <p><strong>Uso de Filtros e Ferramentas do Google:</strong> O Google oferece filtros poderosos através de "Ferramentas" após uma busca. Filtre por período (última semana, mês, ano), por tipo de resultado (notícias, imagens, vídeos), por idioma e região. Use a busca por imagens para verificar origem de fotos e encontrar versões em alta resolução.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Navegadores e Extensões Produtivas
+        </div>
+
+        <div class="question">
+            <p><strong>3.</strong> Qual navegador você mais usa? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>4.</strong> Quantas abas você costuma ter abertas? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Funcionalidades avançadas que você usa:</strong></p>
+        <div class="question">
+            <p><span class="checkbox"></span> Favoritos organizados em pastas</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Histórico de navegação para encontrar sites</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Modo incógnito/privativo</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Sincronização entre dispositivos</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Senhas salvas com segurança</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Bloqueador de anúncios</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> Atalhos de teclado do navegador</p>
+        </div>
+
+        <p><strong>Extensões úteis para produtividade:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Extensão</th>
+                    <th>Função</th>
+                    <th>Interesse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">🛡️ Segurança</td>
+                    <td>uBlock Origin</td>
+                    <td>Bloqueia anúncios e rastreadores</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>HTTPS Everywhere</td>
+                    <td>Força conexões seguras</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Privacy Badger</td>
+                    <td>Bloqueia rastreamento</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">📚 Produtividade</td>
+                    <td>Pocket</td>
+                    <td>Salva artigos para ler depois</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Evernote Web Clipper</td>
+                    <td>Salva páginas completas</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Forest</td>
+                    <td>Bloqueia sites que distraem</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">🌐 Tradução</td>
+                    <td>Google Translate</td>
+                    <td>Traduz páginas instantaneamente</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>ImTranslator</td>
+                    <td>Tradução de texto selecionado</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Organização de Favoritos Estratégica:</strong> Favoritos bem organizados economizam tempo significativo. Crie pastas por temas (Trabalho, Estudos, Pessoal, Compras), use subpastas para especificidade, mantenha barra de favoritos apenas com sites mais acessados diariamente. Revise periodicamente e remova links obsoletos. Use nomes descritivos que facilitem localização rápida.</p>
+
+        <p><strong>Gestão de Abas e Sessões:</strong> Muitas abas abertas consomem memória e prejudicam foco. Use extensões como OneTab para converter abas em lista salvável, organize abas por projetos usando divisores visuais, salve sessões importantes para restaurar depois. Configure seu navegador para restaurar sessão anterior apenas quando necessário, não automaticamente.</p>
+
+        <p><strong>Sincronização e Backup:</strong> Configure sincronização entre dispositivos para acessar favoritos, histórico e senhas em qualquer lugar. Isso é especialmente útil para transição entre computador pessoal, trabalho e dispositivos móveis. Mantenha backup periódico de favoritos importantes exportando-os para arquivo HTML.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Fontes Confiáveis e Pesquisa Acadêmica
+        </div>
+
+        <div class="question">
+            <p><strong>5.</strong> Como você verifica se uma informação online é confiável? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>6.</strong> Cite uma fonte de informação que você considera muito confiável: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Hierarquia de confiabilidade das fontes:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nível</th>
+                    <th>Tipo de Fonte</th>
+                    <th>Exemplos</th>
+                    <th>Quando Usar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>🏆 Máxima</td>
+                    <td>Instituições oficiais</td>
+                    <td>Gov.br, OMS, IBGE, universidades</td>
+                    <td>Informações oficiais e estatísticas</td>
+                </tr>
+                <tr>
+                    <td>📚 Alta</td>
+                    <td>Publicações acadêmicas</td>
+                    <td>Google Scholar, SciELO, PubMed</td>
+                    <td>Pesquisas científicas e acadêmicas</td>
+                </tr>
+                <tr>
+                    <td>📰 Boa</td>
+                    <td>Mídia estabelecida</td>
+                    <td>Jornais reconhecidos, revistas especializadas</td>
+                    <td>Notícias e análises atuais</td>
+                </tr>
+                <tr>
+                    <td>⚠️ Moderada</td>
+                    <td>Wikipedia e similares</td>
+                    <td>Wikipedia, Britannica online</td>
+                    <td>Visão geral, sempre verificar fontes</td>
+                </tr>
+                <tr>
+                    <td>❌ Baixa</td>
+                    <td>Redes sociais e blogs</td>
+                    <td>Posts pessoais, opiniões não verificadas</td>
+                    <td>Apenas perspectivas, nunca como fonte única</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Projeto prático - Pesquisa sobre um tema atual:</strong></p>
+        <div class="question">
+            <p><strong>7.</strong> Escolha um tema atual de seu interesse: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Fonte</th>
+                    <th>URL/Referência</th>
+                    <th>Informação Principal</th>
+                    <th>Confiabilidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Oficial/Governo</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Acadêmica</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Jornalística</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Especialista</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Fact-Checking e Verificação:</strong> Desenvolva hábitos de verificação crítica. Use sites especializados em fact-checking (Lupa, Aos Fatos, Comprova), procure fontes primárias das informações citadas, verifique datas de publicação e contexto, desconfie de informações que confirmam exatamente seus preconceitos. Boas informações frequentemente apresentam nuances e complexidades, não respostas simples demais.</p>
+
+        <p><strong>Pesquisa Acadêmica Online:</strong> Para pesquisas mais sérias, use bases acadêmicas: Google Scholar para artigos científicos, Portal CAPES para teses brasileiras, ResearchGate para networking acadêmico, SciELO para publicações latino-americanas. Aprenda a ler resumos (abstracts) para filtrar relevância antes de ler artigos completos.</p>
+
+        <p><strong>Organização de Referências:</strong> Mantenha registro organizado de fontes consultadas. Anote URL completa, data de acesso, autor/instituição, título completo. Use ferramentas como Zotero ou Mendeley para pesquisas acadêmicas. Para uso pessoal, documento compartilhado com links e resumos pessoais funciona bem.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Internet para Oportunidades e Desenvolvimento
+        </div>
+
+        <div class="question">
+            <p><strong>8.</strong> Como você usa a internet para desenvolver sua carreira? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>9.</strong> Que tipo de curso online mais te interessa? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Plataformas de aprendizado online:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Plataforma</th>
+                    <th>Foco</th>
+                    <th>Custo</th>
+                    <th>Interesse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">🎓 Acadêmico</td>
+                    <td>Coursera</td>
+                    <td>Cursos universitários</td>
+                    <td>Freemium</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>edX</td>
+                    <td>Cursos de universidades famosas</td>
+                    <td>Gratuito/Pago</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>FutureLearn</td>
+                    <td>Cursos europeus</td>
+                    <td>Freemium</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">💼 Profissional</td>
+                    <td>LinkedIn Learning</td>
+                    <td>Habilidades profissionais</td>
+                    <td>Pago</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Udemy</td>
+                    <td>Cursos práticos variados</td>
+                    <td>Pago por curso</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Alura</td>
+                    <td>Tecnologia (Brasil)</td>
+                    <td>Assinatura</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">🆓 Gratuito</td>
+                    <td>Khan Academy</td>
+                    <td>Educação básica e fundamental</td>
+                    <td>Gratuito</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>YouTube EDU</td>
+                    <td>Vídeos educacionais</td>
+                    <td>Gratuito</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+                <tr>
+                    <td>Escola Virtual Gov</td>
+                    <td>Capacitação governamental</td>
+                    <td>Gratuito</td>
+                    <td><span class="checkbox"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>10.</strong> Plano de aprendizado online para os próximos 6 meses:</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Curso/Habilidade</th>
+                    <th>Plataforma</th>
+                    <th>Tempo Semanal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1-2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3-4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5-6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Estratégias de Aprendizado Online Eficaz:</strong> Aprendizado online requer disciplina e estratégia diferentes do presencial. Estabeleça horários fixos de estudo, crie ambiente livre de distrações, faça anotações ativas, pratique conceitos aprendidos, participe de fóruns e discussões. Defina metas claras e marcos de progresso para manter motivação.</p>
+
+        <p><strong>Networking Profissional Digital:</strong> Use a internet para construir rede profissional global. LinkedIn para conexões profissionais, grupos especializados no Facebook, comunidades no Reddit, participe de webinars e eventos online, contribua em fóruns da sua área. Qualidade das conexões importa mais que quantidade - foque em relacionamentos genuínos.</p>
+
+        <p><strong>Criação de Presença Digital Profissional:</strong> Sua presença online é seu currículo digital. Mantenha perfis profissionais atualizados, compartilhe conteúdo relevante da sua área, escreva sobre suas experiências de aprendizado, participe de discussões construtivas. Cuide da consistência entre diferentes plataformas e sempre mantenha tom profissional.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Cidadania Digital e Uso Consciente
+        </div>
+
+        <div class="question">
+            <p><strong>11.</strong> Quantas horas por dia você passa na internet? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>12.</strong> Como a internet impacta sua vida positiva e negativamente? <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Autoavaliação do uso da internet:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Atividade Online</th>
+                    <th>Tempo Diário (estimativa)</th>
+                    <th>Impacto na Vida</th>
+                    <th>Ação Necessária</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Redes sociais</td>
+                    <td></td>
+                    <td>Positivo / Neutro / Negativo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Pesquisas/Estudos</td>
+                    <td></td>
+                    <td>Positivo / Neutro / Negativo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Entretenimento (vídeos, games)</td>
+                    <td></td>
+                    <td>Positivo / Neutro / Negativo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Trabalho/Produtividade</td>
+                    <td></td>
+                    <td>Positivo / Neutro / Negativo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Comunicação</td>
+                    <td></td>
+                    <td>Positivo / Neutro / Negativo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Compras online</td>
+                    <td></td>
+                    <td>Positivo / Neutro / Negativo</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question">
+            <p><strong>13.</strong> Estratégias para uso mais consciente da internet:</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Princípios de cidadania digital responsável:</strong></p>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Respeito:</strong> Trato outros online como trataria pessoalmente</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Privacidade:</strong> Protejo informações pessoais minhas e de outros</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Veracidade:</strong> Verifico informações antes de compartilhar</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Legalidade:</strong> Respeito direitos autorais e leis digitais</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Equilíbrio:</strong> Balanço tempo online com atividades offline</p>
+        </div>
+        <div class="question">
+            <p><span class="checkbox"></span> <strong>Inclusão:</strong> Uso tecnologia para conectar, não dividir pessoas</p>
+        </div>
+
+        <p><strong>Bem-estar Digital:</strong> O uso consciente da internet é essencial para saúde mental e produtividade. Configure limites de tempo em aplicativos, estabeleça horários livres de internet, crie rituais de desconexão antes de dormir, pratique mindfulness digital focando em uma tarefa por vez. A tecnologia deve servir seus objetivos, não controlá-los.</p>
+
+        <p><strong>Combate à Desinformação:</strong> Como cidadão digital responsável, você tem papel ativo no combate à desinformação. Pause antes de compartilhar, verifique fontes, questione informações que parecem sensacionais demais, eduque outros sobre verificação de fatos. Pequenas ações individuais, multiplicadas, criam ambiente informacional mais saudável.</p>
+
+        <p><strong>Impacto Social Positivo:</strong> Use suas habilidades digitais para gerar impacto positivo: participe de projetos de ciência cidadã, contribua para Wikipedia em temas de sua expertise, apoie causas importantes através de plataformas de crowdfunding, ensine habilidades digitais para pessoas menos experientes. A internet é ferramenta poderosa para mudança social positiva.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            Reflexão sobre a Era da Informação
+        </div>
+
+        <div class="question">
+            <p><strong>14.</strong> Como suas habilidades de pesquisa mudaram sua forma de aprender?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>15.</strong> Que responsabilidades temos como usuários da internet?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <div class="question">
+            <p><strong>16.</strong> Como você pode usar a internet para contribuir com sua comunidade?</p>
+            <div style="border: 1px solid #000; height: 60px; margin: 5px 0;"></div>
+        </div>
+
+        <p><strong>Democratização do Conhecimento:</strong> A internet democratizou acesso ao conhecimento de forma sem precedentes na história humana. Você tem acesso a informações que antes estavam disponíveis apenas para acadêmicos e especialistas. Essa democratização traz oportunidades extraordinárias, mas também responsabilidades sobre como usar e compartilhar esse conhecimento.</p>
+
+        <p><strong>Literacia Digital como Superpoder:</strong> Habilidades avançadas de pesquisa e navegação digital são superpoderes modernos. Permitem aprender praticamente qualquer coisa, conectar-se com especialistas globalmente, identificar oportunidades, verificar informações e tomar decisões mais informadas. Continue desenvolvendo essas habilidades - elas serão cada vez mais valiosas.</p>
+
+        <p><strong>Futuro da Informação:</strong> Vivemos apenas o início da revolução informacional. Inteligência artificial mudará como pesquisamos e processamos informações, realidade virtual criará novas formas de experienciar conhecimento, blockchain pode revolucionar confiabilidade de informações. Mantenha curiosidade e adaptabilidade para evoluir com essas mudanças.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Internet Avançada e Pesquisa Eficaz</span>
+        <span>Turma: Feminina</span>
+        <span>Data: 09/12/2025</span>
+    </div>
+</body>
+</html>

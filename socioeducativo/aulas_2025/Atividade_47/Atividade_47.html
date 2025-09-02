@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 47 - Redes Sociais Responsáveis</title>
+    <style>
+        @page {
+            margin: 5mm 3mm;
+            size: A4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.3;
+            color: #333;
+            background-color: #ffffff;
+            font-size: 11px;
+            max-width: 204mm;
+            margin: 0 auto;
+            padding: 2mm;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3mm;
+            border-bottom: 1.5px solid #8e44ad;
+            padding-bottom: 2mm;
+        }
+
+        .header h1 {
+            color: #8e44ad;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 1mm;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 11px;
+            font-style: italic;
+        }
+
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4mm;
+            background-color: #f8f9fa;
+            padding: 1.5mm;
+            border-radius: 2mm;
+            font-size: 10px;
+            border: 1px solid #e9ecef;
+        }
+
+        .section {
+            margin-bottom: 4mm;
+            background-color: #fdfdfd;
+            padding: 2.5mm;
+            border-radius: 2mm;
+            border: 1px solid #e3e8ed;
+        }
+
+        .section-title {
+            background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+            color: white;
+            padding: 2mm;
+            border-radius: 2mm;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 2.5mm;
+            display: flex;
+            align-items: center;
+            gap: 2mm;
+        }
+
+        .step-number {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .question {
+            margin-bottom: 2.5mm;
+            padding: 2mm;
+            background-color: #f8f9fa;
+            border-radius: 2mm;
+            border-left: 3px solid #8e44ad;
+        }
+
+        .question p {
+            margin-bottom: 1mm;
+            font-weight: 500;
+        }
+
+        .answer-line {
+            border-bottom: 1px solid #8e44ad;
+            display: inline-block;
+            min-width: 200px;
+            margin-left: 2mm;
+        }
+
+        .social-media-box {
+            background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+            color: white;
+            padding: 3mm;
+            border-radius: 3mm;
+            margin: 3mm 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .social-media-box .section-title {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            margin-bottom: 2mm;
+        }
+
+        .social-media-box p {
+            margin-bottom: 1.5mm;
+            line-height: 1.4;
+        }
+
+        .social-media-box strong {
+            color: #fff;
+        }
+
+        .responsibility-tips {
+            background-color: #f3e5f5;
+            border: 2px solid #8e44ad;
+            border-radius: 3mm;
+            padding: 3mm;
+            margin: 3mm 0;
+        }
+
+        .responsibility-tips .title {
+            color: #8e44ad;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 2mm;
+            display: flex;
+            align-items: center;
+            gap: 2mm;
+        }
+
+        .platform-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2mm;
+            margin: 2mm 0;
+        }
+
+        .platform-item {
+            background-color: #fff;
+            padding: 2mm;
+            border-radius: 2mm;
+            border: 1px solid #dee2e6;
+        }
+
+        .platform-name {
+            font-weight: bold;
+            color: #8e44ad;
+            margin-bottom: 1mm;
+        }
+
+        .digital-wellness {
+            background-color: #e8f5e8;
+            padding: 3mm;
+            border-radius: 2mm;
+            border-left: 4px solid #27ae60;
+            margin: 2mm 0;
+        }
+
+        .digital-wellness .item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5mm;
+            gap: 2mm;
+        }
+
+        .digital-wellness .icon {
+            background-color: #27ae60;
+            color: white;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        p {
+            margin-bottom: 2mm;
+            text-align: justify;
+            line-height: 1.4;
+        }
+
+        strong {
+            color: #8e44ad;
+            font-weight: 600;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .highlight {
+            background-color: #f3e5f5;
+            padding: 2mm;
+            border-left: 4px solid #8e44ad;
+            margin: 2mm 0;
+            border-radius: 0 2mm 2mm 0;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 2mm;
+            padding: 3mm;
+            margin: 3mm 0;
+        }
+
+        .warning-box .warning-title {
+            color: #856404;
+            font-weight: bold;
+            margin-bottom: 1.5mm;
+            display: flex;
+            align-items: center;
+            gap: 2mm;
+        }
+
+        .checklist {
+            background-color: #f8f9fa;
+            padding: 3mm;
+            border-radius: 2mm;
+            border: 1px solid #dee2e6;
+            margin: 2mm 0;
+        }
+
+        .checklist .item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5mm;
+            gap: 2mm;
+        }
+
+        .checklist .checkbox {
+            width: 12px;
+            height: 12px;
+            border: 1.5px solid #8e44ad;
+            border-radius: 2px;
+            margin-top: 1px;
+            flex-shrink: 0;
+        }
+
+        @media print {
+            body {
+                font-size: 10px;
+                margin: 0;
+                padding: 0;
+                max-width: none;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+            
+            .section {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 47 - REDES SOCIAIS RESPONSÁVEIS</h1>
+        <p>Relacionamentos interpessoais e digitais</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 20/11/2025</span>
+        <span>Turma: Feminina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Meu Perfil Digital Atual
+        </div>
+        <div class="question">
+            <p><strong>A1.</strong> Redes sociais que uso ativamente: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A2.</strong> Tempo diário aproximado em redes sociais: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A3.</strong> Principal uso das redes sociais: <span class="answer-line">_________________________</span></p>
+        </div>
+        
+        <p><strong>Autoconhecimento digital:</strong> Compreender nossos hábitos nas redes sociais é essencial para desenvolver uma relação mais saudável e consciente com essas plataformas. Muitas pessoas subestimam o tempo que passam online ou não refletem sobre como esse uso afeta seu bem-estar, relacionamentos, e produtividade. A conscientização é o primeiro passo para mudanças positivas.</p>
+
+        <p><strong>Propósito versus compulsão:</strong> Distinguir entre uso intencional e navegação compulsiva é fundamental para o bem-estar digital. Uso intencional tem objetivos claros: conectar com amigos, buscar informações específicas, ou promover negócios. Navegação compulsiva é automática, sem propósito definido, frequentemente motivada por tédio, ansiedade, ou FOMO (fear of missing out).</p>
+
+        <p><strong>Impacto nos relacionamentos reais:</strong> As redes sociais podem tanto enriquecer quanto prejudicar relacionamentos interpessoais. Elas facilitam manter contato com pessoas distantes, descobrir interesses comuns, e organizar encontros. Porém, podem também substituir interações face a face, criar expectativas irreais baseadas em "vidas perfeitas" online, ou gerar conflitos devido a mal-entendidos na comunicação digital.</p>
+
+        <p><strong>Reflexão sobre identidade online:</strong> Nossa presença nas redes sociais reflete e molda nossa identidade. As escolhas sobre o que compartilhar, como nos apresentamos, e com quem interagimos revelam nossos valores, interesses, e aspirações. É importante manter autenticidade enquanto desenvolvemos consciência sobre como nossa pegada digital pode afetar oportunidades futuras.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Configurações de Privacidade
+        </div>
+        <div class="question">
+            <p><strong>A4.</strong> Já revisei configurações de privacidade: ( ) Sim ( ) Não ( ) Parcialmente</p>
+        </div>
+        <div class="question">
+            <p><strong>A5.</strong> Quem pode ver minhas postagens: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A6.</strong> Informações pessoais que mantenho privadas: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <div class="responsibility-tips">
+            <div class="title">CONFIGURAÇÕES ESSENCIAIS DE PRIVACIDADE</div>
+            <div class="platform-comparison">
+                <div class="platform-item">
+                    <div class="platform-name">Instagram</div>
+                    <div style="font-size: 10px;">
+                        • Conta privada/pública<br>
+                        • Quem pode enviar mensagens<br>
+                        • Localização em posts<br>
+                        • Histórias destacadas<br>
+                        • Comentários ofensivos
+                    </div>
+                </div>
+                <div class="platform-item">
+                    <div class="platform-name">Facebook</div>
+                    <div style="font-size: 10px;">
+                        • Quem vê suas publicações<br>
+                        • Lista de amigos visível<br>
+                        • Busca por telefone/email<br>
+                        • Marcações em fotos<br>
+                        • Aplicativos conectados
+                    </div>
+                </div>
+                <div class="platform-item">
+                    <div class="platform-name">WhatsApp</div>
+                    <div style="font-size: 10px;">
+                        • Última visualização<br>
+                        • Foto do perfil<br>
+                        • Status/recados<br>
+                        • Confirmação de leitura<br>
+                        • Grupos automáticos
+                    </div>
+                </div>
+                <div class="platform-item">
+                    <div class="platform-name">TikTok</div>
+                    <div style="font-size: 10px;">
+                        • Conta privada<br>
+                        • Comentários e duetos<br>
+                        • Download de vídeos<br>
+                        • Sugestão para outros<br>
+                        • Dados de anúncios
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p><strong>Controle sobre visibilidade:</strong> Configurações de privacidade determinam quem pode ver suas informações, postagens, fotos, e atividades online. Plataformas frequentemente atualizam essas configurações, às vezes tornando-as mais permissivas por padrão. Revisar periodicamente essas configurações garante que você mantém controle sobre sua privacidade digital e evita exposição não intencional.</p>
+
+        <p><strong>Gestão de audiência:</strong> Diferentes tipos de conteúdo podem ser apropriados para diferentes audiências. Fotos familiares podem ser adequadas para amigos próximos mas não para colegas de trabalho. Opiniões políticas podem ser apropriadas para alguns círculos mas não para contextos profissionais. Use listas de amigos e configurações segmentadas para controlar quem vê cada tipo de conteúdo.</p>
+
+        <p><strong>Proteção de informações sensíveis:</strong> Certas informações nunca devem ser compartilhadas publicamente: endereço residencial, número de telefone pessoal, localização em tempo real, detalhes financeiros, ou informações que poderiam ser usadas para roubo de identidade. Criminosos frequentemente coletam informações de múltiplas fontes para construir perfis detalhados de potenciais vítimas.</p>
+
+        <p><strong>Implicações profissionais:</strong> Empregadores, universidades, e outras instituições frequentemente verificam perfis online de candidatos. Configure adequadamente a privacidade para separar vida pessoal de profissional, ou mantenha presença online consistente com sua imagem profissional desejada. Considere criar perfis separados para diferentes contextos se necessário.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Comunicação Respeitosa
+        </div>
+        <div class="question">
+            <p><strong>A7.</strong> Como reajo a opiniões diferentes das minhas: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A8.</strong> Já me arrependi de algo que postei: ( ) Sim ( ) Não - Exemplo: <span class="answer-line">_____________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A9.</strong> Estratégia para evitar conflitos online: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Cultura do diálogo construtivo:</strong> Redes sociais podem facilitar debates enriquecedores quando abordados com mentalidade aberta e respeitosa. Ao encontrar opiniões diferentes, pause antes de reagir, considere a perspectiva da outra pessoa, faça perguntas esclarecedoras em vez de ataques, e reconheça que mudança de opinião é sinal de crescimento, não fraqueza. Diversidade de perspectivas pode expandir nossa compreensão do mundo.</p>
+
+        <p><strong>Consequências duradouras:</strong> Conteúdo digital tem vida muito mais longa que conversas presenciais. Screenshots podem preservar comentários impulsivos indefinidamente, mecanismos de busca podem indexar postagens antigas, e empregadores podem descobrir conteúdo anos depois da publicação. Desenvolva hábito de pausar e refletir antes de postar: "Como me sentiria se isso fosse visto por meus avós, chefe, ou filho daqui a 10 anos?"</p>
+
+        <p><strong>Gestão de conflitos digitais:</strong> Conflitos online frequentemente escalam rapidamente devido à ausência de sinais não-verbais e à facilidade de mal-interpretação. Quando conflitos surgem, considere levar a conversa para comunicação privada, use linguagem "eu" em vez de "você" (que soa acusatória), reconheça pontos válidos do outro lado, e saiba quando é apropriado concordar em discordar ou simplesmente se afastar.</p>
+
+        <p><strong>Modelagem de comportamento positivo:</strong> Seu comportamento online influencia a cultura digital mais ampla. Compartilhar conteúdo construtivo, elogiar conquistas de outros, corrigir informações falsas respeitosamente, e demonstrar empatia contribuem para ambiente online mais positivo. Pequenas ações podem ter efeitos multiplicadores quando outros observam e replicam comportamentos positivos.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="social-media-box">
+        <div class="section-title">
+            IMPACTOS DAS REDES SOCIAIS NOS RELACIONAMENTOS
+        </div>
+        
+        <p><strong>ASPECTOS POSITIVOS</strong><br>
+        ☐ Facilita manter contato com pessoas distantes geograficamente<br>
+        ☐ Permite descobrir comunidades com interesses similares<br>
+        ☐ Oferece plataformas para apoio emocional e solidariedade<br>
+        ☐ Facilita organização de eventos e encontros sociais<br>
+        ☐ Proporciona oportunidades de networking profissional</p>
+
+        <p><strong>DESAFIOS POTENCIAIS</strong><br>
+        ☐ Pode substituir interações face a face com superficiais<br>
+        ☐ Cria pressão para manter imagem "perfeita" online<br>
+        ☐ Facilita comparações sociais prejudiciais<br>
+        ☐ Pode gerar FOMO (fear of missing out)<br>
+        ☐ Amplifica mal-entendidos devido a falta de contexto</p>
+
+        <p><strong>ESTRATÉGIAS DE EQUILÍBRIO</strong><br>
+        ☐ Priorizar encontros presenciais sempre que possível<br>
+        ☐ Usar redes sociais para organizar atividades offline<br>
+        ☐ Compartilhar autenticamente, incluindo desafios e imperfeições<br>
+        ☐ Celebrar conquistas de outros sem comparações prejudiciais<br>
+        ☐ Estabelecer limites saudáveis de tempo online</p>
+
+        <p><strong>SINAIS DE USO PROBLEMÁTICO</strong><br>
+        ☐ Verificar redes sociais compulsivamente a cada poucos minutos<br>
+        ☐ Sentir ansiedade quando não pode acessar as plataformas<br>
+        ☐ Preferir interações online a encontros presenciais<br>
+        ☐ Comparar-se constantemente com outros online<br>
+        ☐ Negligenciar responsabilidades devido ao tempo online</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Combate à Desinformação
+        </div>
+        <div class="question">
+            <p><strong>A10.</strong> Como verifico se uma informação é verdadeira: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A11.</strong> Já compartilhei algo sem verificar: ( ) Sim ( ) Não ( ) Não tenho certeza</p>
+        </div>
+        <div class="question">
+            <p><strong>A12.</strong> Ação quando vejo fake news: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <div class="warning-box">
+            <div class="warning-title">⚠️ SINAIS DE POSSÍVEL DESINFORMAÇÃO</div>
+            <div style="font-size: 10px; line-height: 1.4;">
+                • <strong>Urgência excessiva:</strong> "Compartilhe antes que seja removido!"<br>
+                • <strong>Linguagem emocional extrema:</strong> palavras que provocam raiva ou medo<br>
+                • <strong>Fontes vagas:</strong> "especialistas dizem" sem identificação específica<br>
+                • <strong>Contradiz consenso científico:</strong> sem evidências sólidas<br>
+                • <strong>Erros gramaticais:</strong> textos mal escritos ou com erros básicos<br>
+                • <strong>Imagens suspeitas:</strong> fotos fora de contexto ou manipuladas
+            </div>
+        </div>
+
+        <p><strong>Responsabilidade no compartilhamento:</strong> Cada pessoa que compartilha informação se torna parte da cadeia de disseminação, assumindo responsabilidade pela veracidade do conteúdo. Antes de compartilhar, especialmente informações sobre saúde, política, ou segurança, verifique a fonte original, procure confirmação em veículos confiáveis, e considere as possíveis consequências se a informação estiver incorreta.</p>
+
+        <p><strong>Técnicas de verificação:</strong> Desenvolva hábitos de fact-checking: consulte múltiplas fontes independentes, verifique sites especializados em checagem de fatos (Agência Lupa, Aos Fatos), busque a fonte original da informação, desconfie de alegações extraordinárias sem evidências extraordinárias, e use busca reversa de imagens para verificar autenticidade de fotos.</p>
+
+        <p><strong>Impacto social da desinformação:</strong> Informações falsas podem ter consequências reais e graves: influenciar eleições, causar pânico desnecessário, prejudicar campanhas de saúde pública, ou incitar violência contra grupos específicos. Compreender essas consequências motiva maior cuidado na curadoria e compartilhamento de informações.</p>
+
+        <p><strong>Educação como prevenção:</strong> Compartilhe recursos educacionais sobre letramento midiático, ensine familiares e amigos a identificar desinformação, e promova cultura de verificação antes do compartilhamento. Educação preventiva é mais eficaz que correção posterior, e cada pessoa educada pode influenciar positivamente sua rede de contatos.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Bem-estar Digital
+        </div>
+        <div class="question">
+            <p><strong>A13.</strong> Como me sinto após muito tempo nas redes: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A14.</strong> Estratégias que uso para limitar o tempo online: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A15.</strong> Atividades offline que prefiro às redes sociais: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <div class="digital-wellness">
+            <div class="item">
+                <div class="icon">1</div>
+                <div><strong>Estabeleça horários livres:</strong> Defina períodos do dia sem dispositivos, como durante refeições ou antes de dormir.</div>
+            </div>
+            <div class="item">
+                <div class="icon">2</div>
+                <div><strong>Use ferramentas de controle:</strong> Apps que monitoram tempo de uso e estabelecem limites automáticos.</div>
+            </div>
+            <div class="item">
+                <div class="icon">3</div>
+                <div><strong>Curadoria consciente:</strong> Siga apenas contas que agregam valor positivo à sua vida.</div>
+            </div>
+            <div class="item">
+                <div class="icon">4</div>
+                <div><strong>Pausas regulares:</strong> Faça "detox digital" periodicamente para reconectar com mundo offline.</div>
+            </div>
+            <div class="item">
+                <div class="icon">5</div>
+                <div><strong>Atividades alternativas:</strong> Cultive hobbies e interesses que não dependem de tecnologia.</div>
+            </div>
+            <div class="item">
+                <div class="icon">6</div>
+                <div><strong>Mindfulness digital:</strong> Seja consciente sobre por que está usando as redes naquele momento.</div>
+            </div>
+        </div>
+
+        <p><strong>Reconhecimento de sinais de saturação:</strong> O bem-estar digital requer consciência sobre como o uso de redes sociais afeta nosso estado emocional, produtividade, e relacionamentos. Sinais de uso excessivo incluem: sentir-se ansioso quando sem acesso, comparar-se constantemente com outros, perder sono devido ao tempo online, ou negligenciar responsabilidades e relacionamentos reais.</p>
+
+        <p><strong>Estratégias de desconexão saudável:</strong> Implemente pausas intencionais: desligue notificações durante trabalho ou estudo, estabeleça zonas livres de dispositivos em casa, pratique "jejum digital" um dia por semana, ou substitua navegação sem propósito por atividades físicas ou criativas. Pequenas mudanças podem ter grandes impactos no bem-estar geral.</p>
+
+        <p><strong>Cultivo de relações offline:</strong> Invista tempo e energia em relacionamentos presenciais: organize encontros sem dispositivos, pratique esportes ou hobbies em grupo, participe de atividades comunitárias, ou simplesmente tenha conversas profundas sem distrações digitais. Relacionamentos offline frequentemente oferecem satisfação e conexão mais profundas que interações digitais.</p>
+
+        <p><strong>Uso intencional versus compulsivo:</strong> Transforme o uso de redes sociais de hábito automático em escolha consciente. Antes de abrir uma plataforma, pergunte: "O que espero alcançar?" Defina objetivos específicos: verificar mensagens de amigos próximos, buscar inspiração para projetos, ou conectar-se com comunidades de interesse. Uso intencional geralmente resulta em maior satisfação e menor tempo desperdiçado.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">6</span>
+            Construindo Relações Positivas
+        </div>
+        <div class="question">
+            <p><strong>A16.</strong> Como uso redes sociais para apoiar outros: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A17.</strong> Exemplo de conexão real formada online: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A18.</strong> Meta pessoal para melhoria nas redes sociais: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <div class="checklist">
+            <div class="item">
+                <div class="checkbox"></div>
+                <div>Celebrar conquistas de amigos com comentários genuínos e encorajadores</div>
+            </div>
+            <div class="item">
+                <div class="checkbox"></div>
+                <div>Compartilhar recursos úteis (artigos, oportunidades, eventos) com pessoas relevantes</div>
+            </div>
+            <div class="item">
+                <div class="checkbox"></div>
+                <div>Oferecer apoio em momentos difíceis através de mensagens privadas</div>
+            </div>
+            <div class="item">
+                <div class="checkbox"></div>
+                <div>Promover causas e organizações que considero importantes</div>
+            </div>
+            <div class="item">
+                <div class="checkbox"></div>
+                <div>Apresentar pessoas que podem se beneficiar de conexão mútua</div>
+            </div>
+            <div class="item">
+                <div class="checkbox"></div>
+                <div>Compartilhar conhecimentos e habilidades que possam ajudar outros</div>
+            </div>
+            <div class="item">
+                <div class="checkbox"></div>
+                <div>Corrigir desinformação de forma respeitosa e educativa</div>
+            </div>
+            <div class="item">
+                <div class="checkbox"></div>
+                <div>Usar plataformas para organizar encontros e atividades presenciais</div>
+            </div>
+        </div>
+
+        <p><strong>Redes sociais como ferramentas de empoderamento:</strong> Quando usadas intencionalmente, as redes sociais podem amplificar impacto positivo: apoiar pequenos negócios de conhecidos, promover causas importantes, compartilhar oportunidades de trabalho ou educação, ou conectar pessoas com interesses ou necessidades complementares. Essa abordagem transforma consumo passivo em contribuição ativa para o bem-estar coletivo.</p>
+
+        <p><strong>Construção de comunidades significativas:</strong> Procure e participe de grupos e comunidades online alinhados com seus valores e interesses: grupos de hobbies, causas sociais, desenvolvimento profissional, ou apoio mútuo. Contribua ativamente com perguntas reflexivas, recursos úteis, e apoio a outros membros. Comunidades bem estruturadas podem oferecer aprendizado, networking, e senso de pertencimento.</p>
+
+        <p><strong>Transição do digital para o presencial:</strong> Use conexões online como ponto de partida para relacionamentos offline mais profundos. Proponha encontros presenciais com conexões interessantes, participe de eventos organizados por comunidades online, ou use plataformas para coordenar atividades em grupo. A tecnologia deve facilitar, não substituir, conexões humanas autênticas.</p>
+
+        <p><strong>Mentalidade de crescimento contínuo:</strong> Veja seu uso de redes sociais como habilidade em desenvolvimento constante. Experimente novas abordagens, reflita sobre resultados, ajuste estratégias baseado em feedback e bem-estar pessoal. O que funciona pode mudar com diferentes fases da vida, e flexibilidade para adaptar hábitos digitais é essencial para relacionamento saudável com tecnologia.</p>
+
+        <p><strong>Modelagem de comportamento digital exemplar:</strong> Reconheça que seu comportamento online influencia outros, especialmente familiares mais jovens ou pessoas que respeitam sua opinião. Demonstre uso equilibrado e responsável, compartilhe reflexões sobre bem-estar digital, e seja exemplo de como tecnologia pode enriquecer em vez de dominar a vida. Liderança pelo exemplo é poderosa forma de influência positiva.</p>
+
+        <p><strong>Legado digital consciente:</strong> Considere que sua presença online contribui para seu legado pessoal e profissional. Que tipo de pegada digital você quer deixar? Como suas contribuições online refletem seus valores e aspirações? Essa perspectiva de longo prazo pode motivar escolhas mais intencionais sobre conteúdo compartilhado e interações digitais.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: __________</span>
+    </div>
+</body>
+</html>

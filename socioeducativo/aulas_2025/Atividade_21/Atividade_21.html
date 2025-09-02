@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 21 - Pesquisa e Organização de Informações</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+        }
+        .text-area {
+            border: 1px solid #000;
+            min-height: 80px;
+            margin: 5px 0;
+            padding: 5px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        .search-box {
+            border: 2px solid #4285f4;
+            padding: 15px;
+            margin: 10px 0;
+            background: #e8f0fe;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 21 - EXCEL BÁSICO + ORGANIZAÇÃO DE DADOS</h1>
+        <p>Minha Profissão dos Sonhos</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 07/10/2025</span>
+        <span>Turma: Feminina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Operadores de Busca Avançada
+        </div>
+        <div class="question">
+            <p><strong>1.</strong> Operador para busca exata: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>2.</strong> Como excluir palavra da busca: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>3.</strong> Operador para buscar em site específico: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <div class="search-box">
+            <p><strong>PRINCIPAIS OPERADORES DE BUSCA:</strong></p>
+            <p>• <strong>"busca exata"</strong> - Aspas para busca da frase exata</p>
+            <p>• <strong>palavra -excluir</strong> - Hífen para excluir termos</p>
+            <p>• <strong>site:exemplo.com</strong> - Buscar apenas em site específico</p>
+            <p>• <strong>filetype:pdf</strong> - Buscar tipo específico de arquivo</p>
+            <p>• <strong>palavra1 OR palavra2</strong> - Buscar qualquer um dos termos</p>
+            <p>• <strong>palavra*</strong> - Asterisco como coringa</p>
+            <p>• <strong>define:termo</strong> - Definição de palavras</p>
+            <p>• <strong>related:site.com</strong> - Sites relacionados</p>
+        </div>
+
+        <p><strong>Busca com aspas para precisão:</strong> Usar aspas em torno de frases garante que o buscador encontre exatamente aquela sequência de palavras. Por exemplo, "mudanças climáticas no Brasil" encontrará páginas com essa frase exata, em vez de páginas que apenas contenham essas palavras separadamente. Isso é especialmente útil para citações, nomes completos ou conceitos específicos.</p>
+
+        <p><strong>Exclusão estratégica com hífen:</strong> O operador hífen (-) remove resultados indesejados. Se você busca "python" sobre programação mas aparecem resultados sobre a serpente, use "python programação -cobra -animal". Isso refina significativamente os resultados, eliminando contextos irrelevantes para sua pesquisa.</p>
+
+        <p><strong>Pesquisa direcionada por site:</strong> Use "site:" para buscar apenas dentro de domínios específicos. "site:edu.br inteligência artificial" encontra apenas conteúdo acadêmico brasileiro sobre IA. "site:youtube.com tutorial excel" busca apenas vídeos no YouTube. Útil para encontrar fontes confiáveis ou tipos específicos de conteúdo.</p>
+
+        <p><strong>Filtros por tipo de arquivo:</strong> "filetype:" permite buscar documentos específicos. "filetype:pdf sustentabilidade" encontra apenas PDFs sobre sustentabilidade. Outros tipos úteis: doc, ppt, xls. Ideal para encontrar materiais acadêmicos, relatórios oficiais ou apresentações sobre seu tema de interesse.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Avaliação de Fontes e Credibilidade
+        </div>
+        <div class="question">
+            <p><strong>4.</strong> Principal indicador de site confiável: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>5.</strong> O que significa domínio .edu: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Critérios de credibilidade:</strong> Avaliar fontes é habilidade essencial na era da informação. Verifique: autoria (quem escreveu?), autoridade (qual qualificação do autor?), atualidade (quando foi publicado/atualizado?), precisão (informações corretas e verificáveis?), propósito (objetivo informar, persuadir ou vender?). Fontes confiáveis identificam claramente autores, citam referências e têm propósito educativo ou informativo.</p>
+
+        <p><strong>Hierarquia de fontes confiáveis:</strong> Em ordem decrescente de confiabilidade: 1) Artigos científicos revisados por pares, 2) Publicações acadêmicas e governamentais, 3) Organizações reconhecidas e veículos jornalísticos estabelecidos, 4) Sites especializados com autores identificados, 5) Wikipédia (como ponto de partida), 6) Blogs e sites pessoais. Use múltiplas fontes para confirmar informações importantes.</p>
+
+        <p><strong>Identificando fake news:</strong> Desconfie de: títulos sensacionalistas, ausência de autor ou data, erros gramaticais excessivos, informações extraordinárias sem evidências, sites que imitam veículos conhecidos, conteúdo que confirma exatamente seus preconceitos. Verifique fatos em sites especializados (Aos Fatos, Agência Lupa), procure fontes originais e compare com múltiplas fontes.</p>
+
+        <p><strong>Domínios e sua relevância:</strong> Domínios podem indicar tipo de organização: .edu (educacional), .gov (governamental), .org (organizações), .com (comercial). Embora não garantam credibilidade absoluta, domínios .edu e .gov geralmente têm maior confiabilidade. Cuidado com sites que imitam domínios confiáveis usando variações (ex: .com.br em vez de .gov.br).</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Estratégias de Pesquisa Eficiente
+        </div>
+        <div class="question">
+            <p><strong>6.</strong> Primeira etapa de qualquer pesquisa: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>7.</strong> Vantagem de usar sinônimos na busca: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Planejamento da pesquisa:</strong> Antes de abrir o navegador, defina claramente: 1) Objetivo da pesquisa (o que exatamente precisa saber?), 2) Tipo de informação necessária (dados, conceitos, exemplos, opiniões?), 3) Nível de profundidade desejado (visão geral ou detalhamento?), 4) Fontes apropriadas (acadêmicas, jornalísticas, técnicas?). Bom planejamento economiza tempo e melhora resultados.</p>
+
+        <p><strong>Construção de consultas eficazes:</strong> Comece com termos gerais, depois refine. Use palavras-chave específicas da área de estudo. Varie sinônimos e termos relacionados - "computador", "tecnologia", "informática" podem trazer resultados diferentes. Combine termos técnicos com linguagem popular. Experimente diferentes ordens de palavras.</p>
+
+        <p><strong>Técnica da pesquisa em camadas:</strong> 1ª camada: visão geral do tema (Wikipédia, enciclopédias), 2ª camada: fontes acadêmicas e especializadas (Google Scholar, bases científicas), 3ª camada: aplicações práticas e casos reais (sites especializados, estudos de caso), 4ª camada: perspectivas atuais e debates (notícias, blogs especializados). Cada camada aprofunda e complementa a anterior.</p>
+
+        <p><strong>Documentação da pesquisa:</strong> Mantenha registro organizado: URLs das fontes, data de acesso, citações importantes, resumos próprios. Use ferramentas como Evernote, OneNote ou simples documento Word. Organize por temas ou cronologia. Isso facilita elaboração de trabalhos e evita necessidade de refazer buscas.</p>
+
+        <p><strong>Verificação cruzada:</strong> Nunca confie em fonte única para informações importantes. Compare informações entre múltiplas fontes confiáveis. Se fontes concordam, informação provavelmente é correta. Se divergem, investigue mais ou apresente diferentes perspectivas. Essa prática desenvolve pensamento crítico e garante precisão.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Ferramentas Especializadas de Busca
+        </div>
+        <div class="question">
+            <p><strong>8.</strong> Melhor buscador para artigos científicos: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>9.</strong> Vantagem do Google Acadêmico: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Google Scholar para pesquisa acadêmica:</strong> Google Acadêmico é ferramenta específica para literatura científica, teses, dissertações, artigos de periódicos e citações. Resultados são mais confiáveis que busca comum do Google. Permite ver quantas vezes artigo foi citado (indicador de relevância), encontrar versões gratuitas de artigos pagos e acompanhar pesquisas de autores específicos.</p>
+
+        <p><strong>Bases de dados especializadas:</strong> Cada área tem bases específicas: PubMed (medicina), IEEE Xplore (engenharia/tecnologia), JSTOR (humanidades), SciELO (América Latina), Portal CAPES (Brasil). Essas bases contêm artigos revisados por pares, garantindo maior qualidade científica. Muitas são acessíveis gratuitamente através de universidades.</p>
+
+        <p><strong>Buscadores alternativos:</strong> DuckDuckGo não rastreia usuários e oferece resultados menos personalizados (útil para pesquisas imparciais). Bing tem boa integração com ferramentas Microsoft. Yandex é eficaz para conteúdo em russo. Baidu para chinês. Cada buscador tem algoritmos diferentes, podendo revelar resultados únicos.</p>
+
+        <p><strong>Ferramentas de arquivo e histórico:</strong> Wayback Machine (archive.org) permite ver versões antigas de sites, útil quando conteúdo foi removido ou modificado. Google Cache mostra versão armazenada de páginas. Library Genesis oferece acesso a livros acadêmicos. Essas ferramentas recuperam informações que parecem perdidas.</p>
+
+        <p><strong>Alertas e monitoramento:</strong> Google Alerts envia notificações sobre novos conteúdos relacionados a termos específicos. Útil para acompanhar desenvolvimentos em área de interesse, monitorar menções a seu nome ou empresa, ou manter-se atualizado sobre temas específicos. Configure alertas com palavras-chave relevantes para sua área de estudo ou trabalho.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            Reflexão sobre Literacia Digital
+        </div>
+
+        <p><strong>Pensamento crítico na era digital:</strong> Vivemos na era da informação abundante, onde o desafio não é encontrar informação, mas filtrar, avaliar e sintetizar o que é relevante e confiável. Desenvolver senso crítico para questionar fontes, verificar fatos e distinguir opinião de evidência é habilidade essencial para cidadania digital responsável.</p>
+
+        <p><strong>Evitando bolhas de filtro:</strong> Algoritmos de busca e redes sociais tendem a mostrar conteúdo similar ao que você já consumiu, criando "bolhas" que limitam exposição a perspectivas diferentes. Conscientemente busque fontes diversas, use buscadores diferentes, explore viewpoints opostos. Essa diversidade enriquece compreensão e evita polarização.</p>
+
+        <p><strong>Ética na pesquisa:</strong> Respeite direitos autorais, cite fontes adequadamente, não plagiarize conteúdo. Use informações de forma responsável, especialmente dados pessoais ou sensíveis. Considere impacto de compartilhar informações não verificadas. Pesquisa responsável contribui para ecossistema digital mais saudável e confiável.</p>
+
+        <p><strong>Desenvolvimento de expertise:</strong> Tornar-se expert em busca eficiente é processo contínuo. Pratique regularmente, experimente novas técnicas, mantenha-se atualizado sobre mudanças em algoritmos e ferramentas. Expertise em pesquisa é competência transferível valiosa em qualquer área profissional ou acadêmica.</p>
+
+        <p><strong>Ensino e compartilhamento:</strong> Compartilhe conhecimento sobre pesquisa eficiente com outros. Ajude colegas, familiares e comunidade a desenvolver habilidades de busca e avaliação crítica. Contribua para combate à desinformação ensinando outros a verificar fontes e pensar criticamente sobre informações online.</p>
+
+        <p><strong>Futuro da pesquisa:</strong> Inteligência artificial está transformando como pesquisamos e processamos informação. Ferramentas como ChatGPT, Gemini e outros assistentes AI podem acelerar pesquisa, mas exigem nova forma de verificação e validação. Mantenha-se adaptável às mudanças tecnológicas mantendo princípios fundamentais de pensamento crítico.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Projeto de Pesquisa Prática
+        </div>
+        <div class="text-area">
+            <p><strong>Tema de pesquisa escolhido:</strong> Defina um tema que gostaria de pesquisar usando técnicas aprendidas:</p>
+        </div>
+
+        <div class="text-area">
+            <p><strong>Estratégia de busca:</strong> Liste 3 operadores ou técnicas que usaria para pesquisar este tema:</p>
+        </div>
+
+        <div class="question">
+            <p><strong>10.</strong> Maior dificuldade em pesquisas online: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>11.</strong> Próximo passo para melhorar suas buscas: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Prática contínua:</strong> Habilidades de pesquisa melhoram com prática deliberada. Experimente técnicas diferentes em pesquisas cotidianas, explore ferramentas novas, questione sempre a confiabilidade das fontes. A competência em pesquisa eficiente é investimento que beneficiará toda sua trajetória acadêmica e profissional.</p>
+    </div>
+</body>
+</html>

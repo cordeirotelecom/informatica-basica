@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 46 - Internet e Navegadores</title>
+    <style>
+        @page {
+            margin: 5mm 3mm;
+            size: A4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.3;
+            color: #333;
+            background-color: #ffffff;
+            font-size: 11px;
+            max-width: 204mm;
+            margin: 0 auto;
+            padding: 2mm;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3mm;
+            border-bottom: 1.5px solid #3498db;
+            padding-bottom: 2mm;
+        }
+
+        .header h1 {
+            color: #2980b9;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 1mm;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 11px;
+            font-style: italic;
+        }
+
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4mm;
+            background-color: #f8f9fa;
+            padding: 1.5mm;
+            border-radius: 2mm;
+            font-size: 10px;
+            border: 1px solid #e9ecef;
+        }
+
+        .section {
+            margin-bottom: 4mm;
+            background-color: #fdfdfd;
+            padding: 2.5mm;
+            border-radius: 2mm;
+            border: 1px solid #e3e8ed;
+        }
+
+        .section-title {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 2mm;
+            border-radius: 2mm;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 2.5mm;
+            display: flex;
+            align-items: center;
+            gap: 2mm;
+        }
+
+        .step-number {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .question {
+            margin-bottom: 2.5mm;
+            padding: 2mm;
+            background-color: #f8f9fa;
+            border-radius: 2mm;
+            border-left: 3px solid #3498db;
+        }
+
+        .question p {
+            margin-bottom: 1mm;
+            font-weight: 500;
+        }
+
+        .answer-line {
+            border-bottom: 1px solid #3498db;
+            display: inline-block;
+            min-width: 200px;
+            margin-left: 2mm;
+        }
+
+        .internet-box {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 3mm;
+            border-radius: 3mm;
+            margin: 3mm 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .internet-box .section-title {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            margin-bottom: 2mm;
+        }
+
+        .internet-box p {
+            margin-bottom: 1.5mm;
+            line-height: 1.4;
+        }
+
+        .internet-box strong {
+            color: #fff;
+        }
+
+        .browser-comparison {
+            background-color: #f0f7ff;
+            border: 2px solid #3498db;
+            border-radius: 3mm;
+            padding: 3mm;
+            margin: 3mm 0;
+        }
+
+        .browser-comparison .title {
+            color: #2980b9;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 2mm;
+            display: flex;
+            align-items: center;
+            gap: 2mm;
+        }
+
+        .browser-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2mm;
+            margin: 2mm 0;
+        }
+
+        .browser-item {
+            background-color: #fff;
+            padding: 2mm;
+            border-radius: 2mm;
+            border: 1px solid #dee2e6;
+        }
+
+        .browser-name {
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 1mm;
+        }
+
+        .search-tips {
+            background-color: #e8f5e8;
+            padding: 3mm;
+            border-radius: 2mm;
+            border-left: 4px solid #27ae60;
+            margin: 2mm 0;
+        }
+
+        .search-tips .item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5mm;
+            gap: 2mm;
+        }
+
+        .search-tips .icon {
+            background-color: #27ae60;
+            color: white;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        p {
+            margin-bottom: 2mm;
+            text-align: justify;
+            line-height: 1.4;
+        }
+
+        strong {
+            color: #2980b9;
+            font-weight: 600;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .highlight {
+            background-color: #f0f7ff;
+            padding: 2mm;
+            border-left: 4px solid #3498db;
+            margin: 2mm 0;
+            border-radius: 0 2mm 2mm 0;
+        }
+
+        .url-structure {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 2mm;
+            padding: 3mm;
+            margin: 3mm 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .url-part {
+            display: inline-block;
+            margin: 1mm;
+            padding: 1mm;
+            border-radius: 1mm;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .protocol {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .domain {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        .path {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        @media print {
+            body {
+                font-size: 10px;
+                margin: 0;
+                padding: 0;
+                max-width: none;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+            
+            .section {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 46 - INTERNET E NAVEGADORES</h1>
+        <p>Explorando melhor a rede mundial de computadores</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 19/11/2025</span>
+        <span>Turma: Masculina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Meus Hábitos de Navegação
+        </div>
+        <div class="question">
+            <p><strong>A1.</strong> Navegador que mais uso: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A2.</strong> Sites que acesso diariamente: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A3.</strong> Para que mais uso a internet: <span class="answer-line">_________________________</span></p>
+        </div>
+        
+        <p><strong>Padrões de uso pessoal:</strong> Compreender nossos próprios hábitos de navegação é o primeiro passo para usar a internet de forma mais eficiente e segura. A maioria das pessoas desenvolve rotinas digitais específicas: sites de notícias pela manhã, redes sociais durante pausas, pesquisas de trabalho ou estudo, entretenimento à noite. Reconhecer esses padrões ajuda a otimizar tempo e identificar oportunidades de aprendizado.</p>
+
+        <p><strong>Escolha de navegador:</strong> Diferentes navegadores oferecem recursos únicos e têm pontos fortes específicos. Chrome é popular por integração com serviços Google, Firefox prioriza privacidade e personalização, Safari otimiza para dispositivos Apple, Edge integra com Microsoft. A escolha ideal depende de necessidades específicas: velocidade, segurança, sincronização entre dispositivos, ou recursos especiais.</p>
+
+        <p><strong>Diversificação de fontes:</strong> Usar a internet apenas para entretenimento ou redes sociais desperdiça seu potencial educacional e profissional. Explore recursos como cursos online gratuitos, documentários educacionais, podcasts informativos, bibliotecas digitais, ou plataformas de habilidades profissionais. Pequenos ajustes nos hábitos de navegação podem transformar tempo online em investimento em crescimento pessoal.</p>
+
+        <p><strong>Consciência do tempo digital:</strong> É fácil perder noção do tempo online, especialmente em plataformas projetadas para maximizar engajamento. Desenvolva consciência sobre quanto tempo gasta online e se esse uso alinha com seus objetivos pessoais e profissionais. Ferramentas de controle de tempo podem ajudar a manter equilíbrio saudável entre vida digital e offline.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Anatomia de um Endereço Web (URL)
+        </div>
+        <div class="question">
+            <p><strong>A4.</strong> Site favorito (URL completa): <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A5.</strong> O que significa "www" em endereços: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A6.</strong> Diferença entre .com, .org, .gov: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <div class="url-structure">
+            <div style="margin-bottom: 2mm; font-weight: bold; color: #333;">ESTRUTURA DE UMA URL:</div>
+            <span class="url-part protocol">https://</span>
+            <span class="url-part domain">www.exemplo.com.br</span>
+            <span class="url-part path">/categoria/pagina</span>
+            
+            <div style="margin-top: 3mm; font-size: 10px; color: #666;">
+                <div style="margin-bottom: 1mm;"><span class="protocol" style="padding: 1mm;">Protocolo</span> - Define como dados são transmitidos (HTTP/HTTPS)</div>
+                <div style="margin-bottom: 1mm;"><span class="domain" style="padding: 1mm;">Domínio</span> - Identifica o servidor/site (subdomínio.domínio.extensão)</div>
+                <div><span class="path" style="padding: 1mm;">Caminho</span> - Localização específica dentro do site</div>
+            </div>
+        </div>
+
+        <p><strong>Protocolo de segurança:</strong> O "https://" no início de URLs indica que a conexão é criptografada, protegendo dados transmitidos entre seu navegador e o servidor. Sites que lidam com informações sensíveis (bancos, lojas online, email) devem sempre usar HTTPS. Navegadores modernos mostram avisos quando sites importantes não usam conexão segura.</p>
+
+        <p><strong>Hierarquia de domínios:</strong> Domínios seguem estrutura hierárquica: "www" é subdomínio (não obrigatório), nome principal identifica a organização, e extensão (.com, .org, .edu, .gov) indica tipo ou localização. Extensões geográficas (.br, .uk, .fr) identificam países, enquanto genéricas (.com, .org) indicam propósito pretendido.</p>
+
+        <p><strong>Interpretação de caminhos:</strong> A parte após o domínio (/categoria/pagina) mostra organização interna do site. URLs bem estruturadas são intuitivas e ajudam usuários entender onde estão no site. Por exemplo: /produtos/eletronicos/smartphones indica categoria clara e navegação lógica.</p>
+
+        <p><strong>Segurança através de URLs:</strong> URLs podem revelar informações sobre legitimidade de sites. Golpistas frequentemente usam domínios similares a sites conhecidos (amazom.com em vez de amazon.com) ou subdomínios enganosos (paypal.seguro-site.com). Sempre verifique URLs cuidadosamente, especialmente antes de inserir informações pessoais.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Comparação de Navegadores
+        </div>
+        <div class="question">
+            <p><strong>A7.</strong> Já experimentei outros navegadores: ( ) Sim ( ) Não ( ) Qual? <span class="answer-line">_____________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A8.</strong> Recurso mais importante para mim: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A9.</strong> Problemas que enfrento navegando: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <div class="browser-comparison">
+            <div class="title">PRINCIPAIS NAVEGADORES E CARACTERÍSTICAS</div>
+            <div class="browser-grid">
+                <div class="browser-item">
+                    <div class="browser-name">Google Chrome</div>
+                    <div style="font-size: 10px;">
+                        • Velocidade e sincronização<br>
+                        • Integração Google Services<br>
+                        • Muitas extensões<br>
+                        • Alto uso de memória
+                    </div>
+                </div>
+                <div class="browser-item">
+                    <div class="browser-name">Mozilla Firefox</div>
+                    <div style="font-size: 10px;">
+                        • Foco em privacidade<br>
+                        • Código aberto<br>
+                        • Customizações avançadas<br>
+                        • Menor uso de recursos
+                    </div>
+                </div>
+                <div class="browser-item">
+                    <div class="browser-name">Microsoft Edge</div>
+                    <div style="font-size: 10px;">
+                        • Integração Windows<br>
+                        • Boa performance<br>
+                        • Recursos de produtividade<br>
+                        • Proteção contra tracking
+                    </div>
+                </div>
+                <div class="browser-item">
+                    <div class="browser-name">Safari</div>
+                    <div style="font-size: 10px;">
+                        • Otimizado para Apple<br>
+                        • Eficiência energética<br>
+                        • Privacidade robusta<br>
+                        • Apenas macOS/iOS
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p><strong>Critérios de escolha:</strong> A seleção do navegador ideal depende de prioridades pessoais: velocidade de carregamento, uso de recursos do sistema, recursos de privacidade, sincronização entre dispositivos, disponibilidade de extensões, ou integração com outros softwares. Usuários diferentes têm necessidades diferentes, e não existe uma escolha universalmente "melhor".</p>
+
+        <p><strong>Recursos de produtividade:</strong> Navegadores modernos oferecem recursos além da navegação básica: gestores de senhas integrados, modo de leitura, tradução automática, bloqueadores de anúncios, organizadores de abas, e sincronização de favoritos entre dispositivos. Explorar esses recursos pode melhorar significativamente a eficiência online.</p>
+
+        <p><strong>Privacidade e segurança:</strong> Diferentes navegadores têm abordagens distintas para privacidade: alguns bloqueiam rastreamento por padrão, outros permitem navegação anônima, alguns oferecem VPN integrado. Configure adequadamente as opções de privacidade independentemente do navegador escolhido, e considere usar modo privado para pesquisas sensíveis.</p>
+
+        <p><strong>Experimentação inteligente:</strong> Instalar múltiplos navegadores permite usar o melhor para cada situação: um para trabalho com conta corporativa, outro para uso pessoal, terceiro para testar sites ou navegação privada. Esta abordagem oferece flexibilidade e redundância caso um navegador apresente problemas.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="internet-box">
+        <div class="section-title">
+            FUNDAMENTOS DA INTERNET
+        </div>
+        
+        <p><strong>O QUE É A INTERNET</strong><br>
+        A internet é uma rede global de computadores interconectados que permite comunicação e compartilhamento de informações instantâneos entre bilhões de dispositivos ao redor do mundo. Ela funciona através de protocolos padronizados que garantem que diferentes sistemas possam se comunicar.</p>
+
+        <p><strong>WORLD WIDE WEB (WWW)</strong><br>
+        A Web é apenas uma parte da internet - especificamente o sistema de documentos interligados através de hiperlinks, acessíveis via navegadores. Outros serviços da internet incluem email, transferência de arquivos, jogos online, e comunicação por voz.</p>
+
+        <p><strong>COMO FUNCIONA</strong><br>
+        Quando você digita uma URL, seu computador consulta servidores DNS para encontrar o endereço IP do site, estabelece conexão com o servidor, solicita a página, recebe os dados, e o navegador renderiza o conteúdo. Tudo isso acontece em milissegundos.</p>
+
+        <p><strong>EVOLUÇÃO HISTÓRICA</strong><br>
+        A internet evoluiu de projeto militar (ARPANET, 1969) para rede acadêmica, depois comercial. A Web foi criada em 1989 por Tim Berners-Lee. Marcos importantes: primeiro navegador gráfico (1993), Google (1998), redes sociais (2000s), smartphones (2007), computação em nuvem.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Técnicas de Pesquisa Eficaz
+        </div>
+        <div class="question">
+            <p><strong>A10.</strong> Mecanismo de busca que prefiro: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A11.</strong> Como faço quando não encontro informações: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A12.</strong> Dificuldade mais comum nas pesquisas: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <div class="search-tips">
+            <div class="item">
+                <div class="icon">1</div>
+                <div><strong>Palavras-chave específicas:</strong> Use termos precisos. "Receita bolo chocolate" é melhor que "como fazer doce".</div>
+            </div>
+            <div class="item">
+                <div class="icon">2</div>
+                <div><strong>Aspas para frases exatas:</strong> "mudanças climáticas no Brasil" busca essa frase específica.</div>
+            </div>
+            <div class="item">
+                <div class="icon">3</div>
+                <div><strong>Operador OR:</strong> "futebol OR soccer" encontra páginas com qualquer um dos termos.</div>
+            </div>
+            <div class="item">
+                <div class="icon">4</div>
+                <div><strong>Sinal de menos (-):</strong> "jaguar -carro" exclui resultados sobre automóveis.</div>
+            </div>
+            <div class="item">
+                <div class="icon">5</div>
+                <div><strong>Site específico:</strong> "site:gov.br covid" busca apenas em sites governamentais.</div>
+            </div>
+            <div class="item">
+                <div class="icon">6</div>
+                <div><strong>Tipo de arquivo:</strong> "relatório ambiental filetype:pdf" encontra apenas PDFs.</div>
+            </div>
+        </div>
+
+        <p><strong>Estratégias de refinamento:</strong> Comece com termos gerais e refine gradualmente. Se "programação" retorna muitos resultados, especifique "programação Python iniciantes" ou "curso programação online grátis". Use sinônimos se não encontrar resultados satisfatórios. Palavras diferentes podem revelar recursos únicos sobre o mesmo tópico.</p>
+
+        <p><strong>Avaliação de credibilidade:</strong> Nem toda informação online é confiável. Verifique a fonte: instituições acadêmicas (.edu), organizações governamentais (.gov), e organizações reconhecidas geralmente são mais confiáveis. Confirme informações importantes através de múltiplas fontes independentes e verifique datas de publicação para garantir atualidade.</p>
+
+        <p><strong>Pesquisa em múltiplas plataformas:</strong> Diferentes mecanismos de busca podem retornar resultados distintos. Google é abrangente, Bing pode ter resultados únicos, DuckDuckGo prioriza privacidade, YouTube para conteúdo em vídeo, Scholar.google.com para artigos acadêmicos. Scholarly search engines podem encontrar conteúdo acadêmico não indexado em buscadores gerais.</p>
+
+        <p><strong>Organização de resultados:</strong> Use favoritos ou bookmarks para salvar recursos úteis, organize em pastas temáticas, e considere ferramentas como Pocket para salvar artigos para leitura posterior. Mantenha notas sobre fontes importantes para referência futura, especialmente para pesquisas acadêmicas ou profissionais.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Configurações e Personalização
+        </div>
+        <div class="question">
+            <p><strong>A13.</strong> Extensões que uso ou gostaria de usar: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A14.</strong> Configuração de privacidade que considero importante: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A15.</strong> Problema técnico que mais me incomoda: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Extensões úteis:</strong> Extensões podem transformar significativamente a experiência de navegação. Bloqueadores de anúncios (uBlock Origin) aceleram carregamento e reduzem distrações, gestores de senhas (LastPass, Bitwarden) melhoram segurança, tradutores automáticos quebram barreiras linguísticas, e capturadores de tela facilitam documentação. Instale apenas extensões necessárias e de fontes confiáveis.</p>
+
+        <p><strong>Configurações de privacidade:</strong> Configure seu navegador para equilibrar funcionalidade e privacidade: desative rastreamento desnecessário, limite cookies de terceiros, configure o navegador para limpar dados ao fechar, use modo privado para pesquisas sensíveis, e considere usar VPN para privacidade adicional. Revise configurações periodicamente pois atualizações podem alterá-las.</p>
+
+        <p><strong>Otimização de performance:</strong> Navegadores lentos frequentemente resultam de: muitas abas abertas, extensões excessivas, cache sobrecarregado, ou problemas de conexão. Limpe dados de navegação regularmente, desinstale extensões não utilizadas, reinicie o navegador periodicamente, e considere usar gestores de abas para organizar melhor o trabalho.</p>
+
+        <p><strong>Sincronização entre dispositivos:</strong> Configure sincronização para manter favoritos, senhas, histórico, e configurações consistentes entre computador, tablet, e smartphone. Isso facilita transição entre dispositivos e garante que recursos importantes estejam sempre disponíveis. Use contas oficiais dos navegadores para sincronização segura.</p>
+
+        <p><strong>Backup e recuperação:</strong> Exporte favoritos periodicamente como backup, anote configurações importantes, e saiba como restaurar dados após problemas técnicos. Considere usar múltiplos navegadores para redundância, especialmente para trabalho importante. Familiarize-se com ferramentas de recuperação de dados do navegador.</p>
+
+        <p><strong>Resolução de problemas comuns:</strong> Para sites que não carregam: verifique conexão, desative extensões temporariamente, limpe cache, ou tente modo privado. Para problemas de velocidade: feche abas desnecessárias, desative extensões não essenciais, ou reinicie o navegador. Para problemas persistentes, considere reinstalar o navegador ou usar perfil alternativo.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">6</span>
+            Explorando Recursos Avançados
+        </div>
+        <div class="question">
+            <p><strong>A16.</strong> Recurso do navegador que não conhecia bem: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A17.</strong> Atalho de teclado que quero aprender: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A18.</strong> Objetivo de melhoria na navegação: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Atalhos de produtividade:</strong> Atalhos de teclado podem acelerar significativamente a navegação: Ctrl+T (nova aba), Ctrl+W (fechar aba), Ctrl+Shift+T (reabrir aba fechada), Ctrl+L (focar na barra de endereços), Ctrl+D (adicionar favorito), Ctrl+H (histórico), F5 (atualizar). Memorizar apenas alguns atalhos principais já melhora consideravelmente a eficiência.</p>
+
+        <p><strong>Ferramentas de desenvolvedor:</strong> Pressionar F12 abre ferramentas poderosas para entender como sites funcionam: inspect element mostra código HTML/CSS, console revela erros JavaScript, network monitoring mostra velocidade de carregamento, e responsive design mode simula diferentes dispositivos. Útil para solucionar problemas ou aprender web design.</p>
+
+        <p><strong>Recursos de acessibilidade:</strong> Navegadores oferecem ferramentas para melhorar acessibilidade: zoom de página, modo de alto contraste, narração de texto (screen readers), navegação por teclado, e legendas automáticas para vídeos. Estes recursos ajudam pessoas com deficiências e podem ser úteis para todos em certas situações.</p>
+
+        <p><strong>Navegação offline:</strong> Muitos sites agora funcionam parcialmente offline através de PWAs (Progressive Web Apps). Alguns conteúdos podem ser salvos para acesso posterior sem internet. Use "Salvar página" para preservar artigos importantes, e explore aplicações web que funcionam offline como Google Docs ou algumas versões de Gmail.</p>
+
+        <p><strong>Automação e produtividade:</strong> Explore recursos como preenchimento automático de formulários, gestão inteligente de senhas, organização automática de downloads, e sincronização de dados entre dispositivos. Estes recursos podem economizar tempo significativo em tarefas repetitivas e reduzir erros de digitação.</p>
+
+        <p><strong>Personalização avançada:</strong> Configure temas personalizados, organize favoritos em estrutura lógica, crie atalhos para sites frequentes, configure página inicial útil, e personalize comportamento de novas abas. Pequenos ajustes na interface podem melhorar significativamente a experiência diária de navegação.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: __________</span>
+    </div>
+</body>
+</html>

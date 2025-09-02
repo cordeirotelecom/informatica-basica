@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 26 - Uso de Estilos e Formatação Avançada</title>
+    <style>
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body { 
+                margin: 5mm 3mm 5mm 3mm; 
+                font-size: 10px; 
+                line-height: 1.2; 
+                max-width: 204mm;
+            }
+            .page-break { 
+                page-break-before: always; 
+                margin-top: 0;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+            .section-title { font-size: 11px !important; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 5mm 3mm;
+            color: #000;
+            background: white;
+            max-width: 210mm;
+        }
+        h2 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+        h3 {
+            color: #555;
+            margin: 12px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 { font-size: 18px; margin: 0 0 5px 0; }
+        .header p { font-size: 14px; margin: 0; }
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        p { margin: 6px 0; text-align: justify; }
+        .question { margin: 5px 0; }
+        .answer-line { 
+            border-bottom: 1px solid #000; 
+            display: inline-block; 
+            min-width: 150px; 
+            height: 16px;
+        }
+        .step-number {
+            background: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 11px;
+        }
+        .format-example {
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 10px 0;
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 26 - WORD AVANÇADO</h1>
+        <p>Uso de Estilos e Formatação Avançada</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: 15/10/2025</span>
+        <span>Turma: Masculina</span>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">1</span>
+            Fundamentos dos Estilos de Formatação
+        </div>
+        <div class="question">
+            <p><strong>A1.</strong> O que são estilos no Word? <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A2.</strong> Principal vantagem dos estilos: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A3.</strong> Onde encontrar estilos no Word: <span class="answer-line">_________________________</span></p>
+        </div>
+        
+        <p><strong>Conceito de estilos:</strong> Estilos são conjuntos predefinidos de formatação que incluem fonte, tamanho, cor, espaçamento, alinhamento e outros elementos visuais. Em vez de formatar cada título, parágrafo ou elemento individualmente, você aplica um estilo que automaticamente define todas as características visuais. Isso garante consistência visual em todo o documento e facilita enormemente a manutenção e modificação da formatação.</p>
+
+        <p><strong>Vantagens dos estilos:</strong> O uso de estilos oferece múltiplos benefícios: economia de tempo (não precisa reformatar elementos similares), consistência visual (todos os títulos ficam iguais), facilidade de modificação (mudando o estilo, todos os elementos com esse estilo se atualizam automaticamente), geração automática de sumários e índices, melhor organização do documento, e aparência profissional. Documentos com estilos bem aplicados transmitem seriedade e competência profissional.</p>
+
+        <p><strong>Tipos de estilos:</strong> Existem diferentes tipos de estilos no Word: estilos de parágrafo (formatam parágrafos inteiros), estilos de caractere (formatam apenas texto selecionado), estilos de tabela (formatam tabelas completas), e estilos de lista (formatam listas numeradas ou com marcadores). Cada tipo tem aplicações específicas e contribui para a organização visual do documento.</p>
+
+        <p><strong>Estilos padrão versus personalizados:</strong> O Word vem com estilos predefinidos como Título 1, Título 2, Normal, Ênfase, entre outros. Esses estilos são adequados para a maioria das situações. Porém, você também pode criar estilos personalizados que atendam necessidades específicas do seu projeto ou organização. Estilos personalizados são especialmente úteis para documentos corporativos com identidade visual específica.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">2</span>
+            Aplicando e Modificando Estilos
+        </div>
+        <div class="question">
+            <p><strong>A4.</strong> Como aplicar um estilo: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A5.</strong> Como modificar um estilo existente: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A6.</strong> Atalho para aplicar estilo Normal: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Aplicação básica de estilos:</strong> Para aplicar um estilo, selecione o texto ou posicione o cursor no parágrafo desejado, depois clique no estilo apropriado na galeria de estilos (aba Página Inicial). Para títulos, use Título 1 para títulos principais, Título 2 para subtítulos, e assim por diante. Para texto normal, use o estilo Normal. A aplicação correta de estilos desde o início economiza muito tempo posteriormente.</p>
+
+        <p><strong>Modificação de estilos:</strong> Clique com botão direito no estilo que deseja modificar e escolha "Modificar". Na janela que abrir, você pode alterar fonte, tamanho, cor, espaçamento, alinhamento e outros elementos. Todas as alterações serão aplicadas automaticamente a todos os elementos do documento que usam esse estilo. Isso é muito mais eficiente que reformatar elementos individualmente.</p>
+
+        <p><strong>Atalhos de teclado:</strong> O Word oferece atalhos úteis para estilos: Ctrl+Shift+N aplica estilo Normal, Ctrl+Alt+1 aplica Título 1, Ctrl+Alt+2 aplica Título 2, e assim por diante. Ctrl+Shift+S abre a janela "Aplicar Estilos" onde você pode digitar o nome do estilo desejado. Aprender esses atalhos acelera significativamente o trabalho com documentos longos.</p>
+
+        <p><strong>Cópia de formatação:</strong> Use o Pincel de Formatação (ícone de pincel na aba Página Inicial) para copiar formatação de um elemento para outro. Para copiar estilos completos, é mais eficiente aplicar o estilo apropriado diretamente. O pincel é útil para formatações específicas que não estão incluídas em estilos predefinidos.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">3</span>
+            Hierarquia e Estrutura de Documento
+        </div>
+        <div class="question">
+            <p><strong>A7.</strong> Ordem correta dos títulos: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A8.</strong> Benefício da hierarquia de títulos: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A9.</strong> Como visualizar estrutura do documento: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Hierarquia lógica:</strong> Use títulos em ordem hierárquica: Título 1 para capítulos ou seções principais, Título 2 para subtítulos, Título 3 para sub-subtítulos, e assim por diante. Nunca pule níveis (não use Título 3 diretamente após Título 1). Esta estrutura lógica facilita navegação, compreensão do conteúdo, e permite geração automática de sumários e índices.</p>
+
+        <p><strong>Painel de navegação:</strong> Ative o Painel de Navegação (aba Exibir > Painel de Navegação) para ver a estrutura do documento baseada nos títulos aplicados. Este painel permite navegar rapidamente entre seções, reorganizar partes do documento arrastando títulos, e ter visão geral da organização do conteúdo. É especialmente útil em documentos longos.</p>
+
+        <p><strong>Numeração automática:</strong> Configure numeração automática para títulos através dos estilos. Isso garante numeração consistente mesmo quando você adiciona, remove ou reorganiza seções. A numeração automática se atualiza automaticamente conforme você modifica a estrutura do documento, eliminando erros manuais de numeração.</p>
+
+        <p><strong>Estrutura visual:</strong> Estilos de título bem configurados criam hierarquia visual clara através de diferentes tamanhos de fonte, formatação em negrito, espaçamento, e outras características. Isso facilita escaneamento rápido do documento e compreensão da organização do conteúdo. Leitores devem conseguir identificar rapidamente a estrutura apenas observando a formatação.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">4</span>
+            Formatação Avançada de Texto
+        </div>
+        <div class="question">
+            <p><strong>A10.</strong> Como criar estilo personalizado: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A11.</strong> Diferença entre estilo de parágrafo e caractere: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A12.</strong> Como aplicar formatação condicional: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Criação de estilos personalizados:</strong> Para criar novo estilo, formate um parágrafo com as características desejadas, selecione-o, clique na seta da galeria de estilos e escolha "Criar um Estilo". Dê nome descritivo ao estilo e defina se é de parágrafo ou caractere. Estilos personalizados são úteis para elementos específicos como citações, legendas, códigos, ou formatações corporativas específicas.</p>
+
+        <p><strong>Formatação de caracteres versus parágrafos:</strong> Estilos de parágrafo afetam parágrafos inteiros (alinhamento, espaçamento entre linhas, recuos), enquanto estilos de caractere afetam apenas texto selecionado (fonte, cor, negrito, itálico). Use estilos de parágrafo para estrutura geral e estilos de caractere para destaques específicos dentro do texto.</p>
+
+        <p><strong>Formatação condicional e automática:</strong> Configure formatação que se adapta automaticamente ao contexto. Por exemplo, estilos podem incluir espaçamento automático antes e depois, quebras de página automáticas, ou formatação que muda baseada na posição no documento. Isso cria documentos que se formatam automaticamente conforme você adiciona conteúdo.</p>
+
+        <p><strong>Gerenciamento de estilos:</strong> Use o painel "Estilos" (aba Página Inicial > Estilos > seta no canto) para gerenciar todos os estilos do documento. Aqui você pode criar, modificar, excluir, organizar e importar estilos. Mantenha apenas estilos necessários para evitar confusão e garantir consistência.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">5</span>
+            Sumários e Índices Automáticos
+        </div>
+        <div class="question">
+            <p><strong>A13.</strong> Pré-requisito para sumário automático: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A14.</strong> Como inserir sumário: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A15.</strong> Como atualizar sumário: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Preparação para sumário:</strong> Sumários automáticos dependem de títulos formatados com estilos de título (Título 1, Título 2, etc.). Certifique-se de que todos os títulos do documento usam estilos apropriados na hierarquia correta. Sem essa formatação, o Word não consegue identificar quais elementos devem aparecer no sumário.</p>
+
+        <p><strong>Inserção de sumário:</strong> Posicione cursor onde deseja o sumário, vá para aba Referências > Sumário, e escolha um dos modelos predefinidos. O Word automaticamente localiza todos os títulos formatados com estilos de título e cria índice com páginas corretas. Você pode personalizar aparência, profundidade (quantos níveis incluir), e formatação do sumário.</p>
+
+        <p><strong>Atualização automática:</strong> Quando modificar títulos ou adicionar novo conteúdo, clique no sumário e escolha "Atualizar Sumário". Você pode atualizar apenas números de página ou sumário completo (incluindo novos títulos). Esta funcionalidade elimina necessidade de refazer sumários manualmente quando documento muda.</p>
+
+        <p><strong>Personalização avançada:</strong> Acesse "Sumário Personalizado" para controlar formatação detalhada, incluir ou excluir níveis específicos, modificar estilos de formatação do sumário, e adicionar elementos como pontilhado entre título e página. Sumários bem formatados transmitem profissionalismo e facilitam navegação em documentos longos.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <span class="step-number">6</span>
+            Documentos Profissionais e Modelos
+        </div>
+        <div class="question">
+            <p><strong>A16.</strong> Vantagem de usar modelos: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A17.</strong> Como salvar documento como modelo: <span class="answer-line">_________________________</span></p>
+        </div>
+        <div class="question">
+            <p><strong>A18.</strong> Elementos de documento profissional: <span class="answer-line">_________________________</span></p>
+        </div>
+
+        <p><strong>Importância dos modelos:</strong> Modelos garantem consistência visual entre documentos da mesma organização ou tipo. Economizam tempo ao fornecer estrutura e formatação predefinidas. Asseguram que elementos importantes (cabeçalhos, rodapés, estilos) estejam sempre presentes e formatados corretamente. Modelos bem criados elevam qualidade e profissionalismo de todos os documentos produzidos.</p>
+
+        <p><strong>Criação de modelos:</strong> Crie documento com toda formatação, estilos, cabeçalhos, rodapés e estrutura desejada. Remova conteúdo específico, deixando apenas estrutura e texto de exemplo. Salve como "Modelo do Word" (*.dotx) em local acessível. Inclua instruções ou texto de orientação para usuários futuros do modelo.</p>
+
+        <p><strong>Elementos profissionais:</strong> Documentos profissionais devem incluir: cabeçalho com logo/identificação, rodapé com informações de contato e numeração, estilos consistentes para títulos e texto, espaçamento adequado, margens apropriadas, fonte legível e profissional, e estrutura lógica. Evite cores excessivas, fontes decorativas, ou elementos que prejudiquem legibilidade.</p>
+
+        <p><strong>Manutenção e versionamento:</strong> Mantenha modelos atualizados com mudanças na identidade visual, informações de contato, ou requisitos organizacionais. Use controle de versão para rastrear mudanças e garantir que todos usem versão mais recente. Treine usuários sobre uso correto dos modelos para garantir consistência.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="format-example">
+        <div class="section-title">
+            EXEMPLO PRÁTICO DE FORMATAÇÃO COM ESTILOS
+        </div>
+        
+        <p><strong>ESTRUTURA DE DOCUMENTO PROFISSIONAL</strong></p>
+        
+        <p><strong>Título 1: CAPÍTULO PRINCIPAL</strong><br>
+        (Fonte: Arial 16pt, Negrito, Espaçamento antes: 12pt, depois: 6pt)</p>
+        
+        <p><strong>Título 2: Seção Secundária</strong><br>
+        (Fonte: Arial 14pt, Negrito, Espaçamento antes: 6pt, depois: 3pt)</p>
+        
+        <p><strong>Título 3: Subseção</strong><br>
+        (Fonte: Arial 12pt, Negrito, Espaçamento antes: 3pt, depois: 3pt)</p>
+        
+        <p><strong>Normal: Texto do parágrafo</strong><br>
+        (Fonte: Arial 11pt, Justificado, Espaçamento entre linhas: 1,15)</p>
+        
+        <p><strong>Ênfase: Texto destacado</strong><br>
+        (Fonte: Arial 11pt, Itálico, Cor: Azul escuro)</p>
+        
+        <p><strong>Citação: "Texto de citação"</strong><br>
+        (Fonte: Arial 10pt, Itálico, Recuo: 1cm, Espaçamento antes e depois: 6pt)</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            Benefícios Profissionais da Formatação Avançada
+        </div>
+
+        <p><strong>Eficiência no trabalho:</strong> Dominar formatação avançada do Word aumenta significativamente sua produtividade profissional. Documentos que levariam horas para formatar manualmente podem ser criados em minutos usando estilos e modelos. Esta eficiência é especialmente valiosa em ambientes de trabalho onde documentação é frequente e deve manter padrões de qualidade elevados.</p>
+
+        <p><strong>Impressão profissional:</strong> Documentos bem formatados transmitem competência, atenção aos detalhes, e profissionalismo. Empregadores valorizam funcionários que produzem materiais visualmente atraentes e organizados. Habilidades avançadas de formatação são especialmente importantes em posições administrativas, de comunicação, ou que envolvem produção de relatórios e documentos.</p>
+
+        <p><strong>Colaboração eficaz:</strong> Estilos facilitam colaboração em equipe ao garantir que todos os colaboradores mantenham formatação consistente. Modelos padronizados permitem que diferentes pessoas trabalhem no mesmo projeto mantendo identidade visual uniforme. Isso é crucial em ambientes corporativos onde múltiplas pessoas contribuem para documentos.</p>
+
+        <p><strong>Adaptabilidade tecnológica:</strong> Conhecimento avançado de processadores de texto demonstra capacidade de aprender e dominar ferramentas tecnológicas complexas. Esta competência é transferível para outras aplicações e sistemas, tornando-o mais valioso no mercado de trabalho atual, onde fluência tecnológica é essencial.</p>
+
+        <p><strong>Preparação acadêmica:</strong> Formatação avançada é essencial para trabalhos acadêmicos, relatórios de pesquisa, teses, e dissertações. Dominar essas habilidades facilita vida estudantil e prepara para exigências de documentação em carreiras que requerem educação superior. Muitas normas acadêmicas (ABNT, APA) são mais facilmente implementadas usando estilos.</p>
+
+        <p><strong>Desenvolvimento contínuo:</strong> Habilidades de formatação evoluem constantemente com novas versões de software e mudanças nas melhores práticas. Profissionais que se mantêm atualizados com recursos avançados têm vantagem competitiva. Invista tempo em aprender novos recursos e técnicas para manter suas habilidades relevantes e valiosas.</p>
+
+        <p><strong>Aplicações específicas:</strong> Diferentes carreiras têm necessidades específicas de formatação: advogados precisam dominar formatação de contratos e petições, educadores criam materiais didáticos, profissionais de marketing produzem propostas e relatórios, administradores desenvolvem políticas e procedimentos. Adapte suas habilidades às necessidades específicas da sua área de interesse.</p>
+    </div>
+
+    <div class="info-bar">
+        <span>Nome: _____________________________________</span>
+        <span>Data: ___/___/2025</span>
+        <span>Turma: __________</span>
+    </div>
+</body>
+</html>
