@@ -1,4 +1,4 @@
-# 📚 Atividades Práticas Socioeducativas - COMPLETAS E DENSAS
+# 📚 Atividades Práticas Socioeducativas
 
 Bem-vindo ao repositório de atividades do dia a dia! Cada atividade foi cuidadosamente desenvolvida para ocupar **4 páginas completas** com conteúdo denso, exercícios práticos, reflexões e projetos que garantem **2+ horas de trabalho focado**.
 
