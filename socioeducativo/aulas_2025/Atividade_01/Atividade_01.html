@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01 - Excel Básico + Organização de Dados</title>
+    <style>
+        @page {
+            margin: 5mm 3mm;
+            size: A4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 5mm 3mm;
+            background: white;
+        }
+
+        @media print {
+            body {
+                font-size: 10px;
+                line-height: 1.2;
+                max-width: 204mm;
+                margin: 0;
+                padding: 0;
+            }
+            .header h1 { font-size: 14px !important; }
+            .header p { font-size: 11px !important; }
+            h2 { font-size: 12px !important; }
+            h3 { font-size: 11px !important; }
+        }
+
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-item strong {
+            display: block;
+            color: #495057;
+            margin-bottom: 5px;
+        }
+
+        .section {
+            background: white;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #495057;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .section h3 {
+            color: #667eea;
+            margin: 15px 0 10px 0;
+            font-size: 16px;
+        }
+
+        .exercise {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .exercise h4 {
+            color: #495057;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .step {
+            background: white;
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .step-number {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #667eea;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .task-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .task-list li {
+            background: white;
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .task-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #28a745;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .input-field {
+            border: none;
+            border-bottom: 2px solid #dee2e6;
+            padding: 5px 0;
+            margin: 0 5px;
+            min-width: 200px;
+            font-size: inherit;
+            background: transparent;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-bottom-color: #667eea;
+        }
+
+        .reflection-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .reflection-box h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .table-practice {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+        }
+
+        .table-practice th,
+        .table-practice td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table-practice th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+
+        .tips {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .tips h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        @media print {
+            .section {
+                break-inside: avoid;
+                margin: 10px 0;
+                padding: 15px;
+            }
+            
+            .exercise {
+                break-inside: avoid;
+                margin: 10px 0;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ATIVIDADE 01 - EXCEL BÁSICO + ORGANIZAÇÃO DE DADOS</h1>
+        <p>Programa Socioeducativo - 02/09/2025 - Turma Feminina</p>
+    </div>
+
+    <div class="info-box">
+        <div class="info-item">
+            <strong>Data:</strong>
+            <input type="text" class="input-field" placeholder="02/09/2025">
+        </div>
+        <div class="info-item">
+            <strong>Nome:</strong>
+            <input type="text" class="input-field" placeholder="Seu nome completo">
+        </div>
+        <div class="info-item">
+            <strong>Turma:</strong>
+            <input type="text" class="input-field" placeholder="Feminina">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🎯 Objetivo da Atividade</h2>
+        <p>Hoje você vai aprender os conceitos básicos do Microsoft Excel enquanto organiza informações sobre profissões e planeja sua carreira. Vamos combinar o aprendizado da ferramenta com reflexões importantes sobre seu futuro profissional.</p>
+        
+        <div class="tips">
+            <h4>💡 O que você vai aprender:</h4>
+            <ul>
+                <li>Como abrir e navegar no Microsoft Excel</li>
+                <li>Criar planilhas simples de organização</li>
+                <li>Inserir e formatar dados</li>
+                <li>Pensar sobre profissões e carreira</li>
+                <li>Organizar informações de forma profissional</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📝 Atividade de Digitação: "Minha Profissão dos Sonhos"</h2>
+        
+        <div class="exercise">
+            <h4>PARTE 1: Reflexão Escrita (15 minutos)</h4>
+            <p>Antes de trabalhar no Excel, vamos refletir sobre sua profissão dos sonhos. Escreva suas respostas nos espaços abaixo:</p>
+            
+            <div style="margin: 15px 0;">
+                <strong>1. Qual é a profissão dos seus sonhos?</strong><br>
+                <input type="text" class="input-field" style="width: 100%; margin-top: 5px;" placeholder="Escreva aqui...">
+            </div>
+            
+            <div style="margin: 15px 0;">
+                <strong>2. Por que você escolheu essa profissão?</strong><br>
+                <textarea style="width: 100%; height: 60px; margin-top: 5px; padding: 8px; border: 1px solid #dee2e6; border-radius: 4px;" placeholder="Explique os motivos da sua escolha..."></textarea>
+            </div>
+            
+            <div style="margin: 15px 0;">
+                <strong>3. Que habilidades você precisa desenvolver para essa profissão?</strong><br>
+                <textarea style="width: 100%; height: 60px; margin-top: 5px; padding: 8px; border: 1px solid #dee2e6; border-radius: 4px;" placeholder="Liste as habilidades necessárias..."></textarea>
+            </div>
+            
+            <div style="margin: 15px 0;">
+                <strong>4. Onde você gostaria de trabalhar?</strong><br>
+                <input type="text" class="input-field" style="width: 100%; margin-top: 5px;" placeholder="Empresa, cidade, tipo de ambiente...">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>💻 Prática no Microsoft Excel</h2>
+        
+        <div class="exercise">
+            <h4>PASSO 1: Abrindo o Microsoft Excel</h4>
+            <div class="step">
+                <div class="step-number">1</div>
+                <strong>Clique no botão "Iniciar"</strong> no canto inferior esquerdo da tela
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <strong>Digite "Excel"</strong> na barra de pesquisa
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <strong>Clique em "Microsoft Excel"</strong> quando aparecer
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <strong>Escolha "Pasta de trabalho em branco"</strong>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h4>PASSO 2: Conhecendo a Interface do Excel</h4>
+            <p>Observe e identifique os elementos principais:</p>
+            <ul class="task-list">
+                <li><strong>Células:</strong> Os quadradinhos onde você digita (A1, B1, C1...)</li>
+                <li><strong>Colunas:</strong> Organizadas por letras (A, B, C, D...)</li>
+                <li><strong>Linhas:</strong> Organizadas por números (1, 2, 3, 4...)</li>
+                <li><strong>Barra de Fórmulas:</strong> Onde aparecem os dados da célula selecionada</li>
+                <li><strong>Abas das Planilhas:</strong> Plan1, Plan2, Plan3 na parte inferior</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>📊 Criando sua Planilha de Profissões</h2>
+        
+        <div class="exercise">
+            <h4>PASSO 3: Criando o Cabeçalho da Planilha</h4>
+            <p>Vamos criar uma planilha para organizar informações sobre diferentes profissões:</p>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <strong>Na célula A1, digite:</strong> "PROFISSÕES QUE ME INTERESSAM"
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <strong>Na célula A3, digite:</strong> "Profissão"
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <strong>Na célula B3, digite:</strong> "Formação Necessária"
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <strong>Na célula C3, digite:</strong> "Salário Médio"
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <strong>Na célula D3, digite:</strong> "Interesse (1-10)"
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h4>PASSO 4: Preenchendo os Dados</h4>
+            <p>Agora vamos preencher a planilha com informações sobre profissões. Digite os dados nas células indicadas:</p>
+            
+            <table class="table-practice">
+                <thead>
+                    <tr>
+                        <th>Linha</th>
+                        <th>Profissão (Coluna A)</th>
+                        <th>Formação (Coluna B)</th>
+                        <th>Salário (Coluna C)</th>
+                        <th>Interesse (Coluna D)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4</td>
+                        <td>Enfermeiro(a)</td>
+                        <td>Curso Superior</td>
+                        <td>R$ 3.000</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Professor(a)</td>
+                        <td>Licenciatura</td>
+                        <td>R$ 3.500</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Técnico em Informática</td>
+                        <td>Curso Técnico</td>
+                        <td>R$ 2.800</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Vendedor(a)</td>
+                        <td>Ensino Médio</td>
+                        <td>R$ 1.800</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>[Sua profissão dos sonhos]</td>
+                        <td>[Pesquise e complete]</td>
+                        <td>[Pesquise e complete]</td>
+                        <td>[Sua nota]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🎨 Formatando sua Planilha</h2>
+        
+        <div class="exercise">
+            <h4>PASSO 5: Deixando sua Planilha Bonita</h4>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <strong>Selecione a célula A1</strong> (clique nela)
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <strong>Na aba "Página Inicial"</strong>, clique no botão "Negrito" (B)
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <strong>Selecione as células A3 até D3</strong> (arraste de A3 até D3)
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <strong>Clique em "Negrito"</strong> para destacar os cabeçalhos
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <strong>Com A3:D3 ainda selecionadas</strong>, clique na setinha ao lado do "balde de tinta" e escolha uma cor de fundo
+            </div>
+        </div>
+
+        <div class="tips">
+            <h4>💡 Dicas de Formatação:</h4>
+            <ul>
+                <li>Use cores suaves para não cansar a vista</li>
+                <li>Mantenha sempre o contraste entre texto e fundo</li>
+                <li>Negrito ajuda a destacar informações importantes</li>
+                <li>Organize sempre os dados de forma clara</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>💰 Organizando Orçamento Simples</h2>
+        
+        <div class="exercise">
+            <h4>PASSO 6: Criando uma Planilha de Orçamento Pessoal</h4>
+            <p>Vamos criar uma segunda planilha. Clique na aba "Plan2" na parte inferior:</p>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <strong>Na célula A1, digite:</strong> "MEU ORÇAMENTO MENSAL"
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <strong>Na célula A3, digite:</strong> "RECEITAS"
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <strong>Nas células A4 a A6, digite:</strong>
+                <ul style="margin-top: 10px;">
+                    <li>A4: "Salário"</li>
+                    <li>A5: "Freelance"</li>
+                    <li>A6: "Outros"</li>
+                </ul>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <strong>Na célula A8, digite:</strong> "DESPESAS"
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <strong>Nas células A9 a A13, digite:</strong>
+                <ul style="margin-top: 10px;">
+                    <li>A9: "Alimentação"</li>
+                    <li>A10: "Transporte"</li>
+                    <li>A11: "Moradia"</li>
+                    <li>A12: "Educação"</li>
+                    <li>A13: "Lazer"</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <h4>PASSO 7: Adicionando Valores ao Orçamento</h4>
+            <p>Agora vamos adicionar valores de exemplo. Na coluna B, digite os valores:</p>
+            
+            <table class="table-practice">
+                <thead>
+                    <tr>
+                        <th>Célula</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B4</td>
+                        <td>1400</td>
+                        <td>Salário mensal</td>
+                    </tr>
+                    <tr>
+                        <td>B5</td>
+                        <td>300</td>
+                        <td>Trabalhos extras</td>
+                    </tr>
+                    <tr>
+                        <td>B6</td>
+                        <td>100</td>
+                        <td>Outras rendas</td>
+                    </tr>
+                    <tr>
+                        <td>B9</td>
+                        <td>400</td>
+                        <td>Gastos com comida</td>
+                    </tr>
+                    <tr>
+                        <td>B10</td>
+                        <td>150</td>
+                        <td>Ônibus, gasolina</td>
+                    </tr>
+                    <tr>
+                        <td>B11</td>
+                        <td>500</td>
+                        <td>Aluguel, contas</td>
+                    </tr>
+                    <tr>
+                        <td>B12</td>
+                        <td>200</td>
+                        <td>Cursos, livros</td>
+                    </tr>
+                    <tr>
+                        <td>B13</td>
+                        <td>150</td>
+                        <td>Diversão, cinema</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🧮 Suas Primeiras Fórmulas no Excel</h2>
+        
+        <div class="exercise">
+            <h4>PASSO 8: Calculando Totais</h4>
+            <p>Agora vamos aprender a fazer o Excel calcular para nós:</p>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <strong>Na célula A7, digite:</strong> "TOTAL RECEITAS"
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <strong>Na célula B7, digite:</strong> =B4+B5+B6
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <strong>Pressione Enter</strong> - veja a mágica acontecer!
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <strong>Na célula A14, digite:</strong> "TOTAL DESPESAS"
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <strong>Na célula B14, digite:</strong> =B9+B10+B11+B12+B13
+            </div>
+            <div class="step">
+                <div class="step-number">6</div>
+                <strong>Pressione Enter</strong>
+            </div>
+        </div>
+
+        <div class="tips">
+            <h4>💡 Entendendo as Fórmulas:</h4>
+            <ul>
+                <li>Toda fórmula no Excel começa com <strong>=</strong></li>
+                <li>O sinal <strong>+</strong> soma os valores</li>
+                <li>Você pode referenciar células (B4, B5) ao invés de digitar números</li>
+                <li>Se mudar um valor na célula, o total atualiza automaticamente!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="reflection-box">
+        <h3>🤔 Reflexão sobre Organização no Trabalho</h3>
+        
+        <div style="margin: 15px 0;">
+            <strong>1. Como a organização de dados pode ajudar na sua futura profissão?</strong><br>
+            <textarea style="width: 100%; height: 60px; margin-top: 5px; padding: 8px; border: 1px solid #dee2e6; border-radius: 4px;" placeholder="Pense em como planilhas podem ser úteis no seu trabalho..."></textarea>
+        </div>
+        
+        <div style="margin: 15px 0;">
+            <strong>2. Que tipo de informações você organizaria em planilhas?</strong><br>
+            <textarea style="width: 100%; height: 60px; margin-top: 5px; padding: 8px; border: 1px solid #dee2e6; border-radius: 4px;" placeholder="Clientes, produtos, horários, orçamentos..."></textarea>
+        </div>
+        
+        <div style="margin: 15px 0;">
+            <strong>3. Como o controle financeiro pode ajudar na sua carreira?</strong><br>
+            <textarea style="width: 100%; height: 60px; margin-top: 5px; padding: 8px; border: 1px solid #dee2e6; border-radius: 4px;" placeholder="Planejamento, investimento em educação, segurança..."></textarea>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>💾 Salvando seu Trabalho</h2>
+        
+        <div class="exercise">
+            <h4>PASSO 9: Salvando suas Planilhas</h4>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <strong>Pressione Ctrl + S</strong> ou clique no ícone de disquete
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <strong>Escolha onde salvar</strong> (Documentos, Desktop, etc.)
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <strong>Digite o nome do arquivo:</strong> "Minha_Profissao_dos_Sonhos"
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <strong>Clique em "Salvar"</strong>
+            </div>
+        </div>
+
+        <div class="tips">
+            <h4>💡 Dicas para Salvar:</h4>
+            <ul>
+                <li>Salve sempre com nomes que façam sentido</li>
+                <li>Use underline (_) ao invés de espaços nos nomes</li>
+                <li>Salve regularmente para não perder o trabalho</li>
+                <li>Mantenha uma pasta organizada para seus arquivos</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🎯 Resumo da Atividade</h2>
+        
+        <div class="exercise">
+            <h4>O que você aprendeu hoje:</h4>
+            <ul class="task-list">
+                <li>Como abrir e navegar no Microsoft Excel</li>
+                <li>Criar planilhas simples com dados organizados</li>
+                <li>Formatar células com cores e negrito</li>
+                <li>Fazer cálculos básicos com fórmulas simples</li>
+                <li>Organizar informações sobre profissões</li>
+                <li>Criar orçamento pessoal básico</li>
+                <li>Salvar arquivos com nomes apropriados</li>
+                <li>Refletir sobre organização no ambiente de trabalho</li>
+            </ul>
+        </div>
+
+        <div class="reflection-box">
+            <h3>📝 Para a Próxima Atividade</h3>
+            <p>Na próxima aula, vamos trabalhar com Microsoft Word, aprendendo a criar documentos profissionais. Pense em:</p>
+            <ul>
+                <li>Que tipos de documentos você gostaria de saber criar</li>
+                <li>Como a escrita profissional pode ajudar na sua carreira</li>
+                <li>Que informações sobre profissões você gostaria de pesquisar mais</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="info-box" style="margin-top: 30px;">
+        <div class="info-item">
+            <strong>Avaliação:</strong>
+            <select style="padding: 5px; border: 1px solid #dee2e6; border-radius: 4px;">
+                <option>Selecione...</option>
+                <option>Excelente</option>
+                <option>Bom</option>
+                <option>Regular</option>
+                <option>Precisa melhorar</option>
+            </select>
+        </div>
+        <div class="info-item">
+            <strong>Dificuldades:</strong>
+            <input type="text" class="input-field" placeholder="O que foi mais difícil?">
+        </div>
+        <div class="info-item">
+            <strong>Próximos passos:</strong>
+            <input type="text" class="input-field" placeholder="O que quer aprender?">
+        </div>
+    </div>
+</body>
+</html>
